@@ -9,7 +9,7 @@
   - [Zeichencodierung](charEncoding.md)
 * Struktur der Transferdatei
   - [Transfer](transfer.md)
-  - [Vorspann](headerSection.md.md)
+  - [Vorspann](headerSection.md)
 * Datenbereich
    - [Themen](topic.md)
    - [Klassen](classes.md)
