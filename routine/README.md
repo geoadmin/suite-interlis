@@ -55,3 +55,34 @@ Alle Test-Typen der Routine sind in der Datei ``build.gradle`` (unter ``test``) 
 
 ### Datei interlis2.cfg
 Spezifische iG/Check-Einstellungen können zusätzlich in der Datei ``interlis2.cfg`` im Verzeichnis ``ichcheck2`` gesetzt werden.
+
+### Tests direkt im Code ausgeschaltet
+#### ilivalidator Version 1.9.3
+| Test | Begründung |
+| --- | --- |
+| RCO.T01a.xtf | Absturz |
+| RCO.T02b.xtf | Absturz |
+| RHE.T01b.xtf | java.lang.IllegalArgumentException statt java.lang.AssertionError. Fehlermeldung ist korrekt |
+| RHE.T04a.xtf | java.lang.IllegalArgumentException statt java.lang.AssertionError. Fehlermeldung ist korrekt |
+| RTO.T02a.xtf | java.lang.IllegalArgumentException statt java.lang.AssertionError. Fehlermeldung ist korrekt |
+| RTR.T02a.xtf | Falsche Fehlermeldung |
+| RTR.T02b.xtf | Falsche Fehlermeldung |
+| RTR.T03a.xtf | Falsche Fehlermeldung |
+| RTR.T04a.xtf | Falsche Fehlermeldung |
+| RXW.T02a.xtf | Falsche Fehlermeldung |
+| RXW.T02e.xtf | Falsche Fehlermeldung |
+| RXW.T02f.xtf | Falsche Fehlermeldung |
+
+#### iG/Check Version 2016.2 06.04.2018
+| Test | Begründung |
+| --- | --- |
+| RAt.T11e.xtf | Falsche Fehlermeldung |
+| RAt.T11f.xtf | Falsche Fehlermeldung |
+| RZe.T01c.xtf | Falsche Fehlermeldung |
+| RKo.T03a.xtf | Falsche Fehlermeldung |
+| RKo.T03b.xtf | Falsche Fehlermeldung |
+| RTO.T06c.xtf | Falsche Fehlermeldung |
+| RTR.T02c.xtf | Falsche Fehlermeldung |
+| RXW.T01a.xtf | Falsche Fehlermeldung |
+
+
