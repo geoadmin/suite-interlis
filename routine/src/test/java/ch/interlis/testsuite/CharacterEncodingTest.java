@@ -81,8 +81,6 @@ public class CharacterEncodingTest {
 	 */
 	@Test
 	public void RZe_T01c() {
-		// Ausgesetzt falls vendor="ig/check" --> Flasche Fehlermeldung
-		assumeFalse (System.getProperty("vendor").equals("ig/check"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RZe.T01c.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
