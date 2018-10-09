@@ -22,7 +22,7 @@
 |:--|:--
 |**Bezeichnung**|**Eingebettete Beziehungen**
 |**Beschreibung**|Für die Validierung einer eingebetteten Beziehung gelten die im [[1]] Kap. 3.3.9.1 definierten Regeln
-|**Details**|<ul><li>Der Wert ```%RoleName%``` muss der ```RolDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entsprechen</li><li>Zeigt die Referenz auf ein Objekt im gleichen Behälter, wird die Referenz mit ```REF``` codiert. Zeigt die Referenz auf ein Objekt in einem anderen Behälter (im gleichen Transfer oder sogar ausserhalb), muss zusätzlich ein ```BID``` zur Verfügung stehen</li><li>Es muss geprüft werden, ob die referenzierte Objektinstanz existiert und der ```RolDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entspricht</li></ul>
+|**Details**|<ul><li>Der Wert ```%RoleName%``` muss der ```RolDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entsprechen</li><li>Zeigt die Referenz auf ein Objekt im gleichen Behälter, wird die Referenz mit ```REF``` codiert. Zeigt die Referenz auf ein Objekt in einem anderen Behälter (im gleichen Transfer oder sogar ausserhalb), muss zusätzlich eine ```BID``` zur Verfügung stehen</li><li>Es muss geprüft werden, ob die referenzierte Objektinstanz existiert und der ```RolDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entspricht</li></ul>
 |**Referenz**|[[1]] Kap. 2.7.1 und 3.3.9.1
 
 ### Testfälle
@@ -48,8 +48,8 @@
 |ID|RBk
 |:--|:--
 |**Bezeichnung**|**Beziehungsklassen**
-|**Beschreibung**|Für die Validierung der Instanzen einer Beziehungsklasse gelten die im [[1]] Kap. 3.3.7 fürs Element ```Link``` und im [[1]] Kap. 3.3.9.2 definierten Regeln
-|**Details**|<ul><li>Der Wert ```%Model.Topic.Association%``` muss der ```AssociationDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entsprechen. Für Beziehungen ohne expliziten Namen wird der Name durch zusammenhängen der einzelnen Rollennamen gebildet (```%RoleName1RoleName2%```) ([[1]] Kap. 3.3.9.2)</li><li>Instanzen von ```Link``` haben nur eine Transferidentifikation, wenn diese im Rahmen der ```AssociationDef``` mit dem Property ```OID``` gefordert wurde ([[1]] Kap. 2.7.1)</li><li>Der Wert ```%RoleName%``` muss der ```RolDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entsprechen</li><li>Zeigt die Referenz auf ein Objekt im gleichen Behälter, wird die Referenz mit ```REF``` codiert. Zeigt die Referenz auf ein Objekt in einem anderen Behälter (im gleichen Transfer oder sogar ausserhalb), muss zusätzlich ein ```BID``` zur Verfügung stehen</li><li>Es muss geprüft werden, ob die referenzierten Objektinstanzen existieren und der ```RolDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entsprechen</li></ul>
+|**Beschreibung**|Für die Validierung der Instanzen einer Beziehungsklasse gelten die im [[1]] Kap. 3.3.7 für das Element ```Link``` und im [[1]] Kap. 3.3.9.2 definierten Regeln
+|**Details**|<ul><li>Der Wert ```%Model.Topic.Association%``` muss der ```AssociationDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entsprechen. Für Beziehungen ohne expliziten Namen wird der Name durch das Zusammenhängen der einzelnen Rollennamen gebildet (```%RoleName1RoleName2%```) ([[1]] Kap. 3.3.9.2)</li><li>Instanzen von ```Link``` haben nur eine Transferidentifikation, wenn diese im Rahmen der ```AssociationDef``` mit der Property ```OID``` gefordert wurde ([[1]] Kap. 2.7.1)</li><li>Der Wert ```%RoleName%``` muss der ```RolDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entsprechen</li><li>Zeigt die Referenz auf ein Objekt im gleichen Behälter, wird die Referenz mit ```REF``` codiert. Zeigt die Referenz auf ein Objekt in einem anderen Behälter (im gleichen Transfer oder sogar ausserhalb), muss zusätzlich eine ```BID``` zur Verfügung stehen</li><li>Es muss geprüft werden, ob die referenzierten Objektinstanzen existieren und der ```RolDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entsprechen</li></ul>
 |**Referenz**|[[1]] Kap. 2.7.1, 3.3.7 und 3.3.9.2
 
 ### Testfälle
