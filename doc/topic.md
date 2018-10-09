@@ -5,7 +5,7 @@
 |:--|:--
 |**Bezeichnung**|**TOPIC**
 |**Beschreibung**|Für die Validierung eines **Topic** gelten die im [[1]] Kap. 3.3.6 definierten Regeln
-|**Details**|<ul><li>Der Wert ```%Model.Topic%``` muss den ```ModelDef``` ([[1]] Kap. 2.5.1) und ```TopicDef``` ([[1]] Kap. 2.5.2) im INTERLIS-Datenmodell entsprechen</li><li>Jeder Datenbehälter (```Basket```) erhält eine Behälteridentifikation (XML-Attribut ```BID```). Wo nötig, muss die BID-Angabe der ```TopicDef``` ([[1]] Kap. 2.5.2) im INTERLIS-Datenmodell entsprechen. Es gelten zusätzlich die im [[1]] Kap. 2.8.9 definierten Regeln</li><li>Alle ```BID``` inkl. alle ```TID``` ([Regel Klassen](classes.md#regel-klassen)) innerhalb eines Transfers müssen eindeutig sein ([[1]] Kap. 3.3.7 und 3.2.6)</li>
+|**Details**|<ul><li>Der Wert ```%Model.Topic%``` muss der ```ModelDef``` ([[1]] Kap. 2.5.1) und ```TopicDef``` ([[1]] Kap. 2.5.2) im INTERLIS-Datenmodell entsprechen</li><li>Jeder Datenbehälter (```Basket```) erhält eine Behälteridentifikation (XML-Attribut ```BID```). Wo nötig, muss die BID-Angabe der ```TopicDef``` ([[1]] Kap. 2.5.2) im INTERLIS-Datenmodell entsprechen. Es gelten zusätzlich die im [[1]] Kap. 2.8.9 definierten Regeln</li><li>Alle ```BID``` inkl. alle ```TID``` ([Regel Klassen](classes.md#regel-klassen)) innerhalb eines Transfers müssen eindeutig sein ([[1]] Kap. 3.3.7 und 3.2.6)</li>
 |**Referenz**|[[1]] Kap. 2.5.1, 2.5.2, 2.8.9, 3.2.5, 3.2.6 und 3.3.6</td>
 
 ### Testfälle
