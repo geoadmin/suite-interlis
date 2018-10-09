@@ -24,7 +24,7 @@
 |**Bezeichnung**|```TEXT```
 |**Beschreibung**|Die Tests müssen prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für ```TEXT```, bzw. den entsprechenden Codierungsregeln, entspricht
 |**Testvoraussetzung**|[RAt.T02a.xtf](../data/RAt.T02a.xtf), [RAt.T02b.xtf](../data/RAt.T02b.xtf), [RAt.T02c.xtf](../data/RAt.T02c.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RAt.T02a.xtf: keine Fehlermeldung. Leerzeichen sind gültige Zeichen</li><li>RAt.T02b.xtf: Fehlermeldung. Attribut ```Art3``` muss auf drei Zeichen begrenzt werden</li><li>RAt.T02c.xtf: Fehlermeldung. ```TEXT``` muss als einzeiliger Text codiert werden: Steuerzeichen sind nicht zulässig</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RAt.T02a.xtf: keine Fehlermeldung. Leerzeichen sind gültige Zeichen</li><li>RAt.T02b.xtf: Fehlermeldung. Attribut ```Art3``` muss auf drei Zeichen begrenzt werden</li><li>RAt.T02c.xtf: Fehlermeldung. ```TEXT``` muss als einzeiliger Text codiert werden, Steuerzeichen sind nicht zulässig</li></ul>
 |**Referenz**|[[1]] Kap. 2.6, 2.8.1 und 3.3.11.2<br/>[[2]] Kap. 2.2 (https://www.w3.org/TR/REC-xml/#charsets)
 
 ###### Attribute - RAt.T03
@@ -33,7 +33,7 @@
 |**Bezeichnung**|```MTEXT```
 |**Beschreibung**|Die Tests müssen prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für ```MTEXT```, bzw. den entsprechenden Codierungsregeln, entspricht
 |**Testvoraussetzung**|[RAt.T03a.xtf](../data/RAt.T03a.xtf), [RAt.T03b.xtf](../data/RAt.T03b.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RAt.T03a.xtf: Fehlermeldung. Attribut ```Beschreibung``` muss auf 9 Zeichen begrenzt werden. Jeder Wagenrücklauf zählt als 1 Zeichen</li><li>RAt.T03b.xtf: keine Fehlermeldung. Steuerzeichen, wie Tabulatoren, sind in ```MTEXT``` zulässig</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RAt.T03a.xtf: Fehlermeldung. Attribut ```Beschreibung``` muss auf 9 Zeichen begrenzt werden; jeder Wagenrücklauf zählt als 1 Zeichen</li><li>RAt.T03b.xtf: keine Fehlermeldung. Steuerzeichen wie Tabulatoren, sind in ```MTEXT``` zulässig</li></ul>
 |**Referenz**|[[1]] Kap. 2.6, 2.8.1 und 3.3.11.2<br/>[[2]] Kap. 2.11 (https://www.w3.org/TR/REC-xml/#sec-line-ends)<br/>[[2]] Kap. 2.2 (https://www.w3.org/TR/REC-xml/#charsets)
 
 ###### Attribute - RAt.T04
@@ -42,7 +42,7 @@
 |**Bezeichnung**|```NAME```
 |**Beschreibung**|Die Tests müssen prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für ```NAME```, bzw. den entsprechenden Codierungsregeln, entspricht
 |**Testvoraussetzung**|[RAt.T04a.xtf](../data/RAt.T04a.xtf), [RAt.T04b.xtf](../data/RAt.T04b.xtf), [RAt.T04c.xtf](../data/RAt.T04c.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RAt.T04a.xtf: Fehlermeldung. ```NAME``` ist eine Folge von maximal 255 Buchstaben</li><li>RAt.T04b.xtf: Fehlermeldung. Das erste Zeichen muss ein Buchstabe sein</li><li>RAt.T04c.xtf: Fehlermeldung. Bei Namen sind reservierte INTERLIS-Wörter unzulässig</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RAt.T04a.xtf: Fehlermeldung. ```NAME``` ist eine Folge von maximal 255 Buchstaben, Ziffern und Unterstrichen</li><li>RAt.T04b.xtf: Fehlermeldung. Das erste Zeichen muss ein Buchstabe sein</li><li>RAt.T04c.xtf: Fehlermeldung. Bei Namen sind reservierte INTERLIS-Wörter nicht zulässig</li></ul>
 |**Referenz**|[[1]] Kap. 2.2.2, 2.2.7, 2.6, 2.8.1 und 3.3.11.2<br/>[[2]] Kap. 2.3 (https://www.w3.org/TR/REC-xml/#NT-Name)
 
 ###### Attribute - RAt.T05
@@ -51,7 +51,7 @@
 |**Bezeichnung**|```URI```
 |**Beschreibung**|Die Tests müssen prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für ```URI```, bzw. den entsprechenden Codierungsregeln, entspricht
 |**Testvoraussetzung**|[RAt.T05a.xtf](../data/RAt.T05a.xtf), [RAt.T05b.xtf](../data/RAt.T05b.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RAt.T05a.xtf: Fehlermeldung. ```URI``` ist eine Folge von maximal 1023 Buchstaben</li><li>RAt.T05b.xtf: Fehlermeldung. Fehlendes URI-Schema</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RAt.T05a.xtf: Fehlermeldung. ```URI``` ist eine Folge von maximal 1023 Zeichen</li><li>RAt.T05b.xtf: Fehlermeldung. Fehlendes URI-Schema</li></ul>
 |**Referenz**|[[1]] Kap. 2.6, 2.8.1 und 3.3.11.2<br/>[[3]] Kap. 3
 
 ###### Attribute - RAt.T06
@@ -78,7 +78,7 @@
 |**Bezeichnung**|```BooleanType```
 |**Beschreibung**|Die Tests müssen prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für ```BooleanType```, bzw. den entsprechenden Codierungsregeln, entspricht
 |**Testvoraussetzung**|[RAt.T08a.xtf](../data/RAt.T08a.xtf), [RAt.T08b.xtf](../data/RAt.T08b.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RAt.T08a.xtf: keine Fehlermeldung.</li><li>RAt.T08b.xtf: Fehlermeldung. Unzulässiger Wert (```0```)</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RAt.T08a.xtf: keine Fehlermeldung</li><li>RAt.T08b.xtf: Fehlermeldung. Unzulässiger Wert (```0```)</li></ul>
 |**Referenz**|[[1]] Kap. 2.6, 2.8.4 und 3.3.11
 
 ###### Attribute - RAt.T09
@@ -87,7 +87,7 @@
 |**Bezeichnung**|```NumericType```
 |**Beschreibung**|Die Tests müssen prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für ```NumericType```, bzw. den entsprechenden Codierungsregeln, entspricht
 |**Testvoraussetzung**|[RAt.T09a.xtf](../data/RAt.T09a.xtf), [RAt.T09b.xtf](../data/RAt.T09b.xtf), [RAt.T09c.xtf](../data/RAt.T09c.xtf), [RAt.T09d.xtf](../data/RAt.T09d.xtf), [RAt.T09e.xtf](../data/RAt.T09e.xtf), [RAt.T09f.xtf](../data/RAt.T09f.xtf), [RAt.T09g.xtf](../data/RAt.T09g.xtf),
-|**Erwartetes Ergebnis**|<ul><li>RAt.T09a.xtf: keine Fehlermeldung.</li><li>RAt.T09b.xtf: Fehlermeldung. Unzulässiger Wert (``0.9``)</li><li>RAt.T09c.xtf: keine Fehlermeldung</li><li>RAt.T09d.xtf: Fehlermeldung ``00004`` statt ``4``</li><li>RAt.T09e.xtf: keine Fehlermeldung (``10000.1`` wird auf ``10000.0`` gerundet)</li><li>RAt.T09f.xtf: keine Fehlermeldung</li><li>RAt.T09g.xtf: Fehlermeldung (``10000.5`` wird auf ``10000.1`` gerundet)</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RAt.T09a.xtf: keine Fehlermeldung</li><li>RAt.T09b.xtf: Fehlermeldung. Unzulässiger Wert (``0.9``)</li><li>RAt.T09c.xtf: keine Fehlermeldung</li><li>RAt.T09d.xtf: Fehlermeldung ``00004`` statt ``4``</li><li>RAt.T09e.xtf: keine Fehlermeldung (``10000.1`` wird auf ``10000.0`` gerundet)</li><li>RAt.T09f.xtf: keine Fehlermeldung</li><li>RAt.T09g.xtf: Fehlermeldung (``10000.5`` wird auf ``10000.1`` gerundet)</li></ul>
 |**Referenz**|[[1]] Kap. 2.6, 2.8.5 und 3.3.11.4
 
 ###### Attribute - RAt.T10
@@ -105,7 +105,7 @@
 |**Bezeichnung**|```OIDType```
 |**Beschreibung**|Die Tests müssen prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für ```OIDType```, bzw. den entsprechenden Codierungsregeln, entspricht
 |**Testvoraussetzung**|[RAt.T11a.xtf](../data/RAt.T11a.xtf), [RAt.T11b.xtf](../data/RAt.T11b.xtf), [RAt.T11c.xtf](../data/RAt.T11c.xtf), [RAt.T11d.xtf](../data/RAt.T11d.xtf), [RAt.T11e.xtf](../data/RAt.T11e.xtf), [RAt.T11f.xtf](../data/RAt.T11f.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RAt.T11a.xtf: Fehlermeldung. Ungültiger UUID im ```BID```</li><li>RAt.T11b.xtf: Fehlermeldung. Ungültiger UUID im ```TID```</li><li>RAt.T11c.xtf: keine Fehlermeldung</li><li>RAt.T11d.xtf: Fehlermeldung. Ungültige Codierung (muss als XML-Attribut codiert werden)</li><li>RAt.T11e.xtf: Fehlermeldung. Nur Ziffern und Buchstaben erlaubt</li><li>RAt.T11f.xtf: Fehlermeldung. Erstes Zeichen muss Buchstabe oder Unterstrich sein</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RAt.T11a.xtf: Fehlermeldung. Ungültiger UUID der ```BID```</li><li>RAt.T11b.xtf: Fehlermeldung. Ungültiger UUID der ```TID```</li><li>RAt.T11c.xtf: keine Fehlermeldung</li><li>RAt.T11d.xtf: Fehlermeldung. Ungültige Codierung (muss als XML-Attribut codiert werden)</li><li>RAt.T11e.xtf: Fehlermeldung. Nur Ziffern und Buchstaben erlaubt</li><li>RAt.T11f.xtf: Fehlermeldung. Erstes Zeichen muss Buchstabe oder Unterstrich sein</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.9 und 3.3.11.16<br/> [[4]] Kap. D.2 (https://www.w3.org/TR/xml-id/#id-avn)<br/>[Objektidentifikation](identifiers.md)
 
 ## Struktur- und Referenzattribute
@@ -169,7 +169,7 @@
 |**Bezeichnung**|```COORD```: **Wertbereich**
 |**Beschreibung**|Die Tests müssen prüfen, ob die Koordinaten der Definition im INTERLIS-Datenmodell entsprechen
 |**Testvoraussetzung**|[RCO.T03a.xtf](../data/RCO.T03a.xtf), [RCO.T03b.xtf](../data/RCO.T03b.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RCO.T03a.xtf: Fehlermeldung. ```<C2>``` nicht im Wertbereich</li><li>RCO.T03b.xtf: Fehlermeldung. ```<C3>``` nicht erlaubt, weil Wertbereich für 2D-Koordinaten ist</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RCO.T03a.xtf: Fehlermeldung. ```<C2>``` ausserhalb der Wertbereichs</li><li>RCO.T03b.xtf: Fehlermeldung. ```<C3>``` nicht erlaubt, weil Wertbereich für 2D-Koordinaten definiert ist</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.8 und 3.3.11.11
 
 ## Geometrische Attribute: Linienzüge
@@ -198,7 +198,7 @@
 |**Beschreibung**|Die Tests müssen die Validität eines einfachen Linienzugs prüfen ([[1]] Kap. 2.8.12.2, Regel ```WITHOUT OVERLAPS```)
 |**Testvoraussetzung**|[RPO.T02a.xtf](../data/RPO.T02a.xtf), [RPO.T02b.xtf](../data/RPO.T02b.xtf), [RPO.T02c.xtf](../data/RPO.T02c.xtf)
 |**Beispiel**|<p align="center"><img src="img/rpo.t02.png" height="384" title="RPO.T02"><br/>```POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord WITHOUT OVERLAPS > 1;```
-|**Erwartetes Ergebnis**|<ul><li>RPO.T02a.xtf: Fehlermeldung, weil Selbstüberschneidung und Kurvenstücke mehrmals benutzt</li><li>RPO.T02b.xtf: Fehlermeldung, weil Selbstüberschneidung</li><li>RPO.T02c.xtf: keine Fehlermeldung</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RPO.T02a.xtf: Fehlermeldung. Selbstüberschneidung und Kurvenstücke mehrmals benutzt</li><li>RPO.T02b.xtf: Fehlermeldung. Selbstüberschneidung</li><li>RPO.T02c.xtf: keine Fehlermeldung</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.12.2 und 3.3.11.12
 
 ###### Linienzüge - RPO.T03
@@ -227,14 +227,14 @@
 |**Beschreibung**|Der Test muss prüfen, ob zwei Polygone der ```AREA```-Definition entsprechen
 |**Testvoraussetzung**|[RSU.T01a.xtf](../data/RSU.T01a.xtf), [RSU.T01b.xtf](../data/RSU.T01b.xtf), [RSU.T01c.xtf](../data/RSU.T01c.xtf)
 |**Beispiel**|<p align="center"><img src="img/rsu.t01.png" height="384" title="RSU.T01"></p>
-|**Erwartetes Ergebnis**|<ul><li>RSU.T01a.xtf: Fehlermeldung. die Fläche teilen nicht die gleichen Kurvenstücke (eine Fläche hat einen Stützpunkt mehr)</li><li>RSU.T01b.xtf: keine Fehlermeldung</li><li>RSU.T01c.xtf: Fehlermeldung</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RSU.T01a.xtf: Fehlermeldung. Die Flächen teilen nicht die gleichen Kurvenstücke (eine Fläche enthält einen zusätzlichen Stützpunkt)</li><li>RSU.T01b.xtf: keine Fehlermeldung</li><li>RSU.T01c.xtf: Fehlermeldung. Die Flächen teilen nicht die gleichen Kurvenstücke</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.13 und 3.3.11.13
 
 ###### Einzelflächen und Gebietseinteilungen - RSU.T02
 |ID|RSU.T02
 |:--|:--
-|**Bezeichnung**|**Validität einer Geometrie**
-|**Beschreibung**|Die Tests müssen die Validität einer Geometrie prüfen
+|**Bezeichnung**|**Validität der Geometrie**
+|**Beschreibung**|Die Tests müssen die Validität der Geometrie prüfen
 |**Testvoraussetzung**|[RSU.T02a.xtf](../data/RSU.T02a.xtf) (```AREA```), [RSU.T02b.xtf](../data/RSU.T02b.xtf) (```SURFACE```)
 |**Beispiel**|<p align="center"><img src="img/rsu.t02.png" height="384" title="RSU.T02"></p>
 |**Erwartetes Ergebnis**|<ul><li>RSU.T02a.xtf: keine Fehlermeldung</li><li>RSU.T02b.xtf: keine Fehlermeldung</li></ul>
@@ -243,18 +243,18 @@
 ###### Einzelflächen und Gebietseinteilungen - RSU.T03
 |ID|RSU.T03
 |:--|:--
-|**Bezeichnung**|**Validität einer Geometrie**
-|**Beschreibung**|Die Tests müssen die Validität einer Geometrie prüfen
+|**Bezeichnung**|**Validität der Geometrie**
+|**Beschreibung**|Die Tests müssen die Validität der Geometrie prüfen
 |**Testvoraussetzung**|[RSU.T03a.xtf](../data/RSU.T03a.xtf) (```AREA```), [RSU.T03b.xtf](../data/RSU.T03b.xtf) (```SURFACE```)
 |**Beispiel**|<p align="center"><img src="img/rsu.t03.png" height="384" title="RSU.T03"></p>
-|**Erwartetes Ergebnis**|<ul><li>RSU.T03a.xtf: Fehlermeldung</li><li>RSU.T03b.xtf: Fehlermeldung</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RSU.T03a.xtf: Fehlermeldung. *OuterBoundary* nicht gleich *InnerBoundary*</li><li>RSU.T03b.xtf: Fehlermeldung. *OuterBoundary* nicht gleich *InnerBoundary*</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.13 und 3.3.11.13
 
 ###### Einzelflächen und Gebietseinteilungen - RSU.T04
 |ID|RSU.T04
 |:--|:--
-|**Bezeichnung**|**Validität einer Geometrie**
-|**Beschreibung**|Die Tests müssen die Validität einer Geometrie prüfen
+|**Bezeichnung**|**Validität der Geometrie**
+|**Beschreibung**|Die Tests müssen die Validität der Geometrie prüfen
 |**Testvoraussetzung**|[RSU.T04a.xtf](../data/RSU.T04a.xtf) (```AREA```), [RSU.T04b.xtf](../data/RSU.T04b.xtf) (```SURFACE```)
 |**Beispiel**|<p align="center"><img src="img/rsu.t04.png" height="384" title="RSU.T04"></p>
 |**Erwartetes Ergebnis**|<ul><li>RSU.T04a.xtf: keine Fehlermeldung</li><li>RSU.T04b.xtf: keine Fehlermeldung</li></ul>
@@ -263,8 +263,8 @@
 ###### Einzelflächen und Gebietseinteilungen - RSU.T05
 |ID|RSU.T05
 |:--|:--
-|**Bezeichnung**|**Validität einer Geometrie**
-|**Beschreibung**|Die Tests müssen die Validität einer Geometrie prüfen
+|**Bezeichnung**|**Validität der Geometrie**
+|**Beschreibung**|Die Tests müssen die Validität der Geometrie prüfen
 |**Testvoraussetzung**|[RSU.T05a.xtf](../data/RSU.T05a.xtf) (```AREA```), [RSU.T05b.xtf](../data/RSU.T05b.xtf) (```SURFACE```)
 |**Beispiel**|<p align="center"><img src="img/rsu.t05.png" height="384" title="RSU.T05"></p>
 |**Erwartetes Ergebnis**|<ul><li>RSU.T05a.xtf: keine Fehlermeldung</li><li>RSU.T05b.xtf: keine Fehlermeldung</li></ul>
@@ -273,48 +273,48 @@
 ###### Einzelflächen und Gebietseinteilungen - RSU.T06
 |ID|RSU.T06
 |:--|:--
-|**Bezeichnung**|**Validität einer Geometrie**
-|**Beschreibung**|Die Tests müssen die Validität einer Geometrie prüfen
+|**Bezeichnung**|**Validität der Geometrie**
+|**Beschreibung**|Die Tests müssen die Validität der Geometrie prüfen
 |**Testvoraussetzung**|[RSU.T06a.xtf](../data/RSU.T06a.xtf) (```AREA```), [RSU.T06b.xtf](../data/RSU.T06b.xtf) (```SURFACE```)
 |**Beispiel**|<p align="center"><img src="img/rsu.t06.png" height="384" title="RSU.T06"></p>
-|**Erwartetes Ergebnis**|<ul><li>RSU.T06a.xtf: Fehlermeldung</li><li>RSU.T06b.xtf: Fehlermeldung</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RSU.T06a.xtf: Fehlermeldung. Ungültige Geometrie</li><li>RSU.T06b.xtf: Fehlermeldung. Ungültige Geometrie</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.13 und 3.3.11.13
 
 ###### Einzelflächen und Gebietseinteilungen - RSU.T07
 |ID|RSU.T07
 |:--|:--
-|**Bezeichnung**|**Validität einer Geometrie**
-|**Beschreibung**|Die Tests müssen die Validität einer Geometrie prüfen
+|**Bezeichnung**|**Validität der Geometrie**
+|**Beschreibung**|Die Tests müssen die Validität der Geometrie prüfen
 |**Testvoraussetzung**|[RSU.T07a.xtf](../data/RSU.T07a.xtf) (```AREA```), [RSU.T07b.xtf](../data/RSU.T07b.xtf) (```SURFACE```)
 |**Beispiel**|<p align="center"><img src="img/rsu.t07.png" height="384" title="RSU.T07"></p>
-|**Erwartetes Ergebnis**|<ul><li>RSU.T07a.xtf: Fehlermeldung</li><li>RSU.T07b.xtf: Fehlermeldung</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RSU.T07a.xtf: Fehlermeldung. Ungültige Geometrie</li><li>RSU.T07b.xtf: Fehlermeldung. Ungültige Geometrie</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.13 und 3.3.11.13
 
 ###### Einzelflächen und Gebietseinteilungen - RSU.T08
 |ID|RSU.T08
 |:--|:--
-|**Bezeichnung**|**Validität einer Geometrie**
-|**Beschreibung**|Die Tests müssen die Validität einer Geometrie prüfen
+|**Bezeichnung**|**Validität der Geometrie**
+|**Beschreibung**|Die Tests müssen die Validität der Geometrie prüfen
 |**Testvoraussetzung**|[RSU.T08a.xtf](../data/RSU.T08a.xtf) (```AREA```), [RSU.T08b.xtf](../data/RSU.T08b.xtf) (```SURFACE```)
 |**Beispiel**|<p align="center"><img src="img/rsu.t08.png" height="384" title="RSU.T08"></p>
-|**Erwartetes Ergebnis**|<ul><li>RSU.T08a.xtf: Fehlermeldung</li><li>RSU.T08b.xtf: Fehlermeldung</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RSU.T08a.xtf: Fehlermeldung. *InnerBoundary* nicht im *OuterBoundary*</li><li>RSU.T08b.xtf: Fehlermeldung. *InnerBoundary* nicht im *OuterBoundary*</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.13 und 3.3.11.13
 
 ###### Einzelflächen und Gebietseinteilungen - RSU.T09
 |ID|RSU.T09
 |:--|:--
-|**Bezeichnung**|**Validität einer Geometrie**
-|**Beschreibung**|Die Tests müssen die Validität einer Geometrie prüfen
+|**Bezeichnung**|**Validität der Geometrie**
+|**Beschreibung**|Die Tests müssen die Validität der Geometrie prüfen
 |**Testvoraussetzung**|[RSU.T09a.xtf](../data/RSU.T09a.xtf) (```AREA```), [RSU.T09b.xtf](../data/RSU.T09b.xtf) (```SURFACE```)
 |**Beispiel**|<p align="center"><img src="img/rsu.t09.png" height="384" title="RSU.T09"></p>
-|**Erwartetes Ergebnis**|<ul><li>RSU.T09a.xtf: Fehlermeldung</li><li>RSU.T09b.xtf: Fehlermeldung</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RSU.T09a.xtf: Fehlermeldung. Multipolygon</li><li>RSU.T09b.xtf: Fehlermeldung. Multipolygon</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.13 und 3.3.11.13
 
 ###### Einzelflächen und Gebietseinteilungen - RSU.T10
 |ID|RSU.T10
 |:--|:--
-|**Bezeichnung**|**Validität einer Geometrie**
-|**Beschreibung**|Die Tests müssen die Validität einer Geometrie prüfen
+|**Bezeichnung**|**Validität der Geometrie**
+|**Beschreibung**|Die Tests müssen die Validität der Geometrie prüfen
 |**Testvoraussetzung**|[RSU.T10a.xtf](../data/RSU.T10a.xtf) (```AREA```), [RSU.T10b.xtf](../data/RSU.T10b.xtf) (```SURFACE```)
 |**Beispiel**|<p align="center"><img src="img/rsu.t10.png" height="384" title="RSU.T10"></p>
 |**Erwartetes Ergebnis**|<ul><li>RSU.T10a.xtf: Fehlermeldung</li><li>RSU.T10b.xtf: Fehlermeldung</li></ul>
@@ -323,31 +323,31 @@
 ###### Einzelflächen und Gebietseinteilungen - RSU.T11
 |ID|RSU.T11
 |:--|:--
-|**Bezeichnung**|**Validität einer Geometrie**
-|**Beschreibung**|Die Tests müssen die Validität einer Geometrie prüfen
+|**Bezeichnung**|**Validität der Geometrie**
+|**Beschreibung**|Die Tests müssen die Validität der Geometrie prüfen
 |**Testvoraussetzung**|[RSU.T11a.xtf](../data/RSU.T011.xtf) (```AREA```), [RSU.T011.xtf](../data/RSU.T011.xtf) (```SURFACE```)
 |**Beispiel**|<p align="center"><img src="img/rsu.t11.png" height="384" title="RSU.T11"></p>
-|**Erwartetes Ergebnis**|<ul><li>RSU.T11a.xtf: Fehlermeldung</li><li>RSU.T11b.xtf: Fehlermeldung</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RSU.T11a.xtf: Fehlermeldung. Ungültige Geometrie</li><li>RSU.T11b.xtf: Fehlermeldung. Ungültige Geometrie</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.13 und 3.3.11.13
 
 ###### Einzelflächen und Gebietseinteilungen - RSU.T12
 |ID|RSU.T12
 |:--|:--
-|**Bezeichnung**|**Validität einer Geometrie**
-|**Beschreibung**|Die Tests müssen die Validität einer Geometrie prüfen
+|**Bezeichnung**|**Validität der Geometrie**
+|**Beschreibung**|Die Tests müssen die Validität der Geometrie prüfen
 |**Testvoraussetzung**|[RSU.T12a.xtf](../data/RSU.T12a.xtf) (```AREA```), [RSU.T12b.xtf](../data/RSU.T12b.xtf) (```SURFACE```)
 |**Beispiel**|<p align="center"><img src="img/rsu.t12.png" height="384" title="RSU.T12"></p>
-|**Erwartetes Ergebnis**|<ul><li>RSU.T12a.xtf: Fehlermeldung</li><li>RSU.T12b.xtf: Fehlermeldung</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RSU.T12a.xtf: Fehlermeldung. Ungültige Geometrie</li><li>RSU.T12b.xtf: Fehlermeldung. Ungültige Geometrie</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.13 und 3.3.11.13
 
 ###### Einzelflächen und Gebietseinteilungen - RSU.T13
 |ID|RSU.T13
 |:--|:--
-|**Bezeichnung**|**Validität einer Geometrie**
-|**Beschreibung**|Die Tests müssen die Validität einer Geometrie prüfen
+|**Bezeichnung**|**Validität der Geometrie**
+|**Beschreibung**|Die Tests müssen die Validität der Geometrie prüfen
 |**Testvoraussetzung**|[RSU.T13a.xtf](../data/RSU.T13a.xtf) (```AREA```), [RSU.T13b.xtf](../data/RSU.T13b.xtf) (```SURFACE```)
 |**Beispiel**|<p align="center"><img src="img/rsu.t13.png" height="384" title="RSU.T13"></p>
-|**Erwartetes Ergebnis**|<ul><li>RSU.T13a.xtf: Fehlermeldung</li><li>RSU.T13b.xtf: Fehlermeldung</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RSU.T13a.xtf: Fehlermeldung. Ungültige Geometrie</li><li>RSU.T13b.xtf: Fehlermeldung. Ungültige Geometrie</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.13 und 3.3.11.13
 
 ## Kardinalität
@@ -363,7 +363,7 @@
 |ID|RKA.T01
 |:--|:--
 |**Bezeichnung**|```MANDATORY```
-|**Beschreibung**|Die Tests müssen die Regeln für die Kardinalität der Attribute prüfen.
+|**Beschreibung**|Die Tests müssen die Regeln für die Kardinalität der Attribute prüfen
 |**Testvoraussetzung**|[RKA.T01a.xtf](../data/RKA.T01a.xtf), [RKA.T01b.xtf](../data/RKA.T01b.xtf)
 |**Erwartetes Ergebnis**|<ul><li>RKA.T01a.xtf: keine Fehlermeldung</li><li>RKA.T01b.xtf: Fehlermeldung. Fehlendes obligatorisches Attribut</li></ul>
 |**Referenz**|[[1]] Kap. 2.6.1 und 2.7.3
@@ -374,9 +374,9 @@
 |ID|RKA.T02
 |:--|:--
 |**Bezeichnung**|```BAG OF```
-|**Beschreibung**|Die Tests müssen die Regeln für die Kardinalität der Attribute prüfen.
+|**Beschreibung**|Die Tests müssen die Regeln für die Kardinalität der Attribute prüfen
 |**Testvoraussetzung**|[RKA.T02a.xtf](../data/RKA.T02a.xtf), [RKA.T02b.xtf](../data/RKA.T02b.xtf), [RKA.T02c.xtf](../data/RKA.T02c.xtf), [RKA.T02d.xtf](../data/RKA.T02d.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RKA.T02a.xtf: keine Fehlermeldung</li><li>RKA.T02b.xtf: Fehlermeldung. Fehlendes obligatorisches Attribut</li><li>RKA.T02c.xtf: Fehlermeldung. Die Struktur darf nicht mehr als zweimal vorkommen</li><li>RKA.T02d.xtf: Fehlermeldung: falsche Codierung (mehrere Tags ```Namen```)</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RKA.T02a.xtf: keine Fehlermeldung</li><li>RKA.T02b.xtf: Fehlermeldung. Fehlendes obligatorisches Attribut</li><li>RKA.T02c.xtf: Fehlermeldung. Die Struktur darf nicht mehr als zweimal vorkommen</li><li>RKA.T02d.xtf: Fehlermeldung. Falsche Codierung (mehrere Tags ```Namen```)</li></ul>
 |**Referenz**|[[1]] Kap. 2.6.1 und 2.7.3
 
 [1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
