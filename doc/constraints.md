@@ -5,7 +5,7 @@
 |:--|:--
 |**Bezeichnung**|**Konsistenzbedingungen**
 |**Beschreibung**|INTERLIS-Daten müssen der ```ConstraintDef``` ([[1]] Kap. 2.12 und 2.13) im INTERLIS-Datenmodell entsprechen
-|**Details**|<ul><li>Konsistenzbedingungen, die mit Standardfunktionen durchgesetzt werden ([[1]] Kap. 2.14), müssen zusätzlich geprüft werden, insbesondere geometrische Bedingungen, die mit der Standardfunktion ```areAreas``` durchgesetzt werden</li></ul>
+|**Details**|<ul><li>Konsistenzbedingungen, die mit Standardfunktionen formuliert werden ([[1]] Kap. 2.14), müssen zusätzlich geprüft werden, insbesondere geometrische Bedingungen, wie die mit der Standardfunktion ```areAreas```</li></ul>
 |**Referenz**|[[1]] Kap. 2.12, 2.13 und 2.14
 
 ### Testfälle
