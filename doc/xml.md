@@ -4,7 +4,7 @@
 |ID|RXW
 |:--|:--
 |**Bezeichnung**|**XML-Wohlgeformtheit**
-|**Beschreibung**|Jede xml-formatierte INTERLIS-Transferdatei muss gemäss XML-1.0 Standard [[2]] wohlgeformt sein
+|**Beschreibung**|Jede XML-formatierte INTERLIS-Transferdatei muss gemäss XML-1.0 Standard [[2]] wohlgeformt sein
 |**Referenz**|[[1]] Kap. 3.3.1 und 3.3.3
 
 ### Testfälle
