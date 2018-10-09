@@ -5,7 +5,7 @@
 |:--|:--
 |**Bezeichnung**|**HEADERSECTION**
 |**Beschreibung**|Für die Validierung des Vorspanns gelten die im [[1]] Kap. 3.3.4 definierten Regeln
-|**Details**|<ul><li>Die Angaben ```VERSION``` und ```SENDER``` im Tag ```HEADERSECTION``` sind verbindlich</li><li>Im Element ```MODELS``` müssen alle Datenmodelle (mindestens ein) aufgeführt werden, zu deren Themen Daten vorkommen</li><li>Die Angaben ```NAME```, ```VERSION``` und ```URI``` im Tag ```MODEL``` sind verbindlich</li><li>Die Angaben ```NAME``` und ```VERSION``` müssen der ```ModelDef``` ([[1]] Kap. 2.5.1) im INTERLIS-Datenmodell entsprechen
+|**Details**|<ul><li>Die Angaben ```VERSION``` und ```SENDER``` im Tag ```HEADERSECTION``` sind verbindlich</li><li>Im Element ```MODELS``` müssen alle Datenmodelle (mindestens eines) aufgeführt werden, zu deren Themen Daten vorkommen</li><li>Die Angaben ```NAME```, ```VERSION``` und ```URI``` im Tag ```MODEL``` sind verbindlich</li><li>Die Angaben ```NAME``` und ```VERSION``` müssen der ```ModelDef``` ([[1]] Kap. 2.5.1) im INTERLIS-Datenmodell entsprechen
 |**Referenz**|[[1]] Kap. 2.5.1 und 3.3.4
 
 ### Testfälle
