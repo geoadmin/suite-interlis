@@ -23,7 +23,7 @@
 |:--|:--
 |**Bezeichnung**|**Reihenfolge – innerhalb der Klasseinstanzen**
 |**Beschreibung**|Für die Validierung der Reihenfolge innerhalb einer Objektinstanz gelten die im [[1]] Kap. 3.3.7 definierten Regeln
-|**Details**|<ul><li>Für die Reihenfolge der Attribute, Rollen, ```EmbeddedLink```, Referenzattribute innerhalb einer (erweiterten) Klasse gilt:</li></ul><ol><li>Rollen der Basisklasse</li><li>Attribute / Referenzattribute der Basisklasse</li><li>```EmbeddedLink``` der Basisklasse</li><li>Attribute/Referenzattribute der Erweiterung</li><li>```EmbeddedLink``` der Erweiterung</li></ol><ul><li>Innerhalb der gleichen Stufe müssen die Attribute / Referenzattribute und Rollen der Definitionsreihenfolge im INTERLIS-Datenmodell entsprechen</li><li>Innerhalb der gleichen Stufe müssen die ```EmbeddedLink``` alphabetisch aufsteigend sortiert werden</li></ul>
+|**Details**|<ul><li>Für die Reihenfolge der Attribute, Rollen, ```EmbeddedLinks``` und Referenzattribute innerhalb einer (erweiterten) Klasse gilt:</li></ul><ol><li>Rollen der Basisklasse</li><li>Attribute / Referenzattribute der Basisklasse</li><li>```EmbeddedLinks``` der Basisklasse</li><li>Attribute/Referenzattribute der Erweiterung</li><li>```EmbeddedLinks``` der Erweiterung</li></ol><ul><li>Innerhalb der gleichen Stufe müssen die Attribute / Referenzattribute und Rollen der Definitionsreihenfolge im INTERLIS-Datenmodell entsprechen</li><li>Innerhalb der gleichen Stufe müssen die ```EmbeddedLinks``` alphabetisch aufsteigend sortiert werden</li></ul>
 |**Referenz**|[[1]] Kap. 3.3.7
 
 ###### Reihenfolge innerhalb der Klasseinstanzen - RRiO.T01
