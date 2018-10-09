@@ -4,7 +4,7 @@
 |ID|RAt
 |:--|:--
 |**Bezeichnung**|**Attribute**
-|**Beschreibung**|Für die Validierung der Attributen gelten die im [[1]] Kap. 3.3.11 definierten Regeln</td>
+|**Beschreibung**|Für die Validierung der Attribute gelten die im [[1]] Kap. 3.3.11 definierten Regeln</td>
 |**Details**|<ul><li>Der Wert ```%AttributeName%``` muss der ```AttributeDef``` ( [[1]] Kap. 2.6) im INTERLIS-Datenmodell entsprechen</li><li>Der Attributtyp und der Attributwert des Werts ```AttributeValue``` müssen der ```AttrTypeDef``` ( [[1]] Kap. 2.6 und 2.8) im INTERLIS-Datenmodell entsprechen</li><li>Bei Attributen von Typ ```NAME``` kommt die Regel *Namen* ( [[1]] Kap. 2.2.2) zur Anwendung. Namen, die mit reservierten Wörtern der Sprache ( [[1]] Kap. 2.2.7) zusammenfallen, sind unzulässig</li></ul>
 |**Referenz**|[[1]] Kap. 2.2.2, 2.2.7, 2.6, 2.8 und 3.3.11
 
