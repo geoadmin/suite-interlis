@@ -12,7 +12,7 @@
 ###### Klassen - RKl.T01
 |ID|RKl.T01
 |:--|:--
-|**Bezeichnung**|```ClassDef```
+|**Bezeichnung**|Klassen: ```ClassDef```
 |**Beschreibung**|Der Test muss prüfen, ob der Wert ```%Model.Topic.Class%``` der ```ClassDef``` entspricht
 |**Testvoraussetzung**|[RKl.T01a.xtf](../data/RKl.T01a.xtf)
 |**Erwartetes Ergebnis**|<ul><li>RKl.T01a.xtf: Fehlermeldung. Wert ```%Class%``` stimmt nicht</li></ul>
@@ -21,10 +21,10 @@
 ###### Klassen - RKl.T02
 |ID|RKl.T02
 |:--|:--
-|**Bezeichnung**|```TID```
-|**Beschreibung**|Die Tests müssen prüfen, ob die ```TID``` vorhanden und eindeutig sind
+|**Bezeichnung**|Klassen: ```TID```
+|**Beschreibung**|Die Tests müssen prüfen, ob die ```TID``` vorhanden und eindeutig ist
 |**Testvoraussetzung**|[RKl.T02a.xtf](../data/RKl.T02a.xtf), [RKl.T02b.xtf](../data/RKl.T02b.xtf), [RKl.T02c.xtf](../data/RKl.T02c.xtf), [RKl.T02d.xtf](../data/RKl.T02d.xtf), [RKl.T02e.xtf](../data/RKl.T02e.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RKl.T02a.xtf: Fehlermeldung. ```TID``` leer</li><li>RKl.T02b.xtf: Fehlermeldung. ```TID``` nicht vorhanden</li><li>RKl.T02c.xtf: Fehlermeldung. Doppelte ```TID```</li><li>RKl.T02d.xtf: Fehlermeldung. ```TID``` werden als XML-ID *à la INTERLIS* codiert. Erstes Zeichen muss Buchstabe, Ziffer oder Unterstrich sein</li><li>RKl.T02e.xtf: Fehlermeldung. Zeichen mit Umlaut sind nicht zulässig</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RKl.T02a.xtf: Fehlermeldung. ```TID``` leer</li><li>RKl.T02b.xtf: Fehlermeldung. ```TID``` nicht vorhanden</li><li>RKl.T02c.xtf: Fehlermeldung. Doppelte ```TID```</li><li>RKl.T02d.xtf: Fehlermeldung. ```TID``` wird als XML-ID *à la INTERLIS* codiert. Erstes Zeichen muss Buchstabe, Ziffer oder Unterstrich sein</li><li>RKl.T02e.xtf: Fehlermeldung. Zeichen mit Umlaut sind nicht zulässig</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.9, 3.3.1 und 3.3.7<br/>[Objektidentifikation](identifiers.md)
 
 [1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
