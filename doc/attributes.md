@@ -140,7 +140,7 @@
 |ID|RCO
 |:--|:--
 |**Bezeichnung**|```COORD```
-|**Beschreibung**|Für die Validierung der Attributwerten von Typ ```COORD``` gelten die im [[1]] Kap. 3.3.11.11 definierten Regeln
+|**Beschreibung**|Für die Validierung der Attributwerte vom Typ ```COORD``` gelten die im [[1]] Kap. 3.3.11.11 definierten Regeln
 |**Details**|<ul><li>Angaben in ```CoordValue``` müssen der ```AttrTypeDef``` ( [[1]] Kap. 2.6 und 2.8.8) im INTERLIS-Datenmodell entsprechen</li></ul>
 |**Referenz**|[[1]] Kap. 2.6, 2.8.8 und 3.3.11.11
 
@@ -176,7 +176,7 @@
 |ID|RPO
 |:--|:--
 |**Bezeichnung**|```POLYLINE```
-|**Beschreibung**|Für die Validierung der Attributwerten von Typ ```POLYLINE``` gelten die im [[1]] Kap. 3.3.11.12 definierten Regeln
+|**Beschreibung**|Für die Validierung der Attributwerte vom Typ ```POLYLINE``` gelten die im [[1]] Kap. 3.3.11.12 definierten Regeln
 |**Details**|<ul><li>Angaben in ```PolylineValue``` müssen der ```AttrTypeDef``` ( [[1]] Kap. 2.6 und 2.8.12.2) im INTERLIS-Datenmodell entsprechen</li><li>Für die Validierung der Geometrie eines Linienzugs gelten zusätzlich die im [[1]] Kap. 2.8.12 definierten Regeln</li></ul>
 |**Referenz**|[[1]] Kap. 2.6, 2.8.12, 2.8.12.2 und 3.3.11.12
 
@@ -215,8 +215,8 @@
 |ID|RSU
 |:--|:--
 |**Bezeichnung**|```SURFACE```
-|**Beschreibung**|Für die Validierung der Attributwerten von Typ ```SURFACE``` gelten die im [[1]] Kap. 3.3.11.13 definierten Regeln
-|**Details**|<ul><li>Angaben in ```SurfaceValue``` müssen der ```AttrTypeDef``` ( [[1]] Kap. 2.6 und 2.8.12.2) im INTERLIS-Datenmodell entsprechen</li><li>Für die Validierung der Geometrie gelten zusätzlich die im [[1]] Kap. 2.8.12 und 2.8.13 definierten Regeln</li><li>Geometrische Bedingungen, die mit der Standardfunktion ```areAreas``` durchgesetzt werden ([[1]] Kap. 2.12 und 2.14), müssen zusätzlich geprüft werden</li></ul>
+|**Beschreibung**|Für die Validierung der Attributwerte vom Typ ```SURFACE``` gelten die im [[1]] Kap. 3.3.11.13 definierten Regeln
+|**Details**|<ul><li>Angaben in ```SurfaceValue``` müssen der ```AttrTypeDef``` ( [[1]] Kap. 2.6 und 2.8.12.2) im INTERLIS-Datenmodell entsprechen</li><li>Für die Validierung der Geometrie gelten zusätzlich die im [[1]] Kap. 2.8.12 und 2.8.13 definierten Regeln</li><li>Geometrische Bedingungen, die mit der Standardfunktion ```areAreas``` formuliert werden ([[1]] Kap. 2.12 und 2.14), müssen zusätzlich geprüft werden</li></ul>
 |**Referenz**|[[1]] Kap. 2.6, 2.8.12, 2.8.12.2, 2.8.13, 2.12, 2.14 und 3.3.11.13
 
 ### Testfälle
