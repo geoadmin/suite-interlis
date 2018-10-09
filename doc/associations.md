@@ -93,7 +93,7 @@
 |**Bezeichnung**|**{1} bei beiden Rollen**
 |**Beschreibung**|Die Tests müssen die Regeln für die Kardinalität der Beziehungen prüfen
 |**Testvoraussetzung**|[RKB.T01a.xtf](../data/RKB.T01a.xtf), [RKB.T01b.xtf](../data/RKB.T01b.xtf), [RKB.T01c.xtf](../data/RKB.T01c.xtf), [RKB.T01d.xtf](../data/RKB.T01d.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RKB.T01a.xtf: keine Fehlermeldung</li><li>RKB.T01b.xtf: Fehlermeldung. Fehlende Rolle (```RolleA``` in ```Klasse B```)</li><li>RKB.T01c.xtf: Fehlermeldung. Zwei Instanzen von ```B``` verweisen auf die gleiche Instanz von ```A```</li><li>RKB.T01d.xtf: Fehlermeldung. Alle Instanzen von ```A``` müssen referenziert werden.</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RKB.T01a.xtf: keine Fehlermeldung</li><li>RKB.T01b.xtf: Fehlermeldung. Fehlende Rolle (```RolleA``` in ```Klasse B```)</li><li>RKB.T01c.xtf: Fehlermeldung. Zwei Instanzen von ```B``` verweisen auf die gleiche Instanz von ```A```</li><li>RKB.T01d.xtf: Fehlermeldung. Alle Instanzen von ```A``` müssen referenziert werden</li></ul>
 |**Referenz**|[[1]] Kap. 2.7.1 und 2.7.3
 
 ###### Kardinalität - RKB.T02
