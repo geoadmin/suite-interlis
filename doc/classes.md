@@ -4,7 +4,7 @@
 |ID|RKl
 |:--|:--
 |**Bezeichnung**|**Klassen**
-|**Beschreibung**|Für die Validierung der Instanzen einer Klasse gelten die im [[1]] Kap. 3.3.7 fürs Element ```Object``` definierten Regeln
+|**Beschreibung**|Für die Validierung der Instanzen einer Klasse gelten die im [[1]] Kap. 3.3.7 für das Element ```Object``` definierten Regeln
 |**Details**|<ul><li>Der Wert ```%Model.Topic.Class%``` muss der ```ClassDef``` ([[1]] Kap. 2.5.3) im INTERLIS-Datenmodell entsprechen</li><li>Jede Objectinstanz erhält implizit eine Transferidentifikation (XML-Attribut ```TID```). Wo nötig, muss die ```TID``` Angabe der ```TopicDef``` ([[1]] Kap. 2.5.2) bzw. der ```ClassDef``` ([1] Kap. 2.5.3) im INTERLIS-Datenmodell entsprechen. Es gelten zusätzlich die im [[1]] Kap. 2.8.9 definierten Regeln</li><li>Alle ```TID``` inkl. alle ```BID``` ([Regel Topic](topic.md#regel-topic)) innerhalb eines Transfers müssen eindeutig sein ([[1]] Kap. 3.3.7 und 3.2.6)</li></ul>
 |**Referenz**|[[1]] Kap. 2.5.2, 2.5.3, 2.7.1, 2.8.9, 3.2.6, 3.3.7 und 3.3.9.2
 
