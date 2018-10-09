@@ -32,7 +32,7 @@
 |**Bezeichnung**|**Reihenfolge – Klasseinstanzen**
 |**Beschreibung**|Die Tests müssen die Regeln für die Reihenfolge der Objektinstanzen einer Klasse prüfen
 |**Testvoraussetzung**|[RRiO.T01a.xtf](../data/RRiO.T01a.xtf), [RRiO.T01b.xtf](../data/RRiO.T01b.xtf), [RRiO.T01c.xtf](../data/RRiO.T01c.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RRiO.T01a.xtf: keine Fehlermeldung</li><li>RRiO.T01b.xtf: Fehlermeldung. Falsche Reihenfolge der Attribute</li><li>RRiO.T01c.xtf:Fehlermeldung. Falsche Reihenfolge der ```EmbeddedLink```</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RRiO.T01a.xtf: keine Fehlermeldung</li><li>RRiO.T01b.xtf: Fehlermeldung. Falsche Reihenfolge der Attribute</li><li>RRiO.T01c.xtf:Fehlermeldung. Falsche Reihenfolge der ```EmbeddedLinks```</li></ul>
 |**Referenz**|[[1]] Kap. 3.3.7
 
 ###### Reihenfolge innerhalb der Klasseinstanzen - RRiO.T02
