@@ -121,7 +121,7 @@ public class AssociationTest {
 	 * @Bezeichnung Kardinalität 0..1 bei beiden Rollen
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>Falls bei beiden (Basis-)Rollen die maximale Kardinalität kleiner gleich 1 ist, wird bei der Ziel-Klasse der zweiten Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation und die Ziel-Klasse der ersten Rolle im selben Topic definiert ist wie die (Basis-)Assoziation, wird bei der Ziel-Klasse der ersten Rolle eingebettet.</i></p>
 	 *
 	 * @Testvoraussetzung REB.T01a.xtf
@@ -143,7 +143,7 @@ public class AssociationTest {
 	 * @Bezeichnung Kardinalität 0..1 bei beiden Rollen
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>Falls bei beiden (Basis-)Rollen die maximale Kardinalität kleiner gleich 1 ist, wird bei der Ziel-Klasse der zweiten Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation und die Ziel-Klasse der ersten Rolle im selben Topic definiert ist wie die (Basis-)Assoziation, wird bei der Ziel-Klasse der ersten Rolle eingebettet.</i></p>
 	 *
 	 * @Testvoraussetzung REB.T01b.xtf
@@ -165,7 +165,7 @@ public class AssociationTest {
 	 * @Bezeichnung Kardinalität 0..1 bei beiden Rollen
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>Falls bei beiden (Basis-)Rollen die maximale Kardinalität kleiner gleich 1 ist, wird bei der Ziel-Klasse der zweiten Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation und die Ziel-Klasse der ersten Rolle im selben Topic definiert ist wie die (Basis-)Assoziation, wird bei der Ziel-Klasse der ersten Rolle eingebettet.</i></p>
 	 *
 	 * @Testvoraussetzung REB.T01c.xtf
@@ -187,7 +187,7 @@ public class AssociationTest {
 	 * @Bezeichnung Kardinalität 0..* bei einer der Rollen
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet.</i></p>
 	 *
 	 * @Testvoraussetzung REB.T02a.xtf
@@ -209,7 +209,7 @@ public class AssociationTest {
 	 * @Bezeichnung Kardinalität 0..* bei einer der Rollen
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet.</i></p>
 	 *
 	 * @Testvoraussetzung REB.T02b.xtf
@@ -231,7 +231,7 @@ public class AssociationTest {
 	 * @Bezeichnung Kardinalität 0..* bei einer der Rollen
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet.</i></p>
 	 *
 	 * @Testvoraussetzung REB.T02c.xtf
@@ -256,7 +256,7 @@ public class AssociationTest {
 	 * <p>Nicht eigebettete Beziehungen</p>
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation, kann nicht eingebettet werden.</i></p>
 	 *
 	 * @Testvoraussetzung RBk.T01a.xtf
@@ -280,7 +280,7 @@ public class AssociationTest {
 	 * <p>Nicht eigebettete Beziehungen</p>
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation, kann nicht eingebettet werden.</i></p>
 	 *
 	 * @Testvoraussetzung RBk.T01b.xtf
@@ -304,7 +304,7 @@ public class AssociationTest {
 	 * <p>Nicht eigebettete Beziehungen</p>
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>wenn die Ziel-Klassen der beiden Rollen in einem anderen Topic definiert sind als die (Basis-)Assoziation, kann nicht eingebettet werden.</i></p>
 	 *
 	 * @Testvoraussetzung RBk.T02a.xtf
@@ -328,7 +328,7 @@ public class AssociationTest {
 	 * <p>Nicht eigebettete Beziehungen</p>
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>wenn die Ziel-Klassen der beiden Rollen in einem anderen Topic definiert sind als die (Basis-)Assoziation, kann nicht eingebettet werden.</i></p>
 	 *
 	 * @Testvoraussetzung RBk.T02b.xtf
@@ -352,7 +352,7 @@ public class AssociationTest {
 	 * <p>Nicht eigebettete Beziehungen</p>
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>Beziehungen werden immer eingebettet, ausser wenn bei bei beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist ...</i></p>
 	 *
 	 * @Testvoraussetzung RBk.T03a.xtf
@@ -376,7 +376,7 @@ public class AssociationTest {
 	 * <p>Nicht eigebettete Beziehungen</p>
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>Beziehungen werden immer eingebettet, ausser wenn bei bei beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist ...</i></p>
 	 *
 	 * @Testvoraussetzung RBk.T03b.xtf
@@ -400,7 +400,7 @@ public class AssociationTest {
 	 * <p>Nicht eigebettete Beziehungen</p>
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>Beziehungen werden immer eingebettet, ausser wenn bei bei beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist ...</i></p>
 	 *
 	 * @Testvoraussetzung RBk.T03c.xtf
@@ -424,7 +424,7 @@ public class AssociationTest {
 	 * <p>Nicht eigebettete Beziehungen</p>
 	 *
 	 * @Beschreibung
-	 * <p>Der Test muss die Regeln fürs Einbetten der Beziehungen prüfen.</p>
+	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
 	 * <p><i>Beziehungen werden immer eingebettet, ausser wenn bei bei beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist ...</i></p>
 	 *
 	 * @Testvoraussetzung RBk.T03d.xtf
