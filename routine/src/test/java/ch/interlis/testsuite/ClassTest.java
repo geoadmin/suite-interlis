@@ -29,7 +29,7 @@ public class ClassTest {
 	/**
 	 * @ID RKl.T01a
 	 *
-	 * @Bezeichnung ClassDef
+	 * @Bezeichnung Klassen: ClassDef
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob der Wert %Model.Topic.Class% der ClassDef entspricht
 	 *
@@ -49,7 +49,7 @@ public class ClassTest {
 	/**
 	 * @ID RKl.T02a
 	 *
-	 * @Bezeichnung TID
+	 * @Bezeichnung Klassen: TID
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob die TID vorhanden und eindeutig sind
 	 *
@@ -115,7 +115,7 @@ public class ClassTest {
 	 *
 	 * @Testvoraussetzung RKl.T02d.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. TID werden als XML-ID «à la INTERLIS» codiert. Erstes Zeichen muss Buchstabe, Ziffer oder Unterstrich sein
+	 * @Erwartetes.Ergebnis Fehlermeldung. TID wird als XML-ID «à la INTERLIS» codiert. Erstes Zeichen muss Buchstabe, Ziffer oder Unterstrich sein
 	 *
 	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9, 3.3.1 und 3.3.7</p>
 	 */
