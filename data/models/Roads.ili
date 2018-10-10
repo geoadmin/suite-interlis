@@ -1,13 +1,13 @@
 INTERLIS 2.3;
 
 MODEL Roads (en)
-	AT "http://www.kogis.ch"
-	VERSION "2017-07-27" =
+AT "https://www.kogis.ch"
+VERSION "2017-07-27" =
 
-	TOPIC Roads =
+  TOPIC Roads =
 
-	CLASS Street =
-      Name: MANDATORY TEXT*32;
+    CLASS Street =
+      Name : MANDATORY TEXT*32;
     END Street;
 
     CLASS StreetAxis =
@@ -17,5 +17,7 @@ MODEL Roads (en)
       Street -- {0..1} Street;
       StreetAxis -- {0..1} StreetAxis;
     END StreetAxisAssoc;
-	END Roads;
+
+  END Roads;
+
 END Roads.
