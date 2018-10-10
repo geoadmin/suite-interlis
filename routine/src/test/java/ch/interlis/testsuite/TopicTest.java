@@ -97,7 +97,7 @@ public class TopicTest {
 	 *
 	 * @Testvoraussetzung RTO.T02c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. BID werden als XML-ID «à la INTERLIS» codiert. Erstes Zeichen muss Buchstabe, Ziffer oder Unterstrich sein
+	 * @Erwartetes.Ergebnis Fehlermeldung. BID wird als XML-ID «à la INTERLIS» codiert. Erstes Zeichen muss Buchstabe, Ziffer oder Unterstrich sein
 	 *
 	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9 und 3.3.1</p>
 	 */
@@ -276,7 +276,7 @@ public class TopicTest {
 	 *
 	 * @Testvoraussetzung RTO.T06c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung
+	 * @Erwartetes.Ergebnis Fehlermeldung. Es muss wegen der ASSOCIATION in einem einzigen Basket transferiert werden
 	 *
 	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.5.1 und Appendix C</p>
 	 */
