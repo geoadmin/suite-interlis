@@ -30,7 +30,7 @@ public class HeaderSectionTest {
 	/**
 	 * @ID RHE.T01a
 	 *
-	 * @Bezeichnung HEADERSECTION: XML-Attribute
+	 * @Bezeichnung Vorspann: XML-Attribute
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute VERSION und SENDER im Tag HEADERSECTION vorhanden sind
 	 *
@@ -50,7 +50,7 @@ public class HeaderSectionTest {
 	/**
 	 * @ID RHE.T01b
 	 *
-	 * @Bezeichnung HEADERSECTION: XML-Attribute
+	 * @Bezeichnung Vorspann: XML-Attribute
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute VERSION und SENDER im Tag HEADERSECTION vorhanden sind
 	 *
@@ -72,7 +72,7 @@ public class HeaderSectionTest {
 	/**
 	 * @ID RHE.T01c
 	 *
-	 * @Bezeichnung HEADERSECTION: XML-Attribute
+	 * @Bezeichnung Vorspann: XML-Attribute
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute VERSION und SENDER im Tag HEADERSECTION vorhanden sind
 	 *
@@ -92,7 +92,7 @@ public class HeaderSectionTest {
 	/**
 	 * @ID RHE.T02a
 	 *
-	 * @Bezeichnung HEADERSECTION: Tag MODELS
+	 * @Bezeichnung Vorspann: Tag MODELS
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob das Tag MODELS im Tag HEADERSECTION vorhanden ist
 	 *
@@ -112,13 +112,13 @@ public class HeaderSectionTest {
 	/**
 	 * @ID RHE.T03a
 	 *
-	 * @Bezeichnung HEADERSECTION: Tag MODEL
+	 * @Bezeichnung Vorspann: Sub-Tag MODEL
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob das Tag MODEL im Tag MODELS vorhanden ist
+	 * @Beschreibung Der Test muss prüfen, ob das Sub-Tag MODEL im Tag MODELS vorhanden ist
 	 *
 	 * @Testvoraussetzung RHE.T03a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Tag MODEL nicht vorhanden
+	 * @Erwartetes.Ergebnis Fehlermeldung. Sub-Tag MODEL nicht vorhanden
 	 *
 	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.4</p>
 	 */
@@ -132,9 +132,9 @@ public class HeaderSectionTest {
 	/**
 	 * @ID RHE.T04a
 	 *
-	 * @Bezeichnung HEADERSECTION: XML-Attribute im Tag MODEL
+	 * @Bezeichnung Vorspann: XML-Attribute im Sub-Tag MODEL
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute NAME, VERSION und URI im Tag MODEL vorhanden sind
+	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute NAME, VERSION und URI im Sub-Tag MODEL vorhanden sind
 	 *
 	 * @Testvoraussetzung RHE.T04a.xtf
 	 *
@@ -154,9 +154,9 @@ public class HeaderSectionTest {
 	/**
 	 * @ID RHE.T04b
 	 *
-	 * @Bezeichnung HEADERSECTION: XML-Attribute im Tag MODEL
+	 * @Bezeichnung Vorspann: XML-Attribute im Sub-Tag MODEL
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute NAME, VERSION und URI im Tag MODEL vorhanden sind
+	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute NAME, VERSION und URI im Sub-Tag MODEL vorhanden sind
 	 *
 	 * @Testvoraussetzung RHE.T04b.xtf
 	 *
@@ -174,9 +174,9 @@ public class HeaderSectionTest {
 	/**
 	 * @ID RHE.T04c
 	 *
-	 * @Bezeichnung HEADERSECTION: XML-Attribute im Tag MODEL
+	 * @Bezeichnung Vorspann: XML-Attribute im Sub-Tag MODEL
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute NAME, VERSION und URI im Tag MODEL vorhanden sind
+	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute NAME, VERSION und URI im Sub-Tag MODEL vorhanden sind
 	 *
 	 * @Testvoraussetzung RHE.T04c.xtf
 	 *
@@ -194,13 +194,13 @@ public class HeaderSectionTest {
 	/**
 	 * @ID RHE.T05a
 	 *
-	 * @Bezeichnung HEADERSECTION: Attributwert in NAME und VERSION
+	 * @Bezeichnung Vorspann: Attributwerte in NAME VERSION und URI
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die Werte der Attribute NAME, VERSION und URI im Tag MODEL der ModelDef im INTERLIS-Datenmodell entsprechen
+	 * @Beschreibung Der Test muss prüfen, ob die Werte der Attribute NAME, VERSION und URI im Sub-Tag MODEL der ModelDef im INTERLIS-Datenmodell entsprechen
 	 *
 	 * @Testvoraussetzung RHE.T05a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Wert in NAME stimmt nicht
+	 * @Erwartetes.Ergebnis Fehlermeldung. Wert in NAME stimmt nicht / Model TestSuite nicht vorhanden
 	 *
 	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.4</p>
 	 */
@@ -214,9 +214,9 @@ public class HeaderSectionTest {
 	/**
 	 * @ID RHE.T05b
 	 *
-	 * @Bezeichnung HEADERSECTION: Attributwert in NAME und VERSION
+	 * @Bezeichnung Vorspann: Attributwerte in NAME VERSION und URI
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die Werte der Attribute NAME, VERSION und URI im Tag MODEL der ModelDef im INTERLIS-Datenmodell entsprechen
+	 * @Beschreibung Der Test muss prüfen, ob die Werte der Attribute NAME, VERSION und URI im Sub-Tag MODEL der ModelDef im INTERLIS-Datenmodell entsprechen
 	 *
 	 * @Testvoraussetzung RHE.T05b.xtf
 	 *
@@ -234,9 +234,9 @@ public class HeaderSectionTest {
 /**
 	 * @ID RHE.T05c
 	 *
-	 * @Bezeichnung HEADERSECTION: Attributwert in NAME und VERSION
+	 * @Bezeichnung Vorspann: Attributwerte in NAME VERSION und URI
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die Werte der Attribute NAME, VERSION und URI im Tag MODEL der ModelDef im INTERLIS-Datenmodell entsprechen
+	 * @Beschreibung Der Test muss prüfen, ob die Werte der Attribute NAME, VERSION und URI im Sub-Tag MODEL der ModelDef im INTERLIS-Datenmodell entsprechen
 	 *
 	 * @Testvoraussetzung RHE.T05c.xtf
 	 *
