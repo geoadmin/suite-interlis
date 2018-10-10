@@ -55,7 +55,7 @@ public class ConstraintTest {
 	 *
 	 * @Testvoraussetzung RKo.T01b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Bedingung verletzt
+	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
 	 */
@@ -75,7 +75,7 @@ public class ConstraintTest {
 	 *
 	 * @Testvoraussetzung RKo.T02a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Bedingung verletzt
+	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
 	 */
@@ -137,7 +137,7 @@ public class ConstraintTest {
 	 *
 	 * @Testvoraussetzung RKo.T03b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Bedingung verletzt
+	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
 	 */
@@ -179,7 +179,7 @@ public class ConstraintTest {
 	 *
 	 * @Testvoraussetzung RKo.T04b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Bedingung verletzt
+	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
 	 */
@@ -239,7 +239,7 @@ public class ConstraintTest {
 	 *
 	 * @Testvoraussetzung RKo.T05b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Bedingung verletzt
+	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
 	 */
@@ -359,7 +359,7 @@ public class ConstraintTest {
 	 *
 	 * @Testvoraussetzung RKo.T06f.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Bedingung verletzt
+	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
 	 */
@@ -379,7 +379,7 @@ public class ConstraintTest {
 	 *
 	 * @Testvoraussetzung RKo.T06g.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Bedingung verletzt
+	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
 	 */
@@ -419,7 +419,7 @@ public class ConstraintTest {
 	 *
 	 * @Testvoraussetzung RKo.T07b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Bedingung verletzt
+	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
 	 */
@@ -439,7 +439,7 @@ public class ConstraintTest {
 	 *
 	 * @Testvoraussetzung RKo.T07a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Bedingung verletzt
+	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
 	 */
@@ -499,7 +499,7 @@ public class ConstraintTest {
 	 *
 	 * @Testvoraussetzung RKo.T08d.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Bedingung verletzt
+	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
 	 */
