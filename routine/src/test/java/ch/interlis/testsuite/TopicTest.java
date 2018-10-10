@@ -276,7 +276,7 @@ public class TopicTest {
 	 *
 	 * @Testvoraussetzung RTO.T06c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Es muss wegen der ASSOCIATION in einem einzigen Basket transferiert werden
+	 * @Erwartetes.Ergebnis Fehlermeldung. Wegen der ASSOCIATION müssen die Daten in einem einzigen Basket transferiert werden
 	 *
 	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.5.1 und Appendix C</p>
 	 */
