@@ -59,7 +59,7 @@
 |**Bezeichnung**|**Themen: : Behälter und importierte Modelle**
 |**Beschreibung**|Die Tests müssen diejenigen Behälter prüfen, die auf Basis von importierten Modellen definiert worden sind
 |**Testvoraussetzung**|[RTO.T06a.xtf](../data/RTO.T06a.xtf), [RTO.T06b.xtf](../data/RTO.T06b.xtf), [RTO.T06c.xtf](../data/RTO.T06c.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RTO.T06a.xtf: keine Fehlermeldung</li><li>RTO.T06b.xtf: keine Fehlermeldung</li><li>RTO.T06c.xtf: Fehlermeldung. Es muss wegen der ASSOCIATION in einem einzigen Basket transferiert werden</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RTO.T06a.xtf: keine Fehlermeldung</li><li>RTO.T06b.xtf: keine Fehlermeldung</li><li>RTO.T06c.xtf: Fehlermeldung. Wegen der ASSOCIATION müssen die Daten in einem einzigen Basket transferiert werden</li></ul>
 |**Referenz**|[[1]] Kap. 2.5.1 und Appendix C
 
 [1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
