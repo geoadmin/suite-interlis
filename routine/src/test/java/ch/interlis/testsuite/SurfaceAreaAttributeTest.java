@@ -394,7 +394,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * @Testvoraussetzung RSU.T08a.xtf (AREA)
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. InnerBoundary liegt nicht innerhald der OuterBoundary
+	 * @Erwartetes.Ergebnis Fehlermeldung. InnerBoundary liegt nicht innerhalb der OuterBoundary
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
 	 *
@@ -418,7 +418,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * @Testvoraussetzung RSU.T08b.xtf (SURFACE)
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. InnerBoundary liegt nicht innerhald der OuterBoundary
+	 * @Erwartetes.Ergebnis Fehlermeldung. InnerBoundary liegt nicht innerhalb der OuterBoundary
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
 	 *
