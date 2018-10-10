@@ -297,7 +297,7 @@
 |**Beschreibung**|Die Tests müssen die Validität der Geometrie prüfen
 |**Testvoraussetzung**|[RSU.T08a.xtf](../data/RSU.T08a.xtf) (```AREA```), [RSU.T08b.xtf](../data/RSU.T08b.xtf) (```SURFACE```)
 |**Beispiel**|<p align="center"><img src="img/rsu.t08.png" height="384" title="RSU.T08"></p>
-|**Erwartetes Ergebnis**|<ul><li>RSU.T08a.xtf: Fehlermeldung. *InnerBoundary* nicht im *OuterBoundary*</li><li>RSU.T08b.xtf: Fehlermeldung. *InnerBoundary* nicht im *OuterBoundary*</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RSU.T08a.xtf: Fehlermeldung. *InnerBoundary* liegt nicht innerhalb der *OuterBoundary*</li><li>RSU.T08b.xtf: Fehlermeldung. *InnerBoundary* liegt nicht innerhalb der *OuterBoundary*</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.13 und 3.3.11.13
 
 ###### Einzelflächen und Gebietseinteilungen - RSU.T09
