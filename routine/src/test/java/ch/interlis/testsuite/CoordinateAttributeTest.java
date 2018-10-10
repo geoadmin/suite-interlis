@@ -100,7 +100,7 @@ public class CoordinateAttributeTest {
 	 *
 	 * @Testvoraussetzung RCO.T03a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. &lt;C2&gt; nicht im Wertbereich.
+	 * @Erwartetes.Ergebnis Fehlermeldung. &lt;C2&gt; ausserhalb des Wertbereichs
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.8 und 3.3.11.11
 	*/
@@ -120,7 +120,7 @@ public class CoordinateAttributeTest {
 	 *
 	 * @Testvoraussetzung RCO.T03b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. &lt;C3&gt; nicht erlaubt, weil Wertbereich für 2D-Koordinaten ist.
+	 * @Erwartetes.Ergebnis Fehlermeldung. &lt;C3&gt; nicht erlaubt, weil Wertbereich für 2D-Koordinaten definiert ist
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.8 und 3.3.11.11
 	*/
