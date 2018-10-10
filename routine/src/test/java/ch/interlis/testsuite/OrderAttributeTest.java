@@ -75,7 +75,7 @@ public class OrderAttributeTest {
 	 *
 	 * @Testvoraussetzung RRiO.T01c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Falsche Reihenfolge der EmbeddedLink
+	 * @Erwartetes.Ergebnis Fehlermeldung. Falsche Reihenfolge der EmbeddedLinks
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.3.7
 	 */
@@ -175,7 +175,7 @@ public class OrderAttributeTest {
 	 *
 	 * @Testvoraussetzung RRiO.T03c.xtf
 	 *
-	 * @Erwartetes.Ergebnis  Fehlermeldung. Fehlermeldung. Zuerst müssen die Attribute der Basisklasse codiert werden
+	 * @Erwartetes.Ergebnis  Fehlermeldung. Zuerst müssen die Attribute der Basisklasse codiert werden
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.3.7
 	 */
@@ -195,7 +195,7 @@ public class OrderAttributeTest {
 	 *
 	 * @Testvoraussetzung RRiO.T03d.xtf
 	 *
-	 * @Erwartetes.Ergebnis  Fehlermeldung. Fehlermeldung. Die Rollen der Basisklasse sind obligatorisch
+	 * @Erwartetes.Ergebnis  Fehlermeldung. Die Rollen der Basisklasse sind obligatorisch
 	 *
 	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.3.7
 	 */
