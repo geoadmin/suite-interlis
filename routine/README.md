@@ -56,7 +56,7 @@ Alle Test-Typen der Routine sind in der Datei ``build.gradle`` (unter ``test``) 
 ### Datei interlis2.cfg
 Spezifische iG/Check-Einstellungen können zusätzlich in der Datei ``interlis2.cfg`` im Verzeichnis ``igcheck2`` gesetzt werden.
 
-### Tests direkt im Code ausgeschaltet
+### Tests, die direkt im Code ausgeschaltet worden sind
 #### ilivalidator Version 1.9.3
 | Test | Begründung |
 | --- | --- |
@@ -73,7 +73,7 @@ Spezifische iG/Check-Einstellungen können zusätzlich in der Datei ``interlis2.
 | RXW.T02e.xtf | Falsche Fehlermeldung |
 | RXW.T02f.xtf | Falsche Fehlermeldung |
 
-#### iG/Check Version 2016.2 06.04.2018
+#### iG/Check Version 2018.0 vom 08.10.2018
 | Test | Begründung |
 | --- | --- |
 | RAt.T11e.xtf | Falsche Fehlermeldung |
