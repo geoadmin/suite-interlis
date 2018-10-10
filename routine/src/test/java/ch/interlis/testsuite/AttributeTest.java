@@ -116,7 +116,7 @@ public class AttributeTest {
 	 *
 	 * @Testvoraussetzung RAt.T02c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. TEXT muss als einzeiliger Text codiert werden: Steuerzeichen sind nicht zulässig
+	 * @Erwartetes.Ergebnis Fehlermeldung. TEXT muss als einzeiliger Text codiert werden. Steuerzeichen sind nicht zulässig
 	 *
 	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6 und 3.3.11.2</p>
  	 * <p><a href="https://www.w3.org/TR/xml/#charsets">Extensible Markup Language (XML) 1.0 Kap. 2.2</a></p>
@@ -138,7 +138,7 @@ public class AttributeTest {
 	 *
 	 * @Testvoraussetzung RAt.T03a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Attribut Beschreibung muss auf 9 Zeichen begrenzt werden. Jeder Wagenrücklauf zählt als 1 Zeichen
+	 * @Erwartetes.Ergebnis Fehlermeldung. Attribut Beschreibung muss auf 9 Zeichen begrenzt werden; jeder Wagenrücklauf zählt als 1 Zeichen
 	 *
 	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.1 und 3.3.11.2</p>
 	 * <p><a href="https://www.w3.org/TR/xml/#charsets">Extensible Markup Language (XML) 1.0 Kap. 2.2</a></p>
@@ -184,7 +184,7 @@ public class AttributeTest {
 	 *
 	 * @Testvoraussetzung RAt.T04a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. NAME ist eine Folge von maximal 255 Buchstaben
+	 * @Erwartetes.Ergebnis Fehlermeldung. NAME ist eine Folge von maximal 255 Buchstaben, Ziffern und Unterstrichen
 	 *
 	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.2.2, 2.2.7, 2.6, 2.8.1 und 3.3.11.2</p>
 	 * <p><a href="https://www.w3.org/TR/xml/#NT-Name">Extensible Markup Language (XML) 1.0 Kap. 2.3</a></p>
@@ -228,7 +228,7 @@ public class AttributeTest {
 	 *
 	 * @Testvoraussetzung RAt.T04c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Bei Namen sind reservierte INTERLIS-Wörter unzulässig
+	 * @Erwartetes.Ergebnis Fehlermeldung. Bei Namen sind reservierte INTERLIS-Wörter nicht zulässig
 	 *
 	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.2.2, 2.2.7, 2.6, 2.8.1 und 3.3.11.2</p>
 	 * <p><a href="https://www.w3.org/TR/xml/#NT-Name">Extensible Markup Language (XML) 1.0 Kap. 2.3</a></p>
@@ -250,7 +250,7 @@ public class AttributeTest {
 	 *
 	 * @Testvoraussetzung RAt.T05a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. URI ist eine Folge von maximal 1023 Buchstaben
+	 * @Erwartetes.Ergebnis Fehlermeldung. URI ist eine Folge von maximal 1023 Zeichen
 	 *
 	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.1 und 3.3.11.2</p>
 	 * <p><a href="https://www.ietf.org/rfc/rfc2396.txt">RFC Uniform Resource Identifiers (URI): Generic Syntax Kap. 3</a></p>
@@ -651,7 +651,7 @@ public class AttributeTest {
 	 *
 	 * @Testvoraussetzung RAt.T11a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültiger UUID im BID
+	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültiger UUID der BID
 	 *
 	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9 und 3.3.11.16</p>
 	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Kap. D.2</a></p>
@@ -673,7 +673,7 @@ public class AttributeTest {
 	 *
 	 * @Testvoraussetzung RAt.T11b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültiger UUID im TID
+	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültiger UUID der TID
 	 *
 	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9 und 3.3.11.16</p>
 	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Kap. D.2</a></p>
