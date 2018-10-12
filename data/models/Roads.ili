@@ -2,7 +2,7 @@ INTERLIS 2.3;
 
 MODEL Roads (en)
 AT "https://www.kogis.ch"
-VERSION "2017-07-27" =
+VERSION "2018-10-10" =
 
   TOPIC Roads =
 

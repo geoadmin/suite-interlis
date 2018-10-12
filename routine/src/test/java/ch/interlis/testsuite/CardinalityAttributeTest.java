@@ -29,7 +29,7 @@ public class CardinalityAttributeTest {
 	/**
 	 * @ID RKA.T01a
 	 *
-	 * @Bezeichnung MANDATORY
+	 * @Bezeichnung Kardinalität: MANDATORY
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Kardinalität der Attribute prüfen
 	 *
@@ -49,7 +49,7 @@ public class CardinalityAttributeTest {
 	/**
 	 * @ID RKA.T01b
 	 *
-	 * @Bezeichnung MANDATORY
+	 * @Bezeichnung Kardinalität: MANDATORY
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Kardinalität der Attribute prüfen
 	 *
@@ -69,7 +69,7 @@ public class CardinalityAttributeTest {
 	/**
 	 * @ID RKA.T02a
 	 *
-	 * @Bezeichnung BAG OF
+	 * @Bezeichnung Kardinalität: BAG OF
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Kardinalität der Attribute prüfen
 	 *
@@ -89,7 +89,7 @@ public class CardinalityAttributeTest {
 	/**
 	 * @ID RKA.T02b
 	 *
-	 * @Bezeichnung BAG OF
+	 * @Bezeichnung Kardinalität: BAG OF
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Kardinalität der Attribute prüfen
 	 *
@@ -109,7 +109,7 @@ public class CardinalityAttributeTest {
 	/**
 	 * @ID RKA.T02c
 	 *
-	 * @Bezeichnung BAG OF
+	 * @Bezeichnung Kardinalität: BAG OF
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Kardinalität der Attribute prüfen
 	 *
@@ -129,7 +129,7 @@ public class CardinalityAttributeTest {
 	/**
 	 * @ID RKA.T02d
 	 *
-	 * @Bezeichnung BAG OF
+	 * @Bezeichnung Kardinalität: BAG OF
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Kardinalität der Attribute prüfen
 	 *

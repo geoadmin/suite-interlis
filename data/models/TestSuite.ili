@@ -2,7 +2,7 @@ INTERLIS 2.3;
 
 MODEL TestSuite
 AT "https://www.kogis.ch"
-VERSION "2017-07-27" =
+VERSION "2018-10-10" =
   IMPORTS TestSuite2;
 
   DOMAIN

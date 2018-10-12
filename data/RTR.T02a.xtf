@@ -3,8 +3,8 @@
 <!-- TRANSFER nicht vorhanden -->
   <HEADERSECTION SENDER="ili2c-4.5.22-20160520" VERSION="2.3">
     <MODELS>
-      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
-	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+      <MODEL NAME="TestSuite" VERSION="2018-10-10" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2018-10-10" URI="http://www.kogis.ch"/>
     </MODELS>
   </HEADERSECTION>
   <DATASECTION>

@@ -87,7 +87,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T02b
 	 *
-	 * @Bezeichnung TEXT
+	 * @Bezeichnung Attribute: TEXT
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für TEXT, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -109,7 +109,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T02c
 	 *
-	 * @Bezeichnung TEXT
+	 * @Bezeichnung Attribute: TEXT
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für TEXT, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -131,7 +131,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T03a
 	 *
-	 * @Bezeichnung MTEXT
+	 * @Bezeichnung Attribute: MTEXT
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für MTEXT, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -154,7 +154,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T03b
 	 *
-	 * @Bezeichnung MTEXT
+	 * @Bezeichnung Attribute: MTEXT
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für MTEXT, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -177,7 +177,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T04a
 	 *
-	 * @Bezeichnung NAME
+	 * @Bezeichnung Attribute: NAME
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NAME, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -199,7 +199,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T04b
 	 *
-	 * @Bezeichnung NAME
+	 * @Bezeichnung Attribute: NAME
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NAME, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -221,7 +221,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T04c
 	 *
-	 * @Bezeichnung NAME
+	 * @Bezeichnung Attribute: NAME
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NAME, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -243,7 +243,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T05a
 	 *
-	 * @Bezeichnung URI
+	 * @Bezeichnung Attribute: URI
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für URI, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -265,7 +265,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T05b
 	 *
-	 * @Bezeichnung URI
+	 * @Bezeichnung Attribute: URI
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für URI, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -287,7 +287,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T06a
 	 *
-	 * @Bezeichnung EnumerationType
+	 * @Bezeichnung Attribute: EnumerationType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für EnumerationType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -308,7 +308,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T06b
 	 *
-	 * @Bezeichnung EnumerationType
+	 * @Bezeichnung Attribute: EnumerationType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für EnumerationType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -329,7 +329,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T06c
 	 *
-	 * @Bezeichnung EnumerationType
+	 * @Bezeichnung Attribute: EnumerationType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für EnumerationType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -350,7 +350,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T07a
 	 *
-	 * @Bezeichnung EnumTreeValueType
+	 * @Bezeichnung Attribute: EnumTreeValueType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für EnumTreeValueType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -371,7 +371,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T07b
 	 *
-	 * @Bezeichnung EnumTreeValueType
+	 * @Bezeichnung Attribute: EnumTreeValueType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für EnumTreeValueType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -392,7 +392,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T08a
 	 *
-	 * @Bezeichnung BooleanType
+	 * @Bezeichnung Attribute: BooleanType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für BooleanType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -413,7 +413,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T08b
 	 *
-	 * @Bezeichnung BooleanType
+	 * @Bezeichnung Attribute: BooleanType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für BooleanType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -434,7 +434,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T09a
 	 *
-	 * @Bezeichnung NumericType
+	 * @Bezeichnung Attribute: NumericType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -455,7 +455,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T09b
 	 *
-	 * @Bezeichnung NumericType
+	 * @Bezeichnung Attribute: NumericType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -476,7 +476,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T09c
 	 *
-	 * @Bezeichnung NumericType
+	 * @Bezeichnung Attribute: NumericType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -497,7 +497,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T09d
 	 *
-	 * @Bezeichnung NumericType
+	 * @Bezeichnung Attribute: NumericType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -514,11 +514,11 @@ public class AttributeTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID RAt.T09e
 	 *
-	 * @Bezeichnung NumericType
+	 * @Bezeichnung Attribute: NumericType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -535,11 +535,11 @@ public class AttributeTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertTrue(ret);
 	}
-	
+
 	/**
 	 * @ID RAt.T09f
 	 *
-	 * @Bezeichnung NumericType
+	 * @Bezeichnung Attribute: NumericType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -556,11 +556,11 @@ public class AttributeTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertTrue(ret);
 	}
-	
+
 	/**
 	 * @ID RAt.T09g
 	 *
-	 * @Bezeichnung NumericType
+	 * @Bezeichnung Attribute: NumericType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -577,11 +577,11 @@ public class AttributeTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID RAt.T10a
 	 *
-	 * @Bezeichnung FormattedType
+	 * @Bezeichnung Attribute: FormattedType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für FormattedType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -602,7 +602,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T10b
 	 *
-	 * @Bezeichnung FormattedType
+	 * @Bezeichnung Attribute: FormattedType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für FormattedType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -623,7 +623,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T10c
 	 *
-	 * @Bezeichnung FormattedType
+	 * @Bezeichnung Attribute: FormattedType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für FormattedType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -640,11 +640,11 @@ public class AttributeTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID RAt.T11a
 	 *
-	 * @Bezeichnung OIDType
+	 * @Bezeichnung Attribute: OIDType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für OIDType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -666,7 +666,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T11b
 	 *
-	 * @Bezeichnung OIDType
+	 * @Bezeichnung Attribute: OIDType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für OIDType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -688,7 +688,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T11c
 	 *
-	 * @Bezeichnung OIDType
+	 * @Bezeichnung Attribute: OIDType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für OIDType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -710,7 +710,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T11d
 	 *
-	 * @Bezeichnung OIDType
+	 * @Bezeichnung Attribute: OIDType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für OIDType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -732,7 +732,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T11e
 	 *
-	 * @Bezeichnung OIDType
+	 * @Bezeichnung Attribute: OIDType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für OIDType, bzw. den entsprechenden Codierungsregeln, entspricht
@@ -747,7 +747,7 @@ public class AttributeTest {
 	@Test
 	public void RAt_T11e() {
 		// Ausgesetzt falls vendor="ig/check" --> Flasche Fehlermeldung
-		assumeFalse (System.getProperty("vendor").equals("ig/check")); 
+		assumeFalse (System.getProperty("vendor").equals("ig/check"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RAt.T11e.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
@@ -755,7 +755,7 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T11f
 	 *
-	 * @Bezeichnung OIDType
+	 * @Bezeichnung Attribute: OIDType
 	 *
 	 * @Beschreibung
 	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für OIDType, bzw. den entsprechenden Codierungsregeln, entspricht

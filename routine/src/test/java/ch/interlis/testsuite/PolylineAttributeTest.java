@@ -29,7 +29,7 @@ public class PolylineAttributeTest {
 	/**
 	 * @ID RPO.T01a
 	 *
-	 * @Bezeichnung POLYLINE: Linienzug
+	 * @Bezeichnung Linienzüge: POLYLINE
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Validität eines Linienzugs prüfen</p>
@@ -55,7 +55,7 @@ public class PolylineAttributeTest {
 	/**
 	 * @ID RPO.T02a
 	 *
-	 * @Bezeichnung POLYLINE: einfacher Linienzug
+	 * @Bezeichnung Linienzüge: einfacher Linienzug
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Validität eines Linienzugs prüfen</p>
@@ -81,7 +81,7 @@ public class PolylineAttributeTest {
 	/**
 	 * @ID RPO.T02b
 	 *
-	 * @Bezeichnung POLYLINE: einfacher Linienzug
+	 * @Bezeichnung Linienzüge: einfacher Linienzug
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Validität eines Linienzugs prüfen</p>
@@ -107,7 +107,7 @@ public class PolylineAttributeTest {
 	/**
 	 * @ID RPO.T02c
 	 *
-	 * @Bezeichnung POLYLINE: einfacher Linienzug
+	 * @Bezeichnung Linienzüge: einfacher Linienzug
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Validität eines Linienzugs prüfen</p>
@@ -133,7 +133,7 @@ public class PolylineAttributeTest {
 	/**
 	 * @ID RPO.T03a
 	 *
-	 * @Bezeichnung Toleranz bei ARC
+	 * @Bezeichnung Linienzüge: Toleranz bei ARC
 	 *
 	 * @Beschreibung Der Test muss die Toleranz prüfen (INTERLIS 2 - Referenzhandbuch Kap. 2.8.12.2, Regeln WITHOUT OVERLAPS &gt;)
 	 *
@@ -157,7 +157,7 @@ public class PolylineAttributeTest {
 	/**
 	 * @ID RPO.T03b
 	 *
-	 * @Bezeichnung Toleranz bei ARC
+	 * @Bezeichnung Linienzüge: Toleranz bei ARC
 	 *
 	 * @Beschreibung Der Test muss die Toleranz prüfen ([1] Kap. 2.8.12.2, Regeln WITHOUT OVERLAPS &gt;)
 	 *

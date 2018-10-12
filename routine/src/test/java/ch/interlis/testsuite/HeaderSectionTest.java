@@ -230,24 +230,4 @@ public class HeaderSectionTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-
-/**
-	 * @ID RHE.T05c
-	 *
-	 * @Bezeichnung Vorspann: Attributwerte in NAME VERSION und URI
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob die Werte der Attribute NAME, VERSION und URI im Sub-Tag MODEL der ModelDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RHE.T05c.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Wert in URI stimmt nicht
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.4</p>
-	 */
-	@Test
-	public void RHE_T05c() {
-		boolean ret = TestUtil.runJob(vendor, "../data/RHE.T05c.xtf");
-		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
-		assertFalse(ret);
-	}
 }

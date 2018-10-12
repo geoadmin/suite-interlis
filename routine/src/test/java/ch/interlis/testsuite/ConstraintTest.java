@@ -29,7 +29,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T01a
 	 *
-	 * @Bezeichnung UNIQUE
+	 * @Bezeichnung Konsistenzbedingungen: UNIQUE
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -49,7 +49,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T01b
 	 *
-	 * @Bezeichnung UNIQUE
+	 * @Bezeichnung Konsistenzbedingungen: UNIQUE
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -69,7 +69,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T02a
 	 *
-	 * @Bezeichnung UNIQUE (LOCAL)
+	 * @Bezeichnung Konsistenzbedingungen: UNIQUE (LOCAL)
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -89,7 +89,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T02b
 	 *
-	 * @Bezeichnung UNIQUE (LOCAL)
+	 * @Bezeichnung Konsistenzbedingungen: UNIQUE (LOCAL)
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -109,7 +109,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T03a
 	 *
-	 * @Bezeichnung UNIQUE WHERE
+	 * @Bezeichnung Konsistenzbedingungen: UNIQUE WHERE
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -131,7 +131,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T03b
 	 *
-	 * @Bezeichnung UNIQUE WHERE
+	 * @Bezeichnung Konsistenzbedingungen: UNIQUE WHERE
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -153,7 +153,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T04a
 	 *
-	 * @Bezeichnung EXISTENCE CONSTRAINT
+	 * @Bezeichnung Konsistenzbedingungen: EXISTENCE CONSTRAINT
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -173,7 +173,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T04b
 	 *
-	 * @Bezeichnung EXISTENCE CONSTRAINT
+	 * @Bezeichnung Konsistenzbedingungen: EXISTENCE CONSTRAINT
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -193,7 +193,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T04c
 	 *
-	 * @Bezeichnung EXISTENCE CONSTRAINT
+	 * @Bezeichnung Konsistenzbedingungen: EXISTENCE CONSTRAINT
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -213,7 +213,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T05a
 	 *
-	 * @Bezeichnung MANDATORY mit Vergleich
+	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Vergleich
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -233,7 +233,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T05b
 	 *
-	 * @Bezeichnung MANDATORY mit Vergleich
+	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Vergleich
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -253,7 +253,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06a
 	 *
-	 * @Bezeichnung MANDATORY mit Bedingungsvorgabe
+	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -273,7 +273,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06b
 	 *
-	 * @Bezeichnung MANDATORY mit Bedingungsvorgabe
+	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -293,7 +293,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06c
 	 *
-	 * @Bezeichnung MANDATORY mit Bedingungsvorgabe
+	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -313,7 +313,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06d
 	 *
-	 * @Bezeichnung MANDATORY mit Bedingungsvorgabe
+	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -333,7 +333,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06e
 	 *
-	 * @Bezeichnung MANDATORY mit Bedingungsvorgabe
+	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -353,7 +353,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06f
 	 *
-	 * @Bezeichnung MANDATORY mit Bedingungsvorgabe
+	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -373,7 +373,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06g
 	 *
-	 * @Bezeichnung MANDATORY mit Bedingungsvorgabe
+	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -393,7 +393,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T07a
 	 *
-	 * @Bezeichnung MANDATORY mit Funktion (INTERLIS.len)
+	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Funktion (INTERLIS.len)
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -413,7 +413,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T07b
 	 *
-	 * @Bezeichnung MANDATORY mit Funktion (INTERLIS.len)
+	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Funktion (INTERLIS.len)
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -433,7 +433,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T08a
 	 *
-	 * @Bezeichnung SET CONSTRAINT mit Funktion (are.Areas)
+	 * @Bezeichnung Konsistenzbedingungen: SET CONSTRAINT mit Funktion (are.Areas)
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -453,7 +453,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T08b
 	 *
-	 * @Bezeichnung SET CONSTRAINT mit Funktion (are.Areas)
+	 * @Bezeichnung Konsistenzbedingungen: SET CONSTRAINT mit Funktion (are.Areas)
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -473,7 +473,7 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T08c
 	 *
-	 * @Bezeichnung SET CONSTRAINT mit Funktion (are.Areas)
+	 * @Bezeichnung Konsistenzbedingungen: SET CONSTRAINT mit Funktion (are.Areas)
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -489,11 +489,11 @@ public class ConstraintTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertTrue(ret);
 	}
-	
+
 	/**
 	 * @ID RKo.T08d
 	 *
-	 * @Bezeichnung SET CONSTRAINT mit Funktion (are.Areas)
+	 * @Bezeichnung Konsistenzbedingungen: SET CONSTRAINT mit Funktion (are.Areas)
 	 *
 	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
 	 *

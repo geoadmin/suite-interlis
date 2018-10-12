@@ -28,7 +28,7 @@ public class OrderObjectTest {
 	/**
 	 * @ID RRO.T01a
 	 *
-	 * @Bezeichnung Reihenfolge - Datenbereich
+	 * @Bezeichnung Reihenfolge; Datenbereich
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objekte im Datenbereich prüfen
 	 *
@@ -48,7 +48,7 @@ public class OrderObjectTest {
 	/**
 	 * @ID RRO.T01b
 	 *
-	 * @Bezeichnung Reihenfolge - Datenbereich
+	 * @Bezeichnung Reihenfolge: Datenbereich
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objekte im Datenbereich prüfen
 	 *

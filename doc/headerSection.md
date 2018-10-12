@@ -5,7 +5,7 @@
 |:--|:--
 |**Bezeichnung**|**HEADERSECTION**
 |**Beschreibung**|Für die Validierung des Vorspanns gelten die im [[1]] Kap. 3.3.4 definierten Regeln
-|**Details**|<ul><li>Die Angaben ```VERSION``` und ```SENDER``` im Tag ```HEADERSECTION``` sind verbindlich</li><li>Im Element ```MODELS``` müssen alle Datenmodelle (mindestens eines) aufgeführt werden, zu deren Themen Daten vorkommen</li><li>Die Angaben ```NAME```, ```VERSION``` und ```URI``` im Tag ```MODEL``` sind verbindlich</li><li>Die Angaben ```NAME``` und ```VERSION``` müssen der ```ModelDef``` ([[1]] Kap. 2.5.1) im INTERLIS-Datenmodell entsprechen
+|**Details**|<ul><li>Die Angaben ```VERSION``` und ```SENDER``` im Tag ```HEADERSECTION``` sind verbindlich</li><li>Im Element ```MODELS``` müssen alle Datenmodelle (mindestens eines) aufgeführt werden, zu deren Themen Daten vorkommen</li><li>Die Angaben ```NAME```, ```VERSION``` und ```URI``` im Tag ```MODEL``` sind verbindlich</li><li>Die Angabe ```NAME``` muss zwingend der ```ModelDef``` ([[1]] Kap. 2.5.1) im INTERLIS-Datenmodell entsprechen</li><li>Die Angabe ```VERSION``` soll der ```ModelDef``` ([[1]] Kap. 2.5.1) im INTERLIS-Datenmodell entsprechen</li><li>Die Angabe ```URI``` hat für die Datenprüfung keine weitere Bedeutung</li></ul>
 |**Referenz**|[[1]] Kap. 2.5.1 und 3.3.4
 
 ### Testfälle
@@ -51,7 +51,7 @@
 |**Bezeichnung**|**Vorspann: Attributswerte in ```NAME```, ```VERSION``` und ```URI```**
 |**Beschreibung**|Die Tests müssen prüfen, ob die Werte der Attribute ```NAME```, ```VERSION``` und ```URI``` im Sub-Tag ```MODEL``` der ```ModelDef``` im INTERLIS-Datenmodell entsprechen
 |**Testvoraussetzung**|[RHE.T05a.xtf](../data/RHE.T05a.xtf), [RHE.T05b.xtf](../data/RHE.T05b.xtf), [RHE.T05c.xtf](../data/RHE.T05c.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RHE.T05a.xtf: Fehlermeldung. Wert in ```NAME``` stimmt nicht / Model ``TestSuite`` nicht vorhanden</li><li>RHE.T05b.xtf: Fehlermeldung. Wert in ```VERSION``` stimmt nicht</li><li>RHE.T05c.xtf: Fehlermeldung. Wert in ```URI``` stimmt nicht</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RHE.T05a.xtf: Fehlermeldung. Wert in ```NAME``` stimmt nicht / Model ``TestSuite`` nicht vorhanden</li><li>RHE.T05b.xtf: Fehlermeldung. Wert in ```VERSION``` stimmt nicht</li></ul>
 |**Referenz**|[[1]] Kap. 3.3.4
 
 [1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006

@@ -30,7 +30,7 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T01a
 	 *
-	 * @Bezeichnung {1} bei beiden Rollen
+	 * @Bezeichnung Kardinalität: {1} bei beiden Rollen
 	 *
 	 * @Beschreibung
 	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
@@ -51,7 +51,7 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T01b
 	 *
-	 * @Bezeichnung {1} bei beiden Rollen
+	 * @Bezeichnung Kardinalität: {1} bei beiden Rollen
 	 *
 	 * @Beschreibung
 	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
@@ -72,7 +72,7 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T01c
 	 *
-	 * @Bezeichnung {1} bei beiden Rollen
+	 * @Bezeichnung Kardinalität: {1} bei beiden Rollen
 	 *
 	 * @Beschreibung
 	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
@@ -93,7 +93,7 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T01d
 	 *
-	 * @Bezeichnung {1} bei beiden Rollen
+	 * @Bezeichnung Kardinalität: {1} bei beiden Rollen
 	 *
 	 * @Beschreibung
 	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
@@ -114,7 +114,7 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T02a
 	 *
-	 * @Bezeichnung <p>{0..1}</p><p>{1}</p>
+	 * @Bezeichnung Kardinalität: <p>{0..1}</p><p>{1}</p>
 	 *
 	 * @Beschreibung
 	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
@@ -135,7 +135,7 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T03a
 	 *
-	 * @Bezeichnung <p>{0..1}</p><p>{0..1}</p>
+	 * @Bezeichnung Kardinalität: <p>{0..1}</p><p>{0..1}</p>
 	 *
 	 * @Beschreibung
 	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
@@ -156,7 +156,7 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T04a
 	 *
-	 * @Bezeichnung <p>{1}</p><p>{0..*}</p>
+	 * @Bezeichnung Kardinalität: <p>{1}</p><p>{0..*}</p>
 	 *
 	 * @Beschreibung
 	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
@@ -177,7 +177,7 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T05a
 	 *
-	 * @Bezeichnung <p>{0..*}</p><p>{1}</p>
+	 * @Bezeichnung Kardinalität: <p>{0..*}</p><p>{1}</p>
 	 *
 	 * @Beschreibung
 	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
@@ -198,7 +198,7 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T05b
 	 *
-	 * @Bezeichnung <p>{0..*}</p><p>{1}</p>
+	 * @Bezeichnung Kardinalität: <p>{0..*}</p><p>{1}</p>
 	 *
 	 * @Beschreibung
 	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen

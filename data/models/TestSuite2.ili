@@ -2,7 +2,7 @@ INTERLIS 2.3;
 
 CONTRACTED MODEL TestSuite2
 AT "https://www.kogis.ch"
-VERSION "2017-07-27" =
+VERSION "2018-10-10" =
 
   DOMAIN
     BFS_Nummer = 1 .. 9999;

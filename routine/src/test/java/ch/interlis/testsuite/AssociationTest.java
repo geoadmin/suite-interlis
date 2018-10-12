@@ -30,7 +30,7 @@ public class AssociationTest {
 	/**
 	 * @ID RBe.T01a
 	 *
-	 * @Bezeichnung Referenzen
+	 * @Bezeichnung Beziehungen: Referenzen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss prüfen, dass bei externen Rollen die Referenzen zusätzlich mit einem XML-Attribut BID codiert werden.</p>
@@ -52,7 +52,7 @@ public class AssociationTest {
 	/**
 	 * @ID RBe.T01b
 	 *
-	 * @Bezeichnung Referenzen
+	 * @Bezeichnung Beziehungen: Referenzen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss prüfen, dass bei externen Rollen die Referenzen zusätzlich mit einem XML-Attribut BID codiert werden.</p>
@@ -70,11 +70,11 @@ public class AssociationTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID RBe.T01c
 	 *
-	 * @Bezeichnung Referenzen
+	 * @Bezeichnung Beziehungen: Referenzen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss prüfen, dass bei externen Rollen die Referenzen zusätzlich mit einem XML-Attribut BID codiert werden.</p>
@@ -92,11 +92,11 @@ public class AssociationTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertTrue(ret);
 	}
-	
+
 	/**
 	 * @ID RBe.T01d
 	 *
-	 * @Bezeichnung Referenzen
+	 * @Bezeichnung Beziehungen: Referenzen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss prüfen, dass bei externen Rollen die Referenzen zusätzlich mit einem XML-Attribut BID codiert werden.</p>
@@ -118,7 +118,7 @@ public class AssociationTest {
 	/**
 	 * @ID REB.T01a
 	 *
-	 * @Bezeichnung Kardinalität 0..1 bei beiden Rollen
+	 * @Bezeichnung Eingebettete Beziehungen: Kardinalität 0..1 bei beiden Rollen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
@@ -140,7 +140,7 @@ public class AssociationTest {
 	/**
 	 * @ID REB.T01b
 	 *
-	 * @Bezeichnung Kardinalität 0..1 bei beiden Rollen
+	 * @Bezeichnung Eingebettete Beziehungen: Kardinalität 0..1 bei beiden Rollen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
@@ -162,7 +162,7 @@ public class AssociationTest {
 	/**
 	 * @ID REB.T01c
 	 *
-	 * @Bezeichnung Kardinalität 0..1 bei beiden Rollen
+	 * @Bezeichnung Eingebettete Beziehungen: Kardinalität 0..1 bei beiden Rollen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
@@ -184,7 +184,7 @@ public class AssociationTest {
 	/**
 	 * @ID REB.T02a
 	 *
-	 * @Bezeichnung Kardinalität 0..* bei einer der Rollen
+	 * @Bezeichnung Eingebettete Beziehungen: Kardinalität 0..* bei einer der Rollen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
@@ -206,7 +206,7 @@ public class AssociationTest {
 	/**
 	 * @ID REB.T02b
 	 *
-	 * @Bezeichnung Kardinalität 0..* bei einer der Rollen
+	 * @Bezeichnung Eingebettete Beziehungen: Kardinalität 0..* bei einer der Rollen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
@@ -224,11 +224,11 @@ public class AssociationTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID REB.T02c
 	 *
-	 * @Bezeichnung Kardinalität 0..* bei einer der Rollen
+	 * @Bezeichnung Eingebettete Beziehungen: Kardinalität 0..* bei einer der Rollen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
@@ -246,14 +246,12 @@ public class AssociationTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 
 	/**
 	 * @ID RBk.T01a
 	 *
-	 * @Bezeichnung
-	 * <p>Kardinalität 0..* bei der Rolle EXTERNAL</p>
-	 * <p>Nicht eigebettete Beziehungen</p>
+	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..* bei der Rolle EXTERNAL
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
@@ -275,9 +273,7 @@ public class AssociationTest {
 	/**
 	 * @ID RBk.T01b
 	 *
-	 * @Bezeichnung
-	 * <p>Kardinalität 0..* bei der Rolle EXTERNAL</p>
-	 * <p>Nicht eigebettete Beziehungen</p>
+	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..* bei der Rolle EXTERNAL
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
@@ -299,9 +295,7 @@ public class AssociationTest {
 	/**
 	 * @ID RBk.T02a
 	 *
-	 * @Bezeichnung
-	 * <p>Kardinalität 0..1 bei beiden Rollen EXTERNAL</p>
-	 * <p>Nicht eigebettete Beziehungen</p>
+	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..1 bei beiden Rollen EXTERNAL
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
@@ -323,9 +317,7 @@ public class AssociationTest {
 	/**
 	 * @ID RBk.T02b
 	 *
-	 * @Bezeichnung
-	 * <p>Kardinalität 0..1 bei beiden Rollen EXTERNAL</p>
-	 * <p>Nicht eigebettete Beziehungen</p>
+	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..1 bei beiden Rollen EXTERNAL
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
@@ -347,9 +339,7 @@ public class AssociationTest {
 	/**
 	 * @ID RBk.T03a
 	 *
-	 * @Bezeichnung
-	 * <p>Kardinalität 0..* bei beiden Rollen</p>
-	 * <p>Nicht eigebettete Beziehungen</p>
+	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..* bei beiden Rollen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
@@ -371,9 +361,7 @@ public class AssociationTest {
 	/**
 	 * @ID RBk.T03b
 	 *
-	 * @Bezeichnung
-	 * <p>Kardinalität 0..* bei beiden Rollen</p>
-	 * <p>Nicht eigebettete Beziehungen</p>
+	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..* bei beiden Rollen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
@@ -391,13 +379,11 @@ public class AssociationTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID RBk.T03c
 	 *
-	 * @Bezeichnung
-	 * <p>Kardinalität 0..* bei beiden Rollen</p>
-	 * <p>Nicht eigebettete Beziehungen</p>
+	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..* bei beiden Rollen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
@@ -415,13 +401,11 @@ public class AssociationTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID RBk.T03d
 	 *
-	 * @Bezeichnung
-	 * <p>Kardinalität 0..* bei beiden Rollen</p>
-	 * <p>Nicht eigebettete Beziehungen</p>
+	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..* bei beiden Rollen
 	 *
 	 * @Beschreibung
 	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>

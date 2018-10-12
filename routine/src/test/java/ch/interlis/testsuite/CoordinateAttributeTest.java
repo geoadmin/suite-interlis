@@ -30,7 +30,7 @@ public class CoordinateAttributeTest {
 	/**
 	 * @ID RCO.T01a
 	 *
-	 * @Bezeichnung COORD
+	 * @Bezeichnung Koordinaten
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob die Koordinaten vorhanden sind.
 	 *
@@ -52,7 +52,7 @@ public class CoordinateAttributeTest {
 	/**
 	 * @ID RCO.T02a
 	 *
-	 * @Bezeichnung COORD: Codierung
+	 * @Bezeichnung Koordinaten: Codierung
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob die Koordinaten den Codierungsregeln entsprechen.
 	 *
@@ -72,7 +72,7 @@ public class CoordinateAttributeTest {
 	/**
 	 * @ID RCO.T02b
 	 *
-	 * @Bezeichnung COORD: Codierung
+	 * @Bezeichnung Koordinaten: Codierung
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob die Koordinaten den Codierungsregeln entsprechen.
 	 *
@@ -94,7 +94,7 @@ public class CoordinateAttributeTest {
 	/**
 	 * @ID RCO.T03a
 	 *
-	 * @Bezeichnung COORD: Codierung
+	 * @Bezeichnung Koordinaten: Wertbereich
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob die Koordinaten der Definition im INTERLIS-Datenmodell entsprechen.
 	 *
@@ -114,7 +114,7 @@ public class CoordinateAttributeTest {
 	/**
 	 * @ID RCO.T03b
 	 *
-	 * @Bezeichnung COORD: Codierung
+	 * @Bezeichnung Koordinaten: Wertbereich
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob die Koordinaten der Definition im INTERLIS-Datenmodell entsprechen.
 	 *

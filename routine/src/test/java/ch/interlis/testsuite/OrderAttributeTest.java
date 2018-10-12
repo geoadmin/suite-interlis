@@ -29,7 +29,7 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T01a
 	 *
-	 * @Bezeichnung Reihenfolge - Klasseinstanzen
+	 * @Bezeichnung Reihenfolge: Klasseinstanzen
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer Klasse
 	 *
@@ -49,7 +49,7 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T01b
 	 *
-	 * @Bezeichnung Reihenfolge - Klasseinstanzen
+	 * @Bezeichnung Reihenfolge: Klasseinstanzen
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer Klasse
 	 *
@@ -69,7 +69,7 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T01c
 	 *
-	 * @Bezeichnung Reihenfolge - Klasseinstanzen
+	 * @Bezeichnung Reihenfolge: Klasseinstanzen
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer Klasse
 	 *
@@ -89,7 +89,7 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T02a
 	 *
-	 * @Bezeichnung Reihenfolge - Instanzen einer erweiterten Klasse
+	 * @Bezeichnung Reihenfolge: Instanzen einer erweiterten Klasse
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse
 	 *
@@ -109,7 +109,7 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T02b
 	 *
-	 * @Bezeichnung Reihenfolge - Instanzen einer erweiterten Klasse
+	 * @Bezeichnung Reihenfolge: Instanzen einer erweiterten Klasse
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse
 	 *
@@ -129,7 +129,7 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T03a
 	 *
-	 * @Bezeichnung Reihenfolge - Instanzen einer erweiterten Beziehungsklasse
+	 * @Bezeichnung Reihenfolge: Instanzen einer erweiterten Beziehungsklasse
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse
 	 *
@@ -149,7 +149,7 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T03b
 	 *
-	 * @Bezeichnung Reihenfolge - Instanzen einer erweiterten Beziehungsklasse
+	 * @Bezeichnung Reihenfolge: Instanzen einer erweiterten Beziehungsklasse
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse
 	 *
@@ -169,7 +169,7 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T03c
 	 *
-	 * @Bezeichnung Reihenfolge - Instanzen einer erweiterten Beziehungsklasse
+	 * @Bezeichnung Reihenfolge: Instanzen einer erweiterten Beziehungsklasse
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse
 	 *
@@ -185,11 +185,11 @@ public class OrderAttributeTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID RRiO.T03d
 	 *
-	 * @Bezeichnung Reihenfolge - Instanzen einer erweiterten Beziehungsklasse
+	 * @Bezeichnung Reihenfolge: Instanzen einer erweiterten Beziehungsklasse
 	 *
 	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse
 	 *

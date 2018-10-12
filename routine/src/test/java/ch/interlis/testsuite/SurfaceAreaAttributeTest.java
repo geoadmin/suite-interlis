@@ -28,7 +28,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T01a
 	 *
-	 * @Bezeichnung AREA
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: AREA
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob zwei Polygone der AREA-Definition entsprechen.
 	 *
@@ -48,11 +48,11 @@ public class SurfaceAreaAttributeTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID RSU.T01b
 	 *
-	 * @Bezeichnung AREA
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: AREA
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob zwei Polygone der AREA-Definition entsprechen.
 	 *
@@ -72,11 +72,11 @@ public class SurfaceAreaAttributeTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertTrue(ret);
 	}
-	
+
 	/**
 	 * @ID RSU.T01c
 	 *
-	 * @Bezeichnung AREA
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: AREA
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob zwei Polygone der AREA-Definition entsprechen.
 	 *
@@ -95,12 +95,12 @@ public class SurfaceAreaAttributeTest {
 		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T01c.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
-	}	
+	}
 
 	/**
 	 * @ID RSU.T02a
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -124,7 +124,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T02b
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -148,7 +148,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T03a
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -172,7 +172,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T03b
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -196,7 +196,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T04a
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -220,7 +220,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T04b
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -244,7 +244,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T05a
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -268,7 +268,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T05b
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -292,7 +292,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T06a
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -316,7 +316,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T06b
 	 *
-	 * @Bezeichnung Validität einer Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität einer Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität einer Geometrie prüfen
 	 *
@@ -340,7 +340,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T07a
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -364,7 +364,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T07b
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -388,7 +388,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T08a
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -412,7 +412,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T08b
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -436,7 +436,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T09a
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -460,7 +460,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T09b
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -484,7 +484,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T10a
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -508,7 +508,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T10b
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -532,7 +532,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T11a
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -556,7 +556,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T11b
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -580,7 +580,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T12a
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -604,7 +604,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T12b
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -628,7 +628,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T13a
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *
@@ -652,7 +652,7 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T13b
 	 *
-	 * @Bezeichnung Validität der Geometrie
+	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
 	 *
 	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
 	 *

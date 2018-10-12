@@ -28,7 +28,7 @@ public class StructureReferenceAttributeTest {
 	/**
 	 * @ID RStReA.T01a
 	 *
-	 * @Bezeichnung StructureValue
+	 * @Bezeichnung Struktur- und Referenzattribute: StructureValue
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob das Strukturattribut der StructureDef im INTERLIS-Datenmodell, bzw. den entsprechenden Codierungsregeln für den StructureValue, entspricht
 	 *
@@ -48,7 +48,7 @@ public class StructureReferenceAttributeTest {
 	/**
 	 * @ID RStReA.T01b
 	 *
-	 * @Bezeichnung StructureValue
+	 * @Bezeichnung Struktur- und Referenzattribute: StructureValue
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob das Strukturattribut der StructureDef im INTERLIS-Datenmodell, bzw. den entsprechenden Codierungsregeln für den StructureValue, entspricht
 	 *
@@ -64,11 +64,11 @@ public class StructureReferenceAttributeTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID RStReA.T01c
 	 *
-	 * @Bezeichnung StructureValue
+	 * @Bezeichnung Struktur- und Referenzattribute: StructureValue
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob das Strukturattribut der StructureDef im INTERLIS-Datenmodell, bzw. den entsprechenden Codierungsregeln für den StructureValue, entspricht
 	 *
@@ -88,7 +88,7 @@ public class StructureReferenceAttributeTest {
 	/**
 	 * @ID RStReA.T02a
 	 *
-	 * @Bezeichnung ReferenceAttribute
+	 * @Bezeichnung Struktur- und Referenzattribute: ReferenceAttribute
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob das Referenzattribut der Definition im INTERLIS-Datenmodell, bzw. den entsprechenden Codierungsregeln, entspricht
 	 *
@@ -108,7 +108,7 @@ public class StructureReferenceAttributeTest {
 	/**
 	 * @ID RStReA.T02b
 	 *
-	 * @Bezeichnung ReferenceAttribute
+	 * @Bezeichnung Struktur- und Referenzattribute: ReferenceAttribute
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob das Referenzattribut der Definition im INTERLIS-Datenmodell, bzw. den entsprechenden Codierungsregeln, entspricht
 	 *
@@ -128,7 +128,7 @@ public class StructureReferenceAttributeTest {
 	/**
 	 * @ID RStReA.T02c
 	 *
-	 * @Bezeichnung ReferenceAttribute
+	 * @Bezeichnung Struktur- und Referenzattribute: ReferenceAttribute
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob das Referenzattribut der Definition im INTERLIS-Datenmodell, bzw. den entsprechenden Codierungsregeln, entspricht
 	 *

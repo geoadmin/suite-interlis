@@ -3,8 +3,8 @@
 <TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
   <HEADERSECTION VERSION="2.3" SENDER="KOGIS">
     <MODELS>
-      <MODEL NAME="Roads" URI="http://www.kogis.ch" VERSION="2017-07-27"/>
-      <MODEL NAME="RoadsExt" URI="http://www.kogis.ch" VERSION="2017-07-27"/>
+      <MODEL NAME="Roads" URI="http://www.kogis.ch" VERSION="2018-10-10"/>
+      <MODEL NAME="RoadsExt" URI="http://www.kogis.ch" VERSION="2018-10-10"/>
     </MODELS>
   </HEADERSECTION>
   <DATASECTION>
