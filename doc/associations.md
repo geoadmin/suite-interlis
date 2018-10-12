@@ -126,7 +126,7 @@
 ###### Kardinalität - RKB.T05
 |ID|RKB.T05
 |:--|:--
-|**Bezeichnung**|**Kardinalität: ``{0..1} {1}``**
+|**Bezeichnung**|**Kardinalität: ``{0..*} {1}``**
 |**Beschreibung**|Die Tests müssen die Regeln für die Kardinalität der Beziehungen prüfen
 |**Testvoraussetzung**|[RKB.T05a.xtf](../data/RKB.T05a.xtf), [RKB.T05b.xtf](../data/RKB.T05b.xtf)
 |**Erwartetes Ergebnis**|<ul><li>RKB.T05a.xtf: Fehlermeldung. Falsches Einbetten</li><li>RKB.T05b.xtf: keine Fehlermeldung</li></ul>
