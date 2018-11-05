@@ -194,7 +194,7 @@ public class HeaderSectionTest {
 	/**
 	 * @ID RHE.T05a
 	 *
-	 * @Bezeichnung Vorspann: Attributwerte in NAME VERSION und URI
+	 * @Bezeichnung Vorspann: Attributwerte in NAME und VERSION
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob die Werte der Attribute NAME und VERSION im Sub-Tag MODEL der ModelDef im INTERLIS-Datenmodell entsprechen
 	 *
@@ -214,7 +214,7 @@ public class HeaderSectionTest {
 	/**
 	 * @ID RHE.T05b
 	 *
-	 * @Bezeichnung Vorspann: Attributwerte in NAME VERSION und URI
+	 * @Bezeichnung Vorspann: Attributwerte in NAME und VERSION
 	 *
 	 * @Beschreibung Der Test muss prüfen, ob die Werte der Attribute NAME und VERSION im Sub-Tag MODEL der ModelDef im INTERLIS-Datenmodell entsprechen
 	 *
