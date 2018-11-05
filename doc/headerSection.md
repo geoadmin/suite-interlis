@@ -48,9 +48,9 @@
 ###### Vorspann - RHE.T05
 |ID|RHE.T05
 |:--|:--
-|**Bezeichnung**|**Vorspann: Attributswerte in ```NAME```, ```VERSION``` und ```URI```**
-|**Beschreibung**|Die Tests müssen prüfen, ob die Werte der Attribute ```NAME```, ```VERSION``` und ```URI``` im Sub-Tag ```MODEL``` der ```ModelDef``` im INTERLIS-Datenmodell entsprechen
-|**Testvoraussetzung**|[RHE.T05a.xtf](../data/RHE.T05a.xtf), [RHE.T05b.xtf](../data/RHE.T05b.xtf), [RHE.T05c.xtf](../data/RHE.T05c.xtf)
+|**Bezeichnung**|**Vorspann: Attributswerte in ```NAME```, und ```VERSION```**
+|**Beschreibung**|Die Tests müssen prüfen, ob die Werte der Attribute ```NAME``` und ```VERSION``` im Sub-Tag ```MODEL``` der ```ModelDef``` im INTERLIS-Datenmodell entsprechen
+|**Testvoraussetzung**|[RHE.T05a.xtf](../data/RHE.T05a.xtf), [RHE.T05b.xtf](../data/RHE.T05b.xtf)
 |**Erwartetes Ergebnis**|<ul><li>RHE.T05a.xtf: Fehlermeldung. Wert in ```NAME``` stimmt nicht / Model ``TestSuite`` nicht vorhanden</li><li>RHE.T05b.xtf: Fehlermeldung. Wert in ```VERSION``` stimmt nicht</li></ul>
 |**Referenz**|[[1]] Kap. 3.3.4
 
