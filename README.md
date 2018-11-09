@@ -1,6 +1,6 @@
 # INTERLIS Test Suite
-Ziel der "INTERLIS Test Suite" ist die Mindestregeln für die Validierung von INTERLIS-Daten (Version 2.3) explizit aus dem [INTERLIS 2.3 Referenzhandbuch](https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_d.pdf) ableiten und Testfälle dazu definieren.
-Die Regeln und die Testfälle sind im Verzeichnis [doc](doc/README.md) gelistet: die Testdateien und die entsprechenden Modelle stehen im Verzeichnis [data](data) zur Verfügung.
-Zusätzlich wurde eine Testroutine entwickelt, um die Test Suite gegen die Tools ["ilivalidator"](https://www.interlis.ch/downloads/ilivalidator) und ["iG/Check"](https://www.interlis.ch/downloads/igcheck) auszuführen.
-- [Dokumentation](doc/README.md)
+The aim of the "INTERLIS Test Suite" is to explicitly derive from the [INTERLIS 2.3 Reference Manual](https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf) a minimum set of rules for the validation of INTERLIS data (version 2.3) and to define related test cases.
+The rules and the test cases are available in the directory [doc](doc/README.md): the test files and the corresponding models are available in the directory [data](data).
+In addition, a test routine has been developed to run the Test Suite against the tools ["ilivalidator"](https://www.interlis.ch/downloads/ilivalidator) and ["iG/Check"](https://www.interlis.ch/downloads/igcheck).
+- [Documentation](doc/README.md)
 - [Routine](routine)
