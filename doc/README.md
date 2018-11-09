@@ -8,7 +8,7 @@
   - [XML-Wohlgeformtheit](xml.md#xml-wohlgeformtheit)
   - [Zeichencodierung](charEncoding.md)
 * Struktur der Transferdatei
-  - [Transfer](transfer.md)
+  - [Transfer](transferStructure.md)
   - [Vorspann](headerSection.md)
 * Datenbereich
    - [Themen](topic.md)
