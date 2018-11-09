@@ -4,8 +4,8 @@
 
 * Allgemeine Regeln
   - [Objektidentifikation](identifiers.md)
-  - [XML-Wohlgeformtheit](xml.md)
   - [Vordefinierte XML-Regeln](xml.md#vordefinierte-xml-regeln)
+  - [XML-Wohlgeformtheit](xml.md#xml-wohlgeformtheit)
   - [Zeichencodierung](charEncoding.md)
 * Struktur der Transferdatei
   - [Transfer](transfer.md)
