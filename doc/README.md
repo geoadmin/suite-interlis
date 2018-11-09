@@ -8,7 +8,7 @@
   - [XML Well-Formedness](xml.md#xml-well-formedness)
   - [Symbol coding](charEncoding.md)
 * Structur of the transfer file
-  - [Transfer](transfer.md)
+  - [Transfer](transferStructure.md)
   - [Header section](headerSection.md)
 * Daten section
    - [Topic](topic.md)
