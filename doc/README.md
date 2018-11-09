@@ -1,31 +1,31 @@
-# Test Suite für XML-formatierte INTERLIS-Transferdateien (Version 2.3)
+# Test Suite for XML formatted INTERLIS transfer files (version 2.3)
 
-### Inhaltsverzeichnis
+### Table of contents
 
-* Allgemeine Regeln
-  - [Objektidentifikation](identifiers.md)
-  - [Vordefinierte XML-Regeln](xml.md#vordefinierte-xml-regeln)
-  - [XML-Wohlgeformtheit](xml.md#xml-wohlgeformtheit)
-  - [Zeichencodierung](charEncoding.md)
-* Struktur der Transferdatei
-  - [Transfer](transferStructure.md)
-  - [Vorspann](headerSection.md)
-* Datenbereich
-   - [Themen](topic.md)
-   - [Klassen](classes.md)
-   - [Beziehungen](associations.md#beziehungen)
-     - [Eingebettete Beziehungen](associations.md#eingebettete-beziehungen)
-     - [Nicht eingebettete Beziehungen](associations.md#nicht-eingebettete-beziehungen)
-     - [Kardinalität](associations.md#kardinalität)
-   - [Attribute](attributes.md#attribute)
-     - [Struktur- und Referenzattribute](attributes.md#struktur--und-referenzattribute)
-     - Geometrische Attribute
-       - [Koordinaten](attributes.md#geometrische-attribute-koordinaten)
-       - [Linienzüge](attributes.md#geometrische-attribute-linienzüge)
-       - [Einzelflächen und Gebietseinteilungen](attributes.md#geometrische-attribute-einzelflächen-und-gebietseinteilungen)
-     - [Kardinalität](attributes.md#kardinalität)
-     - Reihenfolge
-       - [Reihenfolge der Objekte im Datenbereich](order.md#reihenfolge-der-objekte-im-datenbereich)
-       - [Reihenfolge innerhalb der Klasseinstanzen](order.md#reihenfolge-innerhalb-der-klasseinstanzen)
-     - [Konsistenzbedingungen](constraints.md)
-* [Referenzen](bib.md)
+* General rules
+  - [Object identification](identifiers.md)
+  - [Predefined XML rules](xml.md#predefined-xml-rules)
+  - [XML Well-Formedness](xml.md#xml-well-formedness)
+  - [Symbol coding](charEncoding.md)
+* Structur of the transfer file
+  - [Transfer](transfer.md)
+  - [Header section](headerSection.md)
+* Daten section
+   - [Topic](topic.md)
+   - [Classes](classes.md)
+   - [Relationships](associations.md#relationships)
+     - [Embedded relationship](associations.md#embedded-relationship)
+     - [Non-embedded relationship](associations.md#non-embedded-relationship)
+     - [Cardinality](associations.md#cardinality)
+   - [Attributes](attributes.md#attributes)
+     - [Structur and reference attributes](attributes.md#structur-and-referenz-attributes)
+     - Geometric attributes
+       - [Coordinates](attributes.md#geometric-attributes-coordinates)
+       - [Line strings](attributes.md#geometric-attributes-line-strings)
+       - [Surfaces and tessellations](attributes.md#geometric-attributes-surfaces-and-tessellations)
+     - [Cardinality](attributes.md#cardinality)
+     - Order
+       - [Order of the objects within the data section](order.md#order-of-the-objects-within-the-data-section)
+       - [Order within class instances](order.md#order-within-class-instances)
+     - [Constraints](constraints.md)
+* [References](bib.md)
