@@ -1,4 +1,11 @@
-# XML-Wohlgeformtheit
+# XML
+
+## Vordefinierte XML-Regeln
+|ID|RVX
+|:--|:--
+|**Bezeichnung**|**Vordefinierte XML-Regeln**
+|**Beschreibung**|Es gelten die im [[1]] Kap. 3.3.1 vordefinierten Regeln
+|**Referenz**|[[1]] Kap. 3.3.1
 
 ## XML-Wohlgeformtheit
 |ID|RXW
