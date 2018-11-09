@@ -5,7 +5,7 @@
 * Allgemeine Regeln
   - [Objektidentifikation](identifiers.md)
   - [XML-Wohlgeformtheit](xml.md)
-  - [Vordefinierte XML-Regeln](#312-vordefinierte-xml-regeln)
+  - [Vordefinierte XML-Regeln](xml.md#vordefinierte-xml-regeln)
   - [Zeichencodierung](charEncoding.md)
 * Struktur der Transferdatei
   - [Transfer](transfer.md)
