@@ -82,7 +82,7 @@
 |**Referenz**|[[1]] Kap. 2.6, 2.8.4 und 3.3.11
 
 ###### Attribute - RAt.T09
-|ID|RAt.T10
+|ID|RAt.T09
 |:--|:--
 |**Bezeichnung**|**Attribute:** ```NumericType```
 |**Beschreibung**|Die Tests müssen prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für ```NumericType```, bzw. den entsprechenden Codierungsregeln, entspricht
