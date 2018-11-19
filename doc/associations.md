@@ -75,9 +75,10 @@
 |ID|RBk.T03
 |:--|:--
 |**Bezeichnung**|**Nicht Eingebettete Beziehungen: Kardinalität ``{0..*}`` bei beiden Rollen**
-|**Beschreibung**|Die Tests müssen die Regeln für das Einbetten der Beziehungen prüfen. *«…(d.h., wenn die Ziel-Klassen der beiden Rollen in einem anderen Topic definiert sind als die (Basis-)Assoziation, kann nicht eingebettet werden).»*
+|**Beschreibung**|Die Tests müssen die Regeln für das Einbetten der Beziehungen prüfen. *«Beziehungen werden immer eingebettet, ausser wenn bei beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist. ...»* [[1]] Kap. 3.3.9
 |**Testvoraussetzung**|[RBk.T03a.xtf](../data/RBk.T03a.xtf), [RBk.T03b.xtf](../data/RBk.T03b.xtf), [RBk.T03c.xtf](../data/RBk.T03c.xtf), [RBk.T03d.xtf](../data/RBk.T03d.xtf)
 |**Erwartetes Ergebnis**|<ul><li>RBk.T03a.xtf: keine Fehlermeldung</li><li>RBk.T03b.xtf: Fehlermeldung. Falsche Codierung</li><li>RBk.T03c.xtf: Fehlermeldung. Die Rollen der ``ASSOCIATION`` sind obligatorisch</li><li>RBk.T03d.xtf: Fehlermeldung. Doppeltes Beziehung mit gleichen Referenzen</li></ul>
+|**Referenz**|[[1]] Kap. 3.3.9
 
 ## Kardinalität
 |ID|RKB
