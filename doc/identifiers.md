@@ -1,4 +1,4 @@
-# Objektidentifikation
+# Object identification
 
 ```BID``` und ```TID``` werden als XML-ID codiert ([[1]] Kap. 3.3.6 und 3.3.7). Die EBNF-Regel für XML-ID ist ([[1]] Kap. 3.3.1):
 
