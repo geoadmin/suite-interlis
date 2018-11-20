@@ -56,7 +56,7 @@
 ###### Themen - RTO.T06
 |ID|RTO.T06
 |:--|:--
-|**Bezeichnung**|**Themen: : Behälter und importierte Modelle**
+|**Bezeichnung**|**Themen: Behälter und importierte Modelle**
 |**Beschreibung**|Die Tests müssen diejenigen Behälter prüfen, die auf Basis von importierten Modellen definiert worden sind
 |**Testvoraussetzung**|[RTO.T06a.xtf](../data/RTO.T06a.xtf), [RTO.T06b.xtf](../data/RTO.T06b.xtf), [RTO.T06c.xtf](../data/RTO.T06c.xtf)
 |**Erwartetes Ergebnis**|<ul><li>RTO.T06a.xtf: keine Fehlermeldung</li><li>RTO.T06b.xtf: keine Fehlermeldung</li><li>RTO.T06c.xtf: Fehlermeldung. Wegen der ASSOCIATION müssen die Daten in einem einzigen Basket transferiert werden</li></ul>
