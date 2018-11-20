@@ -208,7 +208,7 @@
 |**Beschreibung**|Die Tests müssen die Toleranz prüfen ([[1]] Kap. 2.8.12.2, Regel ```WITHOUT OVERLAPS > 1;```)
 |**Testvoraussetzung**|[RPO.T03a.xtf](../data/RPO.T03a.xtf), [RPO.T03b.xtf](../data/RPO.T03b.xtf)
 |**Beispiel**|<p align="center"><img src="img/rpo.t03.png" title="RPO.T03"><br/>```POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord WITHOUT OVERLAPS > 0.10;```
-|**Erwartetes Ergebnis**|<ul><li>RPO.T01a.xtf: keine Fehlermeldung</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RPO.T03a.xtf: keine Fehlermeldung. Pfeilhöhe kleiner als im INTERLIS-Datenmodell definiert</li><li>RPO.T03b.xtf: Fehlermeldung. Pfeilhöhe grösser als im INTERLIS-Datenmodell definiert</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.12 und 3.3.11.12
 
 ## Geometrische Attribute: Einzelflächen und Gebietseinteilungen
