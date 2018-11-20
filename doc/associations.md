@@ -1,135 +1,136 @@
-# Datenbereich: Beziehungen
+# Data section: Relationships
 
-## Beziehungen
+## Relationships
 |ID|RBe
 |:--|:--
-|**Bezeichnung**|**Beziehungen**
-|**Beschreibung**|Für die Validierung der Beziehungen gelten allgemein die im [[1]] Kap. 3.3.9 definierten Regeln
-|**Referenz**|[[1]] Kap. 3.3.9
+|**Designation**|**Relationships**
+|**Description**|For the validation of relationships, the general rules defined in [[1]] Chap. 3.3.9 apply
+|**Reference**|[[1]] Chap. 3.3.9
 
-### Testfälle
-###### Beziehungen - RBe.T01
+### Test cases
+###### Relationships - RBe.T01
 |ID|RBe.T01
 |:--|:--
-|**Bezeichnung**|**Beziehungen: Referenzen**
-|**Beschreibung**|Die Tests müssen prüfen, dass bei externen Rollen die Referenzen zusätzlich mit einem XML-Attribut ```BID``` codiert werden. *«Zeigt die Referenz auf ein Objekt in einem anderen Behälter (im gleichen Transfer oder sogar ausserhalb), wird die Referenz zusätzlich mit BID codiert. In BID wird dabei die Behälteridentifikation des referenzierten Objekts eingetragen.»*
-|**Testvoraussetzung**|[RBe.T01a.xtf](../data/RBe.T01a.xtf), [RBe.T01b.xtf](../data/RBe.T01b.xtf), [RBe.T01c.xtf](../data/RBe.T01c.xtf), [RBe.T01d.xtf](../data/RBe.T01d.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RBe.T01a.xtf: keine Fehlermeldung</li><li>RBe.T01b.xtf: Fehlermeldung. ```BID``` nicht vorhanden</li><li>RBe.T01c.xtf: keine Fehlermeldung.</li><li>RBe.T01d.xtf: Fehlermeldung. ```BID``` nicht vorhanden</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.9.2
+|**Designation**|**Relationships: References**
+|**Description**|The tests check that the references to external Roles are additionally encoded with an XML Attribute ```BID```. *«If the reference points to an object in a different basket (within the same transfer or even elsewhere), the reference will be further coded with BID, thereby entering the basket identification of the object which has been referenced in BID.»* ([[1]] Chap. 3.3.9.2)
+|**Test requirement**|[RBe.T01a.xtf](../data/RBe.T01a.xtf), [RBe.T01b.xtf](../data/RBe.T01b.xtf), [RBe.T01c.xtf](../data/RBe.T01c.xtf), [RBe.T01d.xtf](../data/RBe.T01d.xtf)
+|**Expected result**|<ul><li>RBe.T01a.xtf: no error message</li><li>RBe.T01b.xtf: error message. ```BID``` not available</li><li>RBe.T01c.xtf: no error message.</li><li>RBe.T01d.xtf: error message. ```BID``` not available</li></ul>
+|**Reference**|[[1]] Chap. 3.3.9.2
 
-## Eingebettete Beziehungen
+## Embedded relationships
 |ID|REB
 |:--|:--
-|**Bezeichnung**|**Eingebettete Beziehungen**
-|**Beschreibung**|Für die Validierung einer eingebetteten Beziehung gelten die im [[1]] Kap. 3.3.9.1 definierten Regeln
-|**Details**|<ul><li>Der Wert ```%RoleName%``` muss der ```RolDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entsprechen</li><li>Zeigt die Referenz auf ein Objekt im gleichen Behälter, wird die Referenz mit ```REF``` codiert. Zeigt die Referenz auf ein Objekt in einem anderen Behälter (im gleichen Transfer oder sogar ausserhalb), muss zusätzlich eine ```BID``` zur Verfügung stehen</li><li>Es muss geprüft werden, ob die referenzierte Objektinstanz existiert und der ```RolDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entspricht</li></ul>
-|**Referenz**|[[1]] Kap. 2.7.1 und 3.3.9.1
+|**Designation**|**Embedded relationships**
+|**Description**|For the validation of embedded relationships, the rules defined in [[1]] Chap. 3.3.9.1 apply
+|**Details**|<ul><li>The value ```%RoleName%``` must satisfy the ```RolDef``` ([[1]] Chap. 2.7.1) in the INTERLIS data model</li><li>If the reference points to an object in the same basket, the reference is encoded with ```REF```. If the reference points to an object in another basket (in the same transfer or even outside), a BID must be additionally provided</li><li>It must be checked whether the referenced object instance exists and satisfies the ```RolDef``` ([[1]] Chap. 2.7.1) in the INTERLIS data model</li></ul>
+|**Reference**|[[1]] Chap. 2.7.1 and 3.3.9.1
 
-### Testfälle
-###### Eingebettete Beziehungen - REB.T01
+### Test cases
+###### Embedded relationships - REB.T01
 |ID|REB.T01
 |:--|:--
-|**Bezeichnung**|**Eingebettete Beziehungen: Kardinalität ``{0..1}`` bei beiden Rollen**
-|**Beschreibung**|Die Tests müssen die Regeln für das Einbetten der Beziehungen prüfen. *«Falls bei beiden (Basis-)Rollen die maximale Kardinalität kleiner gleich 1 ist, wird bei der Ziel-Klasse der zweiten Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation und die Ziel-Klasse der ersten Rolle im selben Topic definiert ist wie die (Basis-)Assoziation, wird bei der Ziel-Klasse der ersten Rolle eingebettet…»*
-|**Testvoraussetzung**|[REB.T01a.xtf](../data/REB.T01a.xtf), [REB.T01b.xtf](../data/REB.T01b.xtf), [REB.T01c.xtf](../data/REB.T01c.xtf)
-|**Erwartetes Ergebnis**|<ul><li>REB.T01a.xtf: keine Fehlermeldung</li><li>REB.T01b.xtf: Fehlermeldung. Falsche Codierung</li><li>REB.T01c.xtf: keine Fehlermeldung</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.9
+|**Designation**|**Embedded relationships: cardinality ``{0..1}`` at both roles**
+|**Description**|The tests must check the rules for the embedding of relationships. *«If with both (basic) roles maximum cardinality is smaller or equal 1, the embedding takes place with the target class of the second role. If this target class has been defined in a different topic than the (basic) association and the target class of the first role has been defined in the same topic as the (basic) association, embedding will take place with the target class of the first role …»* [[1]] Chap. 3.3.9
+|**Test requirement**|[REB.T01a.xtf](../data/REB.T01a.xtf), [REB.T01b.xtf](../data/REB.T01b.xtf), [REB.T01c.xtf](../data/REB.T01c.xtf)
+|**Expected result**|<ul><li>REB.T01a.xtf: no error message</li><li>REB.T01b.xtf: error message. Wrong encoding</li><li>REB.T01c.xtf: no error message</li></ul>
+|**Reference**|[[1]] Chap. 3.3.9
 
-###### Eingebettete Beziehungen - REB.T02
+###### Embedded relationships - REB.T02
 |ID|REB.T02
 |:--|:--
-|**Bezeichnung**|**Eingebettete Beziehungen: Kardinalität ``{0..}`` bei einer der Rolle**
-|**Beschreibung**|Die Tests müssen die Regeln für das Einbetten der Beziehungen prüfen. *«Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet…»*
-|**Testvoraussetzung**|[REB.T02a.xtf](../data/REB.T02a.xtf), [REB.T02b.xtf](../data/REB.T02b.xtf), [REB.T02c.xtf](../data/REB.T02c.xtf)
-|**Erwartetes Ergebnis**|<ul><li>REB.T02a.xtf: keine Fehlermeldung</li><li>REB.T02b.xtf: Fehlermeldung. Falsche Codierung</li><li>REB.T02c.xtf: Fehlermeldung. Attribut ```Status``` ist obligatorisch</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.9
+|**Designation**|**Embedded relationships: cardinality ``{0..*}`` at one of the role**
+|**Description**|The tests must check the rules for the embedding of relationships. *«If maximum cardinality is greater than 1 in one of the two (basic) roles, the embedding takes place with the target class of this role …»* [[1]] Chap. 3.3.9
+|**Test requirement**|[REB.T02a.xtf](../data/REB.T02a.xtf), [REB.T02b.xtf](../data/REB.T02b.xtf), [REB.T02c.xtf](../data/REB.T02c.xtf)
+|**Expected result**|<ul><li>REB.T02a.xtf: no error message</li><li>REB.T02b.xtf: error message. Wrong encoding</li><li>REB.T02c.xtf: error message. Attribute ```Status``` is mandatory</li></ul>
+|**Reference**|[[1]] Chap. 3.3.9
 
-## Nicht eingebettete Beziehungen
+## Non-embedded relationships
 |ID|RBk
 |:--|:--
-|**Bezeichnung**|**Nicht Eingebettete Beziehungen: Beziehungsklassen**
-|**Beschreibung**|Für die Validierung der Instanzen einer Beziehungsklasse gelten die im [[1]] Kap. 3.3.7 für das Element ```Link``` und im [[1]] Kap. 3.3.9.2 definierten Regeln
-|**Details**|<ul><li>Der Wert ```%Model.Topic.Association%``` muss der ```AssociationDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entsprechen. Für Beziehungen ohne expliziten Namen wird der Name durch das Zusammenhängen der einzelnen Rollennamen gebildet (```%RoleName1RoleName2%```) ([[1]] Kap. 3.3.9.2)</li><li>Instanzen von ```Link``` haben nur eine Transferidentifikation, wenn diese im Rahmen der ```AssociationDef``` mit der Property ```OID``` gefordert wurde ([[1]] Kap. 2.7.1)</li><li>Der Wert ```%RoleName%``` muss der ```RolDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entsprechen</li><li>Zeigt die Referenz auf ein Objekt im gleichen Behälter, wird die Referenz mit ```REF``` codiert. Zeigt die Referenz auf ein Objekt in einem anderen Behälter (im gleichen Transfer oder sogar ausserhalb), muss zusätzlich eine ```BID``` zur Verfügung stehen</li><li>Es muss geprüft werden, ob die referenzierten Objektinstanzen existieren und der ```RolDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entsprechen</li></ul>
-|**Referenz**|[[1]] Kap. 2.7.1, 3.3.7 und 3.3.9.2
+|**Designation**|**Non-embedded relationships: association classes**
+|**Description**|For the validation of instances of association classes, the rules defined in [[1]] Chap. 3.3.7 for the element ```Link``` and in [[1]] Chap. 3.3.9.2 apply
+|**Details**|<ul><li>The value ```%Model.Topic.Association%``` must satisfy the ```AssociationDef``` ([[1]] Chap. 2.7.1) in the INTERLIS data model. For relationships without explicit names, the (class) name is given by combining the individual role names (```%RoleName1RoleName2%```) ([[1]] Chap. 3.3.9.2)</li><li>Instances of ```Link``` only have a transfer identification if this has been set in the ```AssociationDef``` by means of the property ```OID``` ([[1]] Chap. 2.7.1)</li><li>The value ```%RoleName%``` must satisfy the ```RolDef``` ([[1]] Chap. 2.7.1) in the INTERLIS data model</li><li>If the reference points to an object in the same basket, the reference is encoded with ```REF```. If the reference points to an object in another basket (in the same transfer or even outside), a BID must be additionally provided</li><li>It must be checked whether the referenced object instance exists and satifies to the ```RolDef``` ([[1]] Chap. 2.7.1) in the INTERLIS data model</li></ul>
+|**Reference**|[[1]] Chap. 2.7.1, 3.3.7 and 3.3.9.2
 
-### Testfälle
-###### Nicht eingebettete Beziehungen - RBk.T01
+### Test cases
+###### Non-embedded relationships - RBk.T01
 |ID|RBk.T01
 |:--|:--
-|**Bezeichnung**|**Nicht Eingebettete Beziehungen: Kardinalität ``{0..}`` bei der Rolle EXTERNAL**
-|**Beschreibung**|Die Tests müssen die Regeln für das Einbetten der Beziehungen prüfen. *«Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation, kann nicht eingebettet werden…»*
-|**Testvoraussetzung**|[RBk.T01a.xtf](../data/RBk.T01a.xtf), [RBk.T01b.xtf](../data/RBk.T01b.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RBk.T01a.xtf: Fehlermeldung. Falsche Codierung</li><li>RBk.T01b.xtf: keine Fehlermeldung</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.9
+|**Designation**|**Non-embedded relationships: cardinality ``{0..}`` at the role EXTERNAL**
+|**Description**|The tests must check the rules for the embedding of relationships. *«If maximum cardinality is greater than 1 in one of the two (basic) roles, the embedding takes place with the target class of this role. If this target class has been defined within a different topic than the (basic) association, then no embedding can take place …»* [[1]] Chap. 3.3.9
+|**Test requirement**|[RBk.T01a.xtf](../data/RBk.T01a.xtf), [RBk.T01b.xtf](../data/RBk.T01b.xtf)
+|**Expected result**|<ul><li>RBk.T01a.xtf: error message. Wrong encoding</li><li>RBk.T01b.xtf: no error message</li></ul>
+|**Reference**|[[1]] Chap. 3.3.9
 
-###### Nicht eingebettete Beziehungen - RBk.T02
+###### Non-embedded relationships - RBk.T02
 |ID|RBk.T02
 |:--|:--
-|**Bezeichnung**|**Nicht Eingebettete Beziehungen: Kardinalität ``{0..1}`` bei beiden Rollen EXTERNAL**
-|**Beschreibung**|Die Tests müssen die Regeln für das Einbetten der Beziehungen prüfen. *«…(d.h., wenn die Ziel-Klassen der beiden Rollen in einem anderen Topic definiert sind als die (Basis-)Assoziation, kann nicht eingebettet werden).»*
-|**Testvoraussetzung**|[RBk.T02a.xtf](../data/RBk.T02a.xtf), [RBk.T02b.xtf](../data/RBk.T02b.xtf),
-|**Erwartetes Ergebnis**|<ul><li>RBk.T02a.xtf: keine Fehlermeldung</li><li>RBk.T02b.xtf: Fehlermeldung. Falsche Codierung</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.9
+|**Designation**|**Non-embedded relationships: cardinality ``{0..1}`` at both roles EXTERNAL**
+|**Description**|The tests must check the rules for the embedding of relationships. *«…(in other words: if the target classes of both roles have been defined in a different topic than the (basic) association, no embedding can take place).»* [[1]] Chap. 3.3.9
+|**Test requirement**|[RBk.T02a.xtf](../data/RBk.T02a.xtf), [RBk.T02b.xtf](../data/RBk.T02b.xtf),
+|**Expected result**|<ul><li>RBk.T02a.xtf: no error message</li><li>RBk.T02b.xtf: error message. Wrong encoding</li></ul>
+|**Reference**|[[1]] Chap. 3.3.9
 
-###### Nicht eingebettete Beziehungen - RBk.T03
+###### Non-embedded relationships - RBk.T03
 |ID|RBk.T03
 |:--|:--
-|**Bezeichnung**|**Nicht Eingebettete Beziehungen: Kardinalität ``{0..*}`` bei beiden Rollen**
-|**Beschreibung**|Die Tests müssen die Regeln für das Einbetten der Beziehungen prüfen. *«…(d.h., wenn die Ziel-Klassen der beiden Rollen in einem anderen Topic definiert sind als die (Basis-)Assoziation, kann nicht eingebettet werden).»*
-|**Testvoraussetzung**|[RBk.T03a.xtf](../data/RBk.T03a.xtf), [RBk.T03b.xtf](../data/RBk.T03b.xtf), [RBk.T03c.xtf](../data/RBk.T03c.xtf), [RBk.T03d.xtf](../data/RBk.T03d.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RBk.T03a.xtf: keine Fehlermeldung</li><li>RBk.T03b.xtf: Fehlermeldung. Falsche Codierung</li><li>RBk.T03c.xtf: Fehlermeldung. Die Rollen der ``ASSOCIATION`` sind obligatorisch</li><li>RBk.T03d.xtf: Fehlermeldung. Doppeltes Beziehung mit gleichen Referenzen</li></ul>
+|**Designation**|**Non-embedded relationships: cardinality ``{0..*}`` at both roles**
+|**Description**|The tests must check the rules for the embedding of relationships. *«Relationships are always embedded, unless ... maximum cardinality is greater than 1 for both (basic) roles or ...»* [[1]] Chap. 3.3.9
+|**Test requirement**|[RBk.T03a.xtf](../data/RBk.T03a.xtf), [RBk.T03b.xtf](../data/RBk.T03b.xtf), [RBk.T03c.xtf](../data/RBk.T03c.xtf), [RBk.T03d.xtf](../data/RBk.T03d.xtf)
+|**Expected result**|<ul><li>RBk.T03a.xtf: no error message</li><li>RBk.T03b.xtf: error message. Wrong encoding</li><li>RBk.T03c.xtf: error message. The roles of the ``ASSOCIATION`` are mandatory</li><li>RBk.T03d.xtf: error message. Double relationship with the same references</li></ul>
+|**Reference**|[[1]] Chap. 3.3.9
 
-## Kardinalität
+## Cardinality
 |ID|RKB
 |:--|:--
-|**Bezeichnung**|**Kardinalität in Beziehungen**
-|**Beschreibung**|Für die Validierung der Kardinalität, muss die Anzahl der nötigen/erlaubten in Beziehung stehenden Objekte der ```RolDef``` ([[1]] Kap. 2.7.1) im INTERLIS-Datenmodell entsprechen
-|**Details**|<ul><li>Es gelten zusätzlich die im [[1]] Kap. 2.7.3 definierten Regeln</li></ul>
-|**Referenz**|[[1]] Kap. 2.7.1 und 2.7.3
+|**Designation**|**Relationships cardinality**
+|**Description**|For the validation of the cardinality, the number of necessary/allowed related objects must satisfy the ```RolDef``` ([[1]] Chap. 2.7.1) in the INTERLIS data model
+|**Details**|<ul><li>The rules defined in [[1]] Chap. 2.7.3 apply additionally</li></ul>
+|**Reference**|[[1]] Chap. 2.7.1 und 2.7.3
 
-###### Kardinalität - RKB.T01
+###### Cardinality - RKB.T01
 |ID|RKB.T01
 |:--|:--
-|**Bezeichnung**|**Kardinalität: ``{1}`` bei beiden Rollen**
-|**Beschreibung**|Die Tests müssen die Regeln für die Kardinalität der Beziehungen prüfen
-|**Testvoraussetzung**|[RKB.T01a.xtf](../data/RKB.T01a.xtf), [RKB.T01b.xtf](../data/RKB.T01b.xtf), [RKB.T01c.xtf](../data/RKB.T01c.xtf), [RKB.T01d.xtf](../data/RKB.T01d.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RKB.T01a.xtf: keine Fehlermeldung</li><li>RKB.T01b.xtf: Fehlermeldung. Fehlende Rolle (```RolleA``` in ```Klasse B```)</li><li>RKB.T01c.xtf: Fehlermeldung. Zwei Instanzen von ```B``` verweisen auf die gleiche Instanz von ```A```</li><li>RKB.T01d.xtf: Fehlermeldung. Alle Instanzen von ```A``` müssen referenziert werden</li></ul>
-|**Referenz**|[[1]] Kap. 2.7.1 und 2.7.3
+|**Designation**|**Cardinality: ``{1}`` at both roles**
+|**Description**|The tests must check the rules for the cardinality of relationships
+|**Test requirement**|[RKB.T01a.xtf](../data/RKB.T01a.xtf), [RKB.T01b.xtf](../data/RKB.T01b.xtf), [RKB.T01c.xtf](../data/RKB.T01c.xtf), [RKB.T01d.xtf](../data/RKB.T01d.xtf)
+|**Expected result**|<ul><li>RKB.T01a.xtf: no error message</li><li>RKB.T01b.xtf: error message. Missing role (```RolleA``` in ```Klasse B```)</li><li>RKB.T01c.xtf: error message. Two instances of ```B``` refer to the same instance of ```A```</li><li>RKB.T01d.xtf: error message. All instances of ```A``` must be referenced</li></ul>
+|**Reference**|[[1]] Chap. 2.7.1 und 2.7.3
 
-###### Kardinalität - RKB.T02
+###### Cardinality - RKB.T02
 |ID|RKB.T02
 |:--|:--
-|**Bezeichnung**|**Kardinalität: ``{0..1} {1}``**
-|**Beschreibung**|Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
-|**Testvoraussetzung**|[RKB.T02a.xtf](../data/RKB.T02a.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RKB.T02a.xtf: keine Fehlermeldung</li></ul>
-|**Referenz**|[[1]] Kap. 2.7.1 und 2.7.3
+|**Designation**|**Cardinality: ``{0..1} {1}``**
+|**Description**|The tests must check the rules for the cardinality of relationships
+|**Test requirement**|[RKB.T02a.xtf](../data/RKB.T02a.xtf)
+|**Expected result**|<ul><li>RKB.T02a.xtf: no error message</li></ul>
+|**Reference**|[[1]] Chap. 2.7.1 und 2.7.3
 
-###### Kardinalität - RKB.T03
+###### Cardinality - RKB.T03
 |ID|RKB.T03
 |:--|:--
-|**Bezeichnung**|**Kardinalität: ``{0..1} {0..1}``**
-|**Beschreibung**|Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
-|**Testvoraussetzung**|[RKB.T03a.xtf](../data/RKB.T03a.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RKB.T03a.xtf: keine Fehlermeldung</li></ul>
-|**Referenz**|[[1]] Kap. 2.7.1 und 2.7.3
+|**Designation**|**Cardinality: ``{0..1} {0..1}``**
+|**Description**|The tests must check the rules for the cardinality of relationships
+|**Test requirement**|[RKB.T03a.xtf](../data/RKB.T03a.xtf)
+|**Expected result**|<ul><li>RKB.T03a.xtf: no error message</li></ul>
+|**Reference**|[[1]] Chap. 2.7.1 und 2.7.3
 
-###### Kardinalität - RKB.T04
+###### Cardinality - RKB.T04
 |ID|RKB.T04
 |:--|:--
-|**Bezeichnung**|**Kardinalität: ``{1} {0..*}``**
-|**Beschreibung**|Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
-|**Testvoraussetzung**|[RKB.T04a.xtf](../data/RKB.T04a.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RKB.T04a.xtf: keine Fehlermeldung</li></ul>
-|**Referenz**|[[1]] Kap. 2.7.1 und 2.7.3
+|**Designation**|**Cardinality: ``{1} {0..*}``**
+|**Description**|The tests must check the rules for the cardinality of relationships
+|**Test requirement**|[RKB.T04a.xtf](../data/RKB.T04a.xtf)
+|**Expected result**|<ul><li>RKB.T04a.xtf: no error message</li></ul>
+|**Reference**|[[1]] Chap. 2.7.1 und 2.7.3
 
-###### Kardinalität - RKB.T05
+###### Cardinality - RKB.T05
 |ID|RKB.T05
 |:--|:--
-|**Bezeichnung**|**Kardinalität: ``{0..*} {1}``**
-|**Beschreibung**|Die Tests müssen die Regeln für die Kardinalität der Beziehungen prüfen
-|**Testvoraussetzung**|[RKB.T05a.xtf](../data/RKB.T05a.xtf), [RKB.T05b.xtf](../data/RKB.T05b.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RKB.T05a.xtf: Fehlermeldung. Falsches Einbetten</li><li>RKB.T05b.xtf: keine Fehlermeldung</li></ul>
-|**Referenz**|[[1]] Kap. 2.7.1 und 2.7.3
+|**Designation**|**Cardinality: ``{0..*} {1}``**
+|**Description**|The tests must check the rules for the cardinality of relationships
+|**Test requirement**|[RKB.T05a.xtf](../data/RKB.T05a.xtf), [RKB.T05b.xtf](../data/RKB.T05b.xtf)
+|**Expected result**|<ul><li>RKB.T05a.xtf: error message. Wrong embedding</li><li>RKB.T05b.xtf: no error message</li></ul>
+|**Reference**|[[1]] Chap. 2.7.1 und 2.7.3
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[1]: bib.md#1-cogis-interlis-version-2--reference-manual-13042006
