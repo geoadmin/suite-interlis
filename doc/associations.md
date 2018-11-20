@@ -56,7 +56,7 @@
 ###### Nicht eingebettete Beziehungen - RBk.T01
 |ID|RBk.T01
 |:--|:--
-|**Bezeichnung**|**Nicht Eingebettete Beziehungen: Kardinalität ``{0..}`` bei der Rolle EXTERNAL**
+|**Bezeichnung**|**Nicht Eingebettete Beziehungen: Kardinalität ``{0..*}`` bei der Rolle EXTERNAL**
 |**Beschreibung**|Die Tests müssen die Regeln für das Einbetten der Beziehungen prüfen. *«Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation, kann nicht eingebettet werden…»*
 |**Testvoraussetzung**|[RBk.T01a.xtf](../data/RBk.T01a.xtf), [RBk.T01b.xtf](../data/RBk.T01b.xtf)
 |**Erwartetes Ergebnis**|<ul><li>RBk.T01a.xtf: Fehlermeldung. Falsche Codierung</li><li>RBk.T01b.xtf: keine Fehlermeldung</li></ul>
