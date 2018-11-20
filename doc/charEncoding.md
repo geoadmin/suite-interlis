@@ -4,7 +4,7 @@
 |ID|RZe
 |:--|:--
 |**Bezeichnung**|**Zeichencodierung**
-|**Beschreibung**|Für die Codierung von XML-String bzw. XML-NormalizedString gelten die im [[1]] Kap. 3.3.1, Chap. 3.3.2 und Anhang B definierten Regeln
+|**Beschreibung**|Für die Codierung von XML-String bzw. XML-NormalizedString gelten die im [[1]] Kap. 3.3.1, Kap. 3.3.2 und Anhang B definierten Regeln
 |**Referenz**|[[1]] Kap. 3.3.1, 3.3.2 und Anhang B
 
 ### Testfälle
