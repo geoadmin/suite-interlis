@@ -56,7 +56,7 @@
 ###### Non-embedded relationships - RBk.T01
 |ID|RBk.T01
 |:--|:--
-|**Designation**|**Non-embedded relationships: cardinality ``{0..}`` at the role EXTERNAL**
+|**Designation**|**Non-embedded relationships: cardinality ``{0..*}`` at the role EXTERNAL**
 |**Description**|The tests must check the rules for the embedding of relationships. *«If maximum cardinality is greater than 1 in one of the two (basic) roles, the embedding takes place with the target class of this role. If this target class has been defined within a different topic than the (basic) association, then no embedding can take place …»* [[1]] Chap. 3.3.9
 |**Test requirement**|[RBk.T01a.xtf](../data/RBk.T01a.xtf), [RBk.T01b.xtf](../data/RBk.T01b.xtf)
 |**Expected result**|<ul><li>RBk.T01a.xtf: error message. Wrong encoding</li><li>RBk.T01b.xtf: no error message</li></ul>
