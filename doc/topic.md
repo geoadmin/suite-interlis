@@ -13,7 +13,7 @@
 |ID|RTO.T01
 |:--|:--
 |**Bezeichnung**|**Themen:** ```TopicDef```
-|**Beschreibung**|Die Tests müssen prüfen, ob der Wert ```%Model.Topic%``` den Definitionen im INTERLIS-Datenmodell
+|**Beschreibung**|Die Tests müssen prüfen, ob der Wert ```%Model.Topic%``` den Definitionen im INTERLIS-Datenmodell entspricht
 |**Testvoraussetzung**|[RTO.T01a.xtf](../data/RTO.T01a.xtf)
 |**Erwartetes Ergebnis**|<ul><li>RTO.T01a.xtf: Fehlermeldung. Wert ```%Topic%``` stimmt nicht</li></ul>
 |**Referenz**|[[1]] Kap. 2.5.1, 3.3.4 und 3.3.6</td>
