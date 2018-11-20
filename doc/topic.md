@@ -24,13 +24,13 @@
 |**Bezeichnung**|**Themen:** ```BID```
 |**Beschreibung**|Die Tests müssen prüfen, ob die ```BID``` vorhanden ist und der richtigen Codierung entspricht
 |**Testvoraussetzung**|[RTO.T02a.xtf](../data/RTO.T02a.xtf), [RTO.T02b.xtf](../data/RTO.T02b.xtf), [RTO.T02c.xtf](../data/RTO.T02c.xtf), [RTO.T02d.xtf](../data/RTO.T02d.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RTO.T02a.xtf: Fehlermeldung. ```BID``` nicht vorhanden</li><li>RTO.T02b.xtf: Fehlermeldung. ```BID``` leer</li><li>RTO.T02c.xtf: Fehlermeldung. Die ```BID``` wird als XML-ID *à la INTERLIS* codiert. Erstes Zeichen muss Buchstabe, Ziffer oder Unterstrich sein</li><li>RTO.T02d.xtf: Fehlermeldung. Zeichen mit Umlaut sind nicht zulässig)</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RTO.T02a.xtf: Fehlermeldung. ```BID``` nicht vorhanden</li><li>RTO.T02b.xtf: Fehlermeldung. ```BID``` leer</li><li>RTO.T02c.xtf: Fehlermeldung. Die ```BID``` wird als XML-ID *à la INTERLIS* codiert. Erstes Zeichen muss Buchstabe, Ziffer oder Unterstrich sein</li><li>RTO.T02d.xtf: Fehlermeldung. Zeichen mit Umlaut sind nicht zulässig</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.9 und 3.3.1<br/>[Objektidentifikation](identifiers.md)
 
 ###### Themen - RTO.T03
 |ID|RTO.T03
 |:--|:--
-|**Bezeichnung**|**Themen:** ```BID``` *und* ```TID```
+|**Bezeichnung**|**Themen:** ```BID``` **und** ```TID```
 |**Beschreibung**|Die Tests müssen prüfen, ob alle ```BID``` inkl. alle ```TID``` innerhalb des Transfers eindeutig sind
 |**Testvoraussetzung**|[RTO.T03a.xtf](../data/RTO.T03a.xtf), [RTO.T03b.xtf](../data/RTO.T03b.xtf)
 |**Erwartetes Ergebnis**|<ul><li>RTO.T03a.xtf: Fehlermeldung. Doppelte ```BID```</li><li>RTO.T03b.xtf: Fehlermeldung. Gleicher Wert der ```BID``` und ```TID```</li></ul>
