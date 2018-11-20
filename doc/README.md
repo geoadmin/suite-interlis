@@ -18,14 +18,14 @@
      - [Non-embedded relationship](associations.md#non-embedded-relationship)
      - [Cardinality](associations.md#cardinality)
    - [Attributes](attributes.md#attributes)
-     - [Structur and reference attributes](attributes.md#structur-and-referenz-attributes)
+     - [Structure and reference attributes](attributes.md#structure-and-reference-attributes)
      - Geometric attributes
        - [Coordinates](attributes.md#geometric-attributes-coordinates)
        - [Line strings](attributes.md#geometric-attributes-line-strings)
        - [Surfaces and tessellations](attributes.md#geometric-attributes-surfaces-and-tessellations)
      - [Cardinality](attributes.md#cardinality)
      - Order
-       - [Order of the objects within the data section](order.md#order-of-the-objects-within-the-data-section)
+       - [Order of objects within the data section](order.md#order-of-objects-within-the-data-section)
        - [Order within class instances](order.md#order-within-class-instances)
      - [Constraints](constraints.md)
 * [References](bib.md)
