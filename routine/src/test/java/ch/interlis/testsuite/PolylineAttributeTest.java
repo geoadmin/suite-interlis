@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Datenbereich: Linienzüge
+ * Tests Data section: Line strings
  */
 public class PolylineAttributeTest {
 	private final Logger logger = LoggerFactory.getLogger(PolylineAttributeTest.class);
@@ -29,17 +29,17 @@ public class PolylineAttributeTest {
 	/**
 	 * @ID RPO.T01a
 	 *
-	 * @Bezeichnung Linienzüge: POLYLINE
+	 * @Designation Line strings: POLYLINE
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Validität eines Linienzugs prüfen</p>
+	 * @Description
+	 * <p>The tests must check the validity of a polyline</p>
 	 * <code>POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord;</code>
 	 *
-	 * @Testvoraussetzung RPO.T01a.xtf
+	 * @Test-requirement RPO.T01a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.12 und 3.3.11.12
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.12 and 3.3.11.12
 	 *
 	 * <p>
 	 *
@@ -55,17 +55,17 @@ public class PolylineAttributeTest {
 	/**
 	 * @ID RPO.T02a
 	 *
-	 * @Bezeichnung Linienzüge: einfacher Linienzug
+	 * @Designation Line strings: simple line strings
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Validität eines Linienzugs prüfen</p>
+	 * @Description
+	 * <p>The tests must check the validity of a simple polyline</p>
 	 * <code>POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord WITHOUT OVERLAPS &gt; 1;</code>
 	 *
-	 * @Testvoraussetzung RPO.T02a.xtf
+	 * @Test-requirement RPO.T02a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Selbstüberschneidung und Kurvenstücke mehrmals benutzt.
+	 * @Expected-result Error message. Self-intersection and segments used several times
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.12.2 und 3.3.11.12
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.12 and 3.3.11.12
 	 *
 	 * <p>
 	 *
@@ -81,17 +81,17 @@ public class PolylineAttributeTest {
 	/**
 	 * @ID RPO.T02b
 	 *
-	 * @Bezeichnung Linienzüge: einfacher Linienzug
+	 * @Designation Line strings: simple line strings
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Validität eines Linienzugs prüfen</p>
+	 * @Description
+	 * <p>The tests must check the validity of a simple polyline</p>
 	 * <code>POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord WITHOUT OVERLAPS &gt; 1;</code>
 	 *
-	 * @Testvoraussetzung RPO.T02b.xtf
+	 * @Test-requirement RPO.T02b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Selbstüberschneidung
+	 * @Expected-result Error message. Self-intersection
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.12.2 und 3.3.11.12
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.12 and 3.3.11.12
 	 *
 	 * <p>
 	 *
@@ -107,17 +107,17 @@ public class PolylineAttributeTest {
 	/**
 	 * @ID RPO.T02c
 	 *
-	 * @Bezeichnung Linienzüge: einfacher Linienzug
+	 * @Designation Line strings: simple line strings
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Validität eines Linienzugs prüfen</p>
+	 * @Description
+	 * <p>The tests must check the validity of a simple polyline</p>
 	 * <code>POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord WITHOUT OVERLAPS &gt; 1;</code>
 	 *
-	 * @Testvoraussetzung RPO.T02c.xtf
+	 * @Test-requirement RPO.T02c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.12.2 und 3.3.11.12
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.12 and 3.3.11.12
 	 *
 	 * <p>
 	 *
@@ -133,15 +133,17 @@ public class PolylineAttributeTest {
 	/**
 	 * @ID RPO.T03a
 	 *
-	 * @Bezeichnung Linienzüge: Toleranz bei ARC
+	 * @Designation Line strings: tolerance by ARC
 	 *
-	 * @Beschreibung Der Test muss die Toleranz prüfen (INTERLIS 2 - Referenzhandbuch Kap. 2.8.12.2, Regeln WITHOUT OVERLAPS &gt;)
+	 * @Description
+	 * <p>The tests must check the tolerance</p>
+	 * <code>POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord WITHOUT OVERLAPS &gt; 1;</code>
 	 *
-	 * @Testvoraussetzung RPO.T03a.xtf
+	 * @Test-requirement RPO.T03a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung. Pfeilhöhe kleiner als im INTERLIS-Datenmodell definiert.
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.12.2 und 3.3.11.12
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.12 and 3.3.11.12
 	 *
 	 * <p>
 	 *
@@ -157,15 +159,17 @@ public class PolylineAttributeTest {
 	/**
 	 * @ID RPO.T03b
 	 *
-	 * @Bezeichnung Linienzüge: Toleranz bei ARC
+	 * @Designation Line strings: tolerance by ARC
 	 *
-	 * @Beschreibung Der Test muss die Toleranz prüfen ([1] Kap. 2.8.12.2, Regeln WITHOUT OVERLAPS &gt;)
+	 * @Description
+	 * <p>The tests must check the tolerance</p>
+	 * <code>POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord WITHOUT OVERLAPS &gt; 1;</code>
 	 *
-	 * @Testvoraussetzung RCO.T03b.xtf
+	 * @Test-requirement RPO.T03b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Pfeilhöhe grösser als im INTERLIS-Datenmodell definiert
+	 * @Expected-result Error message
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.12.2 und 3.3.11.12
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.12 and 3.3.11.12
 	 *
 	 * <p>
 	 *

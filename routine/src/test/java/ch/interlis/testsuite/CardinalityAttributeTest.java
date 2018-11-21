@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Datenbereich: Kardinalitäten der Attribute
+ * Tests Data section: Cardinality of attributes
  */
 public class CardinalityAttributeTest {
 	private final Logger logger = LoggerFactory.getLogger(CardinalityAttributeTest.class);
@@ -29,15 +29,15 @@ public class CardinalityAttributeTest {
 	/**
 	 * @ID RKA.T01a
 	 *
-	 * @Bezeichnung Kardinalität: MANDATORY
+	 * @Designation Cardinality: MANDATORY
 	 *
-	 * @Beschreibung Der Test muss die Regeln für die Kardinalität der Attribute prüfen
+	 * @Description The tests must check the rules for the cardinality of attributes
 	 *
-	 * @Testvoraussetzung RKA.T01a.xtf
+	 * @Test-requirement RKA.T01a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6.1 und 2.7.3
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6.1 and 2.7.3
 	 */
 	@Test
 	public void RKA_T01a() {
@@ -49,15 +49,15 @@ public class CardinalityAttributeTest {
 	/**
 	 * @ID RKA.T01b
 	 *
-	 * @Bezeichnung Kardinalität: MANDATORY
+	 * @Designation Cardinality: MANDATORY
 	 *
-	 * @Beschreibung Der Test muss die Regeln für die Kardinalität der Attribute prüfen
+	 * @Description The tests must check the rules for the cardinality of attributes
 	 *
-	 * @Testvoraussetzung RKA.T01b.xtf
+	 * @Test-requirement RKA.T01b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Fehlendes obligatorisches Attribut
+	 * @Expected-result Error message. Mandatory attribute missing
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6.1 und 2.7.3
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6.1 and 2.7.3
 	 */
 	@Test
 	public void RKA_T01b() {
@@ -69,15 +69,15 @@ public class CardinalityAttributeTest {
 	/**
 	 * @ID RKA.T02a
 	 *
-	 * @Bezeichnung Kardinalität: BAG OF
+	 * @Designation Cardinality: BAG OF
 	 *
-	 * @Beschreibung Der Test muss die Regeln für die Kardinalität der Attribute prüfen
+	 * @Description The tests must check the rules for the cardinality of attributes
 	 *
-	 * @Testvoraussetzung RKA.T02a.xtf
+	 * @Test-requirement RKA.T02a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6.1 und 2.7.3
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6.1 and 2.7.3
 	 */
 	@Test
 	public void RKA_T02a() {
@@ -89,15 +89,15 @@ public class CardinalityAttributeTest {
 	/**
 	 * @ID RKA.T02b
 	 *
-	 * @Bezeichnung Kardinalität: BAG OF
+	 * @Designation Cardinality: BAG OF
 	 *
-	 * @Beschreibung Der Test muss die Regeln für die Kardinalität der Attribute prüfen
+	 * @Description The tests must check the rules for the cardinality of attributes
 	 *
-	 * @Testvoraussetzung RKA.T02b.xtf
+	 * @Test-requirement RKA.T02b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Fehlendes obligatorisches Attribut
+	 * @Expected-result Error message. Mandatory attribute missing
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6.1 und 2.7.3
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6.1 and 2.7.3
 	 */
 	@Test
 	public void RKA_T02b() {
@@ -109,15 +109,15 @@ public class CardinalityAttributeTest {
 	/**
 	 * @ID RKA.T02c
 	 *
-	 * @Bezeichnung Kardinalität: BAG OF
+	 * @Designation Cardinality: BAG OF
 	 *
-	 * @Beschreibung Der Test muss die Regeln für die Kardinalität der Attribute prüfen
+	 * @Description The tests must check the rules for the cardinality of attributes
 	 *
-	 * @Testvoraussetzung RCO.T02c.xtf
+	 * @Test-requirement RKA.T02c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Die Struktur darf nicht mehr als zweimal vorkommen
+	 * @Expected-result Error message. The structure must not occur more than twice
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6.1 und 2.7.3
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6.1 and 2.7.3
 	 */
 	@Test
 	public void RKA_T02c() {
@@ -129,15 +129,15 @@ public class CardinalityAttributeTest {
 	/**
 	 * @ID RKA.T02d
 	 *
-	 * @Bezeichnung Kardinalität: BAG OF
+	 * @Designation Cardinality: BAG OF
 	 *
-	 * @Beschreibung Der Test muss die Regeln für die Kardinalität der Attribute prüfen
+	 * @Description The tests must check the rules for the cardinality of attributes
 	 *
-	 * @Testvoraussetzung RCO.T02d.xtf
+	 * @Test-requirement RKA.T02d.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Falsche Codierung (mehrere Tags "Namen")
+	 * @Expected-result Error message. Wrong encoding (multiple tags Namen)
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6.1 und 2.7.3
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6.1 and 2.7.3
 	 */
 	@Test
 	public void RKA_T02d() {

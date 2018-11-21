@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Zeichencodierung
+ * Tests Characters encoding
  */
 public class CharacterEncodingTest {
 	private final Logger logger = LoggerFactory.getLogger(CharacterEncodingTest.class);
@@ -29,15 +29,15 @@ public class CharacterEncodingTest {
 	/**
 	 * @ID RZe.T01a
 	 *
-	 * @Bezeichnung Zeichencodierung
+	 * @Designation Characters encoding
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die Zeichen den Codierungsregeln gemäss UTF-8 entsprechen
+	 * @Description The tests must check whether the characters satisfy the UTF-8 encoding rules
 	 *
-	 * @Testvoraussetzung RZe.T01a.xtf
+	 * @Test-requirement RZe.T01a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.2</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.2</p>
 	 */
 	@Test
 	public void RZe_T01a() {
@@ -49,15 +49,15 @@ public class CharacterEncodingTest {
 	/**
 	 * @ID RZe.T01b
 	 *
-	 * @Bezeichnung Zeichencodierung
+	 * @Designation Characters encoding
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die Zeichen den Codierungsregeln gemäss UTF-8 entsprechen
+	 * @Description The tests must check whether the characters satisfy the UTF-8 encoding rules
 	 *
-	 * @Testvoraussetzung RZe.T01b.xtf
+	 * @Test-requirement RZe.T01b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Datei nicht als UTF-8 codiert 
+	 * @Expected-result Error message. File not encoded as UTF-8
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.2</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.2</p>
 	 */
 	@Test
 	public void RZe_T01b() {
@@ -65,24 +65,24 @@ public class CharacterEncodingTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID RZe.T01c
 	 *
-	 * @Bezeichnung Zeichencodierung
+	 * @Designation Characters encoding
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die Zeichen den Codierungsregeln gemäss UTF-8 entsprechen
+	 * @Description The tests must check whether the characters satisfy the UTF-8 encoding rules
 	 *
-	 * @Testvoraussetzung RZe.T01c.xtf
+	 * @Test-requirement RZe.T01c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige UTF-8-Zeichen
+	 * @Expected-result Error message. Invalid UTF-8 characters
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.2</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.2</p>
 	 */
 	@Test
 	public void RZe_T01c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RZe.T01c.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
-	}	
+	}
 }

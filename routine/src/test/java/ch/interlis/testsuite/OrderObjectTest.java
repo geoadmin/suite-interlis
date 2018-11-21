@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Reihenfolge der Objekte im Datenbereich
+ * Tests Order of objects within the data section
  */
 public class OrderObjectTest {
 	private final Logger logger = LoggerFactory.getLogger(OrderObjectTest.class);
@@ -28,16 +28,16 @@ public class OrderObjectTest {
 	/**
 	 * @ID RRO.T01a
 	 *
-	 * @Bezeichnung Reihenfolge; Datenbereich
-	 *
-	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objekte im Datenbereich prüfen
-	 *
-	 * @Testvoraussetzung RRO.T01a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung.
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.2.5
-	 */
+	 * @Designation Order: data section
+ 	 *
+ 	 * @Description The tests must check the rules for the order of the objects within the data section
+ 	 *
+ 	 * @Test-requirement RRO.T01a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.2.5</p>
+ 	 */
 	@Test
 	public void RRO_T01a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RRO.T01a.xtf");
@@ -48,16 +48,16 @@ public class OrderObjectTest {
 	/**
 	 * @ID RRO.T01b
 	 *
-	 * @Bezeichnung Reihenfolge: Datenbereich
-	 *
-	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objekte im Datenbereich prüfen
-	 *
-	 * @Testvoraussetzung RRO.T01b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.2.5
-	 */
+	 * @Designation Order: data section
+ 	 *
+ 	 * @Description The tests must check the rules for the order of the objects within the data section
+ 	 *
+ 	 * @Test-requirement RRO.T01b.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.2.5</p>
+ 	 */
 	@Test
 	public void RRO_T01b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RRO.T01b.xtf");

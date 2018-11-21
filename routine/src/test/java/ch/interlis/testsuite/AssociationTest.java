@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Datenbereich: Beziehungen
+ * Tests Data section: Relationships
  */
 public class AssociationTest {
 	private final Logger logger = LoggerFactory.getLogger(AssociationTest.class);
@@ -29,19 +29,18 @@ public class AssociationTest {
 
 	/**
 	 * @ID RBe.T01a
+ 	 *
+	 * @Designation Relationships: References
 	 *
-	 * @Bezeichnung Beziehungen: Referenzen
+	 * @Description <p>The tests check that the references to external Roles are additionally encoded with an XML Attribute BID.</p>
+	 * <p><i>If the reference points to an object in a different basket (within the same transfer or even elsewhere), the reference will be further coded with BID, thereby entering the basket identification of the object which has been referenced in BID.</i></p>
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss prüfen, dass bei externen Rollen die Referenzen zusätzlich mit einem XML-Attribut BID codiert werden.</p>
-	 * <p><i>Zeigt die Referenz auf ein Objekt in einem anderen Behälter (im gleichen Transfer oder sogar ausserhalb), wird die Referenz zusätzlich mit BID codiert. In BID wird dabei die Behälteridentifikation des referenzierten Objekts eingetragen.</i></p>
+	 * @Test-requirement RBe.T01a.xtf
 	 *
-	 * @Testvoraussetzung RBe.T01a.xtf
+	 * @Expected-result No error message
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9.2</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9.2</p>
+	*/
 	@Test
 	public void RBe_T01a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RBe.T01a.xtf");
@@ -52,18 +51,17 @@ public class AssociationTest {
 	/**
 	 * @ID RBe.T01b
 	 *
-	 * @Bezeichnung Beziehungen: Referenzen
+	 * @Designation Relationships: References
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss prüfen, dass bei externen Rollen die Referenzen zusätzlich mit einem XML-Attribut BID codiert werden.</p>
-	 * <p><i>Zeigt die Referenz auf ein Objekt in einem anderen Behälter (im gleichen Transfer oder sogar ausserhalb), wird die Referenz zusätzlich mit BID codiert. In BID wird dabei die Behälteridentifikation des referenzierten Objekts eingetragen.</i></p>
+	 * @Description <p>The tests check that the references to external Roles are additionally encoded with an XML Attribute BID.</p>
+	 * <p><i>If the reference points to an object in a different basket (within the same transfer or even elsewhere), the reference will be further coded with BID, thereby entering the basket identification of the object which has been referenced in BID.</i></p>
 	 *
-	 * @Testvoraussetzung RBe.T01b.xtf
+	 * @Test-requirement RBe.T01b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. BID nicht vorhanden
+	 * @Expected-result Error message. BID not available
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9.2</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9.2</p>
+	*/
 	@Test
 	public void RBe_T01b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RBe.T01b.xtf");
@@ -74,18 +72,17 @@ public class AssociationTest {
 	/**
 	 * @ID RBe.T01c
 	 *
-	 * @Bezeichnung Beziehungen: Referenzen
+	 * @Designation Relationships: References
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss prüfen, dass bei externen Rollen die Referenzen zusätzlich mit einem XML-Attribut BID codiert werden.</p>
-	 * <p><i>Zeigt die Referenz auf ein Objekt in einem anderen Behälter (im gleichen Transfer oder sogar ausserhalb), wird die Referenz zusätzlich mit BID codiert. In BID wird dabei die Behälteridentifikation des referenzierten Objekts eingetragen.</i></p>
+	 * @Description <p>The tests check that the references to external Roles are additionally encoded with an XML Attribute BID.</p>
+	 * <p><i>If the reference points to an object in a different basket (within the same transfer or even elsewhere), the reference will be further coded with BID, thereby entering the basket identification of the object which has been referenced in BID.</i></p>
 	 *
-	 * @Testvoraussetzung RBe.T01c.xtf
+	 * @Test-requirement RBe.T01c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9.2</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9.2</p>
+	*/
 	@Test
 	public void RBe_T01c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RBe.T01c.xtf");
@@ -96,18 +93,17 @@ public class AssociationTest {
 	/**
 	 * @ID RBe.T01d
 	 *
-	 * @Bezeichnung Beziehungen: Referenzen
+	 * @Designation Relationships: References
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss prüfen, dass bei externen Rollen die Referenzen zusätzlich mit einem XML-Attribut BID codiert werden.</p>
-	 * <p><i>Zeigt die Referenz auf ein Objekt in einem anderen Behälter (im gleichen Transfer oder sogar ausserhalb), wird die Referenz zusätzlich mit BID codiert. In BID wird dabei die Behälteridentifikation des referenzierten Objekts eingetragen.</i></p>
+	 * @Description <p>The tests check that the references to external Roles are additionally encoded with an XML Attribute BID.</p>
+	 * <p><i>If the reference points to an object in a different basket (within the same transfer or even elsewhere), the reference will be further coded with BID, thereby entering the basket identification of the object which has been referenced in BID.</i></p>
 	 *
-	 * @Testvoraussetzung RBe.T01d.xtf
+	 * @Test-requirement RBe.T01d.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. BID nicht vorhanden
+	 * @Expected-result Error message. BID not available
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9.2</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9.2</p>
+	*/
 	@Test
 	public void RBe_T01d() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RBe.T01d.xtf");
@@ -118,18 +114,17 @@ public class AssociationTest {
 	/**
 	 * @ID REB.T01a
 	 *
-	 * @Bezeichnung Eingebettete Beziehungen: Kardinalität 0..1 bei beiden Rollen
+	 * @Designation Embedded relationships: cardinality {0..1} at both roles
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>Falls bei beiden (Basis-)Rollen die maximale Kardinalität kleiner gleich 1 ist, wird bei der Ziel-Klasse der zweiten Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation und die Ziel-Klasse der ersten Rolle im selben Topic definiert ist wie die (Basis-)Assoziation, wird bei der Ziel-Klasse der ersten Rolle eingebettet.</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>If with both (basic) roles maximum cardinality is smaller or equal 1, the embedding takes place with the target class of the second role. If this target class has been defined in a different topic than the (basic) association and the target class of the first role has been defined in the same topic as the (basic) association, embedding will take place with the target class of the first role …</i></p>
 	 *
-	 * @Testvoraussetzung REB.T01a.xtf
+	 * @Test-requirement REB.T01a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void REB_T01a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/REB.T01a.xtf");
@@ -140,18 +135,17 @@ public class AssociationTest {
 	/**
 	 * @ID REB.T01b
 	 *
-	 * @Bezeichnung Eingebettete Beziehungen: Kardinalität 0..1 bei beiden Rollen
+	 * @Designation Embedded relationships: cardinality {0..1} at both roles
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>Falls bei beiden (Basis-)Rollen die maximale Kardinalität kleiner gleich 1 ist, wird bei der Ziel-Klasse der zweiten Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation und die Ziel-Klasse der ersten Rolle im selben Topic definiert ist wie die (Basis-)Assoziation, wird bei der Ziel-Klasse der ersten Rolle eingebettet.</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>If with both (basic) roles maximum cardinality is smaller or equal 1, the embedding takes place with the target class of the second role. If this target class has been defined in a different topic than the (basic) association and the target class of the first role has been defined in the same topic as the (basic) association, embedding will take place with the target class of the first role …</i></p>
 	 *
-	 * @Testvoraussetzung REB.T01b.xtf
+	 * @Test-requirement REB.T01b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Flasche Codierung
+	 * @Expected-result Error message. Wrong encoding
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void REB_T01b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/REB.T01b.xtf");
@@ -162,18 +156,17 @@ public class AssociationTest {
 	/**
 	 * @ID REB.T01c
 	 *
-	 * @Bezeichnung Eingebettete Beziehungen: Kardinalität 0..1 bei beiden Rollen
+	 * @Designation Embedded relationships: cardinality {0..1} at both roles
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>Falls bei beiden (Basis-)Rollen die maximale Kardinalität kleiner gleich 1 ist, wird bei der Ziel-Klasse der zweiten Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation und die Ziel-Klasse der ersten Rolle im selben Topic definiert ist wie die (Basis-)Assoziation, wird bei der Ziel-Klasse der ersten Rolle eingebettet.</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>If with both (basic) roles maximum cardinality is smaller or equal 1, the embedding takes place with the target class of the second role. If this target class has been defined in a different topic than the (basic) association and the target class of the first role has been defined in the same topic as the (basic) association, embedding will take place with the target class of the first role …</i></p>
 	 *
-	 * @Testvoraussetzung REB.T01c.xtf
+	 * @Test-requirement REB.T01c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void REB_T01c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/REB.T01c.xtf");
@@ -184,18 +177,17 @@ public class AssociationTest {
 	/**
 	 * @ID REB.T02a
 	 *
-	 * @Bezeichnung Eingebettete Beziehungen: Kardinalität 0..* bei einer der Rollen
+	 * @Designation Embedded relationships: cardinality {0..*} at one of the roles
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet.</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>If maximum cardinality is greater than 1 in one of the two (basic) roles, the embedding takes place with the target class of this role …</i></p>
 	 *
-	 * @Testvoraussetzung REB.T02a.xtf
+	 * @Test-requirement REB.T02a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void REB_T02a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/REB.T02a.xtf");
@@ -206,18 +198,17 @@ public class AssociationTest {
 	/**
 	 * @ID REB.T02b
 	 *
-	 * @Bezeichnung Eingebettete Beziehungen: Kardinalität 0..* bei einer der Rollen
+	 * @Designation Embedded relationships: cardinality {0..*} at one of the roles
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet.</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>If maximum cardinality is greater than 1 in one of the two (basic) roles, the embedding takes place with the target class of this role …</i></p>
 	 *
-	 * @Testvoraussetzung REB.T02b.xtf
+	 * @Test-requirement REB.T02b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Falsche Codierung
+	 * @Expected-result Error message. Wrong encoding
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void REB_T02b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/REB.T02b.xtf");
@@ -228,18 +219,17 @@ public class AssociationTest {
 	/**
 	 * @ID REB.T02c
 	 *
-	 * @Bezeichnung Eingebettete Beziehungen: Kardinalität 0..* bei einer der Rollen
+	 * @Designation Embedded relationships: cardinality {0..*} at one of the roles
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet.</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>If maximum cardinality is greater than 1 in one of the two (basic) roles, the embedding takes place with the target class of this role …</i></p>
 	 *
-	 * @Testvoraussetzung REB.T02c.xtf
+	 * @Test-requirement REB.T02c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Attribut «Status» ist obligatorisch
+	 * @Expected-result Error message. Attribute Status is mandatory
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void REB_T02c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/REB.T02c.xtf");
@@ -251,18 +241,17 @@ public class AssociationTest {
 	/**
 	 * @ID RBk.T01a
 	 *
-	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..* bei der Rolle EXTERNAL
+	 * @Designation Non-embedded relationships: cardinality {0..*} at the role EXTERNAL
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation, kann nicht eingebettet werden.</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>If maximum cardinality is greater than 1 in one of the two (basic) roles, the embedding takes place with the target class of this role. If this target class has been defined within a different topic than the (basic) association, then no embedding can take place …</i></p>
 	 *
-	 * @Testvoraussetzung RBk.T01a.xtf
+	 * @Test-requirement RBk.T01a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Falsche Codierung
+	 * @Expected-result Error message. Wrong encoding
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void RBk_T01a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RBk.T01a.xtf");
@@ -273,18 +262,17 @@ public class AssociationTest {
 	/**
 	 * @ID RBk.T01b
 	 *
-	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..* bei der Rolle EXTERNAL
+	 * @Designation Non-embedded relationships: cardinality {0..*} at the role EXTERNAL
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation, kann nicht eingebettet werden.</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>If maximum cardinality is greater than 1 in one of the two (basic) roles, the embedding takes place with the target class of this role. If this target class has been defined within a different topic than the (basic) association, then no embedding can take place …</i></p>
 	 *
-	 * @Testvoraussetzung RBk.T01b.xtf
+	 * @Test-requirement RBk.T01b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void RBk_T01b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RBk.T01b.xtf");
@@ -295,18 +283,17 @@ public class AssociationTest {
 	/**
 	 * @ID RBk.T02a
 	 *
-	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..1 bei beiden Rollen EXTERNAL
+	 * @Designation Non-embedded relationships: cardinality {0..1} at both roles EXTERNAL
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>wenn die Ziel-Klassen der beiden Rollen in einem anderen Topic definiert sind als die (Basis-)Assoziation, kann nicht eingebettet werden.</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>…(in other words: if the target classes of both roles have been defined in a different topic than the (basic) association, no embedding can take place).</i></p>
 	 *
-	 * @Testvoraussetzung RBk.T02a.xtf
+	 * @Test-requirement RBk.T02a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void RBk_T02a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RBk.T02a.xtf");
@@ -317,18 +304,17 @@ public class AssociationTest {
 	/**
 	 * @ID RBk.T02b
 	 *
-	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..1 bei beiden Rollen EXTERNAL
+	 * @Designation Non-embedded relationships: cardinality {0..1} at both roles EXTERNAL
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>wenn die Ziel-Klassen der beiden Rollen in einem anderen Topic definiert sind als die (Basis-)Assoziation, kann nicht eingebettet werden.</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>…(in other words: if the target classes of both roles have been defined in a different topic than the (basic) association, no embedding can take place).</i></p>
 	 *
-	 * @Testvoraussetzung RBk.T02b.xtf
+	 * @Test-requirement RBk.T02b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Falsche Codierung
+	 * @Expected-result Error message. Wrong encoding
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void RBk_T02b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RBk.T02b.xtf");
@@ -339,18 +325,17 @@ public class AssociationTest {
 	/**
 	 * @ID RBk.T03a
 	 *
-	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..* bei beiden Rollen
+	 * @Designation Non-embedded relationships: cardinality {0..*} at both roles
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>Beziehungen werden immer eingebettet, ausser wenn bei bei beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist ...</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>Relationships are always embedded, unless ... maximum cardinality is greater than 1 for both (basic) roles or ...</i></p>
 	 *
-	 * @Testvoraussetzung RBk.T03a.xtf
+	 * @Test-requirement RBk.T03a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void RBk_T03a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RBk.T03a.xtf");
@@ -361,18 +346,17 @@ public class AssociationTest {
 	/**
 	 * @ID RBk.T03b
 	 *
-	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..* bei beiden Rollen
+	 * @Designation Non-embedded relationships: cardinality {0..*} at both roles
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>Beziehungen werden immer eingebettet, ausser wenn bei bei beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist ...</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>Relationships are always embedded, unless ... maximum cardinality is greater than 1 for both (basic) roles or ...</i></p>
 	 *
-	 * @Testvoraussetzung RBk.T03b.xtf
+	 * @Test-requirement RBk.T03b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Falsche Codierung
+	 * @Expected-result Error message. Wrong encoding
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void RBk_T03b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RBk.T03b.xtf");
@@ -383,18 +367,17 @@ public class AssociationTest {
 	/**
 	 * @ID RBk.T03c
 	 *
-	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..* bei beiden Rollen
+	 * @Designation Non-embedded relationships: cardinality {0..*} at both roles
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>Beziehungen werden immer eingebettet, ausser wenn bei bei beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist ...</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>Relationships are always embedded, unless ... maximum cardinality is greater than 1 for both (basic) roles or ...</i></p>
 	 *
-	 * @Testvoraussetzung RBk.T03c.xtf
+	 * @Test-requirement RBk.T03c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Die Rollen der ASSOCIATION sind obligatorisch
+	 * @Expected-result Error message. The roles of the ASSOCIATION are mandatory
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void RBk_T03c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RBk.T03c.xtf");
@@ -405,18 +388,17 @@ public class AssociationTest {
 	/**
 	 * @ID RBk.T03d
 	 *
-	 * @Bezeichnung Nicht Eingebettete Beziehungen: Kardinalität 0..* bei beiden Rollen
+	 * @Designation Non-embedded relationships: cardinality {0..*} at both roles
 	 *
-	 * @Beschreibung
-	 * <p>Der Test muss die Regeln für das Einbetten der Beziehungen prüfen.</p>
-	 * <p><i>Beziehungen werden immer eingebettet, ausser wenn bei bei beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist ...</i></p>
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>Relationships are always embedded, unless ... maximum cardinality is greater than 1 for both (basic) roles or ...</i></p>
 	 *
-	 * @Testvoraussetzung RBk.T03d.xtf
+	 * @Test-requirement RBk.T03d.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Doppelte Beziehung mit gleichen Referenzen
+	 * @Expected-result Error message. Double relationship with the same references
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.9</p>
-	 */
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
 	@Test
 	public void RBk_T03d() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RBk.T03d.xtf");

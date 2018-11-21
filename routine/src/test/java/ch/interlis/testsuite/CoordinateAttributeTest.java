@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Datenbereich: Koordinaten
+ * Data section: Coordinates
  */
 public class CoordinateAttributeTest {
 	private final Logger logger = LoggerFactory.getLogger(CoordinateAttributeTest.class);
@@ -30,19 +30,19 @@ public class CoordinateAttributeTest {
 	/**
 	 * @ID RCO.T01a
 	 *
-	 * @Bezeichnung Koordinaten
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob die Koordinaten vorhanden sind.
-	 *
-	 * @Testvoraussetzung RCO.T01a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Koordinaten nicht vorhanden.
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.8 und 3.3.11.11
-	 */
+	 * @Designation Coordinates
+ 	 *
+ 	 * @Description The tests must check whether the coordinates are available
+ 	 *
+ 	 * @Test-requirement RCO.T01a.xtf
+ 	 *
+ 	 * @Expected-result Error message. Coordinates not available
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.8 and 3.3.11.11</p>
+ 	 */
 	@Test
 	public void RCO_T01a() {
-		// Ausgesetzt falls vendor="ilivalidator" --> Absturz Error: java.lang.NullPointerException
+		// Ignored if vendor="ilivalidator" --> Crash Error: java.lang.NullPointerException
 		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RCO.T01a.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
@@ -52,16 +52,16 @@ public class CoordinateAttributeTest {
 	/**
 	 * @ID RCO.T02a
 	 *
-	 * @Bezeichnung Koordinaten: Codierung
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob die Koordinaten den Codierungsregeln entsprechen.
-	 *
-	 * @Testvoraussetzung RCO.T02a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Falsche Codierung &lt;C4&gt;
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.8 und 3.3.11.11
-	 */
+	 * @Designation Coordinates: encoding
+ 	 *
+ 	 * @Description The tests must check whether the coordinates satisfy the encoding rules
+ 	 *
+ 	 * @Test-requirement RCO.T02a.xtf
+ 	 *
+ 	 * @Expected-result Error message. Wrong encoding (C4)
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.8 and 3.3.11.11</p>
+ 	 */
 	@Test
 	public void RCO_T02a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RCO.T02a.xtf");
@@ -72,19 +72,19 @@ public class CoordinateAttributeTest {
 	/**
 	 * @ID RCO.T02b
 	 *
-	 * @Bezeichnung Koordinaten: Codierung
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob die Koordinaten den Codierungsregeln entsprechen.
-	 *
-	 * @Testvoraussetzung RCO.T02b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Redundante Koordinaten &lt;C2&gt;
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.8 und 3.3.11.11
-	*/
+	 * @Designation Coordinates: encoding
+ 	 *
+ 	 * @Description The tests must check whether the coordinates satisfy the encoding rules
+ 	 *
+ 	 * @Test-requirement RCO.T02b.xtf
+ 	 *
+ 	 * @Expected-result Error message. Redundant coordinates (C2)
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.8 and 3.3.11.11</p>
+ 	 */
 	@Test
 	public void RCO_T02b() {
-		// Ausgesetzt falls vendor="ilivalidator" --> Absturz Error: java.lang.NullPointerException
+		// Ignored if vendor="ilivalidator" --> Crash Error: java.lang.NullPointerException
 		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RCO.T02b.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
@@ -94,16 +94,16 @@ public class CoordinateAttributeTest {
 	/**
 	 * @ID RCO.T03a
 	 *
-	 * @Bezeichnung Koordinaten: Wertbereich
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob die Koordinaten der Definition im INTERLIS-Datenmodell entsprechen.
-	 *
-	 * @Testvoraussetzung RCO.T03a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. &lt;C2&gt; ausserhalb des Wertbereichs
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.8 und 3.3.11.11
-	*/
+	 * @Designation Coordinates: domain
+ 	 *
+ 	 * @Description The tests must check whether the coordinates satisfy the definition in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RCO.T03a.xtf
+ 	 *
+ 	 * @Expected-result Error message. C2 outside the value range
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.8 and 3.3.11.11</p>
+ 	 */
 	@Test
 	public void RCO_T03a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RCO.T03a.xtf");
@@ -114,16 +114,16 @@ public class CoordinateAttributeTest {
 	/**
 	 * @ID RCO.T03b
 	 *
-	 * @Bezeichnung Koordinaten: Wertbereich
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob die Koordinaten der Definition im INTERLIS-Datenmodell entsprechen.
-	 *
-	 * @Testvoraussetzung RCO.T03b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. &lt;C3&gt; nicht erlaubt, weil Wertbereich für 2D-Koordinaten definiert ist
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.8 und 3.3.11.11
-	*/
+	 * @Designation Coordinates: domain
+ 	 *
+ 	 * @Description The tests must check whether the coordinates satisfy the definition in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RCO.T03b.xtf
+ 	 *
+ 	 * @Expected-result Error message. C3 not allowed because value range is defined for 2D coordinates
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.8 and 3.3.11.11</p>
+ 	 */
 	@Test
 	public void RCO_T03b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RCO.T03b.xtf");
