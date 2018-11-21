@@ -38,7 +38,7 @@
 ###### Embedded relationships - REB.T02
 |ID|REB.T02
 |:--|:--
-|**Designation**|**Embedded relationships: cardinality ``{0..*}`` at one of the role**
+|**Designation**|**Embedded relationships: cardinality ``{0..*}`` at one of the roles**
 |**Description**|The tests must check the rules for the embedding of relationships. *«If maximum cardinality is greater than 1 in one of the two (basic) roles, the embedding takes place with the target class of this role …»* [[1]] Chap. 3.3.9
 |**Test requirement**|[REB.T02a.xtf](../data/REB.T02a.xtf), [REB.T02b.xtf](../data/REB.T02b.xtf), [REB.T02c.xtf](../data/REB.T02c.xtf)
 |**Expected result**|<ul><li>REB.T02a.xtf: no error message</li><li>REB.T02b.xtf: error message. Wrong encoding</li><li>REB.T02c.xtf: error message. Attribute ```Status``` is mandatory</li></ul>

@@ -87,7 +87,7 @@
 |**Designation**|**Attributes:** ```NumericType```
 |**Description**|The tests must check whether the attribute value satisfies the definition for ```NumericType``` in the INTERLIS data model and the corresponding encoding rules
 |**Test requirement**|[RAt.T09a.xtf](../data/RAt.T09a.xtf), [RAt.T09b.xtf](../data/RAt.T09b.xtf), [RAt.T09c.xtf](../data/RAt.T09c.xtf), [RAt.T09d.xtf](../data/RAt.T09d.xtf), [RAt.T09e.xtf](../data/RAt.T09e.xtf), [RAt.T09f.xtf](../data/RAt.T09f.xtf), [RAt.T09g.xtf](../data/RAt.T09g.xtf)
-|**Expected result**|<ul><li>RAt.T09a.xtf: no error message</li><li>RAt.T09b.xtf: error message. Invalid value (``0.9``)</li><li>RAt.T09c.xtf: no error message</li><li>RAt.T09d.xtf: error message ``00004`` instead of ``4``</li><li>RAt.T09e.xtf: no error message (``10000.1`` will be rounded to ``10000.0``)</li><li>RAt.T09f.xtf: no error message</li><li>RAt.T09g.xtf: error message (``10000.5`` will be rounded to ``10000.1``)</li></ul>
+|**Expected result**|<ul><li>RAt.T09a.xtf: no error message</li><li>RAt.T09b.xtf: error message. Invalid value (``0.9``)</li><li>RAt.T09c.xtf: no error message</li><li>RAt.T09d.xtf: error message (``00004`` instead of ``4``)</li><li>RAt.T09e.xtf: no error message (``10000.1`` will be rounded to ``10000.0``)</li><li>RAt.T09f.xtf: no error message</li><li>RAt.T09g.xtf: error message (``10000.5`` will be rounded to ``10000.1``)</li></ul>
 |**Reference**|[[1]] Chap. 2.6, 2.8.5 and 3.3.11.4
 
 ###### Attributes - RAt.T10

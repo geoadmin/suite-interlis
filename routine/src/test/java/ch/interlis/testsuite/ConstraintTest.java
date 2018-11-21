@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Konsistenzbedingungen
+ * Tests Data section: Constraints
  */
 public class ConstraintTest {
 	private final Logger logger = LoggerFactory.getLogger(ConstraintTest.class);
@@ -29,16 +29,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T01a
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: UNIQUE
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T01a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: UNIQUE
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T01a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T01a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T01a.xtf");
@@ -49,16 +49,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T01b
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: UNIQUE
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T01b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: UNIQUE
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T01a.xtf
+ 	 *
+ 	 * @Expected-result Error message. Constraint violated
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T01b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T01b.xtf");
@@ -69,16 +69,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T02a
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: UNIQUE (LOCAL)
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T02a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: UNIQUE (LOCAL)
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T02a.xtf
+ 	 *
+ 	 * @Expected-result Error message. Constraint violated
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T02a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T02a.xtf");
@@ -89,16 +89,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T02b
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: UNIQUE (LOCAL)
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T02b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: UNIQUE (LOCAL)
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T02b.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T02b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T02b.xtf");
@@ -109,19 +109,19 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T03a
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: UNIQUE WHERE
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T03a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: UNIQUE WHERE
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T03a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T03a() {
-		// Ausgesetzt falls vendor="ig/check" --> Absturz PSTACK ….END_PSTACK
+		// Ignored if vendor="ig/check" --> PSTACK ….END_PSTACK
 		assumeFalse (System.getProperty("vendor").equals("ig/check"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T03a.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
@@ -131,19 +131,19 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T03b
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: UNIQUE WHERE
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T03b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: UNIQUE WHERE
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T03b.xtf
+ 	 *
+ 	 * @Expected-result Error message. Constraint violated
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T03b() {
-		// Ausgesetzt falls vendor="ig/check" --> Absturz PSTACK ….END_PSTACK
+		// Ignored if vendor="ig/check" --> PSTACK ….END_PSTACK
 		assumeFalse (System.getProperty("vendor").equals("ig/check"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T03b.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
@@ -153,16 +153,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T04a
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: EXISTENCE CONSTRAINT
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T04a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: EXISTENCE CONSTRAINT
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T04a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T04a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T04a.xtf");
@@ -173,16 +173,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T04b
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: EXISTENCE CONSTRAINT
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T04b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: EXISTENCE CONSTRAINT
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T04b.xtf
+ 	 *
+ 	 * @Expected-result Error message. Constraint violated
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T04b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T04b.xtf");
@@ -193,16 +193,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T04c
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: EXISTENCE CONSTRAINT
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T04c.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: EXISTENCE CONSTRAINT
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T04c.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T04c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T04c.xtf");
@@ -213,16 +213,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T05a
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Vergleich
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T05a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: MANDATORY with comparison
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T05a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T05a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T05a.xtf");
@@ -233,16 +233,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T05b
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Vergleich
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T05b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: MANDATORY with comparison
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T05b.xtf
+ 	 *
+ 	 * @Expected-result Error message. Constraint violated
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T05b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T05b.xtf");
@@ -253,16 +253,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06a
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T06a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: MANDATORY with specification of conditions
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T06a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T06a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T06a.xtf");
@@ -273,16 +273,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06b
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T06b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: MANDATORY with specification of conditions
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T06b.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T06b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T06b.xtf");
@@ -293,16 +293,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06c
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T06c.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Datum ist obligatorisch
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: MANDATORY with specification of conditions
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T06c.xtf
+ 	 *
+ 	 * @Expected-result Error message. Datum is mandatory
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T06c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T06c.xtf");
@@ -313,16 +313,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06d
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T06d.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: MANDATORY with specification of conditions
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T06d.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T06d() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T06d.xtf");
@@ -333,16 +333,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06e
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T06e.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: MANDATORY with specification of conditions
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T06e.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T06e() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T06e.xtf");
@@ -353,16 +353,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06f
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T06f.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: MANDATORY with specification of conditions
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T06f.xtf
+ 	 *
+ 	 * @Expected-result Error message. Constraint violated
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T06f() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T06f.xtf");
@@ -373,16 +373,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T06g
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Bedingungsvorgabe
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T06g.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: MANDATORY with specification of conditions
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T06g.xtf
+ 	 *
+ 	 * @Expected-result Error message. Constraint violated
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T06g() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T06g.xtf");
@@ -393,16 +393,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T07a
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Funktion (INTERLIS.len)
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T07a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: MANDATORY with function (INTERLIS.len)
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T07a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T07a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T07a.xtf");
@@ -413,16 +413,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T07b
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: MANDATORY mit Funktion (INTERLIS.len)
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T07b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: MANDATORY with function (INTERLIS.len)
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T07b.xtf
+ 	 *
+ 	 * @Expected-result Error message. Constraint violated
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T07b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T07b.xtf");
@@ -433,16 +433,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T08a
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: SET CONSTRAINT mit Funktion (are.Areas)
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T07a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: SET CONSTRAINT with function (are.Areas)
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T08a.xtf
+ 	 *
+ 	 * @Expected-result Error message. Constraint violated
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T08a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T08a.xtf");
@@ -453,16 +453,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T08b
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: SET CONSTRAINT mit Funktion (are.Areas)
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T08b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: SET CONSTRAINT with function (are.Areas)
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T08b.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T08b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T08b.xtf");
@@ -473,16 +473,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T08c
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: SET CONSTRAINT mit Funktion (are.Areas)
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T08c.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: SET CONSTRAINT with function (are.Areas)
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T08c.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T08c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T08c.xtf");
@@ -493,16 +493,16 @@ public class ConstraintTest {
 	/**
 	 * @ID RKo.T08d
 	 *
-	 * @Bezeichnung Konsistenzbedingungen: SET CONSTRAINT mit Funktion (are.Areas)
-	 *
-	 * @Beschreibung Der Test muss prüfen, dass die Daten der ConstraintDef im INTERLIS-Datenmodell entsprechen
-	 *
-	 * @Testvoraussetzung RKo.T08d.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Konsistenzbedingung verletzt
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.12, 2.13 und 2.14
-	 */
+	 * @Designation Constraints: SET CONSTRAINT with function (are.Areas)
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T08d.xtf
+ 	 *
+ 	 * @Expected-result Error message. Constraint violated
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
 	@Test
 	public void RKo_T08d() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T08d.xtf");

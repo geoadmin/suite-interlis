@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Datenbereich: Kardinalität der Beziehungen
+ * Tests Data section: Relationships cardinality
  */
 public class CardinalityAssociationTest {
 	private final Logger logger = LoggerFactory.getLogger(CardinalityAssociationTest.class);
@@ -30,16 +30,15 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T01a
 	 *
-	 * @Bezeichnung Kardinalität: {1} bei beiden Rollen
+	 * @Designation Cardinality: {1} at both roles
 	 *
-	 * @Beschreibung
-	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
+	 * @Description The tests must check the rules for the cardinality of relationships
 	 *
-	 * @Testvoraussetzung RKB.T01a.xtf
+	 * @Test-requirement RKB.T01a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.7.1 und 2.7.3</p>
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.7.1 and 2.7.3
 	 */
 	@Test
 	public void RKB_T01a() {
@@ -51,16 +50,15 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T01b
 	 *
-	 * @Bezeichnung Kardinalität: {1} bei beiden Rollen
+	 * @Designation Cardinality: {1} at both roles
 	 *
-	 * @Beschreibung
-	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
+	 * @Description The tests must check the rules for the cardinality of relationships
 	 *
-	 * @Testvoraussetzung RKB.T01b.xtf
+	 * @Test-requirement RKB.T01b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Fehlende Rolle (RolleA in Klasse B)
+	 * @Expected-result Error message. Missing role (RolleA in Klasse B)
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.7.1 und 2.7.3</p>
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.7.1 and 2.7.3
 	 */
 	@Test
 	public void RKB_T01b() {
@@ -72,16 +70,15 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T01c
 	 *
-	 * @Bezeichnung Kardinalität: {1} bei beiden Rollen
+	 * @Designation Cardinality: {1} at both roles
 	 *
-	 * @Beschreibung
-	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
+	 * @Description The tests must check the rules for the cardinality of relationships
 	 *
-	 * @Testvoraussetzung RKB.T01c.xtf
+	 * @Test-requirement RKB.T01c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Zwei Instanzen von B verweisen auf die gleiche Instanz von A
+	 * @Expected-result Error message. Two instances of B refer to the same instance of A
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.7.1 und 2.7.3</p>
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.7.1 and 2.7.3
 	 */
 	@Test
 	public void RKB_T01c() {
@@ -93,16 +90,15 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T01d
 	 *
-	 * @Bezeichnung Kardinalität: {1} bei beiden Rollen
+	 * @Designation Cardinality: {1} at both roles
 	 *
-	 * @Beschreibung
-	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
+	 * @Description The tests must check the rules for the cardinality of relationships
 	 *
-	 * @Testvoraussetzung RKB.T01d.xtf
+	 * @Test-requirement RKB.T01d.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Alle Instanzen von A müssen referenziert werden
+	 * @Expected-result Error message. All instances of A must be referenced
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.7.1 und 2.7.3</p>
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.7.1 and 2.7.3
 	 */
 	@Test
 	public void RKB_T01d() {
@@ -114,16 +110,15 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T02a
 	 *
-	 * @Bezeichnung Kardinalität: <p>{0..1}</p><p>{1}</p>
+	 * @Designation Cardinality: <p>{0..1}</p><p>{1}</p>
 	 *
-	 * @Beschreibung
-	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
+	 * @Description The tests must check the rules for the cardinality of relationships
 	 *
-	 * @Testvoraussetzung RKB.T02a.xtf
+	 * @Test-requirement RKB.T02a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.7.1 und 2.7.3</p>
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.7.1 and 2.7.3
 	 */
 	@Test
 	public void RKB_T02a() {
@@ -135,16 +130,15 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T03a
 	 *
-	 * @Bezeichnung Kardinalität: <p>{0..1}</p><p>{0..1}</p>
+	 * @Designation Cardinality: <p>{0..1}</p><p>{0..1}</p>
 	 *
-	 * @Beschreibung
-	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
+	 * @Description The tests must check the rules for the cardinality of relationships
 	 *
-	 * @Testvoraussetzung RKB.T03a.xtf
+	 * @Test-requirement RKB.T03a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.7.1 und 2.7.3</p>
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.7.1 and 2.7.3
 	 */
 	@Test
 	public void RKB_T03a() {
@@ -156,16 +150,15 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T04a
 	 *
-	 * @Bezeichnung Kardinalität: <p>{1}</p><p>{0..*}</p>
+	 * @Designation Cardinality: <p>{1}</p><p>{0..*}</p>
 	 *
-	 * @Beschreibung
-	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
+	 * @Description The tests must check the rules for the cardinality of relationships
 	 *
-	 * @Testvoraussetzung RKB.T04a.xtf
+	 * @Test-requirement RKB.T04a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.7.1 und 2.7.3</p>
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.7.1 and 2.7.3
 	 */
 	@Test
 	public void RKB_T04a() {
@@ -177,16 +170,15 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T05a
 	 *
-	 * @Bezeichnung Kardinalität: <p>{0..*}</p><p>{1}</p>
+	 * @Designation Cardinality: <p>{0..*}</p><p>{1}</p>
 	 *
-	 * @Beschreibung
-	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
+	 * @Description The tests must check the rules for the cardinality of relationships
 	 *
-	 * @Testvoraussetzung RKB.T05a.xtf
+	 * @Test-requirement RKB.T5a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Falsches Einbetten
+	 * @Expected-result Error message. Wrong embedding
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.7.1 und 2.7.3</p>
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.7.1 and 2.7.3
 	 */
 	@Test
 	public void RKB_T05a() {
@@ -198,16 +190,15 @@ public class CardinalityAssociationTest {
 	/**
 	 * @ID RKB.T05b
 	 *
-	 * @Bezeichnung Kardinalität: <p>{0..*}</p><p>{1}</p>
+	 * @Designation Cardinality: <p>{0..*}</p><p>{1}</p>
 	 *
-	 * @Beschreibung
-	 * Der Test muss die Regeln für die Kardinalität der Beziehungen prüfen
+	 * @Description The tests must check the rules for the cardinality of relationships
 	 *
-	 * @Testvoraussetzung RKB.T05b.xtf
+	 * @Test-requirement RKB.T5b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.7.1 und 2.7.3</p>
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.7.1 and 2.7.3
 	 */
 	@Test
 	public void RKB_T05b() {
