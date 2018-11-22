@@ -4,8 +4,8 @@
 
 * Allgemeine Regeln
   - [Objektidentifikation](identifiers_de-CH.md)
-  - [Vordefinierte XML-Regeln](xml.md_de-CH#vordefinierte-xml-regeln)
-  - [XML-Wohlgeformtheit](xml.md_de-CH#xml-wohlgeformtheit)
+  - [Vordefinierte XML-Regeln](xml_de-CH.md#vordefinierte-xml-regeln)
+  - [XML-Wohlgeformtheit](xml_de-CH.md#xml-wohlgeformtheit)
   - [Zeichencodierung](charEncoding_de-CH.md)
 * Struktur der Transferdatei
   - [Transfer](transferStructure_de-CH.md)
