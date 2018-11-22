@@ -20,4 +20,4 @@ Als Zusammenfassung:
 *	Numerische ```OID```: nur Ziffern erlaubt
 *	Textliche ```OID```: echter XML-ID (gemäss [[1]]  Kap. 2.8.9)
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[1]: bib_de-CH.md#1-kogis-interlis-2--referenzhandbuch-13042006
