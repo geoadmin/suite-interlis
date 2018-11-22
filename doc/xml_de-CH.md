@@ -33,5 +33,5 @@
 |**Erwartetes Ergebnis**|<ul><li>RXW.T02a.xtf: Fehlermeldung. Attributwert (```xmlns```) nicht in Anführungszeichen geschrieben</li><li>RXW.T02b.xtf: keine Fehlermeldung. Einfaches und doppeltes Anführungszeichen sind beide gültig</li><li>RXW.T02c.xtf: Fehlermeldung. Doppeltes Attribut ```BID```</li><li>RXW.T02d.xtf: Fehlermeldung. Doppeltes Attribut ```TID```</li><li>RXW.T02e.xtf: Fehlermeldung. Doppeltes Attribut ``VERSION`` in ``HEADERSECTION``</li><li>RXW.T02f.xtf: Fehlermeldung. Doppeltes Attribut ``VERSION`` in ``MODEL``</li></ul>
 |**Referenz**|[[1]] Kap. 3.3.1<br/>[[2]] Kap. 3.1 (https://www.w3.org/TR/xml/#uniqattspec)
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
-[2]: bib.md#2-w3c-extensible-markup-language-xml-10-fifth-edition-26112008
+[1]: bib_de-CH.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[2]: bib_de-CH.md#2-w3c-extensible-markup-language-xml-10-fifth-edition-26112008
