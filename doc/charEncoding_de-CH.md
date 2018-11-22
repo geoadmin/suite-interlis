@@ -17,4 +17,4 @@
 |**Erwartetes Ergebnis**|<ul><li>RZe.T01a.xtf: keine Fehlermeldung</li><li>RZe.T01b.xtf: Fehlermeldung. Datei nicht als UTF-8 codiert </li><li>RZe.T01c.xtf: Fehlermeldung. Ungültige UTF-8-Zeichen</li></ul>
 |**Referenz**|[[1]] Kap. 3.3.2
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[1]: bib_de-CH.md#1-kogis-interlis-2--referenzhandbuch-13042006
