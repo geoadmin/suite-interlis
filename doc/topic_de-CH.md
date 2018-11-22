@@ -5,7 +5,7 @@
 |:--|:--
 |**Bezeichnung**|**TOPIC**
 |**Beschreibung**|Für die Validierung eines **Topic** gelten die im [[1]] Kap. 3.3.6 definierten Regeln
-|**Details**|<ul><li>Der Wert ```%Model.Topic%``` muss der ```ModelDef``` ([[1]] Kap. 2.5.1) und ```TopicDef``` ([[1]] Kap. 2.5.2) im INTERLIS-Datenmodell entsprechen</li><li>Jeder Datenbehälter (```Basket```) erhält eine Behälteridentifikation (XML-Attribut ```BID```). Wo nötig, muss die BID-Angabe der ```TopicDef``` ([[1]] Kap. 2.5.2) im INTERLIS-Datenmodell entsprechen. Es gelten zusätzlich die im [[1]] Kap. 2.8.9 definierten Regeln</li><li>Alle ```BID``` inkl. alle ```TID``` ([Regel Klassen](classes.md#regel-klassen)) innerhalb eines Transfers müssen eindeutig sein ([[1]] Kap. 3.3.7 und 3.2.6)</li>
+|**Details**|<ul><li>Der Wert ```%Model.Topic%``` muss der ```ModelDef``` ([[1]] Kap. 2.5.1) und ```TopicDef``` ([[1]] Kap. 2.5.2) im INTERLIS-Datenmodell entsprechen</li><li>Jeder Datenbehälter (```Basket```) erhält eine Behälteridentifikation (XML-Attribut ```BID```). Wo nötig, muss die BID-Angabe der ```TopicDef``` ([[1]] Kap. 2.5.2) im INTERLIS-Datenmodell entsprechen. Es gelten zusätzlich die im [[1]] Kap. 2.8.9 definierten Regeln</li><li>Alle ```BID``` inkl. alle ```TID``` ([Regel Klassen](classes_de-CH.md#regel-klassen)) innerhalb eines Transfers müssen eindeutig sein ([[1]] Kap. 3.3.7 und 3.2.6)</li>
 |**Referenz**|[[1]] Kap. 2.5.1, 2.5.2, 2.8.9, 3.2.5, 3.2.6 und 3.3.6</td>
 
 ### Testfälle
@@ -25,7 +25,7 @@
 |**Beschreibung**|Die Tests müssen prüfen, ob die ```BID``` vorhanden ist und der richtigen Codierung entspricht
 |**Testvoraussetzung**|[RTO.T02a.xtf](../data/RTO.T02a.xtf), [RTO.T02b.xtf](../data/RTO.T02b.xtf), [RTO.T02c.xtf](../data/RTO.T02c.xtf), [RTO.T02d.xtf](../data/RTO.T02d.xtf)
 |**Erwartetes Ergebnis**|<ul><li>RTO.T02a.xtf: Fehlermeldung. ```BID``` nicht vorhanden</li><li>RTO.T02b.xtf: Fehlermeldung. ```BID``` leer</li><li>RTO.T02c.xtf: Fehlermeldung. Die ```BID``` wird als XML-ID *à la INTERLIS* codiert. Erstes Zeichen muss Buchstabe, Ziffer oder Unterstrich sein</li><li>RTO.T02d.xtf: Fehlermeldung. Zeichen mit Umlaut sind nicht zulässig</li></ul>
-|**Referenz**|[[1]] Kap. 2.8.9 und 3.3.1<br/>[Objektidentifikation](identifiers.md)
+|**Referenz**|[[1]] Kap. 2.8.9 und 3.3.1<br/>[Objektidentifikation](identifiers_de-CH.md)
 
 ###### Themen - RTO.T03
 |ID|RTO.T03
@@ -62,5 +62,5 @@
 |**Erwartetes Ergebnis**|<ul><li>RTO.T06a.xtf: keine Fehlermeldung</li><li>RTO.T06b.xtf: keine Fehlermeldung</li><li>RTO.T06c.xtf: Fehlermeldung. Wegen der ASSOCIATION müssen die Daten in einem einzigen Basket transferiert werden</li></ul>
 |**Referenz**|[[1]] Kap. 2.5.1 und Appendix C
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
-[2]: bib.md#2-w3c-extensible-markup-language-xml-10-fifth-edition-26112008
+[1]: bib_de-CH.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[2]: bib_de-CH.md#2-w3c-extensible-markup-language-xml-10-fifth-edition-26112008
