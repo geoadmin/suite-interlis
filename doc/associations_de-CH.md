@@ -133,4 +133,4 @@
 |**Erwartetes Ergebnis**|<ul><li>RKB.T05a.xtf: Fehlermeldung. Falsches Einbetten</li><li>RKB.T05b.xtf: keine Fehlermeldung</li></ul>
 |**Referenz**|[[1]] Kap. 2.7.1 und 2.7.3
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[1]: bib_de-CH.md#1-kogis-interlis-2--referenzhandbuch-13042006
