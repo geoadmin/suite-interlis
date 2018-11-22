@@ -47,5 +47,5 @@
 |**Erwartetes Ergebnis**|<ul><li>RTR.T04a.xtf: Fehlermeldung. xmlns-Attribut nicht vorhanden</li></ul>
 |**Referenz**|[[1]] Kap. 3.3.3
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
-[2]: bib.md#2-w3c-extensible-markup-language-xml-10-fifth-edition-26112008
+[1]: bib_de-CH.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[2]: bib_de-CH.md#2-w3c-extensible-markup-language-xml-10-fifth-edition-26112008
