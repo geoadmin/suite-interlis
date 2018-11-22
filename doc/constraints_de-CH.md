@@ -81,4 +81,4 @@
 |**Erwartetes Ergebnis**|<ul><li>RKo.T08a.xtf: Fehlermeldung. Konsistenzbedingung verletzt</li><li>RKo.T08b.xtf: keine Fehlermeldung</li><li>RKo.T08c.xtf: keine Fehlermeldung</li><li>RKo.T08d.xtf: Fehlermeldung. Konsistenzbedingung verletzt</li></ul>
 |**Referenz**|[[1]] Kap. 2.12, 2.13 und 2.14
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[1]: bib_de-CH.md#1-kogis-interlis-2--referenzhandbuch-13042006
