@@ -53,4 +53,4 @@
 |**Erwartetes Ergebnis**|<ul><li>RRiO.T03a.xtf: keine Fehlermeldung</li><li>RRiO.T03b.xtf: Fehlermeldung. Zuerst müssen die Rollen der Basisklasse codiert werden</li><li>RRiO.T03c.xtf: Fehlermeldung. Zuerst müssen die Attribute der Basisklasse codiert werden</li><li>RRiO.T03d.xtf: Fehlermeldung. Die Rollen der Basisklasse sind obligatorisch</li></ul>
 |**Referenz**|[[1]] Kap. 3.3.7
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[1]: bib_de-CH.md#1-kogis-interlis-2--referenzhandbuch-13042006
