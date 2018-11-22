@@ -379,7 +379,7 @@
 |**Erwartetes Ergebnis**|<ul><li>RKA.T02a.xtf: keine Fehlermeldung</li><li>RKA.T02b.xtf: Fehlermeldung. Fehlendes obligatorisches Attribut</li><li>RKA.T02c.xtf: Fehlermeldung. Die Struktur darf nicht mehr als zweimal vorkommen</li><li>RKA.T02d.xtf: Fehlermeldung. Falsche Codierung (mehrere Tags ```Namen```)</li></ul>
 |**Referenz**|[[1]] Kap. 2.6.1 und 2.7.3
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
-[2]: bib.md#2-w3c-extensible-markup-language-xml-10-fifth-edition-26112008
-[3]: bib.md#3-ietf-rfc-uniform-resource-identifiers-uri-generic-syntax-08-1998
-[4]: bib.md#4-w3c-xmlid-version-10-09-09-2005-online-available-httpswwww3orgtrxml-id
+[1]: bib_de-CH.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[2]: bib_de-CH.md#2-w3c-extensible-markup-language-xml-10-fifth-edition-26112008
+[3]: bib_de-CH.md#3-ietf-rfc-uniform-resource-identifiers-uri-generic-syntax-08-1998
+[4]: bib_de-CH.md#4-w3c-xmlid-version-10-09-09-2005-online-available-httpswwww3orgtrxml-id
