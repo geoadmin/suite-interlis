@@ -1,87 +1,85 @@
 # Test Suite - Routine
-Die Routine wurde als gradle-Projekt entwickelt.
+The test routine is implemented as a *gradle* project.
 
-## Voraussetzungen
+## Requirements
 - JAVA Development Kit
-- [iG/Check](https://www.interlis.ch/downloads/igcheck) (lokal installiert)
+- [iG/Check](https://www.interlis.ch/downloads/igcheck) (locally installed)
 
 ## Getting Started
-Das Repository clonen/herunterladen und das Arbeitsverzeichnis wechseln:
+Clone/download the repository and change the working directory:
 
 ```
 cd suite-interlis/routine
 ```
 
-### Die Test Suite ausführen
+### Run the Test Suite
 ```
 gradlew -Pvendor=<vendor> test
 ```
-Der Parameter ``<vendor>`` kann die Werte ``ilivalidator`` oder ``ig/check`` Enthalten.
+The parameter ``<vendor>`` can contain the values ``ilivalidator`` or ``ig/check``.
 
-Die Ergebnisse stehen in ``/build/reports/tests/test/index.html`` zur Verfügung.
+The results are available in ``/build/reports/tests/test/index.html``.
 
-### Die JavaDoc kompilieren
+### Compile the JavaDoc
 ```
 gradlew -Pvendor=<vendor> javadoc
 ```
-Die JavaDoc steht in ``/build/docs/javadoc/index.html`` zur Verfügung.
+The JavaDoc is available in  ``/build/docs/javadoc/index.html``.
 
-### Muss ein Proxyserver verwendet werden?
+### Does a proxy server have to be used?
 ```
 gradlew -Dhttp.proxyHost=theProxyServer -Dhttp.proxyPort=theProxyPort -Pvendor=<vendor> test
 ```
-### Ist JAVA-JDK nicht im PATH?
+### Isn't JAVA-JDK in PATH?
 ```
 gradlew -Dorg.gradle.java.home=/pathToJavaJDK -Pvendor=<vendor> test
 ```
-### Ist ics.exe (iG/Check) nicht im PATH?
-- Variante 1
+### Isn't ics.exe (iG/Check) in PATH?
+- Alternative 1
 ```
 SET PATH=%PATH%;'pathToics.exe'
 gradlew -Pvendor=ig/check test
 ```
-- Variante 2
+- Alternative 2
 ```
 gradlew -Pvendor=ig/check -Pics=pathToics.exe test
 ```
-Der Parameter ``-Pics`` kann zusätzlich benutzt werden, um unterschiedliche Versionen von iG/Check zu testen.
+The parameter ``-Pics`` can also be used to test different versions of iG/Check.
 
-### Andere Versionen des ilivalidators testen
-Die Routine ist vorkonfiguriert um den ilivalidator Version 1.9.3 zu testen.
-Um andere Versionen des ilivalidators zu testen, muss die Information ``compile 'ch.interlis:ilivalidator:1.9.3'`` in der Datei ``build.gradle`` (unter ``dependencies``) entsprechend angepasst werden.
+### Testing other versions of the ilivalidator
+The routine is preconfigured to test the ilivalidator version 1.9.3.
+To test other versions, string ``compile 'ch.interlis:ilivalidator:1.9.3'`` in the ``build.gradle`` file (under ``dependencies``) must be modified accordingly.
 
-### Spezifische Tests ausschalten
-Alle Test-Typen der Routine sind in der Datei ``build.gradle`` (unter ``test``) gelistet. Um einen Test-Typ auszuschalten, muss die entsprechende Linie auskommentiert werden.
+### Skip specific tests
+All test types are listed in the file ``build.gradle`` (under ``test``). To skip a test type, the corresponding line must be commented out.
 
-### Datei interlis2.cfg
-Spezifische iG/Check-Einstellungen können zusätzlich in der Datei ``interlis2.cfg`` im Verzeichnis ``igcheck2`` gesetzt werden.
+### File interlis2.cfg
+Specific iG/Check settings can be set in the file ``interlis2.cfg`` in the directory ``igcheck2``.
 
-### Tests, die direkt im Code ausgeschaltet worden sind
+### Tests that have been switched off directly in the code
 #### ilivalidator Version 1.9.3
-| Test | Begründung |
+| Test | Reason |
 | --- | --- |
-| RCO.T01a.xtf | Absturz |
-| RCO.T02b.xtf | Absturz |
-| RHE.T01b.xtf | java.lang.IllegalArgumentException statt java.lang.AssertionError. Fehlermeldung ist korrekt |
-| RHE.T04a.xtf | java.lang.IllegalArgumentException statt java.lang.AssertionError. Fehlermeldung ist korrekt |
-| RTO.T02a.xtf | java.lang.IllegalArgumentException statt java.lang.AssertionError. Fehlermeldung ist korrekt |
-| RTR.T02a.xtf | Falsche Fehlermeldung |
-| RTR.T02b.xtf | Falsche Fehlermeldung |
-| RTR.T03a.xtf | Falsche Fehlermeldung |
-| RTR.T04a.xtf | Falsche Fehlermeldung |
-| RXW.T02a.xtf | Falsche Fehlermeldung |
-| RXW.T02e.xtf | Falsche Fehlermeldung |
-| RXW.T02f.xtf | Falsche Fehlermeldung |
+| RCO.T01a.xtf | Crash |
+| RCO.T02b.xtf | Crash |
+| RHE.T01b.xtf | java.lang.IllegalArgumentException instead of java.lang.AssertionError. Error message is correct |
+| RHE.T04a.xtf | java.lang.IllegalArgumentException instead of java.lang.AssertionError. Error message is correct |
+| RTO.T02a.xtf | java.lang.IllegalArgumentException instead of java.lang.AssertionError. Error message is correct |
+| RTR.T02a.xtf | Error message is wrong |
+| RTR.T02b.xtf | Error message is wrong |
+| RTR.T03a.xtf | Error message is wrong |
+| RTR.T04a.xtf | Error message is wrong |
+| RXW.T02a.xtf | Error message is wrong |
+| RXW.T02e.xtf | Error message is wrong |
+| RXW.T02f.xtf | Error message is wrong |
 
-#### iG/Check Version 2018.0 vom 08.10.2018
-| Test | Begründung |
+#### iG/Check Version 2018.0, 08.10.2018
+| Test | Reason |
 | --- | --- |
-| RAt.T11e.xtf | Falsche Fehlermeldung |
-| RAt.T11f.xtf | Falsche Fehlermeldung |
-| RKo.T03a.xtf | Falsche Fehlermeldung |
-| RKo.T03b.xtf | Falsche Fehlermeldung |
-| RTO.T06c.xtf | Falsche Fehlermeldung |
-| RTR.T02c.xtf | Falsche Fehlermeldung |
-| RXW.T01a.xtf | Falsche Fehlermeldung |
-
-
+| RAt.T11e.xtf | Error message is wrong |
+| RAt.T11f.xtf | Error message is wrong |
+| RKo.T03a.xtf | Error message is wrong |
+| RKo.T03b.xtf | Error message is wrong |
+| RTO.T06c.xtf | Error message is wrong |
+| RTR.T02c.xtf | Error message is wrong |
+| RXW.T01a.xtf | Error message is wrong |

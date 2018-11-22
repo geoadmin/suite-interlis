@@ -12,21 +12,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Datenbereich: Attribute
- *
- * <p>BID und TID werden als XML-ID codiert (INTERLIS 2 - Referenzhandbuch Kap. 3.3.6, 3.3.7). Die EBNF-Regel für XML-ID ist ( INTERLIS 2 - Referenzhandbuch Kap. 3.3.1):</p>
- * <code>XML-ID = XML-ValueDelimiter [ XML-NcName ':' ] ( Letter | Digit | '_' ) { Letter | Digit | '_' | '-' | '.' } XML-ValueDelimiter</code>
- * <p>Gemäss dieser Regel, könnte eine BID/TID eine Ziffer, einen Buchstabe oder einen Unterstrich als erstes Zeichen haben (also, nicht echte XML-ID gemäss <a href="https://www.w3.org/TR/xml-id/#id-avn">https://www.w3.org/TR/xml-id/#id-avn</a>).</p>
- * <p>OID-Werte von textlichen OID-Wertebereichen müssen die Regeln des XML-ID-Typs erfüllen: sie müssen echte XML-ID sein.</p>
- * <p>STANDARDOID und UUIDOID haben ihre eigene Definition.</p>
- * <p>Als Zusammenfassung:</p>
- * <ul>
- * <li>TIDs und BIDs werden als XML-ID «à la INTERLIS» (gemäss INTERLIS 2 - Referenzhandbuch Kap. 3.3.1 und nicht als echte XML-ID) kodiert</li>
- * <li>STANDARDOID: nur Ziffern und Buchstaben erlaubt ( INTERLIS 2 - Referenzhandbuch Kap. 2.8.9)</li>
- * <li>UUIDOID: muss eine valide UUID gemäss ISO 11578 sein ( INTERLIS 2 - Referenzhandbuch Kap. 2.8.9)</li>
- * <li>Numerische OID: nur Ziffern erlaubt</li>
- * <li>Textliche OID: echte XML-ID (gemäss INTERLIS 2 - Referenzhandbuch Kap. 2.8.9)</li>
- *</ul>
+ * Data section: Attributes
 */
 public class AttributeTest {
 	private final Logger logger = LoggerFactory.getLogger(AttributeTest.class);
@@ -44,16 +30,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T01a
 	 *
-	 * @Bezeichnung AttributeName
+	 * @Designation Attributes: AttributeName
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Wert %AttributeName% der Definition im INTERLIS-Datenmodell entspricht
+	 * @Description The tests must check whether the value %AttributeName% satisfies the definition in the INTERLIS data model
 	 *
-	 * @Testvoraussetzung RAt.T01a.xtf
+	 * @Test-requirement RAt.T01a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Wert %AttributeName% stimmt nicht
+	 * @Expected-result Error message. Value %AttributeName% is wrong
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6 und 3.3.11</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6 and 3.3.11</p>
 	 */
 	@Test
 	public void RAt_T01a() {
@@ -65,17 +50,16 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T02a
 	 *
-	 * @Bezeichnung TEXT
+	 * @Designation Attributes: TEXT
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für TEXT, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for TEXT in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T02a.xtf
+	 * @Test-requirement RAt.T02a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung. Leerzeichen sind gültige Zeichen
+	 * @Expected-result No error message. Spaces are valid characters
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6 und 3.3.11.2</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#charsets">Extensible Markup Language (XML) 1.0 Kap. 2.2</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.1 and 3.3.11.2</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#charsets">Extensible Markup Language (XML) 1.0 Chap. 2.2</a></p>
 	 */
 	@Test
 	public void RAt_T02a() {
@@ -87,17 +71,16 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T02b
 	 *
-	 * @Bezeichnung Attribute: TEXT
+	 * @Designation Attributes: TEXT
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für TEXT, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for TEXT in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T02b.xtf
+	 * @Test-requirement RAt.T02b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Attribut Art3 muss auf drei Zeichen begrenzt werden
+	 * @Expected-result Error message. Attribute Art3 must be limited to three characters
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6 und 3.3.11.2</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#charsets">Extensible Markup Language (XML) 1.0 Kap. 2.2</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.1 and 3.3.11.2</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#charsets">Extensible Markup Language (XML) 1.0 Chap. 2.2</a></p>
 	 */
 	@Test
 	public void RAt_T02b() {
@@ -109,17 +92,16 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T02c
 	 *
-	 * @Bezeichnung Attribute: TEXT
+	 * @Designation Attributes: TEXT
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für TEXT, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for TEXT in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T02c.xtf
+	 * @Test-requirement RAt.T02c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. TEXT muss als einzeiliger Text codiert werden. Steuerzeichen sind nicht zulässig
+	 * @Expected-result Error message. TEXT must be encoded as a single-line text, control characters are not allowed
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6 und 3.3.11.2</p>
- 	 * <p><a href="https://www.w3.org/TR/xml/#charsets">Extensible Markup Language (XML) 1.0 Kap. 2.2</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.1 and 3.3.11.2</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#charsets">Extensible Markup Language (XML) 1.0 Chap. 2.2</a></p>
 	 */
 	@Test
 	public void RAt_T02c() {
@@ -131,18 +113,17 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T03a
 	 *
-	 * @Bezeichnung Attribute: MTEXT
+	 * @Designation Attributes: MTEXT
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für MTEXT, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for MTEXT in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T03a.xtf
+	 * @Test-requirement RAt.T03a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Attribut Beschreibung muss auf 9 Zeichen begrenzt werden; jeder Wagenrücklauf zählt als 1 Zeichen
+	 * @Expected-result Error message. Attribute Beschreibung must be limited to 9 characters; each carriage return counts as 1 character
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.1 und 3.3.11.2</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#charsets">Extensible Markup Language (XML) 1.0 Kap. 2.2</a></p>
-	 * <p><a href="http://www.w3.org/TR/xml/#sec-line-ends">Extensible Markup Language (XML) 1.0 Kap. 2.11</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.1 and 3.3.11.2</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#charsets">Extensible Markup Language (XML) 1.0 Chap. 2.2</a></p>
+	 * <p><a href="http://www.w3.org/TR/xml/#sec-line-ends">Extensible Markup Language (XML) 1.0 Chap. 2.11</a></p>
 	 */
 	@Test
 	public void RAt_T03a() {
@@ -154,18 +135,17 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T03b
 	 *
-	 * @Bezeichnung Attribute: MTEXT
+	 * @Designation Attributes: MTEXT
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für MTEXT, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for MTEXT in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T03b.xtf
+	 * @Test-requirement RAt.T03b.xtf
 	 *
-	 * @Erwartetes.Ergebnis keine Fehlermeldung. Steuerzeichen, wie Tabulatoren, sind in MTEXT zulässig
+	 * @Expected-result No error message. Control characters such as tabs are allowed in MTEXT
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.1 und 3.3.11.2</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#charsets">Extensible Markup Language (XML) 1.0 Kap. 2.2</a></p>
-	 * <p><a href="http://www.w3.org/TR/xml/#sec-line-ends">Extensible Markup Language (XML) 1.0 Kap. 2.11</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.1 and 3.3.11.2</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#charsets">Extensible Markup Language (XML) 1.0 Chap. 2.2</a></p>
+	 * <p><a href="http://www.w3.org/TR/xml/#sec-line-ends">Extensible Markup Language (XML) 1.0 Chap. 2.11</a></p>
 	 */
 	@Test
 	public void RAt_T03b() {
@@ -177,17 +157,16 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T04a
 	 *
-	 * @Bezeichnung Attribute: NAME
+	 * @Designation Attributes: NAME
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NAME, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for NAME in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T04a.xtf
+	 * @Test-requirement RAt.T04a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. NAME ist eine Folge von maximal 255 Buchstaben, Ziffern und Unterstrichen
+	 * @Expected-result Error message. NAME is a sequence of up to 255 letters, numbers and underscores
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.2.2, 2.2.7, 2.6, 2.8.1 und 3.3.11.2</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#NT-Name">Extensible Markup Language (XML) 1.0 Kap. 2.3</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.2.2, 2.2.7, 2.6, 2.8.1 and 3.3.11.2</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#NT-Name">Extensible Markup Language (XML) 1.0 Chap. 2.3</a></p>
 	 */
 	@Test
 	public void RAt_T04a() {
@@ -199,17 +178,16 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T04b
 	 *
-	 * @Bezeichnung Attribute: NAME
+	 * @Designation Attributes: NAME
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NAME, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for NAME in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T04b.xtf
+	 * @Test-requirement RAt.T04b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Das erste Zeichen muss ein Buchstabe sein
+	 * @Expected-result Error message. The first character must be a letter
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.2.2, 2.2.7, 2.6, 2.8.1 und 3.3.11.2</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#NT-Name">Extensible Markup Language (XML) 1.0 Kap. 2.3</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.2.2, 2.2.7, 2.6, 2.8.1 and 3.3.11.2</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#NT-Name">Extensible Markup Language (XML) 1.0 Chap. 2.3</a></p>
 	 */
 	@Test
 	public void RAt_T04b() {
@@ -221,17 +199,16 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T04c
 	 *
-	 * @Bezeichnung Attribute: NAME
+	 * @Designation Attributes: NAME
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NAME, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for NAME in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T04c.xtf
+	 * @Test-requirement RAt.T04c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Bei Namen sind reservierte INTERLIS-Wörter nicht zulässig
+	 * @Expected-result Error message. Reserved INTERLIS words are not allowed
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.2.2, 2.2.7, 2.6, 2.8.1 und 3.3.11.2</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#NT-Name">Extensible Markup Language (XML) 1.0 Kap. 2.3</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.2.2, 2.2.7, 2.6, 2.8.1 and 3.3.11.2</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#NT-Name">Extensible Markup Language (XML) 1.0 Chap. 2.3</a></p>
 	 */
 	@Test
 	public void RAt_T04c() {
@@ -243,17 +220,16 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T05a
 	 *
-	 * @Bezeichnung Attribute: URI
+	 * @Designation Attributes: URI
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für URI, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for URI in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T05a.xtf
+	 * @Test-requirement RAt.T05a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. URI ist eine Folge von maximal 1023 Zeichen
+	 * @Expected-result Error message. URI is a sequence of up to 1023 characters
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.1 und 3.3.11.2</p>
-	 * <p><a href="https://www.ietf.org/rfc/rfc2396.txt">RFC Uniform Resource Identifiers (URI): Generic Syntax Kap. 3</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.1 and 3.3.11.2</p>
+	 * <p><a href="https://www.ietf.org/rfc/rfc2396.txt">RFC Uniform Resource Identifiers (URI): Generic Syntax Chap. 3</a></p>
 	 */
 	@Test
 	public void RAt_T05a() {
@@ -265,17 +241,16 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T05b
 	 *
-	 * @Bezeichnung Attribute: URI
+	 * @Designation Attributes: URI
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für URI, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for URI in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T05b.xtf
+	 * @Test-requirement RAt.T05b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Fehlendes URI-Schema
+	 * @Expected-result Error message. URI schema is missing
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.1 und 3.3.11.2</p>
-	 * <p><a href="https://www.ietf.org/rfc/rfc2396.txt">RFC Uniform Resource Identifiers (URI): Generic Syntax Kap. 3</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.1 and 3.3.11.2</p>
+	 * <p><a href="https://www.ietf.org/rfc/rfc2396.txt">RFC Uniform Resource Identifiers (URI): Generic Syntax Chap. 3</a></p>
 	 */
 	@Test
 	public void RAt_T05b() {
@@ -287,16 +262,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T06a
 	 *
-	 * @Bezeichnung Attribute: EnumerationType
+	 * @Designation Attributes: EnumerationType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für EnumerationType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for EnumerationType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T06a.xtf
+	 * @Test-requirement RAt.T06a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Die Werte einer Aufzählung sind case-sensitive
+	 * @Expected-result Error message. The values of an enumeration are case-sensitive
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.2 und 3.3.11.3</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.1 and 3.3.11.3</p>
 	 */
 	@Test
 	public void RAt_T06a() {
@@ -308,16 +282,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T06b
 	 *
-	 * @Bezeichnung Attribute: EnumerationType
+	 * @Designation Attributes: EnumerationType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für EnumerationType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for EnumerationType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T06b.xtf
+	 * @Test-requirement RAt.T06b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Die Blätter des Baumes (nicht aber die Knoten) bilden die Menge der zulässigen Werte: 'Gebaeude' ist ein Knoten
+	 * @Expected-result Error message. The leaves of the tree (but not the nodes) form the set of allowed values: Gebaeude is a node
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.2 und 3.3.11.3</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.1 and 3.3.11.3</p>
 	 */
 	@Test
 	public void RAt_T06b() {
@@ -329,16 +302,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T06c
 	 *
-	 * @Bezeichnung Attribute: EnumerationType
+	 * @Designation Attributes: EnumerationType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für EnumerationType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for EnumerationType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T06c.xtf
+	 * @Test-requirement RAt.T06c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Leerzeichen sind nicht zulässig
+	 * @Expected-result Error message. Spaces are not allowed
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.2 und 3.3.11.3</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.1 and 3.3.11.3</p>
 	 */
 	@Test
 	public void RAt_T06c() {
@@ -350,16 +322,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T07a
 	 *
-	 * @Bezeichnung Attribute: EnumTreeValueType
+	 * @Designation Attributes: EnumTreeValueType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für EnumTreeValueType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for EnumTreeValueType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T07a.xtf
+	 * @Test-requirement RAt.T07a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Unzulässiger Wert (dunkel)
+	 * @Expected-result Error message. Invalid value (dunkel)
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.2 und 3.3.11.3</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.1 and 3.3.11.3</p>
 	 */
 	@Test
 	public void RAt_T07a() {
@@ -371,16 +342,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T07b
 	 *
-	 * @Bezeichnung Attribute: EnumTreeValueType
+	 * @Designation Attributes: EnumTreeValueType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für EnumTreeValueType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for EnumTreeValueType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T07b.xtf
+	 * @Test-requirement RAt.T07b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung. Blätter und Knoten sind zulässig
+	 * @Expected-result No error message. Leaves and nodes are allowed
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.2 und 3.3.11.3</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.1 and 3.3.11.3</p>
 	 */
 	@Test
 	public void RAt_T07b() {
@@ -392,16 +362,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T08a
 	 *
-	 * @Bezeichnung Attribute: BooleanType
+	 * @Designation Attributes: BooleanType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für BooleanType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for BooleanType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T08a.xtf
+	 * @Test-requirement RAt.T08a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.4 und 3.3.11</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.4 and 3.3.11</p>
 	 */
 	@Test
 	public void RAt_T08a() {
@@ -413,16 +382,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T08b
 	 *
-	 * @Bezeichnung Attribute: BooleanType
+	 * @Designation Attributes: BooleanType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für BooleanType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for BooleanType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T08b.xtf
+	 * @Test-requirement RAt.T08b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Unzulässiger Wert '0'
+	 * @Expected-result Error message. Invalid value (0)
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.4 und 3.3.11</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.4 and 3.3.11</p>
 	 */
 	@Test
 	public void RAt_T08b() {
@@ -434,16 +402,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T09a
 	 *
-	 * @Bezeichnung Attribute: NumericType
+	 * @Designation Attributes: NumericType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for NumericType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T09a.xtf
+	 * @Test-requirement RAt.T09a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.5 und 3.3.11.4</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.5 and 3.3.11.4</p>
 	 */
 	@Test
 	public void RAt_T09a() {
@@ -455,16 +422,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T09b
 	 *
-	 * @Bezeichnung Attribute: NumericType
+	 * @Designation Attributes: NumericType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for NumericType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T09b.xtf
+	 * @Test-requirement RAt.T09b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Unzulässiger Wert '0.9'
+	 * @Expected-result Error message.Invalid value (0.9)
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.5 und 3.3.11.4</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.5 and 3.3.11.4</p>
 	 */
 	@Test
 	public void RAt_T09b() {
@@ -476,16 +442,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T09c
 	 *
-	 * @Bezeichnung Attribute: NumericType
+	 * @Designation Attributes: NumericType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for NumericType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T09c.xtf
+	 * @Test-requirement RAt.T09c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.5 und 3.3.11.4</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.5 and 3.3.11.4</p>
 	 */
 	@Test
 	public void RAt_T09c() {
@@ -497,16 +462,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T09d
 	 *
-	 * @Bezeichnung Attribute: NumericType
+	 * @Designation Attributes: NumericType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for NumericType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T09d.xtf
+	 * @Test-requirement RAt.T09d.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. '00004' statt '4'
+	 * @Expected-result Error message (00004 instead of 4)
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.5 und 3.3.11.4</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.5 and 3.3.11.4</p>
 	 */
 	@Test
 	public void RAt_T09d() {
@@ -518,16 +482,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T09e
 	 *
-	 * @Bezeichnung Attribute: NumericType
+	 * @Designation Attributes: NumericType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for NumericType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T09e.xtf
+	 * @Test-requirement RAt.T09e.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung (10000.01 wird auf 10000.0 gerundet)
+	 * @Expected-result No error message (10000.1 will be rounded to 10000.0)
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.5 und 3.3.11.4</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.5 and 3.3.11.4</p>
 	 */
 	@Test
 	public void RAt_T09e() {
@@ -539,16 +502,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T09f
 	 *
-	 * @Bezeichnung Attribute: NumericType
+	 * @Designation Attributes: NumericType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for NumericType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T09f.xtf
+	 * @Test-requirement RAt.T09f.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.5 und 3.3.11.4</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.5 and 3.3.11.4</p>
 	 */
 	@Test
 	public void RAt_T09f() {
@@ -560,16 +522,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T09g
 	 *
-	 * @Bezeichnung Attribute: NumericType
+	 * @Designation Attributes: NumericType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für NumericType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for NumericType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T09g.xtf
+	 * @Test-requirement RAt.T09g.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung (10000.05 wird auf 10000.1 gerundet)
+	 * @Expected-result Error message (10000.5 will be rounded to 10000.1)
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.5 und 3.3.11.4</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.5 and 3.3.11.4</p>
 	 */
 	@Test
 	public void RAt_T09g() {
@@ -581,16 +542,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T10a
 	 *
-	 * @Bezeichnung Attribute: FormattedType
+	 * @Designation Attributes: FormattedType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für FormattedType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for FormattedType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T10a.xtf
+	 * @Test-requirement RAt.T10a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Unzulässiger Wert '1'
+	 * @Expected-result Error message. Invalid value (1)
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.6, 2.8.7 und 3.3.11.5</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.6, 2.8.7 and 3.3.11.5</p>
 	 */
 	@Test
 	public void RAt_T10a() {
@@ -602,16 +562,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T10b
 	 *
-	 * @Bezeichnung Attribute: FormattedType
+	 * @Designation Attributes: FormattedType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für FormattedType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for FormattedType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T10b.xtf
+	 * @Test-requirement RAt.T10b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Unzulässiges Jahr '3000'
+	 * @Expected-result Error message. Invalid year (3000)
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.6, 2.8.7 und 3.3.11.5</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.6, 2.8.7 and 3.3.11.5</p>
 	 */
 	@Test
 	public void RAt_T10b() {
@@ -623,16 +582,15 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T10c
 	 *
-	 * @Bezeichnung Attribute: FormattedType
+	 * @Designation Attributes: FormattedType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für FormattedType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for FormattedType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T10c.xtf
+	 * @Test-requirement RAt.T10c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Unzulässiges Jahr '2018'
+	 * @Expected-result Error message. Invalid year (2018)
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6, 2.8.6, 2.8.7 und 3.3.11.5</p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.6, 2.8.7 and 3.3.11.5</p>
 	 */
 	@Test
 	public void RAt_T10c() {
@@ -644,17 +602,16 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T11a
 	 *
-	 * @Bezeichnung Attribute: OIDType
+	 * @Designation Attributes: OIDType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für OIDType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for OIDType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T11a.xtf
+	 * @Test-requirement RAt.T11a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültiger UUID der BID
+	 * @Expected-result Error message. Invalid UUID for the BID
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9 und 3.3.11.16</p>
-	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Kap. D.2</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.9 and 3.3.11.16</p>
+	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Chap. D.2</a></p>
 	 */
 	@Test
 	public void RAt_T11a() {
@@ -666,17 +623,16 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T11b
 	 *
-	 * @Bezeichnung Attribute: OIDType
+	 * @Designation Attributes: OIDType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für OIDType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for OIDType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T11b.xtf
+	 * @Test-requirement RAt.T11b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültiger UUID der TID
+	 * @Expected-result Error message. Invalid UUID for the TID
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9 und 3.3.11.16</p>
-	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Kap. D.2</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.9 and 3.3.11.16</p>
+	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Chap. D.2</a></p>
 	 */
 	@Test
 	public void RAt_T11b() {
@@ -688,17 +644,16 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T11c
 	 *
-	 * @Bezeichnung Attribute: OIDType
+	 * @Designation Attributes: OIDType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für OIDType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for OIDType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T11c.xtf
+	 * @Test-requirement RAt.T11c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9 und 3.3.11.16</p>
-	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Kap. D.2</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.9 and 3.3.11.16</p>
+	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Chap. D.2</a></p>
 	 */
 	@Test
 	public void RAt_T11c() {
@@ -710,17 +665,16 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T11d
 	 *
-	 * @Bezeichnung Attribute: OIDType
+	 * @Designation Attributes: OIDType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für OIDType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for OIDType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T11d.xtf
+	 * @Test-requirement RAt.T11d.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige Codierung (muss als XML-Attribut codiert werden)
+	 * @Expected-result Error message. Invalid encoding (it must be encoded as XML attribute)
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9 und 3.3.11.16</p>
-	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Kap. D.2</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.9 and 3.3.11.16</p>
+	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Chap. D.2</a></p>
 	 */
 	@Test
 	public void RAt_T11d() {
@@ -732,21 +686,20 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T11e
 	 *
-	 * @Bezeichnung Attribute: OIDType
+	 * @Designation Attributes: OIDType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für OIDType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for OIDType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T11e.xtf
+	 * @Test-requirement RAt.T11e.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Nur Ziffern und Buchstaben erlaubt
+	 * @Expected-result Error message. Only numbers and letters are allowed
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9 und 3.3.11.16</p>
-	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Kap. D.2</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.9 and 3.3.11.16</p>
+	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Chap. D.2</a></p>
 	 */
 	@Test
 	public void RAt_T11e() {
-		// Ausgesetzt falls vendor="ig/check" --> Flasche Fehlermeldung
+		// Ignored if vendor="ig/check" --> Wrong error message
 		assumeFalse (System.getProperty("vendor").equals("ig/check"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RAt.T11e.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
@@ -755,21 +708,20 @@ public class AttributeTest {
 	/**
 	 * @ID RAt.T11f
 	 *
-	 * @Bezeichnung Attribute: OIDType
+	 * @Designation Attributes: OIDType
 	 *
-	 * @Beschreibung
-	 * Der Test muss prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für OIDType, bzw. den entsprechenden Codierungsregeln, entspricht
+	 * @Description The tests must check whether the attribute value satisfies the definition for OIDType in the INTERLIS data model and the corresponding encoding rules
 	 *
-	 * @Testvoraussetzung RAt.T11f.xtf
+	 * @Test-requirement RAt.T11f.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Erstes Zeichen muss Buchstabe oder Unterstrich sein
+	 * @Expected-result Error message. First character must be letter or underscore
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9 und 3.3.11.16</p>
-	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Kap. D.2</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.9 and 3.3.11.16</p>
+	 * <p><a href="https://www.w3.org/TR/xml-id">xml:id Version 1.0 Chap. D.2</a></p>
 	 */
 	@Test
 	public void RAt_T11f() {
-		// Ausgesetzt falls vendor="ig/check" --> Flasche Fehlermeldung
+		// Ignored if vendor="ig/check" --> Wrong error message
 		assumeFalse (System.getProperty("vendor").equals("ig/check"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RAt.T11f.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);

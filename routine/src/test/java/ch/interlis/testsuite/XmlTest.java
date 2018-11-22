@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests XML-Wohlgeformtheit
+ * Tests XML Well-Formedness
  */
 public class XmlTest {
 	private final Logger logger = LoggerFactory.getLogger(XmlTest.class);
@@ -29,20 +29,20 @@ public class XmlTest {
 	/**
 	 * @ID RXW.T01a
 	 *
-	 * @Bezeichnung XML-Wohlgeformtheit: Tags
+	 * @Designation Tags
 	 *
-	 * @Beschreibung Der Test muss die Wohlgeformtheit der Tags prüfen
+	 * @Description The tests must check the well-formedness of the tags
 	 *
-	 * @Testvoraussetzung RXW.T01a.xtf
+	 * @Test-requirement RXW.T01a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Es gibt ein Leerzeichen im Tag 'DATASECTION'
+	 * @Expected-result Error message. There is a space in the DATASECTION tag
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.1 und 3.3.3</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#sec-well-formed">Extensible Markup Language (XML) 1.0 Kap. 2.1</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.1 and 3.3.3</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#sec-well-formed">Extensible Markup Language (XML) 1.0 Chap. 2.1</a></p>
 	 */
 	@Test
 	public void RXW_T01a() {
-		// Ausgesetzt falls vendor="ig/check" --> Flasche Fehlermeldung
+		// Ignored if vendor="ig/check" --> Wrong error message
 		assumeFalse (System.getProperty("vendor").equals("ig/check"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RXW.T01a.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
@@ -52,16 +52,16 @@ public class XmlTest {
 	/**
 	 * @ID RXW.T01b
 	 *
-	 * @Bezeichnung XML-Wohlgeformtheit: Tags
+	 * @Designation Tags
 	 *
-	 * @Beschreibung Der Test muss die Wohlgeformtheit der Tags prüfen
+	 * @Description The tests must check the well-formedness of the tags
 	 *
-	 * @Testvoraussetzung RXW.T01b.xtf
+	 * @Test-requirement RXW.T01b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Der Name des End-Tags 'TRANSFERs' stimmt nicht mit dem Namen des Start-Tags 'TRANSFER' überein
+	 * @Expected-result Error message. The closing tag TRANSFERs does not match the opening tag TRANSFER
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.1 und 3.3.3</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#sec-well-formed">Extensible Markup Language (XML) 1.0 Kap. 2.1</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.1 and 3.3.3</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#sec-well-formed">Extensible Markup Language (XML) 1.0 Chap. 2.1</a></p>
 	 */
 	@Test
 	public void RXW_T01b() {
@@ -72,21 +72,20 @@ public class XmlTest {
 	/**
 	 * @ID RXW.T02a
 	 *
-	 * @Bezeichnung XML-Wohlgeformtheit: XML-Attribute
+	 * @Designation XML attributes
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute in Anführungszeichen geschrieben sind (einfaches oder doppeltes Anführungszeichen).
-	 * Es ist zusätzlich zu prüfen, dass ein Attributname nicht mehr als einmal im selben Tag vorkommt.
+	 * @Description The tests must check whether the XML attributes are written in quotation marks (single or double quotation marks) and that an attribute name does not occur more than once in the same tag
 	 *
-	 * @Testvoraussetzung RXW.T02a.xtf
+	 * @Test-requirement RXW.T02a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Attributwert (xmlns) nicht in Anführungszeichen geschrieben
+	 * @Expected-result Error message. Attribute value (xmlns) not in quotation marks
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.1</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#uniqattspec">Extensible Markup Language (XML) 1.0 Kap. 3.1</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.1</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#sec-well-formed">Extensible Markup Language (XML) 1.0 Chap. 3.1</a></p>
 	 */
 	@Test
 	public void RXW_T02a() {
-		// Ausgesetzt falls vendor="ilivalidator" --> Flasche Fehlermeldung
+		// Ignored if vendor="ilivalidator" --> Wrong error message
 		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RXW.T02a.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
@@ -95,17 +94,16 @@ public class XmlTest {
 	/**
 	 * @ID RXW.T02b
 	 *
-	 * @Bezeichnung XML-Wohlgeformtheit: XML-Attribute
+	 * @Designation XML attributes
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute in Anführungszeichen geschrieben sind (einfaches oder doppeltes Anführungszeichen).
-	 * Es ist zusätzlich zu prüfen, dass ein Attributname nicht mehr als einmal im selben Tag vorkommt.
+	 * @Description The tests must check whether the XML attributes are written in quotation marks (single or double quotation marks) and that an attribute name does not occur more than once in the same tag
 	 *
-	 * @Testvoraussetzung RXW.T02b.xtf
+	 * @Test-requirement RXW.T02b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung. Einfaches und doppeltes Anführungszeichen sind beide gültig
+	 * @Expected-result No error message. Single and double quotation marks are both valid
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.1</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#uniqattspec">Extensible Markup Language (XML) 1.0 Kap. 3.1</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.1</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#sec-well-formed">Extensible Markup Language (XML) 1.0 Chap. 3.1</a></p>
 	 */
 	@Test
 	public void RXW_T02b() {
@@ -116,17 +114,16 @@ public class XmlTest {
 	/**
 	 * @ID RXW.T02c
 	 *
-	 * @Bezeichnung XML-Wohlgeformtheit: XML-Attribute
+	 * @Designation XML attributes
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute in Anführungszeichen geschrieben sind (einfaches oder doppeltes Anführungszeichen).
-	 * Es ist zusätzlich zu prüfen, dass ein Attributname nicht mehr als einmal im selben Tag vorkommt.
+	 * @Description The tests must check whether the XML attributes are written in quotation marks (single or double quotation marks) and that an attribute name does not occur more than once in the same tag
 	 *
-	 * @Testvoraussetzung RXW.T02c.xtf
+	 * @Test-requirement RXW.T02c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Doppeltes Attribut BID
+	 * @Expected-result Error message. Double attribute BID
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.1</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#uniqattspec">Extensible Markup Language (XML) 1.0 Kap. 3.1</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.1</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#sec-well-formed">Extensible Markup Language (XML) 1.0 Chap. 3.1</a></p>
 	 */
 	@Test
 	public void RXW_T02c() {
@@ -134,21 +131,20 @@ public class XmlTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID RXW.T02d
 	 *
-	 * @Bezeichnung XML-Wohlgeformtheit: XML-Attribute
+	 * @Designation XML attributes
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute in Anführungszeichen geschrieben sind (einfaches oder doppeltes Anführungszeichen).
-	 * Es ist zusätzlich zu prüfen, dass ein Attributname nicht mehr als einmal im selben Tag vorkommt.
+	 * @Description The tests must check whether the XML attributes are written in quotation marks (single or double quotation marks) and that an attribute name does not occur more than once in the same tag
 	 *
-	 * @Testvoraussetzung RXW.T02d.xtf
+	 * @Test-requirement RXW.T02d.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Doppeltes Attribut TID
+	 * @Expected-result Error message. Double attribute TID
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.1</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#uniqattspec">Extensible Markup Language (XML) 1.0 Kap. 3.1</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.1</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#sec-well-formed">Extensible Markup Language (XML) 1.0 Chap. 3.1</a></p>
 	 */
 	@Test
 	public void RXW_T02d() {
@@ -156,53 +152,51 @@ public class XmlTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID RXW.T02e
 	 *
-	 * @Bezeichnung XML-Wohlgeformtheit: XML-Attribute
+	 * @Designation XML attributes
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute in Anführungszeichen geschrieben sind (einfaches oder doppeltes Anführungszeichen).
-	 * Es ist zusätzlich zu prüfen, dass ein Attributname nicht mehr als einmal im selben Tag vorkommt.
+	 * @Description The tests must check whether the XML attributes are written in quotation marks (single or double quotation marks) and that an attribute name does not occur more than once in the same tag
 	 *
-	 * @Testvoraussetzung RXW.T02e.xtf
+	 * @Test-requirement RXW.T02e.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Doppeltes Attribut VERSION in HEADERSECTION
+	 * @Expected-result Error message. Double attribute VERSION in HEADERSECTION
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.1</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#uniqattspec">Extensible Markup Language (XML) 1.0 Kap. 3.1</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.1</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#sec-well-formed">Extensible Markup Language (XML) 1.0 Chap. 3.1</a></p>
 	 */
 	@Test
 	public void RXW_T02e() {
-		// Ausgesetzt falls vendor="ilivalidator" --> Flasche Fehlermeldung
+		// Ignored if vendor="ilivalidator" --> Wrong error message
 		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RXW.T02e.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 	/**
 	 * @ID RXW.T02f
 	 *
-	 * @Bezeichnung XML-Wohlgeformtheit: XML-Attribute
+	 * @Designation XML attributes
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Attribute in Anführungszeichen geschrieben sind (einfaches oder doppeltes Anführungszeichen).
-	 * Es ist zusätzlich zu prüfen, dass ein Attributname nicht mehr als einmal im selben Tag vorkommt.
+	 * @Description The tests must check whether the XML attributes are written in quotation marks (single or double quotation marks) and that an attribute name does not occur more than once in the same tag
 	 *
-	 * @Testvoraussetzung RXW.T02f.xtf
+	 * @Test-requirement RXW.T02f.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Doppeltes Attribut VERSION in MODEL
+	 * @Expected-result Error message. Double attribute VERSION in MODEL
 	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.1</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#uniqattspec">Extensible Markup Language (XML) 1.0 Kap. 3.1</a></p>
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.1</p>
+	 * <p><a href="https://www.w3.org/TR/xml/#sec-well-formed">Extensible Markup Language (XML) 1.0 Chap. 3.1</a></p>
 	 */
 	@Test
 	public void RXW_T02f() {
-		// Ausgesetzt falls vendor="ilivalidator" --> Flasche Fehlermeldung
+		// Ignored if vendor="ilivalidator" --> Wrong error message
 		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RXW.T02f.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
-	
+
 }

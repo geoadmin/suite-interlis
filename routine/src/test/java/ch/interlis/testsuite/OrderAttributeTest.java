@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Reihenfolge innerhalb der Klasseinstanzen
+ * Tests Order within class instances
  */
 public class OrderAttributeTest {
 	private final Logger logger = LoggerFactory.getLogger(OrderAttributeTest.class);
@@ -29,16 +29,16 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T01a
 	 *
-	 * @Bezeichnung Reihenfolge: Klasseinstanzen
-	 *
-	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer Klasse
-	 *
-	 * @Testvoraussetzung RRiO.T01a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.3.7
-	 */
+	 * @Designation Order: class instances
+ 	 *
+ 	 * @Description The tests must check the rules for the order of the object instances of a class
+ 	 *
+ 	 * @Test-requirement RRiO.T01a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.7</p>
+ 	 */
 	@Test
 	public void RRiO_T01a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RRiO.T01a.xtf");
@@ -49,16 +49,16 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T01b
 	 *
-	 * @Bezeichnung Reihenfolge: Klasseinstanzen
-	 *
-	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer Klasse
-	 *
-	 * @Testvoraussetzung RRiO.T01b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Falsche Reihenfolge der Attribute
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.3.7
-	 */
+	 * @Designation Order: class instances
+ 	 *
+ 	 * @Description The tests must check the rules for the order of the object instances of a class
+ 	 *
+ 	 * @Test-requirement RRiO.T01b.xtf
+ 	 *
+ 	 * @Expected-result Error message. Wrong sequence of the attributes
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.7</p>
+ 	 */
 	@Test
 	public void RRiO_T01b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RRiO.T01b.xtf");
@@ -69,16 +69,16 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T01c
 	 *
-	 * @Bezeichnung Reihenfolge: Klasseinstanzen
-	 *
-	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer Klasse
-	 *
-	 * @Testvoraussetzung RRiO.T01c.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Falsche Reihenfolge der EmbeddedLinks
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.3.7
-	 */
+	 * @Designation Order: class instances
+ 	 *
+ 	 * @Description The tests must check the rules for the order of the object instances of a class
+ 	 *
+ 	 * @Test-requirement RRiO.T01c.xtf
+ 	 *
+ 	 * @Expected-result Error message. Wrong sequence of the EmbeddedLink
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.7</p>
+ 	 */
 	@Test
 	public void RRiO_T01c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RRiO.T01c.xtf");
@@ -89,16 +89,16 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T02a
 	 *
-	 * @Bezeichnung Reihenfolge: Instanzen einer erweiterten Klasse
-	 *
-	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse
-	 *
-	 * @Testvoraussetzung RRiO.T02a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.3.7
-	 */
+	 * @Designation Order: instances of an extended class
+ 	 *
+ 	 * @Description The tests must check the rules for the order of the object instances of an extended class
+ 	 *
+ 	 * @Test-requirement RRiO.T02a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.7</p>
+ 	 */
 	@Test
 	public void RRiO_T02a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RRiO.T02a.xtf");
@@ -109,16 +109,16 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T02b
 	 *
-	 * @Bezeichnung Reihenfolge: Instanzen einer erweiterten Klasse
-	 *
-	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse
-	 *
-	 * @Testvoraussetzung RRiO.T02b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Falsche Reihenfolge der Attribute (zuerst müssen die Attribute der Basisklasse codiert werden)
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.3.7
-	 */
+	 * @Designation Order: instances of an extended class
+ 	 *
+ 	 * @Description The tests must check the rules for the order of the object instances of an extended class
+ 	 *
+ 	 * @Test-requirement RRiO.T02b.xtf
+ 	 *
+ 	 * @Expected-result Error message. Wrong sequence of the attributes (the attributes of the basic class must be encoded first)
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.7</p>
+ 	 */
 	@Test
 	public void RRiO_T02b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RRiO.T02b.xtf");
@@ -129,16 +129,16 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T03a
 	 *
-	 * @Bezeichnung Reihenfolge: Instanzen einer erweiterten Beziehungsklasse
-	 *
-	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse
-	 *
-	 * @Testvoraussetzung RRiO.T03a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.3.7
-	 */
+	 * @Designation Order: instances of an extended association class
+ 	 *
+ 	 * @Description The tests must check the rules for the order of the object instances of an extended association class
+ 	 *
+ 	 * @Test-requirement RRiO.T03a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.7</p>
+ 	 */
 	@Test
 	public void RRiO_T03a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RRiO.T03a.xtf");
@@ -149,16 +149,16 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T03b
 	 *
-	 * @Bezeichnung Reihenfolge: Instanzen einer erweiterten Beziehungsklasse
-	 *
-	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse
-	 *
-	 * @Testvoraussetzung RRiO.T03b.xtf
-	 *
-	 * @Erwartetes.Ergebnis  Fehlermeldung. Zuerst müssen die Rollen der Basisklasse codiert werden
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.3.7
-	 */
+	 * @Designation Order: instances of an extended association class
+ 	 *
+ 	 * @Description The tests must check the rules for the order of the object instances of an extended association class
+ 	 *
+ 	 * @Test-requirement RRiO.T03b.xtf
+ 	 *
+ 	 * @Expected-result Error message. The roles of the basic class must be encoded first
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.7</p>
+ 	 */
 	@Test
 	public void RRiO_T03b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RRiO.T03b.xtf");
@@ -169,16 +169,16 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T03c
 	 *
-	 * @Bezeichnung Reihenfolge: Instanzen einer erweiterten Beziehungsklasse
-	 *
-	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse
-	 *
-	 * @Testvoraussetzung RRiO.T03c.xtf
-	 *
-	 * @Erwartetes.Ergebnis  Fehlermeldung. Zuerst müssen die Attribute der Basisklasse codiert werden
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.3.7
-	 */
+	 * @Designation Order: instances of an extended association class
+ 	 *
+ 	 * @Description The tests must check the rules for the order of the object instances of an extended association class
+ 	 *
+ 	 * @Test-requirement RRiO.T03c.xtf
+ 	 *
+ 	 * @Expected-result Error message. The attributes of the basic class must be encoded first
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.7</p>
+ 	 */
 	@Test
 	public void RRiO_T03c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RRiO.T03c.xtf");
@@ -189,16 +189,16 @@ public class OrderAttributeTest {
 	/**
 	 * @ID RRiO.T03d
 	 *
-	 * @Bezeichnung Reihenfolge: Instanzen einer erweiterten Beziehungsklasse
-	 *
-	 * @Beschreibung Der Test muss die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse
-	 *
-	 * @Testvoraussetzung RRiO.T03d.xtf
-	 *
-	 * @Erwartetes.Ergebnis  Fehlermeldung. Die Rollen der Basisklasse sind obligatorisch
-	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kapitel 3.3.7
-	 */
+	 * @Designation Order: instances of an extended association class
+ 	 *
+ 	 * @Description The tests must check the rules for the order of the object instances of an extended association class
+ 	 *
+ 	 * @Test-requirement RRiO.T03d.xtf
+ 	 *
+ 	 * @Expected-result Error message. The roles of the basic class are mandatory
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.7</p>
+ 	 */
 	@Test
 	public void RRiO_T03d() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RRiO.T03d.xtf");

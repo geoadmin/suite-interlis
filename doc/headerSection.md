@@ -1,57 +1,57 @@
-# Vorspann
+# Header section
 
 ## HEADERSECTION
 |ID|RHE
 |:--|:--
-|**Bezeichnung**|**HEADERSECTION**
-|**Beschreibung**|Für die Validierung des Vorspanns gelten die im [[1]] Kap. 3.3.4 definierten Regeln
-|**Details**|<ul><li>Die Angaben ```VERSION``` und ```SENDER``` im Tag ```HEADERSECTION``` sind verbindlich</li><li>Im Element ```MODELS``` müssen alle Datenmodelle (mindestens eines) aufgeführt werden, zu deren Themen Daten vorkommen</li><li>Die Angaben ```NAME```, ```VERSION``` und ```URI``` im Tag ```MODEL``` sind verbindlich</li><li>Die Angabe ```NAME``` muss zwingend der ```ModelDef``` ([[1]] Kap. 2.5.1) im INTERLIS-Datenmodell entsprechen</li><li>Die Angabe ```VERSION``` soll der ```ModelDef``` ([[1]] Kap. 2.5.1) im INTERLIS-Datenmodell entsprechen</li><li>Die Angabe ```URI``` hat für die Datenprüfung keine weitere Bedeutung</li></ul>
-|**Referenz**|[[1]] Kap. 2.5.1 und 3.3.4
+|**Designation**|**HEADERSECTION**
+|**Description**|For the validation of the header section, the rules defined in [[1]] Chap. 3.3.4 apply
+|**Details**|<ul><li>The XML attributes ```VERSION``` and ```SENDER``` in tag ```HEADERSECTION``` are mandatory</li><li>The element ```MODELS``` must list all models (at least one) for which data is available</li><li>The XML attributes ```NAME```, ```VERSION``` and ```URI``` in tag ```MODEL``` are mandatory</li><li>The value ```NAME``` must satisfy the ```ModelDef``` ([[1]] Chap. 2.5.1) in the INTERLIS data model</li><li>The value ```VERSION``` should satisfy the ```ModelDef``` ([[1]] Chap. 2.5.1) in the INTERLIS data model</li><li>The value ```URI``` has no further meaning for data validation</li></ul>
+|**Reference**|[[1]] Chap. 2.5.1 and 3.3.4
 
-### Testfälle
-###### Vorspann - RHE.T01
+### Test cases
+###### Header section - RHE.T01
 |ID|RHE.T01
 |:--|:--
-|**Bezeichnung**|**Vorspann: XML-Attribute**
-|**Beschreibung**|Die Tests müssen prüfen, ob die XML-Attribute ```VERSION``` und ```SENDER``` im Tag ```HEADERSECTION``` vorhanden sind
-|**Testvoraussetzung**|[RHE.T01a.xtf](../data/RHE.T01a.xtf), [RHE.T01b.xtf](../data/RHE.T01b.xtf), [RHE.T01c.xtf](../data/RHE.T01c.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RHE.T01a.xtf: Fehlermeldung. ```VERSION``` nicht vorhanden</li><li>RHE.T01b.xtf: Fehlermeldung. ```SENDER``` nicht vorhanden</li><li>RHE.T01c.xtf: Fehlermeldung. ```VERSION``` nicht gleich 2.3</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.4
+|**Designation**|**Header section: XML attributes**
+|**Description**|The tests must check whether the XML attributes ```VERSION``` and ```SENDER``` are available in the tag ```HEADERSECTION```
+|**Test requirement**|[RHE.T01a.xtf](../data/RHE.T01a.xtf), [RHE.T01b.xtf](../data/RHE.T01b.xtf), [RHE.T01c.xtf](../data/RHE.T01c.xtf)
+|**Expected result**|<ul><li>RHE.T01a.xtf: error message. ```VERSION``` not available</li><li>RHE.T01b.xtf: error message. ```SENDER``` not available</li><li>RHE.T01c.xtf: error message. ```VERSION``` not equal 2.3</li></ul>
+|**Reference**|[[1]] Chap. 3.3.4
 
-###### Vorspann - RHE.T02
+###### Header section - RHE.T02
 |ID|RHE.T02
 |:--|:--
-|**Bezeichnung**|**Vorspann: Tag MODELS**
-|**Beschreibung**|Der Test muss prüfen, ob das Tag ```MODELS``` im Tag ```HEADERSECTION``` vorhanden ist
-|**Testvoraussetzung**|[RHE.T02a.xtf](../data/RHE.T02a.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RHE.T02a.xtf: Fehlermeldung. Tag ```MODELS``` nicht vorhanden</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.4
+|**Designation**|**Header section: tag MODELS**
+|**Description**|The tests must check whether the tag ```MODELS``` is available in the tag ```HEADERSECTION```
+|**Test requirement**|[RHE.T02a.xtf](../data/RHE.T02a.xtf)
+|**Expected result**|<ul><li>RHE.T02a.xtf: error message. Tag ```MODELS``` not available</li></ul>
+|**Reference**|[[1]] Chap. 3.3.4
 
-###### Vorspann - RHE.T03
+###### Header section - RHE.T03
 |ID|RHE.T03
 |:--|:--
-|**Bezeichnung**|**Vorspann: Sub-Tag MODEL**
-|**Beschreibung**|Der Test muss prüfen, ob das Sub-Tag ```MODEL``` im Tag ```MODELS``` vorhanden ist
-|**Testvoraussetzung**|[RHE.T03a.xtf](../data/RHE.T03a.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RHE.T03a.xtf: Fehlermeldung. Sub-Tag ```MODEL``` nicht vorhanden</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.4
+|**Designation**|**Header section: tag MODEL**
+|**Description**|The tests must check whether the tag ```MODEL``` is available in the Tag ```MODELS```
+|**Test requirement**|[RHE.T03a.xtf](../data/RHE.T03a.xtf)
+|**Expected result**|<ul><li>RHE.T03a.xtf: error message. Tag ```MODEL``` not available</li></ul>
+|**Reference**|[[1]] Chap. 3.3.4
 
-###### Vorspann - RHE.T04
+###### Header section - RHE.T04
 |ID|RHE.T04
 |:--|:--
-|**Bezeichnung**|**Vorspann: XML-Attribute im Sub-Tag MODEL**
-|**Beschreibung**|Die Tests müssen prüfen, ob die XML-Attribute ```NAME```, ```VERSION``` und ```URI``` im Sub-Tag ```MODEL``` vorhanden sind
-|**Testvoraussetzung**|[RHE.T04a.xtf](../data/RHE.T04a.xtf), [RHE.T04b.xtf](../data/RHE.T04b.xtf), [RHE.T04c.xtf](../data/RHE.T04c.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RHE.T04a.xtf: Fehlermeldung. ```NAME``` nicht vorhanden</li><li>RHE.T04b.xtf: Fehlermeldung. ```VERSION``` nicht vorhanden</li><li>RHE.T04c.xtf: Fehlermeldung. ```URI``` nicht vorhanden</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.4
+|**Designation**|**Header section: XML attributes in tag MODEL**
+|**Description**|The tests must check whether the XML attributes ```NAME```, ```VERSION``` and ```URI``` are available in tag ```MODEL```
+|**Test requirement**|[RHE.T04a.xtf](../data/RHE.T04a.xtf), [RHE.T04b.xtf](../data/RHE.T04b.xtf), [RHE.T04c.xtf](../data/RHE.T04c.xtf)
+|**Expected result**|<ul><li>RHE.T04a.xtf: error message. ```NAME``` not available</li><li>RHE.T04b.xtf: error message. ```VERSION``` not available</li><li>RHE.T04c.xtf: error message. ```URI``` not available</li></ul>
+|**Reference**|[[1]] Chap. 3.3.4
 
-###### Vorspann - RHE.T05
+###### Header section - RHE.T05
 |ID|RHE.T05
 |:--|:--
-|**Bezeichnung**|**Vorspann: Attributswerte in ```NAME```, und ```VERSION```**
-|**Beschreibung**|Die Tests müssen prüfen, ob die Werte der Attribute ```NAME``` und ```VERSION``` im Sub-Tag ```MODEL``` der ```ModelDef``` im INTERLIS-Datenmodell entsprechen
-|**Testvoraussetzung**|[RHE.T05a.xtf](../data/RHE.T05a.xtf), [RHE.T05b.xtf](../data/RHE.T05b.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RHE.T05a.xtf: Fehlermeldung. Wert in ```NAME``` stimmt nicht / Model ``TestSuite`` nicht vorhanden</li><li>RHE.T05b.xtf: Fehlermeldung. Wert in ```VERSION``` stimmt nicht</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.4
+|**Designation**|**Header section: attribute value in ```NAME``` and ```VERSION```**
+|**Description**|The tests must check whether the values of the attributes ```NAME``` and ```VERSION``` in tag ```MODEL``` satisfy the ```ModelDef``` in the INTERLIS data model
+|**Test requirement**|[RHE.T05a.xtf](../data/RHE.T05a.xtf), [RHE.T05b.xtf](../data/RHE.T05b.xtf)
+|**Expected result**|<ul><li>RHE.T05a.xtf: error message. The value ```NAME``` is wrong (model ``TestSuite`` not available)</li><li>RHE.T05b.xtf: error message. The value ```VERSION``` is wrong</li></ul>
+|**Reference**|[[1]] Chap. 3.3.4
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[1]: bib.md#1-cogis-interlis-version-2--reference-manual-13042006

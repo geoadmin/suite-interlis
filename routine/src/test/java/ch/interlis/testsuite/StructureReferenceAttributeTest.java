@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Datenbereich: Struktur- und Referenzattribute
+ * Data section: Structure and Reference attributes
 */
 public class StructureReferenceAttributeTest {
 	private final Logger logger = LoggerFactory.getLogger(StructureReferenceAttributeTest.class);
@@ -26,18 +26,18 @@ public class StructureReferenceAttributeTest {
 	}
 
 	/**
-	 * @ID RStReA.T01a
-	 *
-	 * @Bezeichnung Struktur- und Referenzattribute: StructureValue
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob das Strukturattribut der StructureDef im INTERLIS-Datenmodell, bzw. den entsprechenden Codierungsregeln für den StructureValue, entspricht
-	 *
-	 * @Testvoraussetzung RStReA.T01a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6.4 und 3.3.11.9</p>
-	 */
+ 	 * @ID RStReA.T01a
+ 	 *
+ 	 * @Designation Structure and reference attributes: StructureValue
+ 	 *
+ 	 * @Description The tests must check whether the structure attribute satisfies the definition for StructureDef in the INTERLIS data model and the corresponding encoding rules for StructureValue
+ 	 *
+ 	 * @Test-requirement RStReA.T01a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6.4 and 3.3.11.9</p>
+ 	 */
 	@Test
 	public void RStReA_T01a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RStReA.T01a.xtf");
@@ -48,16 +48,16 @@ public class StructureReferenceAttributeTest {
 	/**
 	 * @ID RStReA.T01b
 	 *
-	 * @Bezeichnung Struktur- und Referenzattribute: StructureValue
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob das Strukturattribut der StructureDef im INTERLIS-Datenmodell, bzw. den entsprechenden Codierungsregeln für den StructureValue, entspricht
-	 *
-	 * @Testvoraussetzung RStReA.T01b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Falsche Codierung der Struktur
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6.4 und 3.3.11.9</p>
-	 */
+	 * @Designation Structure and reference attributes: StructureValue
+ 	 *
+ 	 * @Description The tests must check whether the structure attribute satisfies the definition for StructureDef in the INTERLIS data model and the corresponding encoding rules for StructureValue
+ 	 *
+ 	 * @Test-requirement RStReA.T01b.xtf
+ 	 *
+ 	 * @Expected-result Error message. Wrong encoding of the structure
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6.4 and 3.3.11.9</p>
+ 	 */
 	@Test
 	public void RStReA_T01b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RStReA.T01b.xtf");
@@ -68,16 +68,16 @@ public class StructureReferenceAttributeTest {
 	/**
 	 * @ID RStReA.T01c
 	 *
-	 * @Bezeichnung Struktur- und Referenzattribute: StructureValue
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob das Strukturattribut der StructureDef im INTERLIS-Datenmodell, bzw. den entsprechenden Codierungsregeln für den StructureValue, entspricht
-	 *
-	 * @Testvoraussetzung RStReA.T01c.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Attribut TestSuite2.Einheiten.KantonRef.KtNummer benötigt
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6.4 und 3.3.11.9</p>
-	 */
+	 * @Designation Structure and reference attributes: StructureValue
+ 	 *
+ 	 * @Description The tests must check whether the structure attribute satisfies the definition for StructureDef in the INTERLIS data model and the corresponding encoding rules for StructureValue
+ 	 *
+ 	 * @Test-requirement RStReA.T01c.xtf
+ 	 *
+ 	 * @Expected-result Error message. Attribute TestSuite2.Einheiten.KantonRef.KtNummer is required
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6.4 and 3.3.11.9</p>
+ 	 */
 	@Test
 	public void RStReA_T01c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RStReA.T01c.xtf");
@@ -88,16 +88,16 @@ public class StructureReferenceAttributeTest {
 	/**
 	 * @ID RStReA.T02a
 	 *
-	 * @Bezeichnung Struktur- und Referenzattribute: ReferenceAttribute
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob das Referenzattribut der Definition im INTERLIS-Datenmodell, bzw. den entsprechenden Codierungsregeln, entspricht
-	 *
-	 * @Testvoraussetzung RStReA.T02a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6.3 und 3.3.11.14</p>
-	 */
+	 * @Designation Structure and reference attributes: ReferenceAttribute
+ 	 *
+ 	 * @Description The tests must check whether the reference attribute satisfies the definition in the INTERLIS data model and the corresponding encoding rules
+ 	 *
+ 	 * @Test-requirement RStReA.T02a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6.3 and 3.3.11.14</p>
+ 	 */
 	@Test
 	public void RStReA_T02a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RStReA.T02a.xtf");
@@ -108,16 +108,16 @@ public class StructureReferenceAttributeTest {
 	/**
 	 * @ID RStReA.T02b
 	 *
-	 * @Bezeichnung Struktur- und Referenzattribute: ReferenceAttribute
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob das Referenzattribut der Definition im INTERLIS-Datenmodell, bzw. den entsprechenden Codierungsregeln, entspricht
-	 *
-	 * @Testvoraussetzung RStReA.T02b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6.3 und 3.3.11.14</p>
-	 */
+	 * @Designation Structure and reference attributes: ReferenceAttribute
+ 	 *
+ 	 * @Description The tests must check whether the reference attribute satisfies the definition in the INTERLIS data model and the corresponding encoding rules
+ 	 *
+ 	 * @Test-requirement RStReA.T02b.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6.3 and 3.3.11.14</p>
+ 	 */
 	@Test
 	public void RStReA_T02b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RStReA.T02b.xtf");
@@ -128,16 +128,16 @@ public class StructureReferenceAttributeTest {
 	/**
 	 * @ID RStReA.T02c
 	 *
-	 * @Bezeichnung Struktur- und Referenzattribute: ReferenceAttribute
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob das Referenzattribut der Definition im INTERLIS-Datenmodell, bzw. den entsprechenden Codierungsregeln, entspricht
-	 *
-	 * @Testvoraussetzung RStReA.T02c.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.6.3 und 3.3.11.14</p>
-	 */
+	 * @Designation Structure and reference attributes: ReferenceAttribute
+ 	 *
+ 	 * @Description The tests must check whether the reference attribute satisfies the definition in the INTERLIS data model and the corresponding encoding rules
+ 	 *
+ 	 * @Test-requirement RStReA.T02c.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6.3 and 3.3.11.14</p>
+ 	 */
 	@Test
 	public void RStReA_T02c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RStReA.T02c.xtf");

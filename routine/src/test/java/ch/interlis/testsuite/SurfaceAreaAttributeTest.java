@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Datenbereich: Einzelflächen- und Gebietseinteilungen
+ * Tests Data section: Surfaces and Tessellations
  */
 public class SurfaceAreaAttributeTest {
 	private final Logger logger = LoggerFactory.getLogger(SurfaceAreaAttributeTest.class);
@@ -28,15 +28,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T01a
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: AREA
+	 * @Designation Surfaces and tessellations: AREA
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob zwei Polygone der AREA-Definition entsprechen.
+	 * @Description The tests must check whether two polygons satisfy the definition for AREA
 	 *
-	 * @Testvoraussetzung RSU.T01a.xtf
+	 * @Test-requirement RSU.T01a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Die Flächen teilen nicht die gleichen Kurvenstücke (eine Fläche enthält einen zusätzlichen Stützpunkt)
+	 * @Expected-result Error message. The surfaces do not share the same segments (one surface contains an additional control point)
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -52,15 +52,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T01b
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: AREA
+	 * @Designation Surfaces and tessellations: AREA
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob zwei Polygone der AREA-Definition entsprechen.
+	 * @Description The tests must check whether two polygons satisfy the definition for AREA
 	 *
-	 * @Testvoraussetzung RSU.T01b.xtf
+	 * @Test-requirement RSU.T01b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -76,15 +76,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T01c
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: AREA
+	 * @Designation Surfaces and tessellations: AREA
 	 *
-	 * @Beschreibung Der Test muss prüfen, ob zwei Polygone der AREA-Definition entsprechen.
+	 * @Description The tests must check whether two polygons satisfy the definition for AREA
 	 *
-	 * @Testvoraussetzung RSU.T01c.xtf
+	 * @Test-requirement RSU.T01c.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Die Flächen teilen nicht die gleichen Kurvenstücke
+	 * @Expected-result Error message. The surfaces do not share the same segments
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -100,15 +100,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T02a
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T02a.xtf (AREA)
+	 * @Test-requirement RSU.T02a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -124,15 +124,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T02b
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T02b.xtf (SURFACE)
+	 * @Test-requirement RSU.T02b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -148,15 +148,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T03a
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T03a.xtf (AREA)
+	 * @Test-requirement RSU.T03a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. OuterBoundary nicht gleich InnerBoundary
+	 * @Expected-result Error message. OuterBoundary not equal to InnerBoundary
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -172,15 +172,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T03b
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T03a.xtf (SURFACE)
+	 * @Test-requirement RSU.T03b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. OuterBoundary nicht gleich InnerBoundary
+	 * @Expected-result Error message. OuterBoundary not equal to InnerBoundary
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -196,15 +196,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T04a
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T04a.xtf (AREA)
+	 * @Test-requirement RSU.T04a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -220,15 +220,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T04b
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T04b.xtf (SURFACE)
+	 * @Test-requirement RSU.T04b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -244,15 +244,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T05a
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T05a.xtf (AREA)
+	 * @Test-requirement RSU.T05a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -268,15 +268,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T05b
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T05b.xtf (SURFACE)
+	 * @Test-requirement RSU.T05b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Expected-result No error message
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -292,15 +292,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T06a
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T06a.xtf (AREA)
+	 * @Test-requirement RSU.T06a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige Geometrie
+	 * @Expected-result Error message. Invalid geometry
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -316,15 +316,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T06b
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität einer Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität einer Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T06b.xtf (SURFACE)
+	 * @Test-requirement RSU.T06b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige Geometrie
+	 * @Expected-result Error message. Invalid geometry
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -340,15 +340,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T07a
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T07a.xtf (AREA)
+	 * @Test-requirement RSU.T07a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige Geometrie
+	 * @Expected-result Error message. Invalid geometry
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -364,15 +364,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T07b
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T07b.xtf (SURFACE)
+	 * @Test-requirement RSU.T07b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige Geometrie
+	 * @Expected-result Error message. Invalid geometry
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -388,15 +388,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T08a
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T08a.xtf (AREA)
+	 * @Test-requirement RSU.T08a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. InnerBoundary liegt nicht innerhalb der OuterBoundary
+	 * @Expected-result Error message. InnerBoundary is not inside the OuterBoundary
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -412,15 +412,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T08b
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T08b.xtf (SURFACE)
+	 * @Test-requirement RSU.T08b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. InnerBoundary liegt nicht innerhalb der OuterBoundary
+	 * @Expected-result Error message. InnerBoundary is not inside the OuterBoundary
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -436,15 +436,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T09a
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T09a.xtf (AREA)
+	 * @Test-requirement RSU.T09a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Multipolygon
+	 * @Expected-result Error message. Multipolygon
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -460,15 +460,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T09b
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T09b.xtf (SURFACE)
+	 * @Test-requirement RSU.T09b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Multipolygon
+	 * @Expected-result Error message. Multipolygon
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -484,15 +484,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T10a
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T10a.xtf (AREA)
+	 * @Test-requirement RSU.T010a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige Geometrie
+	 * @Expected-result Error message. Invalid geometry
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -508,15 +508,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T10b
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T10b.xtf (SURFACE)
+	 * @Test-requirement RSU.T010b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige Geometrie
+	 * @Expected-result Error message. Invalid geometry
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -532,15 +532,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T11a
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T11a.xtf (AREA)
+	 * @Test-requirement RSU.T011a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige Geometrie
+	 * @Expected-result Error message. Invalid geometry
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -556,15 +556,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T11b
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T11b.xtf (SURFACE)
+	 * @Test-requirement RSU.T011b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige Geometrie
+	 * @Expected-result Error message. Invalid geometry
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -580,15 +580,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T12a
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T12a.xtf (AREA)
+	 * @Test-requirement RSU.T012a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige Geometrie
+	 * @Expected-result Error message. Invalid geometry
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -604,15 +604,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T12b
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T12b.xtf (SURFACE)
+	 * @Test-requirement RSU.T012b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige Geometrie
+	 * @Expected-result Error message. Invalid geometry
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -628,15 +628,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T13a
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T13a.xtf (AREA)
+	 * @Test-requirement RSU.T013a.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige Geometrie
+	 * @Expected-result Error message. Invalid geometry
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *
@@ -652,15 +652,15 @@ public class SurfaceAreaAttributeTest {
 	/**
 	 * @ID RSU.T13b
 	 *
-	 * @Bezeichnung Einzelflächen und Gebietseinteilungen: Validität der Geometrie
+	 * @Designation Surfaces and tessellations: validity of the geometry
 	 *
-	 * @Beschreibung Der Test muss die Validität der Geometrie prüfen
+	 * @Description The tests must check the validity of the geometry
 	 *
-	 * @Testvoraussetzung RSU.T13b.xtf (SURFACE)
+	 * @Test-requirement RSU.T013b.xtf
 	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Ungültige Geometrie
+	 * @Expected-result Error message. Invalid geometry
 	 *
-	 * @Referenz <a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.13 und 3.3.11.13
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
 	 *
 	 * <p>
 	 *

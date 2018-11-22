@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Datenbereich: Themen
+ * Data section: Topics
  */
 public class TopicTest {
 	private final Logger logger = LoggerFactory.getLogger(TopicTest.class);
@@ -29,16 +29,16 @@ public class TopicTest {
 	/**
 	 * @ID RTO.T01a
 	 *
-	 * @Bezeichnung Themen: TopicDef
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob der Wert %Model.Topic% den Definitionen im INTERLIS-Datenmodell und den Angaben im Element MODELS in der HEADERSECTION entspricht
-	 *
-	 * @Testvoraussetzung RTO.T01a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Wert %Topic% stimmt nicht
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.5.1, 3.3.4 und 3.3.6</p>
-	 */
+	 * @Designation Topics: TopicDef
+ 	 *
+ 	 * @Description The tests must check whether the value %Model.Topic% satisfies the definition the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RTO.T01a.xtf
+ 	 *
+ 	 * @Expected-result Error message. Value %Topic% is wrong
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.9 and 3.3.1</p>
+ 	 */
 	@Test
 	public void RTO_T01a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RTO.T01a.xtf");
@@ -49,16 +49,16 @@ public class TopicTest {
 	/**
 	 * @ID RTO.T02a
 	 *
-	 * @Bezeichnung Themen: BID
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob der BID vorhanden ist und der richtigen Codierung entspricht
-	 *
-	 * @Testvoraussetzung RTO.T02a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. BID nicht vorhanden
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9 und 3.3.1</p>
-	 */
+	 * @Designation Topics: BID
+ 	 *
+ 	 * @Description The tests must check whether the BID exists and satisfies the encoding rules
+ 	 *
+ 	 * @Test-requirement RTO.T02a.xtf
+ 	 *
+ 	 * @Expected-result Error message. BID not available
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.9 and 3.3.1</p>
+ 	 */
 	@Test
 	public void RTO_T02a() {
 		// Ausgesetzt falls vendor="ilivalidator" --> java.lang.IllegalArgumentException: Attribute Attribute BID missing in basket TestSuite.Bodenbedeckung statt java.lang.AssertionError. Fehlermeldung ist korrekt
@@ -71,16 +71,16 @@ public class TopicTest {
 	/**
 	 * @ID RTO.T02b
 	 *
-	 * @Bezeichnung Themen: BID
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob der BID vorhanden ist und der richtigen Codierung entspricht
-	 *
-	 * @Testvoraussetzung RTO.T02b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. BID leer
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9 und 3.3.1</p>
-	 */
+	 * @Designation Topics: BID
+ 	 *
+ 	 * @Description The tests must check whether the BID exists and satisfies the encoding rules
+ 	 *
+ 	 * @Test-requirement RTO.T02b.xtf
+ 	 *
+ 	 * @Expected-result Error message. Empty BID
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.9 and 3.3.1</p>
+ 	 */
 	@Test
 	public void RTO_T02b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RTO.T02b.xtf");
@@ -91,16 +91,16 @@ public class TopicTest {
 	/**
 	 * @ID RTO.T02c
 	 *
-	 * @Bezeichnung Themen: BID
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob der BID vorhanden ist und der richtigen Codierung entspricht
-	 *
-	 * @Testvoraussetzung RTO.T02c.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. BID wird als XML-ID «à la INTERLIS» codiert. Erstes Zeichen muss Buchstabe, Ziffer oder Unterstrich sein
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9 und 3.3.1</p>
-	 */
+	 * @Designation Topics: BID
+ 	 *
+ 	 * @Description The tests must check whether the BID exists and satisfies the encoding rules
+ 	 *
+ 	 * @Test-requirement RTO.T02c.xtf
+ 	 *
+ 	 * @Expected-result Error message. BID must be encoded as XML-ID à la INTERLIS. The first character must be a letter or a digit or an underscore
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.9 and 3.3.1</p>
+ 	 */
 	@Test
 	public void RTO_T02c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RTO.T02c.xtf");
@@ -111,16 +111,16 @@ public class TopicTest {
 	/**
 	 * @ID RTO.T02d
 	 *
-	 * @Bezeichnung Themen: BID
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob der BID vorhanden ist und der richtigen Codierung entspricht
-	 *
-	 * @Testvoraussetzung RTO.T02d.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Zeichen mit Umlauten sind nicht zulässig
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.8.9 und 3.3.1</p>
-	 */
+	 * @Designation Topics: BID
+ 	 *
+ 	 * @Description The tests must check whether the BID exists and satisfies the encoding rules
+ 	 *
+ 	 * @Test-requirement RTO.T02d.xtf
+ 	 *
+ 	 * @Expected-result Error message. Characters with umlauts are not allowed
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.9 and 3.3.1</p>
+ 	 */
 	@Test
 	public void RTO_T02d() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RTO.T02d.xtf");
@@ -131,16 +131,16 @@ public class TopicTest {
 	/**
 	 * @ID RTO.T03a
 	 *
-	 * @Bezeichnung Themen: BID und TID
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob alle BID inkl. alle TID innerhalb des Transfers eindeutig sind
-	 *
-	 * @Testvoraussetzung RTO.T03a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Doppelte BID
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.2.6 und 3.3.7</p>
-	 */
+	 * @Designation Topics: BID and TID
+ 	 *
+ 	 * @Description The tests must check whether all BID and all TID within the transfer are unique
+ 	 *
+ 	 * @Test-requirement RTO.T03a.xtf
+ 	 *
+ 	 * @Expected-result Error message. Double BID
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.2.6 and 3.3.7</p>
+ 	 */
 	@Test
 	public void RTO_T03a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RTO.T03a.xtf");
@@ -151,16 +151,16 @@ public class TopicTest {
 	/**
 	 * @ID RTO.T03b
 	 *
-	 * @Bezeichnung Themen: BID und TID
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob alle BID inkl. alle TID innerhalb des Transfers eindeutig sind
-	 *
-	 * @Testvoraussetzung RTO.T03b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Gleicher Wert in BID und in TID
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.2.6 und 3.3.7</p>
-	 */
+	 * @Designation Topics: BID and TID
+ 	 *
+ 	 * @Description The tests must check whether all BID and all TID within the transfer are unique
+ 	 *
+ 	 * @Test-requirement RTO.T03b.xtf
+ 	 *
+ 	 * @Expected-result Error message. Same value in BID and in TID
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.2.6 and 3.3.7</p>
+ 	 */
 	@Test
 	public void RTO_T03b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RTO.T03b.xtf");
@@ -171,13 +171,13 @@ public class TopicTest {
 	/**
 	 * @ID RTO.T04a
 	 *
-	 * @Bezeichnung Themen: Behälter und Modelle
-	 *
-	 * @Beschreibung Der Test muss Behälter prüfen, die unterschiedlichen Modellen entsprechen
-	 *
-	 * @Testvoraussetzung RTO.T04a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
+	 * @Designation Topics: containers and models
+ 	 *
+ 	 * @Description The tests must check containers corresponding to different models
+ 	 *
+ 	 * @Test-requirement RTO.T04a.xtf
+ 	 *
+ 	 * @Expected-result No error message
 	 *
 	 */
 	@Test
@@ -190,16 +190,16 @@ public class TopicTest {
 	/**
 	 * @ID RTO.T05a
 	 *
-	 * @Bezeichnung Themen: leere Behälter
-	 *
-	 * @Beschreibung Der Test muss die Regeln für leere Behälter prüfen
-	 *
-	 * @Testvoraussetzung RTO.T05a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.3, 3.3.5 und 3.3.6</p>
-	 */
+	 * @Designation Topics: empty containers
+ 	 *
+ 	 * @Description The tests must check the rules for empty containers
+ 	 *
+ 	 * @Test-requirement RTO.T05a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.3, 3.3.5 and 3.3.6</p>
+ 	 */
 	@Test
 	public void RTO_T05a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RTO.T05a.xtf");
@@ -210,16 +210,16 @@ public class TopicTest {
 	/**
 	 * @ID RTO.T05b
 	 *
-	 * @Bezeichnung Themen: leere Behälter
-	 *
-	 * @Beschreibung Der Test muss die Regeln für leere Behälter prüfen
-	 *
-	 * @Testvoraussetzung RTO.T05b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.3, 3.3.5 und 3.3.6</p>
-	 */
+	 * @Designation Topics: empty containers
+ 	 *
+ 	 * @Description The tests must check the rules for empty containers
+ 	 *
+ 	 * @Test-requirement RTO.T05b.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.3, 3.3.5 and 3.3.6</p>
+ 	 */
 	@Test
 	public void RTO_T05b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RTO.T05b.xtf");
@@ -230,16 +230,16 @@ public class TopicTest {
 	/**
 	 * @ID RTO.T06a
 	 *
-	 * @Bezeichnung Themen: Behälter und importierte Modelle
-	 *
-	 * @Beschreibung Der Test muss Behälter prüfen, die auf Basis von importierten Modellen definiert werden
-	 *
-	 * @Testvoraussetzung RTO.T06a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung.
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.5.1 und Appendix C</p>
-	 */
+	 * @Designation Topics: containers and imported models
+ 	 *
+ 	 * @Description The tests must check containers that have been defined on the basis of imported models
+ 	 *
+ 	 * @Test-requirement RTO.T06a.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.5.1 and Appendix C</p>
+ 	 */
 	@Test
 	public void RTO_T06a() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RTO.T06a.xtf");
@@ -250,36 +250,36 @@ public class TopicTest {
 	/**
 	 * @ID RTO.T06b
 	 *
-	 * @Bezeichnung Themen: Behälter und importierte Modelle
-	 *
-	 * @Beschreibung Der Test muss Behälter prüfen, die auf Basis von importierten Modellen definiert werden
-	 *
-	 * @Testvoraussetzung RTO.T06b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Keine Fehlermeldung
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.5.1 und Appendix C</p>
-	 */
+	 * @Designation Topics: containers and imported models
+ 	 *
+ 	 * @Description The tests must check containers that have been defined on the basis of imported models
+ 	 *
+ 	 * @Test-requirement RTO.T06b.xtf
+ 	 *
+ 	 * @Expected-result No error message
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.5.1 and Appendix C</p>
+ 	 */
 	@Test
 	public void RTO_T06b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RTO.T06b.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertTrue(ret);
 	}
-	
+
 	/**
 	 * @ID RTO.T06c
 	 *
-	 * @Bezeichnung Themen: Behälter und importierte Modelle
-	 *
-	 * @Beschreibung Der Test muss Behälter prüfen, die auf Basis von importierten Modellen definiert werden
-	 *
-	 * @Testvoraussetzung RTO.T06c.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. Wegen der ASSOCIATION müssen die Daten in einem einzigen Basket transferiert werden
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 2.5.1 und Appendix C</p>
-	 */
+	 * @Designation Topics: containers and imported models
+ 	 *
+ 	 * @Description The tests must check containers that have been defined on the basis of imported models
+ 	 *
+ 	 * @Test-requirement RTO.T06c.xtf
+ 	 *
+ 	 * @Expected-result Error message. Because of ASSOCIATION, the data must be transferred in a single basket
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.5.1 and Appendix C</p>
+ 	 */
 	@Test
 	public void RTO_T06c() {
 		// Ausgesetzt falls vendor="ig/check" --> Flasche Fehlermeldung

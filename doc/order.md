@@ -1,56 +1,56 @@
-# Datenbereich: Reihenfolge
+# Data section: Order
 
-## Reihenfolge der Objekte im Datenbereich
+## Order of objects within the data section
 |ID|RRO
 |:--|:--
-|**Bezeichnung**|**Reihenfolge - Datenbereich**
-|**Beschreibung**|Für die Validierung der Reihenfolge der Objektinstanzen im Datenbereich gelten die im [[1]] Kap. 3.2.5 definierten Regeln
-|**Details**|<ul><li>Die Reihenfolge der Objekte im Transfer ist beliebig, insbesondere müssen die Objekte innerhalb eines Behälters nicht unbedingt nach Beziehungen geordnet oder nach Klassen gruppiert sein</li></ul>
-|**Referenz**|[[1]] Kap. 3.2.5
+|**Designation**|**Order within the data section**
+|**Description**|For the validation of the order of the objects within the data section, the rules defined in [[1]] Chap. 3.2.5 apply
+|**Details**|<ul><li>The sequence of the objects in the transfer is arbitrary. In particular, the objects within a container do not necessarily have to be sorted according to relationships or grouped according to classes.</li></ul>
+|**Reference**|[[1]] Chap. 3.2.5
 
-### Testfälle
-###### Reihenfolge der Objekte im Datenbereich - RRO.T01
+### Test cases
+###### Order of objects within the data section - RRO.T01
 |ID|RRO.T01
 |:--|:--
-|**Bezeichnung**|**Reihenfolge: Datenbereich**
-|**Beschreibung**|Die Tests müssen die Regeln für die Reihenfolge der Objekte im Datenbereich prüfen
-|**Testvoraussetzung**|[RRO.T01a.xtf](../data/RRO.T01a.xtf), [RRO.T01b.xtf](../data/RRO.T01b.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RRO.T01a.xtf: keine Fehlermeldung</li><li>RRO.T01b.xtf: keine Fehlermeldung</li></ul>
-|**Referenz**|[[1]] Kap. 3.2.5
+|**Designation**|**Order: data section**
+|**Description**|The tests must check the rules for the order of the objects within the data section
+|**Test requirement**|[RRO.T01a.xtf](../data/RRO.T01a.xtf), [RRO.T01b.xtf](../data/RRO.T01b.xtf)
+|**Expected result**|<ul><li>RRO.T01a.xtf: no error message</li><li>RRO.T01b.xtf: no error message</li></ul>
+|**Reference**|[[1]] Chap. 3.2.5
 
-## Reihenfolge innerhalb der Klasseinstanzen
+## Order within class instances
 |ID|RRiO
 |:--|:--
-|**Bezeichnung**|**Reihenfolge innerhalb der Klasseinstanzenn**
-|**Beschreibung**|Für die Validierung der Reihenfolge innerhalb einer Objektinstanz gelten die im [[1]] Kap. 3.3.7 definierten Regeln
-|**Details**|<ul><li>Für die Reihenfolge der Attribute, Rollen, ```EmbeddedLinks``` und Referenzattribute innerhalb einer (erweiterten) Klasse gilt:</li></ul><ol><li>Rollen der Basisklasse</li><li>Attribute / Referenzattribute der Basisklasse</li><li>```EmbeddedLinks``` der Basisklasse</li><li>Attribute/Referenzattribute der Erweiterung</li><li>```EmbeddedLinks``` der Erweiterung</li></ol><ul><li>Innerhalb der gleichen Stufe müssen die Attribute / Referenzattribute und Rollen der Definitionsreihenfolge im INTERLIS-Datenmodell entsprechen</li><li>Innerhalb der gleichen Stufe müssen die ```EmbeddedLinks``` alphabetisch aufsteigend sortiert werden</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.7
+|**Designation**|**Order within class instances**
+|**Description**|For the validation of the order within class instances, the rules defined in  [[1]] Chap. 3.3.7 apply
+|**Details**|<ul><li>The following applies for the order of attributes, roles, ```EmbeddedLink``` and reference attributes within a (extended) class :</li></ul><ol><li>Roles of the basic class</li><li>Attributes / Reference attributes of the basic class</li><li>```EmbeddedLink``` of the basic class</li><li>Attributes / Reference attributes of the extension</li><li>```EmbeddedLink``` of the extension</li></ol><ul><li>Within the same extension level, the attributes / reference attributes and the roles are encoded according to the definition in the INTERLIS data model</li><li>Within the same extension level, the ```EmbeddedLink``` are sorted alphabetically</li></ul>
+|**Reference**|[[1]] Chap. 3.3.7
 
-###### Reihenfolge innerhalb der Klasseinstanzen - RRiO.T01
+###### Order within class instances - RRiO.T01
 |ID|RRiO.T01
 |:--|:--
-|**Bezeichnung**|**Reihenfolge: Klasseinstanzen**
-|**Beschreibung**|Die Tests müssen die Regeln für die Reihenfolge der Objektinstanzen einer Klasse prüfen
-|**Testvoraussetzung**|[RRiO.T01a.xtf](../data/RRiO.T01a.xtf), [RRiO.T01b.xtf](../data/RRiO.T01b.xtf), [RRiO.T01c.xtf](../data/RRiO.T01c.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RRiO.T01a.xtf: keine Fehlermeldung</li><li>RRiO.T01b.xtf: Fehlermeldung. Falsche Reihenfolge der Attribute</li><li>RRiO.T01c.xtf:Fehlermeldung. Falsche Reihenfolge der ```EmbeddedLinks```</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.7
+|**Designation**|**Order: class instances**
+|**Description**|The tests must check the rules for the order of the object instances of a class
+|**Test requirement**|[RRiO.T01a.xtf](../data/RRiO.T01a.xtf), [RRiO.T01b.xtf](../data/RRiO.T01b.xtf), [RRiO.T01c.xtf](../data/RRiO.T01c.xtf)
+|**Expected result**|<ul><li>RRiO.T01a.xtf: no error message</li><li>RRiO.T01b.xtf: error message. Wrong sequence of the attributes</li><li>RRiO.T01c.xtf: error message. Wrong sequence of the ```EmbeddedLink```</li></ul>
+|**Reference**|[[1]] Chap. 3.3.7
 
-###### Reihenfolge innerhalb der Klasseinstanzen - RRiO.T02
+###### Order within class instances - RRiO.T02
 |ID|RRiO.T02
 |:--|:--
-|**Bezeichnung**|**Reihenfolge: Instanzen einer erweiterten Klasse**
-|**Beschreibung**|Die Tests müssen die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse prüfen
-|**Testvoraussetzung**|[RRiO.T02a.xtf](../data/RRiO.T02a.xtf), [RRiO.T02b.xtf](../data/RRiO.T02b.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RRiO.T02a.xtf: keine Fehlermeldung</li><li>RRiO.T02b.xtf: Fehlermeldung. Falsche Reihenfolge der Attribute (zuerst müssen die Attribute der Basisklasse codiert werden)</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.7
+|**Designation**|**Order: instances of an extended class**
+|**Description**|The tests must check the rules for the order of the object instances of an extended class
+|**Test requirement**|[RRiO.T02a.xtf](../data/RRiO.T02a.xtf), [RRiO.T02b.xtf](../data/RRiO.T02b.xtf)
+|**Expected result**|<ul><li>RRiO.T02a.xtf: no error message</li><li>RRiO.T02b.xtf: error message. Wrong sequence of the attributes (the attributes of the basic class must be encoded first)</li></ul>
+|**Reference**|[[1]] Chap. 3.3.7
 
-###### Reihenfolge innerhalb der Klasseinstanzen - RRiO.T03
+###### Order within class instances - RRiO.T03
 |ID|RRiO.T03
 |:--|:--
-|**Bezeichnung**|**Reihenfolge: Instanzen einer erweiterten Beziehungsklasse**
-|**Beschreibung**|Die Tests müssen die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Beziehungsklasse prüfen
-|**Testvoraussetzung**|[RRiO.T03a.xtf](../data/RRiO.T03a.xtf), [RRiO.T03b.xtf](../data/RRiO.T023.xtf), [RRiO.T03c.xtf](../data/RRiO.T03c.xtf), [RRiO.T03d.xtf](../data/RRiO.T03d.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RRiO.T03a.xtf: keine Fehlermeldung</li><li>RRiO.T03b.xtf: Fehlermeldung. Zuerst müssen die Rollen der Basisklasse codiert werden</li><li>RRiO.T03c.xtf: Fehlermeldung. Zuerst müssen die Attribute der Basisklasse codiert werden</li><li>RRiO.T03d.xtf: Fehlermeldung. Die Rollen der Basisklasse sind obligatorisch</li></ul>
-|**Referenz**|[[1]] Kap. 3.3.7
+|**Designation**|**Order: instances of an extended association class**
+|**Description**|The tests must check the rules for the order of the object instances of an extended association class
+|**Test requirement**|[RRiO.T03a.xtf](../data/RRiO.T03a.xtf), [RRiO.T03b.xtf](../data/RRiO.T023.xtf), [RRiO.T03c.xtf](../data/RRiO.T03c.xtf), [RRiO.T03d.xtf](../data/RRiO.T03d.xtf)
+|**Expected result**|<ul><li>RRiO.T03a.xtf: no error message</li><li>RRiO.T03b.xtf: error message. The roles of the basic class must be encoded first</li><li>RRiO.T03c.xtf: error message. The attributes of the basic class must be encoded first</li><li>RRiO.T03d.xtf: error message. The roles of the basic class are mandatory</li></ul>
+|**Reference**|[[1]] Chap. 3.3.7
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[1]: bib.md#1-cogis-interlis-version-2--reference-manual-13042006

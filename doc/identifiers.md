@@ -1,23 +1,23 @@
-# Objektidentifikation
+# Object identification
 
-```BID``` und ```TID``` werden als XML-ID codiert ([[1]] Kap. 3.3.6 und 3.3.7). Die EBNF-Regel für XML-ID ist ([[1]] Kap. 3.3.1):
+```BID``` and ```TID``` are encoded as XML-ID ([[1]] Chap. 3.3.6 and 3.3.7). The EBNF rule for XML-ID is ([[1]] Chap. 3.3.1):
 
 ``
 XML-ID = XML-ValueDelimiter [ XML-NcName ':' ] ( Letter | Digit | '_' ) { Letter | Digit | '_' | '-' | '.' } XML-ValueDelimiter
 ``
 
-Gemäss dieser Regel, könnte ein BID/TID eine Ziffer, einen Buchstabe oder einen Unterstrich als erstes Zeichen haben (also, nicht echte XML-ID gemäss https://www.w3.org/TR/xml-id/#id-avn).
+According to this rule, a BID/TID can have a letter or a digit or an underscore as first character (not "proper" XML-ID according to https://www.w3.org/TR/xml-id/#id-avn).
 
-```OID```-Werte von textlichen ```OID```-Wertebereichen müssen die Regeln des XML-ID-Typs erfüllen: sie müssen echte XML-ID sein.
+```OID``` values of text ```OID``` domains must comply with the rules of the XML-ID type: they are "proper" XML-ID.
 
-```STANDARDOID``` und ```UUIDOID``` haben ihre eigene Definition.
+```STANDARDOID``` and ```UUIDOID``` have their own definitions.
 
-Als Zusammenfassung:
+Summary:
 
-* ```TID``` und ```BID``` werden als XML-ID «à la INTERLIS» (gemäss [[1]] Kap. 3.3.1) und nicht als echter XML-ID kodiert
-* ```STANDARDOID```: nur Ziffern und Buchstaben erlaubt ([[1]] Kap. 2.8.9)
-* ```UUIDOID```: muss eine valide UUID gemäss ISO 11578 sein ([[1]] Kap. 2.8.9)
-*	Numerische ```OID```: nur Ziffern erlaubt
-*	Textliche ```OID```: echter XML-ID (gemäss [[1]]  Kap. 2.8.9)
+* ```TID``` and ```BID``` are encoded as XML-ID «à la INTERLIS» (according to [[1]] Chap. 3.3.1) and not as "proper" XML-ID
+* ```STANDARDOID```: only numbers and letters are allowed ([[1]] Chap. 2.8.9)
+* ```UUIDOID```: valid UUID according to ISO 11578 ([[1]] Chap. 2.8.9)
+*	Numeric ```OID```: only numbers are allowed
+*	Text ```OID```: "proper" XML-ID (according to [[1]]  Chap. 2.8.9)
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[1]: bib.md#1-cogis-interlis-version-2--reference-manual-13042006

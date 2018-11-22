@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import ch.interlis.testsuite.util.TestUtil;
 
 /**
- * Tests Struktur der Transferdatei
+ * Tests Transfer structure
  */
 public class TransferStructureTest {
 	private final Logger logger = LoggerFactory.getLogger(TransferStructureTest.class);
@@ -29,16 +29,16 @@ public class TransferStructureTest {
 	/**
 	 * @ID RTR.T01a
 	 *
-	 * @Bezeichnung TRANSFER: XML-Deklaration
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Deklaration vorhanden ist
-	 *
-	 * @Testvoraussetzung RTR.T01a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung: XML-Deklaration nicht vorhanden
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.3</p>
-	 * <p><a href="https://www.w3.org/TR/xml/#sec-prolog-dtd">Extensible Markup Language (XML) 1.0 Kap. 2.8</a></p>
+	 * @Designation Transfer: XML declaration
+ 	 *
+ 	 * @Description The tests must check whether the XML declaration exists
+ 	 *
+ 	 * @Test-requirement RTR.T01a.xtf
+ 	 *
+ 	 * @Expected-result Error message. XML declaration not available
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.3</p>
+ 	 * <p><a href="https://www.w3.org/TR/xml/#sec-prolog-dtd">Extensible Markup Language (XML) 1.0 Chap. 2.8</a></p>
 	 */
 	@Test
 	public void RTR_T01a() {
@@ -50,19 +50,19 @@ public class TransferStructureTest {
 	/**
 	 * @ID RTR.T02a
 	 *
-	 * @Bezeichnung TRANSFER: Aufbau der Transferdatei
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Tags TRANSFER, HEADERSECTION, DATASECTION vorhanden sind
-	 *
-	 * @Testvoraussetzung RTR.T02a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. TRANSFER nicht vorhanden
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.3</p>
+	 * @Designation Transfer: structure of a transfer file
+ 	 *
+ 	 * @Description The tests must check whether the XML tags TRANSFER, HEADERSECTION, DATASECTION exist
+ 	 *
+ 	 * @Test-requirement RTR.T02a.xtf
+ 	 *
+ 	 * @Expected-result Error message. TRANSFER not available
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.3</p>
 	 */
 	@Test
 	public void RTR_T02a() {
-		// Ausgesetzt falls vendor="ilivalidator" --> Flasche Fehlermeldung
+		// Ignored if vendor="ilivalidator" --> Wrong error message
 		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RTR.T02a.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
@@ -72,19 +72,19 @@ public class TransferStructureTest {
 	/**
 	 * @ID RTR.T02b
 	 *
-	 * @Bezeichnung TRANSFER: Aufbau der Transferdatei
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Tags TRANSFER, HEADERSECTION, DATASECTION vorhanden sind
-	 *
-	 * @Testvoraussetzung RTR.T02b.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. HEADERSECTION nicht vorhanden
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.3</p>
+	 * @Designation Transfer: structure of a transfer file
+ 	 *
+ 	 * @Description The tests must check whether the XML tags TRANSFER, HEADERSECTION, DATASECTION exist
+ 	 *
+ 	 * @Test-requirement RTR.T02b.xtf
+ 	 *
+ 	 * @Expected-result Error message. HEADERSECTION not available
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.3</p>
 	 */
 	@Test
 	public void RTR_T02b() {
-		// Ausgesetzt falls vendor="ilivalidator" --> Flasche Fehlermeldung
+		// Ignored if vendor="ilivalidator" --> Wrong error message
 		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RTR.T02b.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
@@ -94,19 +94,19 @@ public class TransferStructureTest {
 	/**
 	 * @ID RTR.T02c
 	 *
-	 * @Bezeichnung TRANSFER: Aufbau der Transferdatei
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Tags TRANSFER, HEADERSECTION, DATASECTION vorhanden sind
-	 *
-	 * @Testvoraussetzung RTR.T02c.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung. DATASECTION nicht vorhanden
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.3</p>
+	 * @Designation Transfer: structure of a transfer file
+ 	 *
+ 	 * @Description The tests must check whether the XML tags TRANSFER, HEADERSECTION, DATASECTION exist
+ 	 *
+ 	 * @Test-requirement RTR.T02c.xtf
+ 	 *
+ 	 * @Expected-result Error message. DATASECTION not available
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.3</p>
 	 */
 	@Test
 	public void RTR_T02c() {
-		// Ausgesetzt falls vendor="ig/check" --> Flasche Fehlermeldung
+		// Ignored if vendor="ig/check" --> Wrong error message
 		assumeFalse (System.getProperty("vendor").equals("ig/check"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RTR.T02c.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
@@ -116,19 +116,19 @@ public class TransferStructureTest {
 	/**
 	 * @ID RTR.T03a
 	 *
-	 * @Bezeichnung TRANSFER: Reihenfolge der Elemente
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob die XML-Tags TRANSFER, HEADERSECTION, DATASECTION in der richtigen Reihenfolge sind
-	 *
-	 * @Testvoraussetzung RTR.T03a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung: HEADERSECTION und DATASECTION erfolgen in umgekehrter Reihenfolge
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.3</p>
+	 * @Designation Transfer: elements order
+ 	 *
+ 	 * @Description The tests must check whether the XML tags TRANSFER, HEADERSECTION, DATASECTION are in the correct order
+ 	 *
+ 	 * @Test-requirement RTR.T03a.xtf
+ 	 *
+ 	 * @Expected-result Error message. HEADERSECTION and DATASECTION occur in reverse order
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.3</p>
 	 */
 	@Test
 	public void RTR_T03a() {
-		// Ausgesetzt falls vendor="ilivalidator" --> Flasche Fehlermeldung
+		// Ignored if vendor="ilivalidator" --> Wrong error message
 		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RTR.T03a.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
@@ -138,19 +138,19 @@ public class TransferStructureTest {
 	/**
 	 * @ID RTR.T04a
 	 *
-	 * @Bezeichnung TRANSFER: xmlns-Attribut
-	 *
-	 * @Beschreibung Der Test muss prüfen, ob das xmlns-Attribut im Tag TRANSFER vorhanden ist
-	 *
-	 * @Testvoraussetzung RTR.T04a.xtf
-	 *
-	 * @Erwartetes.Ergebnis Fehlermeldung: xmlns-Attribut nicht vorhanden
-	 *
-	 * @Referenz <p><a href="https://www.interlis.ch/interlis2/docs23/ili2-refman_2006-04-13_d.pdf">INTERLIS 2 - Referenzhandbuch</a> Kap. 3.3.3</p>
+	 * @Designation Transfer: attribute xmlns
+ 	 *
+ 	 * @Description The tests must check whether the xmlns attribute exists in tag TRANSFER
+ 	 *
+ 	 * @Test-requirement RTR.T04a.xtf
+ 	 *
+ 	 * @Expected-result Error message. xmlns attribute not available
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.3</p>
 	 */
 	@Test
 	public void RTR_T04a() {
-		// Ausgesetzt falls vendor="ilivalidator" --> Flasche Fehlermeldung
+		// Ignored if vendor="ilivalidator" --> Wrong error message
 		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RTR.T04a.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);

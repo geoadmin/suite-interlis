@@ -20,7 +20,7 @@ test {
   systemProperty "vendor", findProperty("vendor")
   // -Pics=c:\igcheck2\system\bin\ics.exe   # if ics.exe is not on the PATH
   systemProperty "ics",findProperty("ics")?:"ics"
-  
+
   //exclude '**/AssociationTest.class'
   //exclude '**/AttributeTest.class'
   //exclude '**/CardinalityAssociationTest.class'
@@ -44,7 +44,7 @@ javadoc {
     source sourceSets.test.allJava
     classpath = configurations.compile
     classpath += configurations.testCompile
-    options.tags = [ "ID", "Bezeichnung", "Beschreibung", "Testvoraussetzung", "Erwartetes.Ergebnis", "Referenz"]
+    options.tags = [ "ID", "Designation", "Description", "Test-requirement", "Expected-result", "Reference"]
     options {
       encoding "UTF-8"
       docEncoding "UTF-8"
