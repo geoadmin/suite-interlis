@@ -54,4 +54,4 @@
 |**Erwartetes Ergebnis**|<ul><li>RHE.T05a.xtf: Fehlermeldung. Wert in ```NAME``` stimmt nicht / Model ``TestSuite`` nicht vorhanden</li><li>RHE.T05b.xtf: Fehlermeldung. Wert in ```VERSION``` stimmt nicht</li></ul>
 |**Referenz**|[[1]] Kap. 3.3.4
 
-[1]: bib.md#1-kogis-interlis-2--referenzhandbuch-13042006
+[1]: bib_de-CH.md#1-kogis-interlis-2--referenzhandbuch-13042006
