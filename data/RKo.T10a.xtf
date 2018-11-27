@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RKo.T10a -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2018-10-10" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2018-10-10" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <TestSuite.Beziehungen BID="bez1">
+		<TestSuite.Beziehungen.L TID="L1">
+			<attrL>abc</attrL>
+			<attrL2>zwy</attrL2>
+		</TestSuite.Beziehungen.L>
+		<TestSuite.Beziehungen.M TID="M1">
+			<attrM>abc</attrM>
+		</TestSuite.Beziehungen.M>
+		<TestSuite.Beziehungen.M TID="M2">
+			<attrM>abc</attrM>
+		</TestSuite.Beziehungen.M>
+		<TestSuite.Beziehungen.LM TID="LM1">
+			<RolleL REF="L1"/>
+			<RolleM REF="M1"/>
+		</TestSuite.Beziehungen.LM>
+		<TestSuite.Beziehungen.LM TID="LM2">
+			<RolleL REF="L1"/>
+			<RolleM REF="M2"/>
+		</TestSuite.Beziehungen.LM>
+    </TestSuite.Beziehungen>
+  </DATASECTION>
+</TRANSFER>

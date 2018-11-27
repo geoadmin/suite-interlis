@@ -204,12 +204,30 @@ VERSION "2018-10-10" =
 
     CLASS I =
     END I;
-  
+
+    CLASS L =
+  	 attrL : MANDATORY TEXT*3;
+  	 attrL2 : MANDATORY TEXT*3;
+    END L;
+
+    CLASS M =
+     attrM : MANDATORY TEXT*3;
+    END M;
+
+    CLASS N =
+     attrN : MANDATORY TEXT*3;
+     attrN2 : MANDATORY TEXT*3;
+    END N;
+
+    CLASS O =
+     attrO : MANDATORY TEXT*3;
+    END O;
+
     CLASS Alpha =
     END Alpha;
-  
+
     CLASS Beta =
-    END Beta; 
+    END Beta;
 
     ASSOCIATION AB =
       RolleA -- {0..1} A;
@@ -247,15 +265,27 @@ VERSION "2018-10-10" =
       RolleBeta -- {0..*} Beta;
       Status : MANDATORY (Bearbeitung, Verifikation, verifiziert);
     END AlphaBeta;
-  
+
     ASSOCIATION AlphaBetaExtended EXTENDS AlphaBeta =
       Code : TEXT*4;
     END AlphaBetaExtended;
-  
+
     ASSOCIATION HI =
       RolleH -- {0..*} H;
       RolleI -- {0..*} I;
     END HI;
+
+    ASSOCIATION LM =
+      RolleL -- {0..*} L;
+      RolleM -- {0..*} M;
+  	  UNIQUE RolleL->attrL,RolleL->attrL2,RolleM->attrM;
+    END LM;
+
+  	ASSOCIATION assoNO =
+      RolleN -- {0..*} N;
+      RolleO -- {0..1} O;
+  	  UNIQUE RolleN->attrN,RolleN->attrN2,RolleO->attrO;
+    END assoNO;
 
   END Beziehungen;
 
