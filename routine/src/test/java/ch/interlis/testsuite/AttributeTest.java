@@ -764,6 +764,6 @@ public class AttributeTest {
 	public void RAt_T12b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RAt.T12b.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
-		assertTrue(ret);
+		assertFalse(ret);
 	}
 }
