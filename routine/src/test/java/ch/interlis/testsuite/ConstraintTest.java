@@ -509,4 +509,45 @@ public class ConstraintTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
+
+	/**
+	 * @ID RKo.T09a
+	 *
+	 * @Designation Constraints in embedded relationships
+ 	 *
+ 	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+ 	 *
+ 	 * @Test-requirement RKo.T09a.xtf
+ 	 *
+ 	 * @Expected-result Error message. Constraint violated
+ 	 *
+ 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+ 	 */
+	@Test
+	public void RKo_T09a() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T09a.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RKo.T10a
+	 *
+	 * @Designation Constraints in non-embedded relationships
+	 *
+	 * @Description The tests must check whether the data satisfies the ConstraintDef in the INTERLIS data model
+	 *
+	 * @Test-requirement RKo.T10a.xtf
+	 *
+	 * @Expected-result Error message. Constraint violated
+	 *
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14</p>
+	 */
+	@Test
+	public void RKo_T10a() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T10a.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
 }

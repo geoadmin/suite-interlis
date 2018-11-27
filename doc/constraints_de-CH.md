@@ -81,4 +81,24 @@
 |**Erwartetes Ergebnis**|<ul><li>RKo.T08a.xtf: Fehlermeldung. Konsistenzbedingung verletzt</li><li>RKo.T08b.xtf: keine Fehlermeldung</li><li>RKo.T08c.xtf: keine Fehlermeldung</li><li>RKo.T08d.xtf: Fehlermeldung. Konsistenzbedingung verletzt</li></ul>
 |**Referenz**|[[1]] Kap. 2.12, 2.13 und 2.14
 
+###### Konsistenzbedingungen - RKo.T09
+|ID|RKo.T09
+|:--|:--
+|**Bezeichnung**|**Konsistenzbedingungen in eingebetteten Beziehungen**
+|**Beschreibung**|Die Tests müssen prüfen, dass die Daten der ```ConstraintDef``` im INTERLIS-Datenmodell entsprechen
+|**Testvoraussetzung**|[RKo.T09a.xtf](../data/RKo.T09a.xtf)
+|**Erwartetes Ergebnis**|<ul><li>RKo.T09a.xtf: Fehlermeldung. Konsistenzbedingung verletzt</li></ul>
+|**Referenz**|[[1]] Kap. 2.12, 2.13 und 2.14
+
+###### Konsistenzbedingungen - RKo.T10
+|ID|RKo.T10
+|:--|:--
+|**Bezeichnung**|**Konsistenzbedingungen in nicht-eingebetteten Beziehungen**
+|**Beschreibung**|Die Tests müssen prüfen, dass die Daten der ```ConstraintDef``` im INTERLIS-Datenmodell entsprechen
+|**Testvoraussetzung**|[RKo.T10a.xtf](../data/RKo.T10a.xtf)
+|**Erwartetes Ergebnis**|<ul><li>RKo.T10a.xtf: Fehlermeldung. Konsistenzbedingung verletzt</li></ul>
+|**Referenz**|[[1]] Kap. 2.12, 2.13 und 2.14
+
+
+
 [1]: bib_de-CH.md#1-kogis-interlis-2--referenzhandbuch-13042006

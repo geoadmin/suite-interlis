@@ -81,4 +81,22 @@
 |**Expected result**|<ul><li>RKo.T08a.xtf: error message. Constraint violated</li><li>RKo.T08b.xtf: no error message</li><li>RKo.T08c.xtf: no error message</li><li>RKo.T08d.xtf: error message. Constraint violated</li></ul>
 |**Reference**|[[1]] Chap. 2.12, 2.13 and 2.14
 
+###### Constraints - RKo.T09
+|ID|RKo.T09
+|:--|:--
+|**Designation**|**Constraints in embedded relationships**
+|**Description**|The tests must check whether the data satisfies the ```ConstraintDef``` in the INTERLIS data model
+|**Test requirement**|[RKo.T09a.xtf](../data/RKo.T09a.xtf)
+|**Expected result**|<ul><li>RKo.T09a.xtf: error message. Constraint violated</li></ul>
+|**Reference**|[[1]] Chap. 2.12, 2.13 and 2.14
+
+###### Constraints - RKo.T10
+|ID|RKo.T10
+|:--|:--
+|**Designation**|**Constraints in non-embedded relationships**
+|**Description**|The tests must check whether the data satisfies the ```ConstraintDef``` in the INTERLIS data model
+|**Test requirement**|[RKo.T10a.xtf](../data/RKo.T10a.xtf)
+|**Expected result**|<ul><li>RKo.T10a.xtf: error message. Constraint violated</li></ul>
+|**Reference**|[[1]] Chap. 2.12, 2.13 and 2.14
+
 [1]: bib.md#1-cogis-interlis-version-2--reference-manual-13042006
