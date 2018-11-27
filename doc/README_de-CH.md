@@ -27,5 +27,5 @@
      - Reihenfolge
        - [Reihenfolge der Objekte im Datenbereich](order_de-CH.md#reihenfolge-der-objekte-im-datenbereich)
        - [Reihenfolge innerhalb der Klasseinstanzen](order_de-CH.md#reihenfolge-innerhalb-der-klasseinstanzen)
-     - [Konsistenzbedingungen](constraints_de-CH.md)
+   - [Konsistenzbedingungen](constraints_de-CH.md)
 * [Referenzen](bib_de-CH.md)
