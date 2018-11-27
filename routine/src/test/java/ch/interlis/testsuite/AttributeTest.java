@@ -727,4 +727,43 @@ public class AttributeTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
+
+	/**
+	 * @ID RAt.T12a
+	 *
+	 * @Designation Attributes: Blackboxtype
+	 *
+	 * @Description The tests must check whether the attribute value satisfies the definition for Blackboxtype in the INTERLIS data model and the corresponding encoding rules
+	 *
+	 * @Test-requirement RAt.T12a.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.10 and 3.3.11.6</p>
+	 */
+	@Test
+	public void RAt_T12a() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RAt.T12a.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
+	/**
+	 * @ID RAt.T12b
+	 *
+	 * @Designation Attributes: Blackboxtype
+	 *
+	 * @Description The tests must check whether the attribute value satisfies the definition for Blackboxtype in the INTERLIS data model and the corresponding encoding rules
+	 *
+	 * @Test-requirement RAt.T12b.xtf
+	 *
+	 * @Expected-result Error message. Wrong encoding
+	 *
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.10 and 3.3.11.6</p>
+	 */
+	@Test
+	public void RAt_T12b() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RAt.T12b.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
 }

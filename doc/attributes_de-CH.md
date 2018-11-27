@@ -108,6 +108,15 @@
 |**Erwartetes Ergebnis**|<ul><li>RAt.T11a.xtf: Fehlermeldung. Ungültiger UUID der ```BID```</li><li>RAt.T11b.xtf: Fehlermeldung. Ungültiger UUID der ```TID```</li><li>RAt.T11c.xtf: keine Fehlermeldung</li><li>RAt.T11d.xtf: Fehlermeldung. Ungültige Codierung (muss als XML-Attribut codiert werden)</li><li>RAt.T11e.xtf: Fehlermeldung. Nur Ziffern und Buchstaben erlaubt</li><li>RAt.T11f.xtf: Fehlermeldung. Erstes Zeichen muss Buchstabe oder Unterstrich sein</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.9 und 3.3.11.16<br/> [[4]] Kap. D.2 (https://www.w3.org/TR/xml-id/#id-avn)<br/>[Objektidentifikation](identifiers.md)
 
+###### Attribute - RAt.T12
+|ID|RAt.T12
+|:--|:--
+|**Bezeichnung**|**Attribute:** ```Blackboxtype```
+|**Beschreibung**|Die Tests müssen prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für ```Blackboxtype```, bzw. den entsprechenden Codierungsregeln, entspricht
+|**Testvoraussetzung**|[RAt.T12a.xtf](../data/RAt.T12a.xtf), [RAt.T12b.xtf](../data/RAt.T12b.xtf)
+|**Erwartetes Ergebnis**|<ul><li>RAt.T12a.xtf: keine Fehlermeldung</li><li>RAt.T12b.xtf: Fehlermeldung. Falsche Codierung</li></ul>
+|**Referenz**|[[1]] Kap. 2.6, 2.8.10 und 3.3.11.6
+
 ## Struktur- und Referenzattribute
 |ID|RStReA
 |:--|:--

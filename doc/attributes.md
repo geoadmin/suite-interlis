@@ -108,6 +108,15 @@
 |**Expected result**|<ul><li>RAt.T11a.xtf: error message. Invalid UUID for the ```BID```</li><li>RAt.T11b.xtf: error message. Invalid UUID for the ```TID```</li><li>RAt.T11c.xtf: no error message</li><li>RAt.T11d.xtf: error message. Invalid encoding (it must be encoded as XML attribute)</li><li>RAt.T11e.xtf: error message. Only numbers and letters are allowed</li><li>RAt.T11f.xtf: error message. First character must be letter or underscore</li></ul>
 |**Reference**|[[1]] Chap. 2.8.9 and 3.3.11.16<br/> [[4]] Chap. D.2 (https://www.w3.org/TR/xml-id/#id-avn)<br/>[Object identification](identifiers.md)
 
+###### Attributes - RAt.T12
+|ID|RAt.T12
+|:--|:--
+|**Designation**|**Attributes:** ```Blackboxtype```
+|**Description**|The tests must check whether the attribute value satisfies the definition for ```Blackboxtype``` in the INTERLIS data model and the corresponding encoding rules
+|**Test requirement**|[RAt.T12a.xtf](../data/RAt.T12a.xtf), [RAt.T12b.xtf](../data/RAt.T12b.xtf)
+|**Expected result**|<ul><li>RAt.T12a.xtf: no error message</li><li>RAt.T12b.xtf: error message. Wrong encoding</li></ul>
+|**Reference**|[[1]] Chap. 2.6, 2.8.10 and 3.3.11.6
+
 ## Structure and reference attributes
 |ID|RStReA
 |:--|:--

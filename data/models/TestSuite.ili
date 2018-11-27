@@ -63,6 +63,7 @@ VERSION "2018-10-10" =
 
     CLASS BoLinien2 =
       Form : POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord;
+      Symbol : BLACKBOX BINARY;
     END BoLinien2;
 
     CLASS Geschichte =
