@@ -27,5 +27,5 @@
      - Order
        - [Order of objects within the data section](order.md#order-of-objects-within-the-data-section)
        - [Order within class instances](order.md#order-within-class-instances)
-     - [Constraints](constraints.md)
+   - [Constraints](constraints.md)
 * [References](bib.md)
