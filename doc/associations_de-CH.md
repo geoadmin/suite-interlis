@@ -40,8 +40,8 @@
 |:--|:--
 |**Bezeichnung**|**Eingebettete Beziehungen: Kardinalität ``{0..*}`` bei einer der Rolle**
 |**Beschreibung**|Die Tests müssen die Regeln für das Einbetten der Beziehungen prüfen. *«Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse dieser Rolle eingebettet…»*
-|**Testvoraussetzung**|[REB.T02a.xtf](../data/REB.T02a.xtf), [REB.T02b.xtf](../data/REB.T02b.xtf), [REB.T02c.xtf](../data/REB.T02c.xtf)
-|**Erwartetes Ergebnis**|<ul><li>REB.T02a.xtf: keine Fehlermeldung</li><li>REB.T02b.xtf: Fehlermeldung. Falsche Codierung</li><li>REB.T02c.xtf: Fehlermeldung. Attribut ```Status``` ist obligatorisch</li></ul>
+|**Testvoraussetzung**|[REB.T02a.xtf](../data/REB.T02a.xtf), [REB.T02b.xtf](../data/REB.T02b.xtf), [REB.T02c.xtf](../data/REB.T02c.xtf), [REB.T02d.xtf](../data/REB.T02d.xtf)
+|**Erwartetes Ergebnis**|<ul><li>REB.T02a.xtf: keine Fehlermeldung</li><li>REB.T02b.xtf: Fehlermeldung. Falsche Codierung</li><li>REB.T02c.xtf: Fehlermeldung. Attribut ```Status``` ist obligatorisch</li><li>REB.T02d.xtf: keine Fehlermeldung</li></ul>
 |**Referenz**|[[1]] Kap. 3.3.9
 
 ## Nicht eingebettete Beziehungen

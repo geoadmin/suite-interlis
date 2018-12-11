@@ -237,6 +237,26 @@ public class AssociationTest {
 		assertFalse(ret);
 	}
 
+	/**
+	 * @ID REB.T02d
+	 *
+	 * @Designation Embedded relationships: cardinality {0..*} at one of the roles
+	 *
+	 * @Description <p>The tests must check the rules for the embedding of relationships.</p>
+	 * <p><i>If maximum cardinality is greater than 1 in one of the two (basic) roles, the embedding takes place with the target class of this role …</i></p>
+	 *
+	 * @Test-requirement REB.T02d.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 3.3.9</p>
+	*/
+	@Test
+	public void REB_T02d() {
+		boolean ret = TestUtil.runJob(vendor, "../data/REB.T02d.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
 
 	/**
 	 * @ID RBk.T01a

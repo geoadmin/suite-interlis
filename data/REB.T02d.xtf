@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- REB.T02c -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2018-10-10" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2018-10-10" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+	<TestSuite.Beziehungen BID="bez">
+		<TestSuite.Beziehungen.F TID="f1"/>
+		<TestSuite.Beziehungen.G TID="g1">
+      <!-- Keine Fehlermeldung -->
+			<RolleF REF="f1">
+				<TestSuite.Beziehungen.FG>
+					<Status>verifiziert</Status>
+				</TestSuite.Beziehungen.FG>
+			</RolleF>
+		</TestSuite.Beziehungen.G>
+    </TestSuite.Beziehungen>
+  </DATASECTION>
+</TRANSFER>
