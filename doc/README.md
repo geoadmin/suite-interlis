@@ -10,7 +10,7 @@
 * Structur of the transfer file
   - [Transfer](transferStructure.md)
   - [Header section](headerSection.md)
-* Daten section
+* Data section
    - [Topic](topic.md)
    - [Classes](classes.md)
    - [Relationships](associations.md#relationships)
