@@ -60,7 +60,7 @@ Spezifische iG/Check-Einstellungen können zusätzlich in der Datei ``interlis2.
 #### ilivalidator Version 1.10.0
 | Test | Begründung |
 | --- | --- |
-| RCO.T01a.xtf | Absturz |
+| RCO.T01a.xtf | java.lang.NullPointerException |
 | RCO.T02b.xtf | Absturz |
 | RHE.T01b.xtf | java.lang.IllegalArgumentException statt java.lang.AssertionError. Fehlermeldung ist korrekt |
 | RHE.T04a.xtf | java.lang.IllegalArgumentException statt java.lang.AssertionError. Fehlermeldung ist korrekt |
