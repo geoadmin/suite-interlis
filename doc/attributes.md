@@ -105,7 +105,7 @@
 |**Bezeichnung**|**Attribute:** ```OIDType```
 |**Beschreibung**|Die Tests müssen prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für ```OIDType```, bzw. den entsprechenden Codierungsregeln, entspricht
 |**Testvoraussetzung**|[RAt.T11a.xtf](../data/RAt.T11a.xtf), [RAt.T11b.xtf](../data/RAt.T11b.xtf), [RAt.T11c.xtf](../data/RAt.T11c.xtf), [RAt.T11d.xtf](../data/RAt.T11d.xtf), [RAt.T11e.xtf](../data/RAt.T11e.xtf), [RAt.T11f.xtf](../data/RAt.T11f.xtf)
-|**Erwartetes Ergebnis**|<ul><li>RAt.T11a.xtf: Fehlermeldung. Ungültiger UUID der ```BID```</li><li>RAt.T11b.xtf: Fehlermeldung. Ungültiger UUID der ```TID```</li><li>RAt.T11c.xtf: keine Fehlermeldung</li><li>RAt.T11d.xtf: Fehlermeldung. Ungültige Codierung (muss als XML-Attribut codiert werden)</li><li>RAt.T11e.xtf: Fehlermeldung. Nur Ziffern und Buchstaben erlaubt</li><li>RAt.T11f.xtf: Fehlermeldung. Erstes Zeichen muss Buchstabe oder Unterstrich sein</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RAt.T11a.xtf: Fehlermeldung. Ungültiger UUID der ```BID```</li><li>RAt.T11b.xtf: Fehlermeldung. Ungültiger UUID der ```TID```</li><li>RAt.T11c.xtf: keine Fehlermeldung</li><li>RAt.T11d.xtf: Fehlermeldung. Ungültige Codierung (muss als XML-Attribut codiert werden)</li><li>RAt.T11e.xtf: Fehlermeldung. Unterstrich nicht erlaubt</li><li>RAt.T11f.xtf: Fehlermeldung. Erstes Zeichen muss Buchstabe oder Unterstrich sein</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.9 und 3.3.11.16<br/> [[4]] Kap. D.2 (https://www.w3.org/TR/xml-id/#id-avn)<br/>[Objektidentifikation](identifiers.md)
 
 ## Struktur- und Referenzattribute
