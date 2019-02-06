@@ -11,12 +11,12 @@
     <TestSuite.Bodenbedeckung BID="a">
 			<TestSuite.Bodenbedeckung.GebaeudeArt3 TID="ga31">
 				<Art>123456</Art>
-				<ArtStandardID>2</ArtStandardID>
+				<ArtStandardID OID="aabcdefghilmno16"/>
 				<Klassifizierung>A</Klassifizierung>
 			</TestSuite.Bodenbedeckung.GebaeudeArt3>
 			<TestSuite.Bodenbedeckung.GebaeudeArt3 TID="ga32">
 				<Art>123456</Art>
-				<ArtStandardID>2</ArtStandardID>
+				<ArtStandardID OID="aabcdefghilmno16"/>
 				<Klassifizierung>B</Klassifizierung>
 			</TestSuite.Bodenbedeckung.GebaeudeArt3>
 		</TestSuite.Bodenbedeckung>
