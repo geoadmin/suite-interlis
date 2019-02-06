@@ -105,7 +105,7 @@
 |**Designation**|**Attributes:** ```OIDType```
 |**Description**|The tests must check whether the attribute value satisfies the definition for ```OIDType``` in the INTERLIS data model and the corresponding encoding rules
 |**Test requirement**|[RAt.T11a.xtf](../data/RAt.T11a.xtf), [RAt.T11b.xtf](../data/RAt.T11b.xtf), [RAt.T11c.xtf](../data/RAt.T11c.xtf), [RAt.T11d.xtf](../data/RAt.T11d.xtf), [RAt.T11e.xtf](../data/RAt.T11e.xtf), [RAt.T11f.xtf](../data/RAt.T11f.xtf)
-|**Expected result**|<ul><li>RAt.T11a.xtf: error message. Invalid UUID for the ```BID```</li><li>RAt.T11b.xtf: error message. Invalid UUID for the ```TID```</li><li>RAt.T11c.xtf: no error message</li><li>RAt.T11d.xtf: error message. Invalid encoding (it must be encoded as XML attribute)</li><li>RAt.T11e.xtf: error message. Only numbers and letters are allowed</li><li>RAt.T11f.xtf: error message. First character must be letter or underscore</li></ul>
+|**Expected result**|<ul><li>RAt.T11a.xtf: error message. Invalid UUID for the ```BID```</li><li>RAt.T11b.xtf: error message. Invalid UUID for the ```TID```</li><li>RAt.T11c.xtf: no error message</li><li>RAt.T11d.xtf: error message. Invalid encoding (it must be encoded as XML attribute)</li><li>RAt.T11e.xtf: error message. Underscore not allowed</li><li>RAt.T11f.xtf: error message. First character must be letter or underscore</li></ul>
 |**Reference**|[[1]] Chap. 2.8.9 and 3.3.11.16<br/> [[4]] Chap. D.2 (https://www.w3.org/TR/xml-id/#id-avn)<br/>[Object identification](identifiers.md)
 
 ###### Attributes - RAt.T12
