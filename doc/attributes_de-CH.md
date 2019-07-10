@@ -87,7 +87,7 @@
 |**Bezeichnung**|**Attribute:** ```NumericType```
 |**Beschreibung**|Die Tests müssen prüfen, ob der Attributwert der Definition im INTERLIS-Datenmodell für ```NumericType```, bzw. den entsprechenden Codierungsregeln, entspricht
 |**Testvoraussetzung**|[RAt.T09a.xtf](../data/RAt.T09a.xtf), [RAt.T09b.xtf](../data/RAt.T09b.xtf), [RAt.T09c.xtf](../data/RAt.T09c.xtf), [RAt.T09d.xtf](../data/RAt.T09d.xtf), [RAt.T09e.xtf](../data/RAt.T09e.xtf), [RAt.T09f.xtf](../data/RAt.T09f.xtf), [RAt.T09g.xtf](../data/RAt.T09g.xtf),
-|**Erwartetes Ergebnis**|<ul><li>RAt.T09a.xtf: keine Fehlermeldung</li><li>RAt.T09b.xtf: Fehlermeldung. Unzulässiger Wert (``0.9``)</li><li>RAt.T09c.xtf: keine Fehlermeldung</li><li>RAt.T09d.xtf: Fehlermeldung ``00004`` statt ``4``</li><li>RAt.T09e.xtf: keine Fehlermeldung (``10000.1`` wird auf ``10000.0`` gerundet)</li><li>RAt.T09f.xtf: keine Fehlermeldung</li><li>RAt.T09g.xtf: Fehlermeldung (``10000.5`` wird auf ``10000.1`` gerundet)</li></ul>
+|**Erwartetes Ergebnis**|<ul><li>RAt.T09a.xtf: keine Fehlermeldung</li><li>RAt.T09b.xtf: Fehlermeldung. Unzulässiger Wert (``0.9``)</li><li>RAt.T09c.xtf: keine Fehlermeldung</li><li>RAt.T09d.xtf: Fehlermeldung ``00004`` statt ``4``</li><li>RAt.T09e.xtf: keine Fehlermeldung (``10000.1`` wird auf ``10000.0`` gerundet)</li><li>RAt.T09f.xtf: keine Fehlermeldung</li><li>RAt.T09g.xtf: Fehlermeldung (``10000.05`` wird auf ``10000.1`` gerundet)</li></ul>
 |**Referenz**|[[1]] Kap. 2.6, 2.8.5 und 3.3.11.4
 
 ###### Attribute - RAt.T10
