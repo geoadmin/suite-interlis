@@ -47,8 +47,8 @@ gradlew -Pvendor=ig/check -Pics=pathToics.exe test
 The parameter ``-Pics`` can also be used to test different versions of iG/Check.
 
 ### Testing other versions of the ilivalidator
-The routine is preconfigured to test the ilivalidator version 1.10.0.
-To test other versions, string ``compile 'ch.interlis:ilivalidator:1.10.0'`` in the ``build.gradle`` file (under ``dependencies``) must be modified accordingly.
+The routine is preconfigured to test the ilivalidator version 1.11.1.
+To test other versions, string ``compile 'ch.interlis:ilivalidator:1.11.1'`` in the ``build.gradle`` file (under ``dependencies``) must be modified accordingly.
 
 ### Skip specific tests
 All test types are listed in the file ``build.gradle`` (under ``test``). To skip a test type, the corresponding line must be commented out.
@@ -57,18 +57,13 @@ All test types are listed in the file ``build.gradle`` (under ``test``). To skip
 Specific iG/Check settings can be set in the file ``interlis2.cfg`` in the directory ``igcheck2``.
 
 ### Tests that have been switched off directly in the code
-#### ilivalidator Version 1.10.0
+#### ilivalidator Version 1.11.1
 | Test | Reason |
 | --- | --- |
 | RCO.T01a.xtf | java.lang.NullPointerException |
 | RCO.T02b.xtf | Hang |
 | RHE.T01b.xtf | java.lang.IllegalArgumentException instead of java.lang.AssertionError. Error message is correct |
 | RHE.T04a.xtf | java.lang.IllegalArgumentException instead of java.lang.AssertionError. Error message is correct |
-| RKo.T08a.xtf | java.lang.NullPointerException |
-| RKo.T08b.xtf | java.lang.NullPointerException |
-| RKo.T08c.xtf | java.lang.NullPointerException |
-| RKo.T08d.xtf | java.lang.NullPointerException |
-| RTO.T02a.xtf | java.lang.IllegalArgumentException instead of java.lang.AssertionError. Error message is correct |
 | RTR.T02a.xtf | Error message is wrong |
 | RTR.T02b.xtf | Error message is wrong |
 | RTR.T03a.xtf | Error message is wrong |
