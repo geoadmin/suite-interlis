@@ -61,8 +61,6 @@ public class TopicTest {
  	 */
 	@Test
 	public void RTO_T02a() {
-		// Ausgesetzt falls vendor="ilivalidator" --> java.lang.IllegalArgumentException: Attribute Attribute BID missing in basket TestSuite.Bodenbedeckung statt java.lang.AssertionError. Fehlermeldung ist korrekt
-		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RTO.T02a.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
