@@ -445,8 +445,6 @@ public class ConstraintTest {
  	 */
 	@Test
 	public void RKo_T08a() {
-		// Ignored if vendor="ilivalidator" --> Crash Error: java.lang.NullPointerException
-		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T08a.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
@@ -467,8 +465,6 @@ public class ConstraintTest {
  	 */
 	@Test
 	public void RKo_T08b() {
-		// Ignored if vendor="ilivalidator" --> Crash Error: java.lang.NullPointerException
-		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T08b.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertTrue(ret);
@@ -489,8 +485,6 @@ public class ConstraintTest {
  	 */
 	@Test
 	public void RKo_T08c() {
-		// Ignored if vendor="ilivalidator" --> Crash Error: java.lang.NullPointerException
-		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T08c.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertTrue(ret);
@@ -511,8 +505,6 @@ public class ConstraintTest {
  	 */
 	@Test
 	public void RKo_T08d() {
-		// Ignored if vendor="ilivalidator" --> Crash Error: java.lang.NullPointerException
-		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RKo.T08d.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);

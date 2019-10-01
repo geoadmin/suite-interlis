@@ -47,8 +47,8 @@ gradlew -Pvendor=ig/check -Pics=pathToics.exe test
 Der Parameter ``-Pics`` kann zusätzlich benutzt werden, um unterschiedliche Versionen von iG/Check zu testen.
 
 ### Andere Versionen des ilivalidators testen
-Die Routine ist vorkonfiguriert um den ilivalidator Version 1.10.0 zu testen.
-Um andere Versionen des ilivalidators zu testen, muss die Information ``compile 'ch.interlis:ilivalidator:1.10.0'`` in der Datei ``build.gradle`` (unter ``dependencies``) entsprechend angepasst werden.
+Die Routine ist vorkonfiguriert um den ilivalidator Version 1.11.1 zu testen.
+Um andere Versionen des ilivalidators zu testen, muss die Information ``compile 'ch.interlis:ilivalidator:1.11.1'`` in der Datei ``build.gradle`` (unter ``dependencies``) entsprechend angepasst werden.
 
 ### Spezifische Tests ausschalten
 Alle Test-Typen der Routine sind in der Datei ``build.gradle`` (unter ``test``) gelistet. Um einen Test-Typ auszuschalten, muss die entsprechende Linie auskommentiert werden.
@@ -57,23 +57,18 @@ Alle Test-Typen der Routine sind in der Datei ``build.gradle`` (unter ``test``) 
 Spezifische iG/Check-Einstellungen können zusätzlich in der Datei ``interlis2.cfg`` im Verzeichnis ``igcheck2`` gesetzt werden.
 
 ### Tests, die direkt im Code ausgeschaltet worden sind
-#### ilivalidator Version 1.10.0
+#### ilivalidator Version 1.11.1
 | Test | Begründung |
 | --- | --- |
 | RCO.T01a.xtf | java.lang.NullPointerException |
 | RCO.T02b.xtf | Absturz |
 | RHE.T01b.xtf | java.lang.IllegalArgumentException statt java.lang.AssertionError. Fehlermeldung ist korrekt |
 | RHE.T04a.xtf | java.lang.IllegalArgumentException statt java.lang.AssertionError. Fehlermeldung ist korrekt |
-| RKo.T08a.xtf | java.lang.NullPointerException |
-| RKo.T08b.xtf | java.lang.NullPointerException |
-| RKo.T08c.xtf | java.lang.NullPointerException |
-| RKo.T08d.xtf | java.lang.NullPointerException |
 | RTO.T02a.xtf | java.lang.IllegalArgumentException statt java.lang.AssertionError. Fehlermeldung ist korrekt |
 | RTR.T02a.xtf | Falsche Fehlermeldung |
 | RTR.T02b.xtf | Falsche Fehlermeldung |
 | RTR.T03a.xtf | Falsche Fehlermeldung |
 | RTR.T04a.xtf | Falsche Fehlermeldung |
-| RXW.T02a.xtf | Falsche Fehlermeldung |
 | RXW.T02e.xtf | Falsche Fehlermeldung |
 | RXW.T02f.xtf | Falsche Fehlermeldung |
 
