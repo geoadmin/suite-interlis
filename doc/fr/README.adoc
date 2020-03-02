@@ -4,7 +4,8 @@ endif::[]
 
 = Suite de tests pour les fichiers de transfert INTERLIS au format XML ( Version 2.3 )
 
-WARNING: Le contenu au format AsciiDoc est optimisé pour la génération de fichiers PDF. Le fichier PDF peut être généré avec la commande suivante : `asciidoctor-pdf -a pdf-style=theme.yml test-suite.adoc`
+WARNING: Le contenu au format AsciiDoc est optimisé pour la génération de fichiers PDF. Le fichier PDF peut être généré avec la commande suivante : 
+`asciidoctor-pdf -a pdf-style=theme.yml test-suite.adoc`
 
 <<<
 
