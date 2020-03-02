@@ -29,4 +29,4 @@ WARNING: Le contenu au format AsciiDoc est optimisé pour la génération de fic
  ** <<ordre.adoc#,Ordre des objets>>
  ** <<regles-integrite.adoc#,Règles d’intégrité>>
 * <<references.adoc#,Références>>
-* <<annexe1.adoc#,Routine de test>>
+* <<annexe.adoc#,Routine de test>>
