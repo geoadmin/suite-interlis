@@ -1,0 +1,173 @@
+==== Konsistenzbedingungen
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo*
+|*Bezeichnung*|*Konsistenzbedingungen*
+|*Beschreibung*|INTERLIS-Daten müssen der `ConstraintDef` (<<referenzen.adoc#1,[1]>> Kap. 2.12 und 2.13) im INTERLIS-Datenmodell entsprechen
+|*Details*|
+* Konsistenzbedingungen, die mit Standardfunktionen formuliert werden (<<referenzen.adoc#1,[1]>> Kap. 2.14), müssen zusätzlich geprüft werden, insbesondere geometrische Bedingungen, wie die mit der Standardfunktion `areAreas`
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|===
+
+===== Testfälle
+====== RKo.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T01*
+|*Bezeichnung*|*Konsistenzbedingungen:* `UNIQUE`
+|*Beschreibung*|Die Tests müssen prüfen, dass die Daten der `ConstraintDef` im INTERLIS-Datenmodell entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T01a.xtf[RKo.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T01b.xtf[RKo.T01b.xtf]
+|*Erwartetes Ergebnis*|
+* RKo.T01a.xtf: keine Fehlermeldung
+* RKo.T01b.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|===
+
+====== RKo.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T02*
+|*Bezeichnung*|*Konsistenzbedingungen:* `UNIQUE (LOCAL)`
+|*Beschreibung*|Die Tests müssen prüfen, dass die Daten der `ConstraintDef` im INTERLIS-Datenmodell entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T02a.xtf[RKo.T02a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T02b.xtf[RKo.T02b.xtf]
+|*Erwartetes Ergebnis*|
+* RKo.T02a.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+* RKo.T02b.xtf: keine Fehlermeldung
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|===
+
+====== RKo.T03
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T03*
+|*Bezeichnung*|*Konsistenzbedingungen:* `UNIQUE WHERE`
+|*Beschreibung*|Die Tests müssen prüfen, dass die Daten der `ConstraintDef` im INTERLIS-Datenmodell entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T03a.xtf[RKo.T03a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T03b.xtf[RKo.T03b.xtf]
+|*Erwartetes Ergebnis*|
+* RKo.T03a.xtf: keine Fehlermeldung
+* RKo.T03b.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|===
+
+====== RKo.T04
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T04*
+|*Bezeichnung*|*Konsistenzbedingungen:* `EXISTENCE CONSTRAINT`
+|*Beschreibung*|Die Tests müssen prüfen, dass die Daten der `ConstraintDef` im INTERLIS-Datenmodell entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T04a.xtf[RKo.T04a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T04b.xtf[RKo.T04b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T04c.xtf[RKo.T04c.xtf]
+|*Erwartetes Ergebnis*|
+* RKo.T04a.xtf: keine Fehlermeldung
+* RKo.T04b.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+* RKo.T04c.xtf: keine Fehlermeldung
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|===
+
+====== RKo.T05
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T05*
+|*Bezeichnung*|*Konsistenzbedingungen:* `MANDATORY` *mit Vergleich*
+|*Beschreibung*|Die Tests müssen prüfen, dass die Daten der `ConstraintDef` im INTERLIS-Datenmodell entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T05a.xtf[RKo.T05a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T05b.xtf[RKo.T05b.xtf]
+|*Erwartetes Ergebnis*|
+* RKo.T05a.xtf: keine Fehlermeldung
+* RKo.T05b.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|===
+
+====== RKo.T06
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T06*
+|*Bezeichnung*|*Konsistenzbedingungen:* `MANDATORY` *mit Bedingungsvorgabe*
+|*Beschreibung*|Die Tests müssen prüfen, dass die Daten der `ConstraintDef` im INTERLIS-Datenmodell entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06a.xtf[RKo.T06a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06b.xtf[RKo.T06b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06c.xtf[RKo.T06c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06d.xtf[RKo.T06d.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06e.xtf[RKo.T06e.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06f.xtf[RKo.T06f.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06g.xtf[RKo.T06g.xtf]
+|*Erwartetes Ergebnis*|
+* RKo.T06a.xtf: keine Fehlermeldung
+* RKo.T06b.xtf: keine Fehlermeldung
+* RKo.T06c.xtf: Fehlermeldung. _Datum_ ist obligatorisch
+* RKo.T06d.xtf: keine Fehlermeldung
+* RKo.T06e.xtf: keine Fehlermeldung
+* RKo.T06f.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+* RKo.T06g.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|===
+
+====== RKo.T07
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T07*
+|*Bezeichnung*|*Konsistenzbedingungen:* `MANDATORY` *mit Funktion* (`INTERLIS.len`)
+|*Beschreibung*|Die Tests müssen prüfen, dass die Daten der `ConstraintDef` im INTERLIS-Datenmodell entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T07a.xtf[RKo.T07a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T07b.xtf[RKo.T07b.xtf]
+|*Erwartetes Ergebnis*|
+* RKo.T07a.xtf: keine Fehlermeldung
+* RKo.T07b.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|===
+
+====== RKo.T08
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T08*
+|*Bezeichnung*|*Konsistenzbedingungen:* `SET CONSTRAINT` *mit Funktion* (`are.Areas`)
+|*Beschreibung*|Die Tests müssen prüfen, dass die Daten der `ConstraintDef` im INTERLIS-Datenmodell entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08a.xtf[RKo.T08a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08b.xtf[RKo.T08b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08c.xtf[RKo.T08c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08d.xtf[RKo.T08d.xtf]
+|*Erwartetes Ergebnis*|
+* RKo.T08a.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+* RKo.T08b.xtf: keine Fehlermeldung
+* RKo.T08c.xtf: keine Fehlermeldung
+* RKo.T08d.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|===
+
+====== RKo.T09
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T09*
+|*Bezeichnung*|*Konsistenzbedingungen in eingebetteten Beziehungen*
+|*Beschreibung*|Die Tests müssen prüfen, dass die Daten der `ConstraintDef` im INTERLIS-Datenmodell entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T09a.xtf[RKo.T09a.xtf]
+|*Erwartetes Ergebnis*|
+* RKo.T09a.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|===
+
+====== RKo.T10
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T10*
+|*Bezeichnung*|*Konsistenzbedingungen in nicht-eingebetteten Beziehungen*
+|*Beschreibung*|Die Tests müssen prüfen, dass die Daten der `ConstraintDef` im INTERLIS-Datenmodell entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T10a.xtf[RKo.T10a.xtf]
+|*Erwartetes Ergebnis*|
+* RKo.T10a.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|===

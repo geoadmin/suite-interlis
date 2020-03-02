@@ -1,0 +1,93 @@
+==== Vorspann
+
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RHE*
+|*Bezeichnung*|*HEADERSECTION*
+|*Beschreibung*|Für die Validierung des Vorspanns gelten die im <<referenzen.adoc#1,[1]>> Kap. 3.3.4 definierten Regeln
+|*Details*|
+* Die Angaben `VERSION` und `SENDER` im Tag `HEADERSECTION` sind verbindlich
+* Im Element `MODELS` müssen alle Datenmodelle (mindestens eines) aufgeführt werden, zu deren Themen Daten vorkommen
+* Die Angaben `NAME`, `VERSION` und `URI` im Tag `MODEL` sind verbindlich
+* Die Angabe `NAME` muss zwingend der `ModelDef` (<<referenzen.adoc#1,[1]>> Kap. 2.5.1) im INTERLIS-Datenmodell entsprechen
+* Die Angabe `VERSION` soll der `ModelDef` (<<referenzen.adoc#1,[1]>> Kap. 2.5.1) im INTERLIS-Datenmodell entsprechen
+* Die Angabe `URI` hat für die Datenprüfung keine weitere Bedeutung
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.5.1 und 3.3.4
+|===
+
+===== Testfälle
+
+====== RHE.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RHE.T01*
+|*Bezeichnung*|*Vorspann: XML-Attribute*
+|*Beschreibung*|Die Tests müssen prüfen, ob die XML-Attribute `VERSION` und `SENDER` im Tag `HEADERSECTION` vorhanden sind
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T01a.xtf[RHE.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T01b.xtf[RHE.T01b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T01c.xtf[RHE.T01c.xtf]
+|*Erwartetes Ergebnis*|
+* RHE.T01a.xtf: Fehlermeldung. `VERSION` nicht vorhanden
+* RHE.T01b.xtf: Fehlermeldung. `SENDER` nicht vorhanden
+* RHE.T01c.xtf: Fehlermeldung. `VERSION` nicht gleich 2.3
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.4
+|===
+
+====== RHE.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RHE.T02*
+|*Bezeichnung*|*Vorspann: Tag MODELS*
+|*Beschreibung*|Der Test muss prüfen, ob das Tag `MODELS` im Tag `HEADERSECTION` vorhanden ist
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T02a.xtf[RHE.T02a.xtf]
+|*Erwartetes Ergebnis*|
+* RHE.T02a.xtf: Fehlermeldung. Tag `MODELS` nicht vorhanden
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.4
+|===
+
+====== RHE.T03
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RHE.T03*
+|*Bezeichnung*|*Vorspann: Sub-Tag MODEL*
+|*Beschreibung*|Der Test muss prüfen, ob das Sub-Tag `MODEL` im Tag `MODELS` vorhanden ist
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T03a.xtf[RHE.T03a.xtf]
+|*Erwartetes Ergebnis*|
+* RHE.T03a.xtf: Fehlermeldung. Sub-Tag `MODEL` nicht vorhanden
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.4
+|===
+
+====== RHE.T04
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RHE.T04*
+|*Bezeichnung*|*Vorspann: XML-Attribute im Sub-Tag MODEL*
+|*Beschreibung*|Die Tests müssen prüfen, ob die XML-Attribute `NAME`, `VERSION` und `URI` im Sub-Tag `MODEL` vorhanden sind
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T04a.xtf[RHE.T04a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T04b.xtf[RHE.T04b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T04c.xtf[RHE.T04c.xtf]
+|*Erwartetes Ergebnis*|
+* RHE.T04a.xtf: Fehlermeldung. `NAME` nicht vorhanden
+* RHE.T04b.xtf: Fehlermeldung. `VERSION` nicht vorhanden
+* RHE.T04c.xtf: Fehlermeldung. `URI` nicht vorhanden
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.4
+|===
+
+====== RHE.T05
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RHE.T05*
+|*Bezeichnung*|*Vorspann: Attributswerte in `NAME`, und `VERSION`*
+|*Beschreibung*|Die Tests müssen prüfen, ob die Werte der Attribute `NAME` und `VERSION` im Sub-Tag `MODEL` der `ModelDef` im INTERLIS-Datenmodell entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T05a.xtf[RHE.T05a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T05b.xtf[RHE.T05b.xtf]
+|*Erwartetes Ergebnis*|
+* RHE.T05a.xtf: Fehlermeldung. Wert in `NAME` stimmt nicht / Model `TestSuite` nicht vorhanden
+* RHE.T05b.xtf: Fehlermeldung. Wert in `VERSION` stimmt nicht
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.4
+|===

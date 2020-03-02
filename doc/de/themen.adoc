@@ -1,0 +1,111 @@
+<<<
+=== Datenbereich
+INTERLIS-Daten werden als XML-Objekte übertragen. Die Namen der Tags der XMLObjekte müssen jeweils den Objektnamen im INTERLIS-Datenmodell entsprechen (<<referenzen.adoc#1,[1]>> Kap. 3.3.3).
+
+==== Themen
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO*
+|*Bezeichnung*|*TOPIC*
+|*Beschreibung*|Für die Validierung eines *Topic* gelten die im <<referenzen.adoc#1,[1]>> Kap. 3.3.6 definierten Regeln
+|*Details*|
+* Der Wert `%Model.Topic%` muss der `ModelDef` (<<referenzen.adoc#1,[1]>> Kap. 2.5.1) und `TopicDef` (<<referenzen.adoc#1,[1]>> Kap. 2.5.2) im INTERLIS-Datenmodell entsprechen
+* Jeder Datenbehälter (`Basket`) erhält eine Behälteridentifikation (XML-Attribut `BID`). Wo nötig, muss die BID-Angabe der `TopicDef` (<<referenzen.adoc#1,[1]>> Kap. 2.5.2) im INTERLIS-Datenmodell entsprechen. Es gelten zusätzlich die im <<referenzen.adoc#1,[1]>> Kap. 2.8.9 definierten Regeln
+* Alle `BID` inkl. alle `TID` (<<Klassen>>) innerhalb eines Transfers müssen eindeutig sein (<<referenzen.adoc#1,[1]>> Kap. 3.3.7 und 3.2.6)
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.5.1, 2.5.2, 2.8.9, 3.2.5, 3.2.6 und 3.3.6
+|===
+
+===== Testfälle
+
+====== RTO.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO.T01*
+|*Bezeichnung*|*Themen:* `TopicDef`
+|*Beschreibung*|Die Tests müssen prüfen, ob der Wert `%Model.Topic%` den Definitionen im INTERLIS-Datenmodell entspricht
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T01a.xtf[RTO.T01a.xtf]
+|*Erwartetes Ergebnis*|
+* RTO.T01a.xtf: Fehlermeldung. Wert `%Topic%` stimmt nicht
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.5.1, 3.3.4 und 3.3.6
+|===
+
+<<<
+====== RTO.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO.T02*
+|*Bezeichnung*|*Themen:* `BID`
+|*Beschreibung*|Die Tests müssen prüfen, ob die `BID` vorhanden ist und der richtigen Codierung entspricht
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T02a.xtf[RTO.T02a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T02b.xtf[RTO.T02b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T02c.xtf[RTO.T02c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T02d.xtf[RTO.T02d.xtf]
+|*Erwartetes Ergebnis*|
+* RTO.T02a.xtf: Fehlermeldung. `BID` nicht vorhanden
+* RTO.T02b.xtf: Fehlermeldung. `BID` leer
+* RTO.T02c.xtf: Fehlermeldung. Die `BID` wird als XML-ID _à la INTERLIS_ codiert. Erstes Zeichen muss Buchstabe, Ziffer oder Unterstrich sein
+* RTO.T02d.xtf: Fehlermeldung. Zeichen mit Umlaut sind nicht zulässig
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.8.9 und 3.3.1 +
+<<Rahmenbedingungen>>
+|===
+
+====== RTO.T03
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO.T03*
+|*Bezeichnung*|*Themen:* `BID` *und* `TID`
+|*Beschreibung*|Die Tests müssen prüfen, ob alle `BID` inkl. alle `TID` innerhalb des Transfers eindeutig sind
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T03a.xtf[RTO.T03a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T03b.xtf[RTO.T03b.xtf]
+|*Erwartetes Ergebnis*|
+* RTO.T03a.xtf: Fehlermeldung. Doppelte `BID`
+* RTO.T03b.xtf: Fehlermeldung. Gleicher Wert der `BID` und `TID`
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.7 und 3.2.6
+|===
+
+====== RTO.T04
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO.T04*
+|*Bezeichnung*|*Themen: Behälter und Modelle*
+|*Beschreibung*|Der Test muss prüfen Behälter, die unterschiedlichen Modellen entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T04a.xtf[RTO.T04a.xtf]
+|*Erwartetes Ergebnis*|
+* RTO.T04a.xtf: keine Fehlermeldung
+|===
+
+====== RTO.T05
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO.T05*
+|*Bezeichnung*|*Themen: leere Behälter*
+|*Beschreibung*|Die Tests müssen die Regeln für leere Behälter prüfen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T05a.xtf[RTO.T05a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T05b.xtf[RTO.T05b.xtf]
+|*Erwartetes Ergebnis*|
+* RTO.T05a.xtf: keine Fehlermeldung
+* RTO.T05b.xtf: keine Fehlermeldung
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.3, 3.3.5 und 3.3.6
+|===
+
+====== RTO.T06
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO.T06*
+|*Bezeichnung*|*Themen: Behälter und importierte Modelle*
+|*Beschreibung*|Die Tests müssen diejenigen Behälter prüfen, die auf Basis von importierten Modellen definiert worden sind
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T06a.xtf[RTO.T06a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T06b.xtf[RTO.T06b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T06c.xtf[RTO.T06c.xtf]
+|*Erwartetes Ergebnis*|
+* RTO.T06a.xtf: keine Fehlermeldung
+* RTO.T06b.xtf: keine Fehlermeldung
+* RTO.T06c.xtf: Fehlermeldung. Wegen der ASSOCIATION müssen die Daten in einem einzigen Basket transferiert werden
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.5.1 und Appendix C
+|===

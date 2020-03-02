@@ -1,0 +1,64 @@
+== Bezug zum Referenzhandbuch und Testfälle
+
+=== Allgemeines
+
+==== Vordefinierte XML-Regeln
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RVX*
+|*Bezeichnung*|*Vordefinierte XML-Regeln*
+|*Beschreibung*|Die vordefinierten XML-Regeln im <<referenzen.adoc#1,[1]>> Kap. 3.3.1 gelten allgemein für alle Testfälle.
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.1
+|===
+
+==== XML-Wohlgeformtheit
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RXW*
+|*Bezeichnung*|*XML-Wohlgeformtheit*
+|*Beschreibung*|Jede XML-formatierte INTERLIS-Transferdatei muss gemäss XML-1.0 Standard <<referenzen.adoc#2,[2]>> wohlgeformt sein
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.1 und 3.3.3
+|===
+
+===== Testfälle
+
+====== RXW.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RXW.T01*
+|*Bezeichnung*|*Tags*
+|*Beschreibung*|Die Tests müssen die Wohlgeformtheit der Tags prüfen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T01a.xtf[RXW.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T01b.xtf[RXW.T01b.xtf]
+|*Erwartetes Ergebnis*|
+* RXW.T01a.xtf: Fehlermeldung. Es gibt ein Leerzeichen im Tag `DATASECTION`
+* RXW.T01b.xtf: Fehlermeldung. Der Name des End-Tags `TRANSFERs` stimmt nicht mit dem Namen des Start-Tags `TRANSFER` überein
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.1 und 3.3.3 +
+<<referenzen.adoc#2,[2]>> Kap. 2.1 (https://www.w3.org/TR/xml/#sec-starttags)
+|===
+
+====== RXW.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RXW.T02*
+|*Bezeichnung*|*XML-Attribute*
+|*Beschreibung*|Die Tests müssen prüfen, ob die XML-Attribute in Anführungszeichen geschrieben sind (einfaches oder doppeltes Anführungszeichen). +
+Es ist zusätzlich zu prüfen, dass ein Attributname nicht mehr als einmal im selben Tag vorkommt.
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T02a.xtf[RXW.T02a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T02b.xtf[RXW.T02b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T02c.xtf[RXW.T02c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T02d.xtf[RXW.T02d.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T02e.xtf[RXW.T02e.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T02f.xtf[RXW.T02f.xtf]
+|*Erwartetes Ergebnis*|
+* RXW.T02a.xtf: Fehlermeldung. Attributwert (`xmlns`) nicht in Anführungszeichen geschrieben
+* RXW.T02b.xtf: keine Fehlermeldung. Einfaches und doppeltes Anführungszeichen sind beide gültig
+* RXW.T02c.xtf: Fehlermeldung. Doppeltes Attribut `BID`
+* RXW.T02d.xtf: Fehlermeldung. Doppeltes Attribut `TID`
+* RXW.T02e.xtf: Fehlermeldung. Doppeltes Attribut `VERSION` in `HEADERSECTION`
+* RXW.T02f.xtf: Fehlermeldung. Doppeltes Attribut `VERSION` in `MODEL`
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.1 +
+<<referenzen.adoc#2,[2]>> Kap. 3.1 (https://www.w3.org/TR/xml/#uniqattspec)
+|===

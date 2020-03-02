@@ -1,0 +1,73 @@
+=== Struktur der Transferdatei
+
+==== Transfer
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTR*
+|*Bezeichnung*|*TRANSFER*
+|*Beschreibung*|Für die Validierung der Transfer-Struktur gelten die im <<referenzen.adoc#1,[1]>> Kap. 3.3.3 definierten Regeln
+|*Details*|
+* Die Angabe `<?xml version="1.0" encoding="UTF-8">` ist verbindlich
+* Die Angabe `+xmlns="http://www.interlis.ch/INTERLIS2.3"+` im Tag `TRANSFER` ist verbindlich
+* Die XML-Tags müssen in der richtigen Reihenfolge (`TRANSFER`, `HEADERSECTION`, `DATASECTION`) sein
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.3
+|===
+
+===== Testfälle
+
+====== RTR.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTR.T01*
+|*Bezeichnung*|*Transfer: XML-Deklaration*
+|*Beschreibung*|Der Test muss prüfen, ob die XML-Deklaration vorhanden ist
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTR.T01a.xtf[RTR.T01a.xtf]
+|*Erwartetes Ergebnis*|
+* RTR.T01a.xtf: Fehlermeldung. XML-Deklaration nicht vorhanden
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.3 +
+<<referenzen.adoc#2,[2]>> Kap. 2.8 (https://www.w3.org/TR/xml/#sec-prolog-dtd)
+|===
+
+====== RTR.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTR.T02*
+|*Bezeichnung*|*Transfer: Aufbau der Transferdatei*
+|*Beschreibung*|Die Tests müssen prüfen, ob die XML-Tags `TRANSFER`, `HEADERSECTION`, `DATASECTION` vorhanden sind
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTR.T02a.xtf[RTR.T02a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTR.T02b.xtf[RTR.T02b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTR.T02c.xtf[RTR.T02c.xtf]
+|*Erwartetes Ergebnis*|
+* RTR.T02a.xtf: Fehlermeldung. `TRANSFER` nicht vorhanden
+* RTR.T02b.xtf: Fehlermeldung. `HEADERSECTION` nicht vorhanden
+* RTR.T02c.xtf: Fehlermeldung. `DATASECTION` nicht vorhanden
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.3
+|===
+
+====== RTR.T03
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTR.T03*
+|*Bezeichnung*|*Transfer: Reihenfolge der Elemente*
+|*Beschreibung*|Der Test muss prüfen, ob die XML-Tags `TRANSFER`, `HEADERSECTION`, `DATASECTION` in der richtigen Reihenfolge sind
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTR.T03a.xtf[RTR.T03a.xtf]
+|*Erwartetes Ergebnis*|
+* RTR.T03a.xtf: Fehlermeldung. `HEADERSECTION` und `DATASECTION` erfolgen in umgekehrter Reihenfolge
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.3
+|===
+
+====== RTR.T04
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTR.T04*
+|*Bezeichnung*|*Transfer: Attribut* `xmlns`
+|*Beschreibung*|Der Test muss prüfen, ob das Attribut `xmlns` im Tag `TRANSFER` vorhanden ist
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTR.T04a.xtf[RTR.T04a.xtf]
+|*Erwartetes Ergebnis*|
+* RTR.T04a.xtf: Fehlermeldung. xmlns-Attribut nicht vorhanden
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.3
+|===
