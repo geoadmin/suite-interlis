@@ -4,7 +4,7 @@ endif::[]
 
 = Test Suite für XML-formatierte INTERLIS-Transferdateien (Version 2.3)
 
-WARNING: Der Inhalt im AsciiDoc-Format ist für die Erzeugung von PDF-Dateien optimiert.
+WARNING: Der Inhalt im AsciiDoc-Format ist für die Erzeugung von PDF-Dateien optimiert. Die PDF-Datei kann mit folgendem Befehl erzeugt werden: `asciidoctor-pdf -a pdf-style=theme.yml test-suite.adoc`
 
 [discrete]
 === Inhaltsverzeichnis
