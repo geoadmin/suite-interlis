@@ -1,0 +1,111 @@
+<<<
+=== Section de données
+Les données INTERLIS sont transférées sous forme d'objets XML.  Les noms des balises des objets XML doivent correspondre aux noms des objets dans le modèle de données INTERLIS ( <<references.adoc#1,[1]>> Chap. 3.3.3 ).
+
+==== Thèmes
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO*
+|*Désignation*|*TOPIC*
+|*Description*|Pour la validation d'un *Topic*,  les règles définies dans <<references.adoc#1,[1]>> Chap. 3.3.6 s'appliquent
+|*Détails*|
+* La valuer `%Model.Topic%` doit être conforme aux définitions `ModelDef` ( <<references.adoc#1,[1]>> Chap. 2.5.1 ) et `TopicDef` ( <<references.adoc#1,[1]>> Chap. 2.5.2 ) du modèle de données INTERLIS
+* Chaque conteneur de données (`Basket`) reçoit un identifiant (attribut XML `BID`). Ci nécessaire, l'indication `BID` doit être conforme à la définition `TopicDef` ( <<references.adoc#1,[1]>> Chap. 2.5.2 ) du modèle de données INTERLIS. Les règles définies dans <<references.adoc#1,[1]>> Chap. 2.8.9 s’appliquent également
+* Tous les `BID`, y compris tous les `TID` ( <<Classes>> ), doivent être univoques dans un transfert ( <<references.adoc#1,[1]>> Chap. 3.3.7 et 3.2.6 )
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.5.1, 2.5.2, 2.8.9, 3.2.5, 3.2.6 et 3.3.6
+|===
+
+===== Cas de test
+
+====== RTO.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO.T01*
+|*Désignation*|*Thèmes :* `TopicDef`
+|*Description*|Le test doit vérifier si la valeur `%Model.Topic%` corresponde aux définitions du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T01a.xtf[RTO.T01a.xtf]
+|*Résultat attendu*|
+* RTO.T01a.xtf: message d'erreur. La valeur `%Topic%` ne corresponde pas
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.5.1, 3.3.4 et 3.3.6
+|===
+
+<<<
+====== RTO.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO.T02*
+|*Désignation*|*Thèmes :* `BID`
+|*Description*|Le test doit vérifier si le `BID` existe et s’il est correctement codé
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T02a.xtf[RTO.T02a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T02b.xtf[RTO.T02b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T02c.xtf[RTO.T02c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T02d.xtf[RTO.T02d.xtf]
+|*Résultat attendu*|
+* RTO.T02a.xtf: message d'erreur. `BID` non disponible
+* RTO.T02b.xtf: message d'erreur. `BID` vide
+* RTO.T02c.xtf: message d'erreur. `BID` est codé en tant que XML-ID _à la INTERLIS_. ». Le premier caractère doit être une lettre, un chiffre ou un caractère de soulignement
+* RTO.T02d.xtf: message d'erreur. Les caractères avec des trémas ne sont pas admis
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.8.9 et 3.3.1 +
+<<Conditions cadre>>
+|===
+
+====== RTO.T03
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO.T03*
+|*Désignation*|*Thèmes :* `BID` *et* `TID`
+|*Description*|Le test doit vérifier si tous les `BID`, y compris tous les `TID`, sont uniques dans le transfert
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T03a.xtf[RTO.T03a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T03b.xtf[RTO.T03b.xtf]
+|*Résultat attendu*|
+* RTO.T03a.xtf: message d'erreur. Double `BID`
+* RTO.T03b.xtf: message d'erreur. Même valeur de `BID` et `TID`
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.7 et 3.2.6
+|===
+
+====== RTO.T04
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO.T04*
+|*Désignation*|*Thèmes : conteneurs et modèles*
+|*Description*|Le test doit vérifier des données contenant des conteneurs de différents modèles
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T04a.xtf[RTO.T04a.xtf]
+|*Résultat attendu*|
+* RTO.T04a.xtf: aucun message d'erreur
+|===
+
+====== RTO.T05
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO.T05*
+|*Désignation*|*Thèmes : conteneurs vides*
+|*Description*|Le test doit vérifier les règles pour les conteneurs vides
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T05a.xtf[RTO.T05a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T05b.xtf[RTO.T05b.xtf]
+|*Résultat attendu*|
+* RTO.T05a.xtf: aucun message d'erreur
+* RTO.T05b.xtf: aucun message d'erreur
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.3, 3.3.5 et 3.3.6
+|===
+
+====== RTO.T06
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RTO.T06*
+|*Désignation*|*Thèmes : conteneurs et modèles importés*
+|*Description*|Le test doit vérifier les conteneurs définis sur la base de modèles importés
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T06a.xtf[RTO.T06a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T06b.xtf[RTO.T06b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RTO.T06c.xtf[RTO.T06c.xtf]
+|*Résultat attendu*|
+* RTO.T06a.xtf: aucun message d'erreur
+* RTO.T06b.xtf: aucun message d'erreur
+* RTO.T06c.xtf: message d'erreur. En raison de la relation (ASSOCIATION), les données doivent être transférées dans un seul conteneur (`Basket`)
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.5.1 et Annexe C
+|===

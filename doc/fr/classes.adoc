@@ -1,0 +1,51 @@
+<<<
+==== Classes
+
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKl*
+|*Désignation*|*Classes*
+|*Description*|Pour la validation des instances d’une classe, les règles définies pour l’élément `Object` dans <<references.adoc#1,[1]>> Chap. 3.3.7 s'appliquent
+|*Détails*|
+* La valeur `%Model.Topic.Class%` doit être conforme à la définition `ClassDef` ( <<references.adoc#1,[1]>> Chap. 2.5.3 ) du modèle de données INTERLIS
+* Chaque instance objet reçoit implicitement un identifiant de transfert ( attribut XML `TID` ). Si nécessaire, l'indication `TID` doit être conforme à la définition `TopicDef` ( <<references.adoc#1,[1]>> Chap. 2.5.2 ), respectivement à la définition  `ClassDef` ( <<references.adoc#1,[1]>> Chap. 2.5.3 ) du modèle de données INTERLIS. Les règles définies dans <<references.adoc#1,[1]>> Chap. 2.8.9 s’appliquent également
+* Tous les `TID`, y compris tous les `BID` (<<Thèmes>>) doivent être univoques dans un transfert ( <<references.adoc#1,[1]>> Chap. 3.3.7 et 3.2.6 )
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.5.2, 2.5.3, 2.7.1, 2.8.9, 3.2.6, 3.3.7 et 3.3.9.2
+|===
+
+===== Cas de test
+
+====== RKl.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKl.T01*
+|*Désignation*|*Classes :* `ClassDef`
+|*Description*|Le test doit vérifier si la valeur `%Model.Topic.Class%` corresponde aux définitions du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKl.T01a.xtf[RKl.T01a.xtf]
+|*Résultat attendu*|
+* RKl.T01a.xtf: message d'erreur. La valeur `%Class%` ne corresponde pas
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.7
+|===
+
+====== RKl.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKl.T02*
+|*Désignation*|*Classes :* `TID`
+|*Description*|Le test doit vérifier si le `TID` existe et s’il est unique
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKl.T02a.xtf[RKl.T02a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKl.T02b.xtf[RKl.T02b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKl.T02c.xtf[RKl.T02c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKl.T02d.xtf[RKl.T02d.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKl.T02e.xtf[RKl.T02e.xtf]
+|*Résultat attendu*|
+* RKl.T02a.xtf: message d'erreur. `TID` vide
+* RKl.T02b.xtf: message d'erreur. `TID` non disponible
+* RKl.T02c.xtf: message d'erreur. Double `TID`
+* RKl.T02d.xtf: message d'erreur. `TID` est codé en tant que XML-ID _à la INTERLIS_. Le premier caractère doit être une lettre, un chiffre ou un caractère de soulignement
+* RKl.T02e.xtf: message d'erreur. Les caractères avec des trémas ne sont pas admis
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.8.9, 3.3.1 et 3.3.7 +
+<<Conditions cadre>>
+|===

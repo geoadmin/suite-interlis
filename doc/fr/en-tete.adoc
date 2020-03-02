@@ -1,0 +1,95 @@
+==== En-tête
+
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RHE*
+|*Désignation*|*HEADERSECTION*
+|*Description*|Pour la validation de l'en-tête, les règles définies dans  <<references.adoc#1,[1]>> Chap. 3.3.4 s'appliquent
+|*Détails*|
+* Les indication `VERSION` et `SENDER` dans la balise `HEADERSECTION` sont obligatoires
+* Tous les modèles de données dont les thèmes comportent des données doivent être énumérés au sein de l'élément  `MODELS`
+* Les indications `NAME`, `VERSION` et `URI` dans la sous-balise `MODEL` sont obligatoires
+* L'indication `NAME` doit être conforme à la définition `ModelDef` (<<references.adoc#1,[1]>> Chap. 2.5.1) du modèle de données INTERLIS
+* L'indication `VERSION` devrait être conforme à la définition `ModelDef` (<<references.adoc#1,[1]>> Chap. 2.5.1) du modèle de données INTERLIS
+* L'indication `URI` n'a aucune autre signification pour le contrôle des données
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.5.1 et 3.3.4
+|===
+
+<<<
+
+===== Cas de test
+
+====== RHE.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RHE.T01*
+|*Désignation*|*En-tête : attributs XML*
+|*Description*|Le test doit vérifier si les attributs XML `VERSION` et `SENDER` existent dans la balise `HEADERSECTION`
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T01a.xtf[RHE.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T01b.xtf[RHE.T01b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T01c.xtf[RHE.T01c.xtf]
+|*Résultat attendu*|
+* RHE.T01a.xtf: message d'erreur. `VERSION` non disponible
+* RHE.T01b.xtf: message d'erreur. `SENDER` non disponible
+* RHE.T01c.xtf: message d'erreur. La valeur de `VERSION` doit être 2.3
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.4
+|===
+
+====== RHE.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RHE.T02*
+|*Désignation*|*Transfert : balise MODELS*
+|*Description*|Le test doit vérifier si la balise `MODELS` existe dans la balise `HEADERSECTION`
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T02a.xtf[RHE.T02a.xtf]
+|*Résultat attendu*|
+* RHE.T02a.xtf: message d'erreur. Balise `MODELS` non disponible
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.4
+|===
+
+====== RHE.T03
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RHE.T03*
+|*Désignation*|*Transfert : sous-balise MODEL*
+|*Description*|Le test doit vérifier si la sous-balise `MODEL` existe dans la balise `MODELS`
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T03a.xtf[RHE.T03a.xtf]
+|*Résultat attendu*|
+* RHE.T03a.xtf: message d'erreur. Sous-balise `MODEL` non disponible
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.4
+|===
+
+====== RHE.T04
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RHE.T04*
+|*Désignation*|*Transfert : attributs XML dans la sous-balise MODEL*
+|*Description*|Le test doit vérifier si les attributs XML `NAME`, `VERSION` et `URI` existent dans la sous-balise `MODEL`
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T04a.xtf[RHE.T04a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T04b.xtf[RHE.T04b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T04c.xtf[RHE.T04c.xtf]
+|*Résultat attendu*|
+* RHE.T04a.xtf: message d'erreur. `NAME` non disponible
+* RHE.T04b.xtf: message d'erreur. `VERSION` non disponible
+* RHE.T04c.xtf: message d'erreur. `URI` non disponible
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.4
+|===
+
+====== RHE.T05
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RHE.T05*
+|*Désignation*|*Transfert : valeurs des attributs `NAME` et `VERSION`*
+|*Description*|Le test doit vérifier si les valeurs des attributs `NAME` et `VERSION` dans la sous-balise `MODEL` correspondent à la définition `ModelDef` du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T05a.xtf[RHE.T05a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RHE.T05b.xtf[RHE.T05b.xtf]
+|*Résultat attendu*|
+* RHE.T05a.xtf: message d'erreur. La valeur dans `NAME` ne corresponde pas / Modèle `TestSuite` non disponible
+* RHE.T05b.xtf: message d'erreur. La valeur dans `VERSION` ne corresponde pas
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.4
+|===

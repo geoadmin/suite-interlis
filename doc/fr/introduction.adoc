@@ -1,0 +1,21 @@
+== Introduction
+
+La mise en œuvre de la loi sur la géoinformation met l'accent sur l'harmonisation syntaxique et sémantique des géodonnées. L'harmonisation des géodonnées est réalisée par diverses mesures, principalement par la définition des « modèles minimaux de géodonnées» avec INTERLIS.
+
+INTERLIS est à la fois un langage de description de données (niveau sémantique) et un format d'échange (niveau structurel) neutre pour le système, ce qui permet la compatibilité entre les systèmes et la disponibilité à long terme, c'est-à-dire l'archivage et la documentation, des données.
+
+Pour échanger des données, les conditions suivantes doivent être remplies :
+
+*	Un modèle INTERLIS pour le transfert de données doit être défini.
+*	Le fournisseur de données doit structurer ses données selon le modèle INTERLIS. Le format de transfert doit respecter des règles de codage documentées. Pour INTERLIS, les règles de codage XML définies au chapitre 3 du « Manuel de réfé-rence INTERLIS » s'appliquent.
+*	Si nécessaire, l'utilisateur des données doit restructurer le fichier de transfert afin d'intégrer les données dans son système. Cette intégration a lieu « seulement » après que l'utilisateur des données ait vérifié la « conformité au modèle » des données.
+
+La « conformité à un modèle » doit être comprise comme la cohérence des données avec le modèle conceptuel INTERLIS associé : le format de transfert doit respecter des règles de codage définies et documentées <<references.adoc#5,[5]>>.
+
+Avec le projet « Suite de tests INTERLIS », COSIG et CCGEO ont voulu dériver explicitement du « Manuel de référence INTERLIS » les règles minimales pour la validation des données INTERLIS (version 2.3) et définir des cas de test pour chaque règle. En outre, il est important de développer une compréhension commune des règles de mise en œuvre conformément au « Manuel de référence INTERLIS ». En fin de compte, l'objectif est de créer une référence pour un contrôle de qualité, « conforme à un modèle » des données.
+
+
+=== Structure du document
+
+*	Le Chap. 2 traite des objectifs et des conditions cadres. De plus, une spécification pour les identifiants des objets dans INTERLIS est fournie.
+*	Le Chap. 3 sert de référence au « Manuel de référence INTERLIS » et contient le cas de test.

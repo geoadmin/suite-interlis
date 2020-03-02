@@ -1,0 +1,240 @@
+=== Relations
+==== Règles générales
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RBe*
+|*Désignation*|*Relations*
+|*Description*|Pour la validation des relations, les règles définies dans <<references.adoc#1,[1]>> Chap. 3.3.9 s'appliquent
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.9
+|===
+
+===== Cas de test
+====== RBe.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RBe.T01*
+|*Désignation*|*Relations : références*
+|*Description*|Le test doit vérifier que les références des rôles externes sont également codées avec un attribut XML `BID`. +
+_« Si la référence pointe sur un objet d'un autre conteneur (dans le cadre du même transfert voire en dehors de celui-ci), la référence est en plus codée via BID. L'identification du conteneur de l'objet référencé est alors enregistrée dans BID »_
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01a.xtf[RBe.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01b.xtf)[RBe.T01b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01c.xtf[RBe.T01c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01d.xtf[RBe.T01d.xtf]
+|*Résultat attendu*|
+* RBe.T01a.xtf: aucun message d'erreur
+* RBe.T01b.xtf: message d'erreur. `BID` non disponible
+* RBe.T01c.xtf: aucun message d'erreur
+* RBe.T01d.xtf: message d'erreur. `BID` non disponible
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.9.2
+|===
+
+==== Relations incorporées
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*REB*
+|*Désignation*|*Relations incorporées*
+|*Description*|Pour la validation d'une relation incorporé, les règles définies dans <<references.adoc#1,[1]>> Chap. 3.3.9.1 s'appliquent
+|*Détails*|
+* La valeur ```%RoleName%``` doit être conforme à la définition ```RolDef``` ( <<references.adoc#1,[1]>> Chap. 2.7.1 ) du modèle de données INTERLIS
+* Si la référence pointe vers un objet du même conteneur, elle est codée avec  ```REF```. Si la référence pointe sur un objet d'un autre conteneur (dans le cadre du même transfert voire en dehors de celui-ci), la référence est en plus codée via un `BID`
+* Il faut vérifier si l'instance d'objet référencée existe et correspond à la définition ```RolDef``` ( <<references.adoc#1,[1]>> Chap. 2.7.1 ) du modèle de données INTERLIS entspricht
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.7.1 et 3.3.9.1
+|===
+
+<<<
+
+===== Cas de test
+====== REB.T01
+
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*REB.T01*
+|*Désignation*|*Relations incorporées : cardinalité* ``{0..1}`` **pour les deux rôles**
+|*Description*|Le test doit vérifier les règles pour les relations incorporées. +
+_« Si la cardinalité maximale est inférieure ou égale à 1 pour les deux rôles (de base), l'incorporation s'effectue dans la classe de destination du second rôle. Si cette classe de destination est définie dans un autre thème que l'association (de base) et si la classe de destination du premier rôle est définie dans le même thème que l'association (de base), l'incorporation s'effectue dans la classe de destination du premier rôle…»_
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/REB.T01a.xtf[REB.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/REB.T01b.xtf[REB.T01b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/REB.T01c.xtf[REB.T01c.xtf]
+|*Résultat attendu*|
+* REB.T01a.xtf: aucun message d'erreur
+* REB.T01b.xtf: message d'erreur. Codage incorrect
+* REB.T01c.xtf: aucun message d'erreur
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.9
+|===
+
+====== REB.T02
+
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*REB.T02*
+|*Désignation*|*Relations incorporées : cardinalité* ``{0..*}`` **pour l'un des deux rôles**
+|*Description*|Le test doit vérifier les règles pour les relations incorporées. +
+_« Si la cardinalité maximale est supérieure à 1 pour l'un des deux rôles (de base), l'incorporation s'effectue dans la classe de destination de ce rôle. »_
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/REB.T02a.xtf[REB.T02a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/REB.T02b.xtf[REB.T02b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/REB.T02c.xtf[REB.T02c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/REB.T02d.xtf[REB.T02d.xtf],
+|*Résultat attendu*|
+* REB.T02a.xtf: aucun message d'erreur
+* REB.T02b.xtf: message d'erreur. Codage incorrect
+* REB.T02c.xtf: message d'erreur. L'attribut `Status` est obligatoire
+* REB.T02d.xtf: aucun message d'erreur
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.9
+|===
+
+==== Relations non incorporées
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RBk*
+|*Désignation*|*Classes relationnelles*
+|*Description*|Pour la validation des instance d'une classe relationnelle, les règles définies pour l'élément `Link` dans <<references.adoc#1,[1]>> Chap. 3.3.7 les règles définies dans <<references.adoc#1,[1]>> Chap. 3.3.9.2 s'appliquent
+|*Détails*|
+* La valeur ```%Model.Topic.Association%``` doit être conforme à la définition ```AssociationDef``` ( <<references.adoc#1,[1]>> Chap. 2.7.1 ) du modèle de données INTERLIS. Pour les relations sans nom explicite, le nom (de la classe) est formé en reliant les noms des rôles individuels  (```%RoleName1RoleName2%```) ( <<references.adoc#1,[1]>> Chap. 3.3.9.2 )
+* Les instances de ```Link``` n'ont un identifiant de transfert que si cela est requis dans la définition ```AssociationDef``` avec la proprieté ```OID``` ( <<references.adoc#1,[1]>> Chap. 2.7.1 )
+* La valeur ```%RoleName%``` doit être conforme à la définition ```RolDef``` ( <<references.adoc#1,[1]>> Chap. 2.7.1 ) du modèle de données INTERLIS
+* Si la référence pointe vers un objet du même conteneur, elle est codée avec ```REF```. Si la référence pointe sur un objet d'un autre conteneur (dans le cadre du même transfert voire en dehors de celui-ci), la référence est en plus codée via un `BID`
+* Il faut vérifier si l'instance d'objet référencée existe et correspond à la définition ```RolDef``` ( <<references.adoc#1,[1]>> Chap. 2.7.1 ) du modèle de données INTERLIS
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.7.1, 3.3.7 et 3.3.9.2
+|===
+
+===== Cas de test
+====== RBk.T01
+
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RBk.T01*
+|*Désignation*|*Relations non incorporées : cardinalité* ``{0..*}`` **pour le rôle** `EXTERNAL`
+|*Description*|Le test doit vérifier les règles pour les relations non incorporées. +
+_« Si la cardinalité maximale est supérieure à 1 pour l'un des deux rôles (de base), l'incorporation s'effectue dans la classe de destination de ce rôle. Si cette classe de destination est définie dans un autre thème que l'association ( de base ), aucune incorporation n'est possible… »_
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBk.T01a.xtf[RBk.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBk.T01b.xtf[RBk.T01b.xtf]
+|*Résultat attendu*|
+* RBk.T01a.xtf: message d'erreur. Codage incorrect
+* RBk.T01b.xtf: aucun message d'erreur
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.9
+|===
+
+====== RBk.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RBk.T02*
+|*Désignation*|*Relations non incorporées : cardinalité* ``{0..1}`` **pour les deus ròles** `EXTERNAL`
+|*Description*|Le test doit vérifier les règles pour les relations non incorporées _« ( autrement dit, aucune incorporation n'est possible lorsque les classes de destination des deux rôles sont définies dans un autre thème que l'association ( de base ) ). »_
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBk.T02a.xtf[RBk.T02a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBk.T02b.xtf[RBk.T02b.xtf]
+|*Résultat attendu*|
+* RBk.T02a.xtf: aucun message d'erreur
+* RBk.T02b.xtf: message d'erreur. Codage incorrect
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.9
+|===
+
+====== RBk.T03
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RBk.T03*
+|*Désignation*|*Relations non incorporées : cardinalité* ``{0..*}`` **pour les deus ròles**
+|*Description*|Le test doit vérifier les règles pour les relations non incorporées. +
+_« Les relations sont toujours incorporées sauf si la cardinalité maximale est supérieure à 1 pour les deux ròles ( de base) ... »_
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBk.T03a.xtf[RBk.T03a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBk.T03b.xtf[RBk.T03b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBk.T03c.xtf[RBk.T03c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBk.T03d.xtf[RBk.T03d.xtf]
+|*Résultat attendu*|
+* RBk.T03a.xtf: aucun message d'erreur
+* RBk.T03b.xtf: message d'erreur. Codage incorrect
+* RBk.T03c.xtf: message d'erreur. Les ròles de l'`ASSOCIATION` sont obligatoires
+* RBk.T03d.xtf: message d'erreur. Double relation avecf les mèmes références
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.9
+|===
+
+==== Cardinalité
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKB*
+|*Désignation*|*Cardinalité des relations*
+|*Description*|Pour la validation de la cardinalité, le nombre des ob-jets connexes nécessaires / permis doit être conforme à la définition ```RolDef``` ( <<references.adoc#1,[1]>> Chap. 2.7.1 ) du modèle de données INTERLIS
+|*Détails*|
+* Les règles définies dans <<references.adoc#1,[1]>> Chap. 2.7.3 s'appliquent également
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.7.1 et 2.7.3
+|===
+
+===== Cas de test
+====== RKB.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKB.T01*
+|*Désignation*|*Cardinalité :* ``{1}`` *pour les deux rôle*
+|*Description*|Le test doit vérifier les règles pour la cardinalité des relations
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKB.T01a.xtf[RKB.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKB.T01b.xtf[RKB.T01b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKB.T01c.xtf[RKB.T01c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKB.T01d.xtf[RKB.T01d.xtf]
+|*Résultat attendu*|
+* RKB.T01a.xtf: aucun message d'erreur
+* RKB.T01b.xtf: message d'erreur. Rôle manquant ( ```RolleA``` dans ```Klasse B``` )
+* RKB.T01c.xtf: message d'erreur. Deux instances de ```B``` font référence à la même instance de ```A```
+* RKB.T01d.xtf: message d'erreur. Toutes les instance de ```A``` doivent être référencées
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.7.1 et 2.7.3
+|===
+
+
+====== RKB.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKB.T02*
+|*Désignation*|*Cardinalité :* ``{0..1} {1}``
+|*Description*|Le test doit vérifier les règles pour la cardinalité des relations
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKB.T02a.xtf[RKB.T02a.xtf]
+|*Résultat attendu*|
+* RKB.T02a.xtf: aucun message d'erreur
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.7.1 et 2.7.3
+|===
+
+====== RKB.T03
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKB.T03*
+|*Désignation*|*Cardinalité :* ``{0..1} {0..1}``
+|*Description*|Le test doit vérifier les règles pour la cardinalité des relations
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKB.T03a.xtf[RKB.T03a.xtf]
+|*Résultat attendu*|
+* RKB.T03a.xtf: aucun message d'erreur
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.7.1 et 2.7.3
+|===
+
+====== RKB.T04
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKB.T04*
+|*Désignation*|*Cardinalité :* ``{1} {0..*}``
+|*Description*|Le test doit vérifier les règles pour la cardinalité des relations
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKB.T04a.xtf[RKB.T04a.xtf]
+|*Résultat attendu*|
+* RKB.T04a.xtf: aucun message d'erreur
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.7.1 et 2.7.3
+|===
+
+====== RKB.T05
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKB.T05*
+|*Désignation*|*Cardinalité :* ``{0..*} {1}``
+|*Description*|Le test doit vérifier les règles pour la cardinalité des relations
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKB.T05a.xtf[RKB.T05a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKB.T05b.xtf[RKB.T05b.xtf]
+|*Résultat attendu*|
+* RKB.T05a.xtf: message d’erreur. Incorporation incorrecte
+* RKB.T05b.xtf: aucun message d'erreur
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.7.1 et 2.7.3
+|===
