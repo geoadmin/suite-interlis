@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RSU.T03b -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2018-10-10" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2018-10-10" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <TestSuite.Bodenbedeckung BID="TestSuite.Bodenbedeckung">
+			<TestSuite.Bodenbedeckung.GebaeudeArt TID="ga4">
+				<Art>5</Art>
+			</TestSuite.Bodenbedeckung.GebaeudeArt>
+			<TestSuite.Bodenbedeckung.GebaeudeArt TID="ga5">
+				<Art>123456</Art>
+			</TestSuite.Bodenbedeckung.GebaeudeArt>
+			<TestSuite.Bodenbedeckung.GebaeudeArt TID="ga6">
+				<Art>6</Art>
+				<Beschreibung>Art 6</Beschreibung>
+			</TestSuite.Bodenbedeckung.GebaeudeArt>
+			<TestSuite.Bodenbedeckung.BoFlaechen2 TID="f7">
+				<Form>
+					<SURFACE>
+						<BOUNDARY>
+							<POLYLINE>
+								<COORD><C1>2658280.225</C1><C2>1250900.586</C2></COORD>
+								<COORD><C1>2658317.225</C1><C2>1250832.586</C2></COORD>
+								<ARC><C1>2658210.528</C1><C2>1250713.944</C2><A1>2658262.543</A1><A2>1250774.465</A2></ARC>
+								<COORD><C1>2658211.456</C1><C2>1250715.072</C2></COORD>
+								<ARC><C1>2658114.283</C1><C2>1250585.266</C2><A1>2658161.386</A1><A2>1250651.279</A2></ARC>
+								<COORD><C1>2658090.283</C1><C2>1250680.266</C2></COORD>
+							</POLYLINE>
+						</BOUNDARY>
+					</SURFACE>
+				</Form>
+			</TestSuite.Bodenbedeckung.BoFlaechen2>
+			<TestSuite.Bodenbedeckung.BoFlaechen TID="f8">
+				<Flaeche>5.0</Flaeche>
+			</TestSuite.Bodenbedeckung.BoFlaechen>
+			<TestSuite.Bodenbedeckung.Gebaeude TID="g9">
+				<Art REF="ga4"></Art>
+				<Flaeche REF="f8"></Flaeche>
+			</TestSuite.Bodenbedeckung.Gebaeude>
+			<TestSuite.Bodenbedeckung.Gebaeude TID="g10">
+				<Art REF="ga4"></Art>
+			</TestSuite.Bodenbedeckung.Gebaeude>
+		</TestSuite.Bodenbedeckung>
+  </DATASECTION>
+</TRANSFER>
