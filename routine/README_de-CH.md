@@ -47,8 +47,8 @@ gradlew -Pvendor=ig/check -Pics=pathToics.exe test
 Der Parameter ``-Pics`` kann zusätzlich benutzt werden, um unterschiedliche Versionen von iG/Check zu testen.
 
 ### Andere Versionen des ilivalidators testen
-Die Routine ist vorkonfiguriert um den ilivalidator Version 1.11.1 zu testen.
-Um andere Versionen des ilivalidators zu testen, muss die Information ``compile 'ch.interlis:ilivalidator:1.11.1'`` in der Datei ``build.gradle`` (unter ``dependencies``) entsprechend angepasst werden.
+Die Routine ist vorkonfiguriert um den ilivalidator Version 1.11.4 zu testen.
+Um andere Versionen des ilivalidators zu testen, muss die Information ``compile 'ch.interlis:ilivalidator:1.11.4'`` in der Datei ``build.gradle`` (unter ``dependencies``) entsprechend angepasst werden.
 
 ### Spezifische Tests ausschalten
 Alle Test-Typen der Routine sind in der Datei ``build.gradle`` (unter ``test``) gelistet. Um einen Test-Typ auszuschalten, muss die entsprechende Linie auskommentiert werden.
@@ -57,7 +57,7 @@ Alle Test-Typen der Routine sind in der Datei ``build.gradle`` (unter ``test``) 
 Spezifische iG/Check-Einstellungen können zusätzlich in der Datei ``interlis2.cfg`` im Verzeichnis ``igcheck2`` gesetzt werden.
 
 ### Tests, die direkt im Code ausgeschaltet worden sind
-#### ilivalidator Version 1.11.1
+#### ilivalidator Version 1.11.4
 | Test | Begründung |
 | --- | --- |
 | RCO.T01a.xtf | java.lang.NullPointerException |
