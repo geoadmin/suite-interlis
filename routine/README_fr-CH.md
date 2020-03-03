@@ -59,7 +59,7 @@ Des paramètres iG/Check spécifiques peuvent également être définis dans le 
 
 ### Tests qui ont été désactivés directement dans le code
 #### ilivalidator Version 1.11.4
-| Test | Motif |
+| Test | Raison |
 | --- | --- |
 | RCO.T01a.xtf | java.lang.NullPointerException |
 | RCO.T02b.xtf | Hang |
@@ -75,7 +75,7 @@ Des paramètres iG/Check spécifiques peuvent également être définis dans le 
 | RXW.T02f.xtf | Le message d'erreur est erroné |
 
 #### iG/Check Version 2018.0, 08.10.2018
-| Test | Reason |
+| Test | Raison |
 | --- | --- |
 | RAt.T11e.xtf | Le message d'erreur est erroné |
 | RAt.T11f.xtf | Le message d'erreur est erroné |
