@@ -30,7 +30,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * @Designation Surfaces and tessellations: AREA
 	 *
-	 * @Description The tests must check whether two polygons satisfy the definition for AREA
+	 * @Description The tests must check whether the polygons satisfy the definition for AREA
 	 *
 	 * @Test-requirement RSU.T01a.xtf
 	 *
@@ -54,7 +54,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * @Designation Surfaces and tessellations: AREA
 	 *
-	 * @Description The tests must check whether two polygons satisfy the definition for AREA
+	 * @Description The tests must check whether the polygons satisfy the definition for AREA
 	 *
 	 * @Test-requirement RSU.T01b.xtf
 	 *
@@ -78,7 +78,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * @Designation Surfaces and tessellations: AREA
 	 *
-	 * @Description The tests must check whether two polygons satisfy the definition for AREA
+	 * @Description The tests must check whether the polygons satisfy the definition for AREA
 	 *
 	 * @Test-requirement RSU.T01c.xtf
 	 *
@@ -93,6 +93,126 @@ public class SurfaceAreaAttributeTest {
 	@Test
 	public void RSU_T01c() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T01c.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RSU.T01d
+	 *
+	 * @Designation Surfaces and tessellations: AREA
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for AREA
+	 *
+	 * @Test-requirement RSU.T01d.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T01" src="../doc/img/rsu.t01.png">
+	 */
+	@Test
+	public void RSU_T01d() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T01d.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
+
+	/**
+	 * @ID RSU.T01e
+	 *
+	 * @Designation Surfaces and tessellations: AREA
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for AREA
+	 *
+	 * @Test-requirement RSU.T01e.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T01" src="../doc/img/rsu.t01.png">
+	 */
+	@Test
+	public void RSU_T01e() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T01e.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
+
+	/**
+	 * @ID RSU.T01f
+	 *
+	 * @Designation Surfaces and tessellations: AREA
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for AREA
+	 *
+	 * @Test-requirement RSU.T01f.xtf
+	 *
+	 * @Expected-result Error message. The AREA definition is violated
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T01" src="../doc/img/rsu.t01.png">
+	 */
+	@Test
+	public void RSU_T01f() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T01f.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RSU.T01g
+	 *
+	 * @Designation Surfaces and tessellations: AREA
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for AREA
+	 *
+	 * @Test-requirement RSU.T01g.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T01" src="../doc/img/rsu.t01.png">
+	 */
+	@Test
+	public void RSU_T01g() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T01g.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
+
+	/**
+	 * @ID RSU.T01h
+	 *
+	 * @Designation Surfaces and tessellations: AREA
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for AREA
+	 *
+	 * @Test-requirement RSU.T01h.xtf
+	 *
+	 * @Expected-result Error message. Same test as RSU.T01f, but with bigger adjacent polygons. The AREA definition is violated
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T01" src="../doc/img/rsu.t01.png">
+	 */
+	@Test
+	public void RSU_T01h() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T01h.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
@@ -669,6 +789,198 @@ public class SurfaceAreaAttributeTest {
 	@Test
 	public void RSU_T13b() {
 		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T13b.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RSU.T14a
+	 *
+	 * @Designation Surfaces and tessellations: AREA
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for AREA
+	 *
+	 * @Test-requirement RSU.T14a.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T14" src="../doc/img/rsu.t14.png">
+	 */
+	@Test
+	public void RSU_T14a() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T14a.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
+
+	/**
+	 * @ID RSU.T14b
+	 *
+	 * @Designation Surfaces and tessellations: AREA
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for AREA
+	 *
+	 * @Test-requirement RSU.T14b.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T14" src="../doc/img/rsu.t14.png">
+	 */
+	@Test
+	public void RSU_T14b() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T14b.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
+
+	/**
+	 * @ID RSU.T14c
+	 *
+	 * @Designation Surfaces and tessellations: AREA
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for AREA
+	 *
+	 * @Test-requirement RSU.T14c.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T14" src="../doc/img/rsu.t14.png">
+	 */
+	@Test
+	public void RSU_T14c() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T14c.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
+
+	/**
+	 * @ID RSU.T14d
+	 *
+	 * @Designation Surfaces and tessellations: AREA
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for AREA
+	 *
+	 * @Test-requirement RSU.T14d.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T14" src="../doc/img/rsu.t14.png">
+	 */
+	@Test
+	public void RSU_T14d() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T14d.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
+
+	/**
+	 * @ID RSU.T15a
+	 *
+	 * @Designation Surfaces and tessellations: validity of the geometry
+	 *
+	 * @Description The tests must check the validity of the geometry
+	 *
+	 * @Test-requirement RSU.T15a.xtf (AREA)
+	 *
+	 * @Expected-result Error message. InnerBoundary is not within the OuterBoundary
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T15" src="../doc/img/rsu.t15.png">
+	 */
+	@Test
+	public void RSU_T15a() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T15a.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RSU.T15b
+	 *
+	 * @Designation Surfaces and tessellations: validity of the geometry
+	 *
+	 * @Description The tests must check the validity of the geometry
+	 *
+	 * @Test-requirement RSU.T15b.xtf (SURFACE)
+	 *
+	 * @Expected-result Error message. InnerBoundary is not within the OuterBoundary
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T15" src="../doc/img/rsu.t15.png">
+	 */
+	@Test
+	public void RSU_T15b() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T15b.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RSU.T16a
+	 *
+	 * @Designation Surfaces and tessellations: validity of the geometry
+	 *
+	 * @Description The tests must check the validity of the geometry
+	 *
+	 * @Test-requirement RSU.T16a.xtf
+	 *
+	 * @Expected-result Error message. Dangle and autointersection
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T16" src="../doc/img/rsu.t16.png">
+	 */
+	@Test
+	public void RSU_T16a() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T16a.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RSU.T16b
+	 *
+	 * @Designation Surfaces and tessellations: validity of the geometry
+	 *
+	 * @Description The tests must check the validity of the geometry
+	 *
+	 * @Test-requirement RSU.T16b.xtf
+	 *
+	 * @Expected-result Error message. Dangle and autointersection
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.8.13 and 3.3.11.13
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T16" src="../doc/img/rsu.t16.png">
+	 */
+	@Test
+	public void RSU_T16b() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T16b.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
