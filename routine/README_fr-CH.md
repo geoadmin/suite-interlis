@@ -82,5 +82,3 @@ Des paramètres iG/Check spécifiques peuvent également être définis dans le 
 | RKo.T03a.xtf | Le message d'erreur est erroné |
 | RKo.T03b.xtf | Le message d'erreur est erroné |
 | RTO.T06c.xtf | Le message d'erreur est erroné |
-| RTR.T02c.xtf | Le message d'erreur est erroné |
-| RXW.T01a.xtf | Le message d'erreur est erroné |
