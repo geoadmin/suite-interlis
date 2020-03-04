@@ -43,7 +43,7 @@ public class XmlTest {
 	@Test
 	public void RXW_T01a() {
 		// Ignored if vendor="ig/check" --> Wrong error message
-		assumeFalse (System.getProperty("vendor").equals("ig/check"));
+		// assumeFalse (System.getProperty("vendor").equals("ig/check"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RXW.T01a.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
