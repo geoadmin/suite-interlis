@@ -112,7 +112,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * <p>
 	 *
-	 * <img alt="RSU_T01" src="../doc/img/rsu.t01.png">
+	 * <img alt="RSU_T01" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t01.png">
 	 */
 	@Test
 	public void RSU_T01d() {
@@ -136,7 +136,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * <p>
 	 *
-	 * <img alt="RSU_T01" src="../doc/img/rsu.t01.png">
+	 * <img alt="RSU_T01" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t01.png">
 	 */
 	@Test
 	public void RSU_T01e() {
@@ -160,7 +160,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * <p>
 	 *
-	 * <img alt="RSU_T01" src="../doc/img/rsu.t01.png">
+	 * <img alt="RSU_T01" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t01.png">
 	 */
 	@Test
 	public void RSU_T01f() {
@@ -184,7 +184,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * <p>
 	 *
-	 * <img alt="RSU_T01" src="../doc/img/rsu.t01.png">
+	 * <img alt="RSU_T01" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t01.png">
 	 */
 	@Test
 	public void RSU_T01g() {
@@ -208,7 +208,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * <p>
 	 *
-	 * <img alt="RSU_T01" src="../doc/img/rsu.t01.png">
+	 * <img alt="RSU_T01" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t01.png">
 	 */
 	@Test
 	public void RSU_T01h() {
@@ -808,7 +808,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * <p>
 	 *
-	 * <img alt="RSU_T14" src="../doc/img/rsu.t14.png">
+	 * <img alt="RSU_T14" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t14.png">
 	 */
 	@Test
 	public void RSU_T14a() {
@@ -832,7 +832,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * <p>
 	 *
-	 * <img alt="RSU_T14" src="../doc/img/rsu.t14.png">
+	 * <img alt="RSU_T14" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t14.png">
 	 */
 	@Test
 	public void RSU_T14b() {
@@ -856,7 +856,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * <p>
 	 *
-	 * <img alt="RSU_T14" src="../doc/img/rsu.t14.png">
+	 * <img alt="RSU_T14" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t14.png">
 	 */
 	@Test
 	public void RSU_T14c() {
@@ -880,7 +880,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * <p>
 	 *
-	 * <img alt="RSU_T14" src="../doc/img/rsu.t14.png">
+	 * <img alt="RSU_T14" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t14.png">
 	 */
 	@Test
 	public void RSU_T14d() {
@@ -904,7 +904,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * <p>
 	 *
-	 * <img alt="RSU_T15" src="../doc/img/rsu.t15.png">
+	 * <img alt="RSU_T15" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t15.png">
 	 */
 	@Test
 	public void RSU_T15a() {
@@ -928,7 +928,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * <p>
 	 *
-	 * <img alt="RSU_T15" src="../doc/img/rsu.t15.png">
+	 * <img alt="RSU_T15" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t15.png">
 	 */
 	@Test
 	public void RSU_T15b() {
@@ -952,7 +952,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * <p>
 	 *
-	 * <img alt="RSU_T16" src="../doc/img/rsu.t16.png">
+	 * <img alt="RSU_T16" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t16.png">
 	 */
 	@Test
 	public void RSU_T16a() {
@@ -976,7 +976,7 @@ public class SurfaceAreaAttributeTest {
 	 *
 	 * <p>
 	 *
-	 * <img alt="RSU_T16" src="../doc/img/rsu.t16.png">
+	 * <img alt="RSU_T16" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t16.png">
 	 */
 	@Test
 	public void RSU_T16b() {
