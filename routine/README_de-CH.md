@@ -80,7 +80,5 @@ Spezifische iG/Check-Einstellungen können zusätzlich in der Datei ``interlis2.
 | RKo.T03a.xtf | Falsche Fehlermeldung |
 | RKo.T03b.xtf | Falsche Fehlermeldung |
 | RTO.T06c.xtf | Falsche Fehlermeldung |
-| RTR.T02c.xtf | Falsche Fehlermeldung |
-| RXW.T01a.xtf | Falsche Fehlermeldung |
 
 
