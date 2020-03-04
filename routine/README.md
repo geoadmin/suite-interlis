@@ -81,5 +81,3 @@ Specific iG/Check settings can be set in the file ``interlis2.cfg`` in the direc
 | RKo.T03a.xtf | Error message is wrong |
 | RKo.T03b.xtf | Error message is wrong |
 | RTO.T06c.xtf | Error message is wrong |
-| RTR.T02c.xtf | Error message is wrong |
-| RXW.T01a.xtf | Error message is wrong |
