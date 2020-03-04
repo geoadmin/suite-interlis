@@ -42,7 +42,7 @@ test {
 
 javadoc {
     source sourceSets.test.allJava
-    classpath = configurations.CompileClasspath
+    classpath = configurations.compileClasspath
     classpath += configurations.testCompileClasspath
     options.tags = [ "ID", "Designation", "Description", "Test-requirement", "Expected-result", "Reference"]
     options {
