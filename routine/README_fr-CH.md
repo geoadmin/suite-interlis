@@ -52,7 +52,7 @@ La routine est préconfigurée pour tester l'ilivalidator version 1.11.4.
 Pour tester d'autres versions de l'ilivalidator, l'information ``compile 'ch.interlis:ilivalidator:1.11.4'`` dans le fichier ``build.gradle`` (sous ``dependencies``) doit être modifiée en conséquence.
 
 ### Désactiver les tests spécifiques
-Tous les types de test de la routine sont listés dans le fichier  ``build.gradle`` (sous ``test``). Pour désactiver un type de test, la ligne correspondante doit être commentée.
+Tous les types de test de la routine sont listés dans le fichier  ``build.gradle`` (sous ``test``). Pour désactiver un type de test, la ligne correspondante doit être décommentée.
 
 ### Fichier interlis2.cfg
 Des paramètres iG/Check spécifiques peuvent également être définis dans le fichier ``interlis2.cfg`` dans le repertoire ``igcheck2``.
