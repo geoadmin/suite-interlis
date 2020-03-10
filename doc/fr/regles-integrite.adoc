@@ -171,3 +171,18 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T
 * RKo.T10a.xtf: message d'erreur. Violation de la règle d’intégrité
 |*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
 |===
+
+====== RKo.T11
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T11*
+|*Désignation*|*Règles d’intégrité :* `CONSTRAINTS OF`
+|*Description*|Le test doit vérifier que les données soient conformes à la définition `ConstraintDef` du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T07a.xtf[RKo.T11a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T07b.xtf[RKo.T11b.xtf]
+|*Résultat attendu*|
+* RKo.T11a.xtf: aucun message d'erreur
+* RKo.T11b.xtf: message d'erreur. Violation de la règle d’intégrité
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===
