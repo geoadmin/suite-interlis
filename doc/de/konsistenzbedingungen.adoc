@@ -171,3 +171,18 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T
 * RKo.T10a.xtf: Fehlermeldung. Konsistenzbedingung verletzt
 |*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
 |===
+
+====== RKo.T11
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T11*
+|*Bezeichnung*|*Konsistenzbedingungen:* `CONSTRAINTS OF`
+|*Beschreibung*|Die Tests müssen prüfen, dass die Daten der `ConstraintDef` im INTERLIS-Datenmodell entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T11a.xtf[RKo.T11a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T11b.xtf[RKo.T11b.xtf]
+|*Erwartetes Ergebnis*|
+* RKo.T11a.xtf: keine Fehlermeldung
+* RKo.T11b.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|===
