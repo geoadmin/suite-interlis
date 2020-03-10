@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RBk.T03a -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2018-10-10" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2018-10-10" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+	<TestSuite.Bodenbedeckung BID="bid">
+		
+		<TestSuite.Bodenbedeckung.Typ TID="typ">
+			<Attribut>a</Attribut>
+		</TestSuite.Bodenbedeckung.Typ>
+		
+		<TestSuite.Bodenbedeckung.Dokument TID="dok"/>
+		
+		<TestSuite.Bodenbedeckung.Typ_Dokument>
+			<typ REF="typ"/>
+			<dok REF="dok"/>
+		</TestSuite.Bodenbedeckung.Typ_Dokument>
+		
+    </TestSuite.Bodenbedeckung>
+  </DATASECTION>
+</TRANSFER>
+
