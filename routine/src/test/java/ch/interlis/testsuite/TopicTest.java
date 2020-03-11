@@ -61,6 +61,8 @@ public class TopicTest {
  	 */
 	@Test
 	public void RTO_T02a() {
+		// Ignored if vendor="ilivalidator" --> java.lang.IllegalArgumentException instead of java.lang.AssertionError. Error message is correct
+		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RTO.T02a.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);

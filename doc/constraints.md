@@ -99,4 +99,13 @@
 |**Expected result**|<ul><li>RKo.T10a.xtf: error message. Constraint violated</li></ul>
 |**Reference**|[[1]] Chap. 2.12, 2.13 and 2.14
 
+###### Constraints - RKo.T11
+|ID|RKo.T11
+|:--|:--
+|**Designation**|**Constraints:** ```CONSTRAINTS OF```
+|**Description**|The tests must check whether the data satisfies the ```ConstraintDef``` in the INTERLIS data model
+|**Test requirement**|[RKo.T11a.xtf](../data/RKo.T11a.xtf), [RKo.T11b.xtf](../data/RKo.T11b.xtf)
+|**Expected result**|<ul><li>RKo.T11a.xtf: no error message</li><li>RKo.T11b.xtf: error message. Constraint violated</li></ul>
+|**Reference**|[[1]] Chap. 2.12, 2.13 and 2.14
+
 [1]: bib.md#1-cogis-interlis-version-2--reference-manual-13042006

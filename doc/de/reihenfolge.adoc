@@ -1,0 +1,98 @@
+=== Reihenfolge
+
+==== Reihenfolge der Objekte im Datenbereich
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RRO*
+|*Bezeichnung*|*Reihenfolge - Datenbereich*
+|*Beschreibung*|Für die Validierung der Reihenfolge der Objektinstanzen im Datenbereich gelten die im <<referenzen.adoc#1,[1]>> Kap. 3.2.5 definierten Regeln
+|*Details*|
+* Die Reihenfolge der Objekte im Transfer ist beliebig, insbesondere müssen die Objekte innerhalb eines Behälters nicht unbedingt nach Beziehungen geordnet oder nach Klassen gruppiert sein
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.2.5
+|===
+
+===== Testfälle
+====== RRO.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RRO.T01*
+|*Bezeichnung*|*Reihenfolge: Datenbereich*
+|*Beschreibung*|Die Tests müssen die Regeln für die Reihenfolge der Objekte im Datenbereich prüfen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRO.T01a.xtf[RRO.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRO.T01b.xtf[RRO.T01b.xtf]
+|*Erwartetes Ergebnis*|
+* RRO.T01a.xtf: keine Fehlermeldung
+* RRO.T01b.xtf: keine Fehlermeldung
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.2.5
+|===
+
+==== Reihenfolge innerhalb der Klasseinstanzen
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RRiO*
+|*Bezeichnung*|*Reihenfolge innerhalb der Klasseinstanzenn*
+|*Beschreibung*|Für die Validierung der Reihenfolge innerhalb einer Objektinstanz gelten die im <<referenzen.adoc#1,[1]>> Kap. 3.3.7 definierten Regeln
+|*Details*|
+* Für die Reihenfolge der Attribute, Rollen, `EmbeddedLinks` und Referenzattribute innerhalb einer (erweiterten) Klasse gilt:
+. Rollen der Basisklasse
+. Attribute / Referenzattribute der Basisklasse
+. ``EmbeddedLinks`` der Basisklasse
+. Attribute/Referenzattribute der Erweiterung
+. ``EmbeddedLinks`` der Erweiterung
+* Innerhalb der gleichen Stufe müssen die Attribute / Referenzattribute und Rollen der Definitionsreihenfolge im INTERLIS-Datenmodell entsprechen
+* Innerhalb der gleichen Stufe müssen die `EmbeddedLinks` alphabetisch aufsteigend sortiert werden
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.7
+|===
+
+===== Testfälle
+====== RRiO.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RRiO.T01*
+|*Bezeichnung*|*Reihenfolge: Klasseinstanzen*
+|*Beschreibung*|Die Tests müssen die Regeln für die Reihenfolge der Objektinstanzen einer Klasse prüfen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T01a.xtf[RRiO.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T01b.xtf[RRiO.T01b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T01c.xtf[RRiO.T01c.xtf]
+|*Erwartetes Ergebnis*|
+* RRiO.T01a.xtf: keine Fehlermeldung
+* RRiO.T01b.xtf: Fehlermeldung. Falsche Reihenfolge der Attribute
+* RRiO.T01c.xtf:Fehlermeldung. Falsche Reihenfolge der `EmbeddedLinks`
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.7
+|===
+
+====== RRiO.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RRiO.T02*
+|*Bezeichnung*|*Reihenfolge: Instanzen einer erweiterten Klasse*
+|*Beschreibung*|Die Tests müssen die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Klasse prüfen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T02a.xtf[RRiO.T02a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T02b.xtf[RRiO.T02b.xtf]
+|*Erwartetes Ergebnis*|
+* RRiO.T02a.xtf: keine Fehlermeldung
+* RRiO.T02b.xtf: Fehlermeldung. Falsche Reihenfolge der Attribute (zuerst müssen die Attribute der Basisklasse codiert werden)
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.7
+|===
+
+====== RRiO.T03
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RRiO.T03*
+|*Bezeichnung*|*Reihenfolge: Instanzen einer erweiterten Beziehungsklasse*
+|*Beschreibung*|Die Tests müssen die Regeln für die Reihenfolge der Objektinstanzen einer erweiterten Beziehungsklasse prüfen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T03a.xtf[RRiO.T03a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T023.xtf[RRiO.T03b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T03c.xtf[RRiO.T03c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T03d.xtf[RRiO.T03d.xtf]
+|*Erwartetes Ergebnis*|
+* RRiO.T03a.xtf: keine Fehlermeldung
+* RRiO.T03b.xtf: Fehlermeldung. Zuerst müssen die Rollen der Basisklasse codiert werden
+* RRiO.T03c.xtf: Fehlermeldung. Zuerst müssen die Attribute der Basisklasse codiert werden
+* RRiO.T03d.xtf: Fehlermeldung. Die Rollen der Basisklasse sind obligatorisch
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 3.3.7
+|===

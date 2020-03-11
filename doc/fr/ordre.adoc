@@ -1,0 +1,98 @@
+=== Ordre
+
+==== Ordre des objets au sein de la section de données
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RRO*
+|*Désignation*|*Ordre - Section de données*
+|*Description*|Pour la validation de l’ordre des instances d’objet dans la section données, les règles définies dans <<references.adoc#1,[1]>> Chap. 3.2.5 s'appliquent
+|*Détails*|
+* L’ordre des objets est sans importance pour le transfert, il n’est en particulier pas nécessaire que les objets au sein d’un conteneur soient ordonnés par relations ou groupés par classes
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.2.5
+|===
+
+===== Cas de test
+====== RRO.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RRO.T01*
+|*Désignation*|*Ordre - Section de données*
+|*Description*|Le test doit vérifier les règles pour l’ordre au sein de la section données
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRO.T01a.xtf[RRO.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRO.T01b.xtf[RRO.T01b.xtf]
+|*Résultat attendu*|
+* RRO.T01a.xtf: aucun message d'erreur
+* RRO.T01b.xtf: aucun message d'erreur
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.2.5
+|===
+
+==== Ordre au sein des classes
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RRiO*
+|*Désignation*|*Ordre au sein des instances de classe*
+|*Description*|Pour la validation de l’ordre au sein des instances d’objet, les règles définies dans <<references.adoc#1,[1]>> Chap. 3.3.7 s'appliquent
+|*Détails*|
+* La règle suivante s’applique pour l’ordre de succession des attributs, rôles, `EmbeddedLinks` et attributs de référence au sein d’une classe ( étendue ) :
+. Rôles de la classe de base
+. Attributs / attributs de référence de la classe de base
+. ``EmbeddedLinks`` de la classe de base
+. Attributs / attributs de référence de l’extension
+. ``EmbeddedLinks`` de l’extension
+* Au sein d’un même niveau d’extension, les attributs / attributs de référence et les rôles sont codés selon l’ordre défini dans le modèle de données INTERLIS
+* Au sein d’un même niveau d’extension, les `EmbeddedLinks` sont triés par ordre alphabétique croissant
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.7
+|===
+
+===== Cas de test
+====== RRiO.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RRiO.T01*
+|*Désignation*|*Ordre : au sein des classes*
+|*Description*|Le test doit vérifier les règles pour l’ordre des instances d’objets au sein des classes
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T01a.xtf[RRiO.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T01b.xtf[RRiO.T01b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T01c.xtf[RRiO.T01c.xtf]
+|*Résultat attendu*|
+* RRiO.T01a.xtf: aucun message d'erreur
+* RRiO.T01b.xtf: message d'erreur. Ordre des attributs incorrect
+* RRiO.T01c.xtf: message d'erreur. Ordre des  `EmbeddedLinks` incorrect
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.7
+|===
+
+====== RRiO.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RRiO.T02*
+|*Désignation*|*Ordre : instances d’une classe étendue*
+|*Description*|Le test doit vérifier les règles pour l’ordre des instances d’objets au sein d’une classe étendue
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T02a.xtf[RRiO.T02a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T02b.xtf[RRiO.T02b.xtf]
+|*Résultat attendu*|
+* RRiO.T02a.xtf: aucun message d'erreur
+* RRiO.T02b.xtf: message d'erreur. Ordre des attributs incorrect ( les attributs de la classe de base doivent être codés d'abord )
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.7
+|===
+
+====== RRiO.T03
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RRiO.T03*
+|*Désignation*|*Ordre : instances d’une classe relationnelle étendue*
+|*Description*|Le test doit vérifier les règles pour l’ordre des instances d’objets au sein d’une classe relationnelle étendue
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T03a.xtf[RRiO.T03a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T023.xtf[RRiO.T03b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T03c.xtf[RRiO.T03c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RRiO.T03d.xtf[RRiO.T03d.xtf]
+|*Résultat attendu*|
+* RRiO.T03a.xtf: aucun message d'erreur
+* RRiO.T03b.xtf: message d'erreur. Les rôles de la classe de base doivent être codés d'abord
+* RRiO.T03c.xtf: message d'erreur. Les attributs de la classe de base doivent être codés d'abord
+* RRiO.T03d.xtf: message d'erreur. Les rôles de la classe de base sont obligatoires
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.7
+|===

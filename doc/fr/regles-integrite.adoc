@@ -1,0 +1,188 @@
+==== Règles d’intégrité
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo*
+|*Désignation*|*Règles d’intégrité*
+|*Description*|Les données INTERLIS doivent être conformes aux définitions `ConstraintDef` ( <<references.adoc#1,[1]>> Chap. 2.12 et 2.13) du modèle de données INTERLIS
+|*Détails*|
+* Les règles d’intégrité formulées avec les fonctions standard ( <<references.adoc#1,[1]>> Chap. 2.14 ) doivent également être vérifiées, en particulier les règles d’intégrité géométrique, telles que celles formulées avec la fonction standard `areAreas`
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===
+
+===== Cas de test
+====== RKo.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T01*
+|*Désignation*|*Règles d’intégrité :* `UNIQUE`
+|*Description*|Le test doit vérifier que les données soient conformes à la définition `ConstraintDef` du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T01a.xtf[RKo.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T01b.xtf[RKo.T01b.xtf]
+|*Résultat attendu*|
+* RKo.T01a.xtf: aucun message d'erreur
+* RKo.T01b.xtf: message d'erreur. Violation de la règle d’intégrité
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===
+
+====== RKo.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T02*
+|*Désignation*|*Règles d’intégrité :* `UNIQUE (LOCAL)`
+|*Description*|Le test doit vérifier que les données soient conformes à la définition `ConstraintDef` du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T02a.xtf[RKo.T02a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T02b.xtf[RKo.T02b.xtf]
+|*Résultat attendu*|
+* RKo.T02a.xtf: message d'erreur. Violation de la règle d’intégrité
+* RKo.T02b.xtf: aucun message d'erreur
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===
+
+====== RKo.T03
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T03*
+|*Désignation*|*Règles d’intégrité :* `UNIQUE WHERE`
+|*Description*|Le test doit vérifier que les données soient conformes à la définition `ConstraintDef` du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T03a.xtf[RKo.T03a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T03b.xtf[RKo.T03b.xtf]
+|*Résultat attendu*|
+* RKo.T03a.xtf: aucun message d'erreur
+* RKo.T03b.xtf: message d'erreur. Violation de la règle d’intégrité
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===
+
+====== RKo.T04
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T04*
+|*Désignation*|*Règles d’intégrité :* `EXISTENCE CONSTRAINT`
+|*Description*|Le test doit vérifier que les données soient conformes à la définition `ConstraintDef` du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T04a.xtf[RKo.T04a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T04b.xtf[RKo.T04b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T04c.xtf[RKo.T04c.xtf]
+|*Résultat attendu*|
+* RKo.T04a.xtf: aucun message d'erreur
+* RKo.T04b.xtf: message d'erreur. Violation de la règle d’intégrité
+* RKo.T04c.xtf: aucun message d'erreur
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===
+
+====== RKo.T05
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T05*
+|*Désignation*|*Règles d’intégrité :* `MANDATORY` *avec comparaison*
+|*Description*|Le test doit vérifier que les données soient conformes à la définition `ConstraintDef` du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T05a.xtf[RKo.T05a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T05b.xtf[RKo.T05b.xtf]
+|*Résultat attendu*|
+* RKo.T05a.xtf: aucun message d'erreur
+* RKo.T05b.xtf: message d'erreur. Violation de la règle d’intégrité
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===
+
+====== RKo.T06
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T06*
+|*Désignation*|*Règles d’intégrité :* `MANDATORY` *avec spécification des conditions*
+|*Description*|Le test doit vérifier que les données soient conformes à la définition `ConstraintDef` du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06a.xtf[RKo.T06a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06b.xtf[RKo.T06b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06c.xtf[RKo.T06c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06d.xtf[RKo.T06d.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06e.xtf[RKo.T06e.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06f.xtf[RKo.T06f.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T06g.xtf[RKo.T06g.xtf]
+|*Résultat attendu*|
+* RKo.T06a.xtf: aucun message d'erreur
+* RKo.T06b.xtf: aucun message d'erreur
+* RKo.T06c.xtf: message d'erreur. _Datum_ est obligatoire
+* RKo.T06d.xtf: aucun message d'erreur
+* RKo.T06e.xtf: aucun message d'erreur
+* RKo.T06f.xtf: message d'erreur. Violation de la règle d’intégrité
+* RKo.T06g.xtf: message d'erreur. Violation de la règle d’intégrité
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===
+
+====== RKo.T07
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T07*
+|*Désignation*|*Règles d’intégrité :* `MANDATORY` *avec fonction* (`INTERLIS.len`)
+|*Description*|Le test doit vérifier que les données soient conformes à la définition `ConstraintDef` du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T07a.xtf[RKo.T07a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T07b.xtf[RKo.T07b.xtf]
+|*Résultat attendu*|
+* RKo.T07a.xtf: aucun message d'erreur
+* RKo.T07b.xtf: message d'erreur. Violation de la règle d’intégrité
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===
+
+====== RKo.T08
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T08*
+|*Désignation*|*Règles d’intégrité :* `SET CONSTRAINT` *avec fonction* (`are.Areas`)
+|*Description*|Le test doit vérifier que les données soient conformes à la définition `ConstraintDef` du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08a.xtf[RKo.T08a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08b.xtf[RKo.T08b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08c.xtf[RKo.T08c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08d.xtf[RKo.T08d.xtf]
+|*Résultat attendu*|
+* RKo.T08a.xtf: message d'erreur. Violation de la règle d’intégrité
+* RKo.T08b.xtf: aucun message d'erreur
+* RKo.T08c.xtf: aucun message d'erreur
+* RKo.T08d.xtf: message d'erreur. Violation de la règle d’intégrité
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===
+
+====== RKo.T09
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T09*
+|*Désignation*|*Règles d’intégrité dans le relations incorporées*
+|*Description*|Le test doit vérifier que les données soient conformes à la définition `ConstraintDef` du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T09a.xtf[RKo.T09a.xtf]
+|*Résultat attendu*|
+* RKo.T09a.xtf: message d'erreur. Violation de la règle d’intégrité
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===
+
+====== RKo.T10
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T10*
+|*Désignation*|*Règles d’intégrité dans le relations non incorporées*
+|*Description*|Le test doit vérifier que les données soient conformes à la définition `ConstraintDef` du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T10a.xtf[RKo.T10a.xtf]
+|*Résultat attendu*|
+* RKo.T10a.xtf: message d'erreur. Violation de la règle d’intégrité
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===
+
+====== RKo.T11
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RKo.T11*
+|*Désignation*|*Règles d’intégrité :* `CONSTRAINTS OF`
+|*Description*|Le test doit vérifier que les données soient conformes à la définition `ConstraintDef` du modèle de données INTERLIS
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T11a.xtf[RKo.T11a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T11b.xtf[RKo.T11b.xtf]
+|*Résultat attendu*|
+* RKo.T11a.xtf: aucun message d'erreur
+* RKo.T11b.xtf: message d'erreur. Violation de la règle d’intégrité
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===

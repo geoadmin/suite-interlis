@@ -1,0 +1,64 @@
+== Relation au Manuel de référence et cas de test
+
+=== Règles générales
+
+==== Codage XML
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RVX*
+|*Désignation*|*Règles XML prédéfinies*
+|*Description*|Les règles prédéfinies dans <<references.adoc#1,[1]>> Chap. 3.3.1 s'appliquent
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.1
+|===
+
+==== Document XML bien formé
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RXW*
+|*Désignation*|*XML bien formé*
+|*Description*|Chaque fichier de transfert INTERLIS au format XML doit être bien formé conformément à la norme XML-1.0 <<references.adoc#2,[2]>>
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.1 et 3.3.3
+|===
+
+===== Cas te test
+
+====== RXW.T01
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RXW.T01*
+|*Désignation*|*Balises XML bien formées*
+|*Description*|Le test doit vérifier que les balises XML soient bien formées
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T01a.xtf[RXW.T01a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T01b.xtf[RXW.T01b.xtf]
+|*Résultat attendu*|
+* RXW.T01a.xtf: message d'erreur. Il y a un espace dans la balise `DATASECTION`
+* RXW.T01b.xtf: message d'erreur. Le nom de la balise fermante `TRANSFERs` ne correspond pas au nom del la balise ouvrante `TRANSFER`
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.1 et 3.3.3 +
+<<references.adoc#2,[2]>> Chap. 2.1 (https://www.w3.org/TR/xml/#sec-starttags)
+|===
+
+====== RXW.T02
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RXW.T02*
+|*Désignation*|*Attributs XML*
+|*Description*|Le test doit vérifier si les attributs XML sont écrits entre guillemets (guillemets simples ou doubles). +
+Il doit également être vérifier qu'un nom d'attribut n'ap-paraisse pas plus d'une fois dans la même balise.
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T02a.xtf[RXW.T02a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T02b.xtf[RXW.T02b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T02c.xtf[RXW.T02c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T02d.xtf[RXW.T02d.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T02e.xtf[RXW.T02e.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RXW.T02f.xtf[RXW.T02f.xtf]
+|*Résultat attendu*|
+* RXW.T02a.xtf: message d'erreur. Valeur d’attribut (`xmlns`) non écrite entre guillemets
+* RXW.T02b.xtf: aucun message d’erreur. Les guillemets simples et doubles sont admis
+* RXW.T02c.xtf: message d'erreur. Double Attribut `BID`
+* RXW.T02d.xtf: message d'erreur. Double Attribut `TID`
+* RXW.T02e.xtf: message d'erreur. Double Attribut `VERSION` dans `HEADERSECTION`
+* RXW.T02f.xtf: message d'erreur. Double Attribut `VERSION` dans `MODEL`
+|*Référence*|<<references.adoc#1,[1]>> Chap. 3.3.1 +
+<<references.adoc#2,[2]>> Chap. 3.1 (https://www.w3.org/TR/xml/#uniqattspec)
+|===

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- RTR.T02a -->
 <!-- TRANSFER nicht vorhanden -->
+<a>  
   <HEADERSECTION SENDER="ili2c-4.5.22-20160520" VERSION="2.3">
     <MODELS>
       <MODEL NAME="TestSuite" VERSION="2018-10-10" URI="http://www.kogis.ch"/>
@@ -27,3 +28,4 @@
       </TestSuite.Bodenbedeckung.BoFlaechen>
     </TestSuite.Bodenbedeckung>
   </DATASECTION>
+</a>

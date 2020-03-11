@@ -1,0 +1,32 @@
+ifdef::env-github[]
+:warning-caption: :warning:
+endif::[]
+
+= Suite de tests pour les fichiers de transfert INTERLIS au format XML ( Version 2.3 )
+
+WARNING: Le contenu au format AsciiDoc est optimisé pour la génération de fichiers PDF. Le fichier PDF peut être généré avec la commande suivante : `asciidoctor-pdf -a pdf-style=theme.yml test-suite.adoc`
+
+<<<
+
+[discrete]
+=== Table des matières
+
+* Règles générales
+ ** <<conditions-cadre.adoc#Conditions-cadre,Identification d’objet>>
+ ** <<xml.adoc#Codage-XML,Règles XML prédéfinies>>
+ ** <<xml.adoc#Document-XML-bien-formé,XML bien formé>>
+ ** <<codage-caracteres.adoc#Codage-de-caractères,Codage de caractères>>
+
+* Structure du fichier de transfert
+ ** <<transfert.adoc#,Transfert>>
+ ** <<en-tete.adoc#,En-tête>>
+
+* Section de données
+ ** <<themes.adoc#,Thèmes>>
+ ** <<classes.adoc#,Classes>>
+ ** <<relations.adoc#,Relations>>
+ ** <<attributs.adoc#,Attributs>>
+ ** <<ordre.adoc#,Ordre des objets>>
+ ** <<regles-integrite.adoc#,Règles d’intégrité>>
+* <<references.adoc#,Références>>
+* <<annexe.adoc#,Routine de test>>

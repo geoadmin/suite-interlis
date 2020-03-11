@@ -85,7 +85,7 @@ VERSION "2018-10-10" =
       stoecke : 1 .. 9;
       Status : (projektiert, real);
       Datum : INTERLIS.XMLDate;
-    MANDATORY CONSTRAINT NOT (Status == "real") OR DEFINED (Datum);
+    MANDATORY CONSTRAINT NOT (Status == #real) OR DEFINED (Datum);
     END Gebaeude;
 
     CLASS Gebaeude2 EXTENDS Gebaeude =
@@ -109,6 +109,22 @@ VERSION "2018-10-10" =
       Flaeche -- {0..1} BoFlaechen;
       Gebaeude -<> {0..*} Gebaeude;
     END GebaeudeFlaeche;
+    
+	  CLASS Typ =
+	    Attribut : MANDATORY (a,b);
+	  END Typ;
+	
+	  CLASS Dokument =
+	  END Dokument;
+
+	  ASSOCIATION Typ_Dokument =
+	    typ -- {0..*} Typ;
+  	  dok -- {0..*} Dokument;
+  	END Typ_Dokument;
+	
+  	CONSTRAINTS OF Typ =
+  	  MANDATORY CONSTRAINT NOT (Attribut == #a) OR DEFINED (dok);
+  	END ;
 
   END Bodenbedeckung;
 

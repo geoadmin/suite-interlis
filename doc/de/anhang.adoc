@@ -1,0 +1,22 @@
+<<<
+:sectnums!:
+== Anhang 1
+
+=== Testroutine
+Eine Testroutine wurde entwickelt und ist unter folgender Adresse erhältlich:
+
+* https://github.com/geoadmin/suite-interlis
+
+Mit der Testroutine kann die Test Suite gegen die Tools https://www.interlis.ch/downloads/ilivalidator[ilivalidator] und https://www.interlis.ch/downloads/igcheck[iG/Check] ausgeführt werden.
+
+Bitte folgen Sie diesen https://github.com/geoadmin/suite-interlis/blob/master/routine/README_de-CH.md[Anweisungen]
+
+=== Daten
+Die XML-formatierte INTERLIS-Dateien sind unter folgender Adresse erhältlich:
+
+* https://github.com/geoadmin/suite-interlis/tree/master/data
+
+=== INTERLIS-Modelle
+Die INTERLIS-Modelle sind unter folgender Adresse erhältlich:
+
+* https://github.com/geoadmin/suite-interlis/tree/master/data/models

@@ -1,0 +1,22 @@
+<<<
+:sectnums!:
+== Annexe 1
+
+=== Routine de test
+Une routine de test a été développée et est disponible à l'adresse suivante :
+
+* https://github.com/geoadmin/suite-interlis
+
+La routine de test permet d'exécuter la suite de tests avec les outils https://www.interlis.ch/downloads/ilivalidator[ilivalidator] et https://www.interlis.ch/downloads/igcheck[iG/Check].
+
+Veuillez suivre les https://github.com/geoadmin/suite-interlis/blob/master/routine/README_fr-CH.md[instructions] suivantes.
+
+=== Données
+Le fichiers INTERLIS au format XML sont disponibles à l'adresse suivante :
+
+* https://github.com/geoadmin/suite-interlis/tree/master/data
+
+=== Modèles INTERLIS
+Les modèles INTERLIS ont disponibles à l'adresse suivante :
+
+* https://github.com/geoadmin/suite-interlis/tree/master/data/models

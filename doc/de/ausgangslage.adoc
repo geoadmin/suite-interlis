@@ -1,0 +1,17 @@
+== Ausgangslage
+
+Die Umsetzung des Geoinformationsgesetzes setzt die syntaktische und semantische Geodatenharmonisierung ins Zentrum. Die Geodatenharmonisierung wird durch verschiedene Massnahmen erreicht, hauptsächlich durch die Definition der «minimalen Geodatenmodelle» mit INTERLIS.
+INTERLIS ist sowohl eine systemneutrale Datenbeschreibungssprache (semantische Ebene) als auch ein systemneutrales Austauschformat (strukturelle Ebene); damit wird die Kompatibilität unter den Systemen und eine langfristige Verfügbarkeit, d.h. Archivierung und Dokumentation der Daten, ermöglicht.
+Um Daten auszutauschen, müssen folgende Bedingungen erfüllt sein:
+
+*	Ein INTERLIS-Modell für den Datentransfer muss definiert werden.
+*	Der Datenlieferant muss seine Daten gemäss dem INTERLIS-Modell umbauen. Das Transferformat muss dokumentierten Kodierungsregeln entsprechen. Für INTERLIS gelten die im Kapitel 3 des INTERLIS-Referenzhandbuchs definierten XML-Kodierungsregeln.
+* Allenfalls muss der Datennutzer die Transferdatei umbauen, um die Daten in sein System zu integrieren. Diese Integration erfolgt «erst» nachdem der Datennutzer die «Modellkonformität» der Daten geprüft hat.
+
+Modellkonformität ist zu verstehen als die Übereinstimmung der Daten mit dem zugehörigen konzeptionellen INTERLIS-Modell: das Transferformat muss definierten und dokumentierten Kodierungsregeln entsprechen <<referenzen.adoc#5,[5]>>.
+Mit dem Projekt «INTERLIS-Testsuite» wollen KOGIS und KKGEO die Mindestregeln für die Validierung von INTERLIS-Daten (Version 2.3) explizit aus dem INTERLIS-Referenzhandbuch ableiten und Testfälle dazu definieren. Des Weiteren ist es wichtig, ein gemeinsames Verständnis der Umsetzungsregeln gemäss INTERLIS-Referenzhandbuch zu entwickeln. Schlussendlich soll damit eine Referenz geschaffen werden für qualitätsgeprüfte, modellkonforme Daten.
+
+=== Struktur dieses Dokuments
+
+*	Kap. 2 befasst sich mit den Zielen und den Rahmenbedingungen. Zusätzlich wird eine Präzisierung bezüglich der Objektidentifikation in INTERLIS bereitgestellt.
+*	Kap. 3 dient als Bezug zum INTERLIS-Referenzhandbuch und enthält die Testfälle.

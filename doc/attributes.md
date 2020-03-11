@@ -233,10 +233,10 @@
 |ID|RSU.T01
 |:--|:--
 |**Designation**|**Surfaces and tessellations:** ```AREA```
-|**Description**|The tests must check whether two polygons satisfy the definition for ```AREA```
-|**Test requirement**|[RSU.T01a.xtf](../data/RSU.T01a.xtf), [RSU.T01b.xtf](../data/RSU.T01b.xtf), [RSU.T01c.xtf](../data/RSU.T01c.xtf)
+|**Description**|The tests must check whether the polygons satisfy the definition for ```AREA```
+|**Test requirement**|[RSU.T01a.xtf](../data/RSU.T01a.xtf), [RSU.T01b.xtf](../data/RSU.T01b.xtf), [RSU.T01c.xtf](../data/RSU.T01c.xtf), [RSU.T01d.xtf](../data/RSU.T01d.xtf), [RSU.T01e.xtf](../data/RSU.T01e.xtf), [RSU.T01f.xtf](../data/RSU.T01f.xtf), [RSU.T01g.xtf](../data/RSU.T01g.xtf), [RSU.T01h.xtf](../data/RSU.T01h.xtf)
 |**Example**|<p align="center"><img src="img/rsu.t01.png" height="384" title="RSU.T01"></p>
-|**Expected result**|<ul><li>RSU.T01a.xtf: error message. The surfaces do not share the same segments (one surface contains an additional control point)</li><li>RSU.T01b.xtf: no error message</li><li>RSU.T01c.xtf: error message. The surfaces do not share the same segments</li></ul>
+|**Expected result**|<ul><li>RSU.T01a.xtf: error message. The surfaces do not share the same segments (one surface contains an additional control point)</li><li>RSU.T01b.xtf: no error message</li><li>RSU.T01c.xtf: error message. The surfaces do not share the same segments</li><li>RSU.T01d.xtf: no error message</li><li>RSU.T01e.xtf: no error message</li><li>RSU.T01f.xtf: error message. The ```AREA``` definition is violated</li><li>RSU.T01g.xtf: no error message</li><li>RSU.T01h.xtf: error message. Same test as RSU.T01f, but with bigger adjacent polygons. The ```AREA``` definition is violated</li></ul>
 |**Reference**|[[1]] Chap. 2.8.13 and 3.3.11.13
 
 ###### Surfaces and Tessellations - RSU.T02
@@ -357,6 +357,36 @@
 |**Test requirement**|[RSU.T13a.xtf](../data/RSU.T13a.xtf) (```AREA```), [RSU.T13b.xtf](../data/RSU.T13b.xtf) (```SURFACE```)
 |**Example**|<p align="center"><img src="img/rsu.t13.png" height="384" title="RSU.T13"></p>
 |**Expected result**|<ul><li>RSU.T13a.xtf: error message. Invalid geometry</li><li>RSU.T13b.xtf: error message. Invalid geometry</li></ul>
+|**Reference**|[[1]] Chap. 2.8.13 and 3.3.11.13
+
+###### Surfaces and Tessellations - RSU.T14
+|ID|RSU.T14
+|:--|:--
+|**Designation**|**Surfaces and tessellations:** ```AREA```
+|**Description**|The tests must check whether the polygons satisfy the definition for ```AREA```
+|**Test requirement**|[RSU.T14a.xtf](../data/RSU.T14a.xtf), [RSU.T14b.xtf](../data/RSU.T14b.xtf), [RSU.T14c.xtf](../data/RSU.T14c.xtf), [RSU.T14d.xtf](../data/RSU.T14d.xtf)
+|**Example**|<p align="center"><img src="img/rsu.t14.png" height="384" title="RSU.T14"></p>
+|**Expected result**|<ul><li>RSU.T14a.xtf: no error message</li><li>RSU.T14b.xtf: no error message</li><li>RSU.T14b.xtf: no error message</li><li>RSU.T14b.xtf: no error message</li></ul>
+|**Reference**|[[1]] Chap. 2.8.13 and 3.3.11.13
+
+###### Surfaces and Tessellations - RSU.T15
+|ID|RSU.T15
+|:--|:--
+|**Designation**|**Surfaces and tessellations: validity of the geometry**
+|**Description**|The tests must check the validity of the geometry
+|**Test requirement**|[RSU.T15a.xtf](../data/RSU.T15a.xtf) (```AREA```), [RSU.T15b.xtf](../data/RSU.T15b.xtf) (```SURFACE```)
+|**Example**|<p align="center"><img src="img/rsu.t15.png" height="384" title="RSU.T15"></p>
+|**Expected result**|<ul><li>RSU.T15a.xtf: error message. ```InnerBoundary``` is not within the ```OuterBoundary```</li><li>RSU.T15b.xtf: error message. ```InnerBoundary``` is not within the ```OuterBoundary```</li></ul>
+|**Reference**|[[1]] Chap. 2.8.13 and 3.3.11.13
+
+###### Surfaces and Tessellations - RSU.T16
+|ID|RSU.T16
+|:--|:--
+|**Designation**|**Surfaces and tessellations: validity of the geometry**
+|**Description**|The tests must check the validity of the geometry
+|**Test requirement**|[RSU.T16a.xtf](../data/RSU.T16a.xtf), [RSU.T16b.xtf](../data/RSU.T16b.xtf)
+|**Example**|<p align="center"><img src="img/rsu.t16.png" height="384" title="RSU.T16"></p>
+|**Expected result**|<ul><li>RSU.T16a.xtf: error message. Dangle and autointersection</li><li>RSU.T16b.xtf: error message. Dangle and autointersection</li></ul>
 |**Reference**|[[1]] Chap. 2.8.13 and 3.3.11.13
 
 ## Cardinality
