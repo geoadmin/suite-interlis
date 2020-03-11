@@ -73,7 +73,7 @@ Spezifische iG/Check-Einstellungen können zusätzlich in der Datei ``interlis2.
 | RXW.T02e.xtf | Falsche Fehlermeldung |
 | RXW.T02f.xtf | Falsche Fehlermeldung |
 
-#### iG/Check Version 2018.0 vom 08.10.2018
+#### iG/Check Version 2018.0.695 vom 29.11.2019
 | Test | Begründung |
 | --- | --- |
 | RAt.T11e.xtf | Falsche Fehlermeldung |
