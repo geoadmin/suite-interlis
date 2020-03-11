@@ -74,7 +74,7 @@ Des paramètres iG/Check spécifiques peuvent également être définis dans le 
 | RXW.T02e.xtf | Le message d'erreur est erroné |
 | RXW.T02f.xtf | Le message d'erreur est erroné |
 
-#### iG/Check Version 2018.0, 08.10.2018
+#### iG/Check Version 2018.0.695, 29.11.2019
 | Test | Raison |
 | --- | --- |
 | RAt.T11e.xtf | Le message d'erreur est erroné |
