@@ -57,7 +57,7 @@ All test types are listed in the file ``build.gradle`` (under ``test``). To skip
 Specific iG/Check settings can be set in the file ``interlis2.cfg`` in the directory ``igcheck2``.
 
 ### Tests that have been switched off directly in the code
-#### ilivalidator Version 1.11.1
+#### ilivalidator Version 1.11.4
 | Test | Reason |
 | --- | --- |
 | RCO.T01a.xtf | java.lang.NullPointerException |
@@ -73,7 +73,7 @@ Specific iG/Check settings can be set in the file ``interlis2.cfg`` in the direc
 | RXW.T02e.xtf | Error message is wrong |
 | RXW.T02f.xtf | Error message is wrong |
 
-#### iG/Check Version 2018.0, 08.10.2018
+#### iG/Check Version 2018.0.695, 29.11.2019
 | Test | Reason |
 | --- | --- |
 | RAt.T11e.xtf | Error message is wrong |
