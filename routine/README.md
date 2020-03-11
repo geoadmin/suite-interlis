@@ -65,7 +65,7 @@ Specific iG/Check settings can be set in the file ``interlis2.cfg`` in the direc
 | RHE.T01b.xtf | java.lang.IllegalArgumentException instead of java.lang.AssertionError. Error message is correct |
 | RHE.T04a.xtf | java.lang.IllegalArgumentException instead of java.lang.AssertionError. Error message is correct |
 | RTO.T02a.xtf | java.lang.IllegalArgumentException instead of java.lang.AssertionError. Error message is correct |
-| RTR.T02a.xtf | Error message is wrong |
+| RTR.T02a.xtf | Error message is wrong/incomplete |
 | RTR.T02b.xtf | Error message is wrong |
 | RTR.T03a.xtf | Error message is wrong |
 | RTR.T04a.xtf | Error message is wrong |
