@@ -229,7 +229,7 @@ table:
   #body_background_color: <hex value>
   #body_stripe_background_color: f9f9f9
   #foot_background_color: f0f0f0
-  border_color: dddddd
+  border_color: 999999
   head:
     border_size: 1
   #cell_padding: 3
