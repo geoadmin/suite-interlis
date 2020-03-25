@@ -19,7 +19,7 @@
 			<Art REF="ga4"></Art>
 		</TestSuite.Bodenbedeckung.Gebaeude>
 		<TestSuite.Bodenbedeckung.BoFlaechen TID="f1">
-			<!-- Keine Fehlermeldung. 10000.05 wird auf 10000.1 gerundet -->
+			<!-- Fehlermeldung. 10000.05 wird auf 10000.1 gerundet -->
 			<Flaeche>10000.05</Flaeche>
 		</TestSuite.Bodenbedeckung.BoFlaechen>
     </TestSuite.Bodenbedeckung>

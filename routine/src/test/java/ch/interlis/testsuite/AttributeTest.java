@@ -488,7 +488,7 @@ public class AttributeTest {
 	 *
 	 * @Test-requirement RAt.T09e.xtf
 	 *
-	 * @Expected-result No error message (10000.1 will be rounded to 10000.0)
+	 * @Expected-result No error message (10000.01 will be rounded to 10000.0)
 	 *
 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.5 and 3.3.11.4</p>
 	 */
@@ -528,7 +528,7 @@ public class AttributeTest {
 	 *
 	 * @Test-requirement RAt.T09g.xtf
 	 *
-	 * @Expected-result Error message (10000.5 will be rounded to 10000.1)
+	 * @Expected-result Error message (10000.05 will be rounded to 10000.1)
 	 *
 	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.5 and 3.3.11.4</p>
 	 */
