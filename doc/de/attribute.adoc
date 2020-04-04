@@ -157,6 +157,7 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T09e.xtf[RAt.T09e.xtf],
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T09f.xtf[RAt.T09f.xtf],
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T09g.xtf[RAt.T09g.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T09h.xtf[RAt.T09h.xtf],
 |*Erwartetes Ergebnis*|
 * RAt.T09a.xtf: keine Fehlermeldung
 * RAt.T09b.xtf: Fehlermeldung. Unzulässiger Wert (`0.9`)
@@ -165,6 +166,7 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T
 * RAt.T09e.xtf: keine Fehlermeldung (`10000.1` wird auf `10000.0` gerundet)
 * RAt.T09f.xtf: keine Fehlermeldung
 * RAt.T09g.xtf: Fehlermeldung (`10000.05` wird auf `10000.1` gerundet)
+* RAt.T09h.xtf: keine Fehlermeldung
 |*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.6, 2.8.5 und 3.3.11.4
 |===
 

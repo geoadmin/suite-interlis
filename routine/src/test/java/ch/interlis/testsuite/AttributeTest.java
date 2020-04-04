@@ -540,6 +540,26 @@ public class AttributeTest {
 	}
 
 	/**
+	 * @ID RAt.T09h
+	 *
+	 * @Designation Attributes: NumericType
+	 *
+	 * @Description The tests must check whether the attribute value satisfies the definition for NumericType in the INTERLIS data model and the corresponding encoding rules
+	 *
+	 * @Test-requirement RAt.T09h.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <p><a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.6, 2.8.5 and 3.3.11.4</p>
+	 */
+	@Test
+	public void RAt_T09h() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RAt.T09h.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
+
+	/**
 	 * @ID RAt.T10a
 	 *
 	 * @Designation Attributes: FormattedType
