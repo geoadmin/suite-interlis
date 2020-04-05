@@ -157,7 +157,7 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T09e.xtf[RAt.T09e.xtf],
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T09f.xtf[RAt.T09f.xtf],
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T09g.xtf[RAt.T09g.xtf],
-link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T09h.xtf[RAt.T09h.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T09h.xtf[RAt.T09h.xtf]
 |*Erwartetes Ergebnis*|
 * RAt.T09a.xtf: keine Fehlermeldung
 * RAt.T09b.xtf: Fehlermeldung. Unzulässiger Wert (`0.9`)
