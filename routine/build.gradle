@@ -21,6 +21,9 @@ test {
   // -Pics=c:\igcheck2\system\bin\ics.exe   # if ics.exe is not on the PATH
   systemProperty "ics",findProperty("ics")?:"ics"
 
+  if (!(project.vendor.equalsIgnoreCase("ilivalidator") || project.vendor.equalsIgnoreCase("ig/check"))) {
+      throw new GradleException('no valid <vendor> property provided. Please use "ig/check" or "ilivalidator".')
+  }
   //exclude '**/AssociationTest.class'
   //exclude '**/AttributeTest.class'
   //exclude '**/CardinalityAssociationTest.class'
