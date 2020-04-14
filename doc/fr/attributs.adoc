@@ -157,6 +157,7 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T09e.xtf[RAt.T09e.xtf],
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T09f.xtf[RAt.T09f.xtf],
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T09g.xtf[RAt.T09g.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T09h.xtf[RAt.T09h.xtf]
 |*Résultat attendu*|
 * RAt.T09a.xtf: aucun message d'erreur
 * RAt.T09b.xtf: message d'erreur. Valeur non valide (`0.9`)
@@ -165,6 +166,7 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RAt.T
 * RAt.T09e.xtf: aucun message d'erreur (`10000.1` est arrondi à `10000.0`)
 * RAt.T09f.xtf: aucun message d'erreur
 * RAt.T09g.xtf: message d'erreur (`10000.05` est arrondi à `10000.1`)
+* RAt.T09h.xtf: aucun message d'erreur
 |*Référence*|<<references.adoc#1,[1]>> Chap. 2.6, 2.8.5 et 3.3.11.4
 |===
 
