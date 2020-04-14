@@ -47,13 +47,16 @@ public class TestUtil {
                     return false;
                 }
                 return true;
-    		} else {
+    		} else if (vendor.equalsIgnoreCase("ilivalidator")){
     			Settings settings = new Settings();
     			settings.setValue(Validator.SETTING_ILIDIRS, "../data/models/");
 
     			boolean ret=Validator.runValidation(xtf, settings);
     			return ret;
-    		}
+    		} else {
+    		    System.err.println("no valid <vendor> property provided. Please use 'ig/check' or 'ilivalidator'");
+    		    return false;
+            }
     }
     private static void appendProcessOutputToStdStreams(Process p, StringBuffer stderr, StringBuffer stdout){
         BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
