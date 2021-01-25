@@ -18,7 +18,7 @@
 _«Zeigt die Referenz auf ein Objekt in einem anderen Behälter (im gleichen Transfer oder sogar ausserhalb), wird die Referenz zusätzlich mit BID codiert. In BID wird dabei die Behälteridentifikation des referenzierten Objekts eingetragen.»_
 |*Testvoraussetzung*|
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01a.xtf[RBe.T01a.xtf],
-link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01b.xtf)[RBe.T01b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01b.xtf[RBe.T01b.xtf],
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01c.xtf[RBe.T01c.xtf],
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01d.xtf[RBe.T01d.xtf]
 |*Erwartetes Ergebnis*|
