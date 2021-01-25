@@ -18,7 +18,7 @@
 _« Si la référence pointe sur un objet d'un autre conteneur (dans le cadre du même transfert voire en dehors de celui-ci), la référence est en plus codée via BID. L'identification du conteneur de l'objet référencé est alors enregistrée dans BID »_
 |*Condition préalable au test*|
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01a.xtf[RBe.T01a.xtf],
-link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01b.xtf)[RBe.T01b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01b.xtf[RBe.T01b.xtf],
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01c.xtf[RBe.T01c.xtf],
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RBe.T01d.xtf[RBe.T01d.xtf]
 |*Résultat attendu*|
