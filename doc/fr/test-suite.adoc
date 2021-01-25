@@ -16,7 +16,7 @@ Cette publication a été rédigée dans la cadre du +
 projet COSIG et CCGEO « Suite de tests INTERLIS »
 
 [.text-right]
-Version: https://github.com/geoadmin/suite-interlis/releases/tag/r_200311[r_200311], Mars 2020
+Version: https://github.com/geoadmin/suite-interlis/releases/tag/r_200414[r_200414], Avril 2020
 
 <<<
 
