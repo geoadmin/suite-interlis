@@ -85,7 +85,7 @@ public class TransferStructureTest {
 	@Test
 	public void RTR_T02b() {
 		// Ignored if vendor="ilivalidator" --> Wrong error message
-		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
+		// assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RTR.T02b.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
@@ -127,7 +127,7 @@ public class TransferStructureTest {
 	@Test
 	public void RTR_T03a() {
 		// Ignored if vendor="ilivalidator" --> Wrong error message
-		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
+		// assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RTR.T03a.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
