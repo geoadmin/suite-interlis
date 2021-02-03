@@ -47,8 +47,8 @@ gradlew -Pvendor=ig/check -Pics=pathToics.exe test
 The parameter ``-Pics`` can also be used to test different versions of iG/Check.
 
 ### Testing other versions of the ilivalidator
-The routine is preconfigured to test the ilivalidator version 1.11.4.
-To test other versions, string ``compile 'ch.interlis:ilivalidator:1.11.4'`` in the ``build.gradle`` file (under ``dependencies``) must be modified accordingly.
+The routine is preconfigured to test the ilivalidator version 1.11.9.
+To test other versions, string ``compile 'ch.interlis:ilivalidator:1.11.9'`` in the ``build.gradle`` file (under ``dependencies``) must be modified accordingly.
 
 ### Skip specific tests
 All test types are listed in the file ``build.gradle`` (under ``test``). To skip a test type, the corresponding line must be commented out.
@@ -57,7 +57,7 @@ All test types are listed in the file ``build.gradle`` (under ``test``). To skip
 Specific iG/Check settings can be set in the file ``interlis2.cfg`` in the directory ``igcheck2``.
 
 ### Tests that have been switched off directly in the code
-#### ilivalidator Version 1.11.4
+#### ilivalidator Version 1.11.9
 | Test | Reason |
 | --- | --- |
 | RCO.T01a.xtf | java.lang.NullPointerException |
@@ -66,12 +66,8 @@ Specific iG/Check settings can be set in the file ``interlis2.cfg`` in the direc
 | RHE.T04a.xtf | java.lang.IllegalArgumentException instead of java.lang.AssertionError. Error message is correct |
 | RTO.T02a.xtf | java.lang.IllegalArgumentException instead of java.lang.AssertionError. Error message is correct |
 | RTR.T02a.xtf | Error message is wrong/incomplete |
-| RTR.T02b.xtf | Error message is wrong |
-| RTR.T03a.xtf | Error message is wrong |
 | RTR.T04a.xtf | Error message is wrong |
 | RXW.T02a.xtf | Error message is wrong |
-| RXW.T02e.xtf | Error message is wrong |
-| RXW.T02f.xtf | Error message is wrong |
 
 #### iG/Check Version 2018.0.695, 29.11.2019
 | Test | Reason |
