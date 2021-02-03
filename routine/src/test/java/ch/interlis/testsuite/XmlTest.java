@@ -170,7 +170,7 @@ public class XmlTest {
 	@Test
 	public void RXW_T02e() {
 		// Ignored if vendor="ilivalidator" --> Wrong error message
-		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
+		// assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RXW.T02e.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
@@ -193,7 +193,7 @@ public class XmlTest {
 	@Test
 	public void RXW_T02f() {
 		// Ignored if vendor="ilivalidator" --> Wrong error message
-		assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
+		// assumeFalse (System.getProperty("vendor").equals("ilivalidator"));
 		boolean ret = TestUtil.runJob(vendor, "../data/RXW.T02f.xtf");
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
