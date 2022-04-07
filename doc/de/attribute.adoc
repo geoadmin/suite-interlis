@@ -328,11 +328,11 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RCO.T
 |*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.8.8 und 3.3.11.11
 |===
 
-==== Linienzügen
+==== Linienzüge
 [cols="2,5a", frame=topbot]
 |===
 |*ID*|*RPO*
-|*Bezeichnung*|*Linienzügen:* `POLYLINE`
+|*Bezeichnung*|*Linienzüge:* `POLYLINE`
 |*Beschreibung*|Für die Validierung der Attributwerte vom Typ `POLYLINE` gelten die im <<referenzen.adoc#1,[1]>> Kap. 3.3.11.12 definierten Regeln
 |*Details*|
 * Angaben in `PolylineValue` müssen der `AttrTypeDef` ( <<referenzen.adoc#1,[1]>> Kap. 2.6 und 2.8.12.2) im INTERLIS-Datenmodell entsprechen
@@ -345,7 +345,7 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RCO.T
 [cols="2,5a", frame=topbot]
 |===
 |*ID*|*RPO.T01*
-|*Bezeichnung*|*Linienzügen:* `POLYLINE`
+|*Bezeichnung*|*Linienzüge:* `POLYLINE`
 |*Beschreibung*|Der Test muss die Validität eines Linienzugs prüfen
 |*Testvoraussetzung*|
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RPO.T01a.xtf[RPO.T01a.xtf]
@@ -360,7 +360,7 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RPO.T
 [cols="2,5a", frame=topbot]
 |===
 |*ID*|*RPO.T02*
-|*Bezeichnung*|*Linienzügen: einfacher Linienzug*
+|*Bezeichnung*|*Linienzüge: einfacher Linienzug*
 |*Beschreibung*|Die Tests müssen die Validität eines einfachen Linienzugs prüfen (<<referenzen.adoc#1,[1]>> Kap. 2.8.12.2, Regel `WITHOUT OVERLAPS`)
 |*Testvoraussetzung*|
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RPO.T02a.xtf[RPO.T02a.xtf],
@@ -379,7 +379,7 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RPO.T
 [cols="2,5a", frame=topbot]
 |===
 |*ID*|*RPO.T03*
-|*Bezeichnung*|*Linienzügen: Toleranz bei ARC*
+|*Bezeichnung*|*Linienzüge: Toleranz bei ARC*
 |*Beschreibung*|Die Tests müssen die Toleranz prüfen (<<referenzen.adoc#1,[1]>> Kap. 2.8.12.2, Regel `WITHOUT OVERLAPS > ;`)
 |*Testvoraussetzung*|
 link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RPO.T03a.xtf[RPO.T03a.xtf],
