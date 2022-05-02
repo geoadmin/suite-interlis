@@ -415,7 +415,7 @@
 |**Designation**|**Surfaces and tessellations: ```areAreas3```**
 |**Description**|The tests must check whether the polygons satisfy the definition for ```areAreas3```
 |**Test requirement**|[RSU.T19a.xtf](../data/RSU.T19a.xtf), [RSU.T19b.xtf](../data/RSU.T19b.xtf), [RSU.T19c.xtf](../data/RSU.T19c.xtf), [RSU.T19d.xtf](../data/RSU.T19d.xtf), [RSU.T19e.xtf](../data/RSU.T19e.xtf)
-|**Example**|<p align="center"><img src="img/rsu.t18.png" height="384" title="RSU.T18"></p>
+|**Example**|<p align="center"><img src="img/rsu.t19.png" height="384" title="RSU.T19"></p>
 |**Expected result**|<ul><li>RSU.T19a.xtf: error message. Constraint ```areAreas3``` is violated</li><li>RSU.T19b.xtf: error message. Constraint ```areAreas3``` is violated</li><li>RSU.T19c.xtf: error message. Constraint ```areAreas3``` is violated</li><li>RSU.T19d.xtf: error message. Constraint ```areAreas3``` is violated</li><li>RSU.T19e.xtf: no error message</li></ul>
 |**Reference**|[[5]]
 
