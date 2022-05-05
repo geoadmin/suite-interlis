@@ -131,19 +131,11 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T
 [cols="2,5a", frame=topbot]
 |===
 |*ID*|*RKo.T08*
-|*Désignation*|*Règles d’intégrité :* `SET CONSTRAINT` *avec fonction* (`are.Areas`)
-|*Description*|Le test doit vérifier que les données soient conformes à la définition `ConstraintDef` du modèle de données INTERLIS
+|*Désignation*|*Règles d’intégrité :* `SET CONSTRAINT` *avec fonction* (`areAreas`)
+|*Description*|Voir <<attributs.adoc#rsut17,[RSU.T17]>>
 |*Condition préalable au test*|
-link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08a.xtf[RKo.T08a.xtf],
-link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08b.xtf[RKo.T08b.xtf],
-link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08c.xtf[RKo.T08c.xtf],
-link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08d.xtf[RKo.T08d.xtf]
 |*Résultat attendu*|
-* RKo.T08a.xtf: message d'erreur. Violation de la règle d’intégrité
-* RKo.T08b.xtf: aucun message d'erreur
-* RKo.T08c.xtf: aucun message d'erreur
-* RKo.T08d.xtf: message d'erreur. Violation de la règle d’intégrité
-|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|*Référence*|
 |===
 
 ====== RKo.T09

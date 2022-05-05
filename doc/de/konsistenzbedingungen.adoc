@@ -132,18 +132,10 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T
 |===
 |*ID*|*RKo.T08*
 |*Bezeichnung*|*Konsistenzbedingungen:* `SET CONSTRAINT` *mit Funktion* (`are.Areas`)
-|*Beschreibung*|Die Tests müssen prüfen, dass die Daten der `ConstraintDef` im INTERLIS-Datenmodell entsprechen
+|*Beschreibung*|Siehe <<attribute.adoc#rsut17,[RSU.T17]>>
 |*Testvoraussetzung*|
-link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08a.xtf[RKo.T08a.xtf],
-link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08b.xtf[RKo.T08b.xtf],
-link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08c.xtf[RKo.T08c.xtf],
-link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T08d.xtf[RKo.T08d.xtf]
 |*Erwartetes Ergebnis*|
-* RKo.T08a.xtf: Fehlermeldung. Konsistenzbedingung verletzt
-* RKo.T08b.xtf: keine Fehlermeldung
-* RKo.T08c.xtf: keine Fehlermeldung
-* RKo.T08d.xtf: Fehlermeldung. Konsistenzbedingung verletzt
-|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|*Referenz*|
 |===
 
 ====== RKo.T09

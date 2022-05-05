@@ -397,7 +397,7 @@
 |**Test requirement**|[RSU.T17a.xtf](../data/RSU.T17a.xtf), [RSU.T17b.xtf](../data/RSU.T17b.xtf), [RSU.T17c.xtf](../data/RSU.T17c.xtf), [RSU.T17d.xtf](../data/RSU.T17d.xtf)
 |**Example**|<p align="center"><img src="" height="384" title=""></p>
 |**Expected result**|<ul><li>RSU.T17a.xtf: error message. Constraint ```areAreas``` is violated</li><li>RSU.T17b.xtf: no error message</li><li>RSU.T17c.xtf: no error message</li><li>RSU.T17d.xtf: error message. Constraint ```areAreas``` is violated</li></ul>
-|**Reference**|[[1]]
+|**Reference**|[[1]] Chap. 2.12, 2.13 et 2.14
 
 ###### Surfaces and Tessellations - RSU.T18
 |ID|RSU.T18
