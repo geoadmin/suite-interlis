@@ -132,7 +132,7 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RKo.T
 |===
 |*ID*|*RKo.T08*
 |*Désignation*|*Règles d’intégrité :* `SET CONSTRAINT` *avec fonction* (`areAreas`)
-|*Description*|Voir <<attributs.adoc#rsut17,[RSU.T17]>>
+|*Description*|Voir <<RSU.T17>>
 |*Condition préalable au test*|
 |*Résultat attendu*|
 |*Référence*|
