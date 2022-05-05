@@ -16,7 +16,7 @@ Die vorliegende Publikation wurde im Rahmen des +
 KOGIS- und KKGEO-Projektes « INTERLIS Testsuite » verfasst.
 
 [.text-right]
-Version: https://github.com/geoadmin/suite-interlis/releases/tag/r_200414[r_200414], April 2020
+Version: https://github.com/geoadmin/suite-interlis/releases/tag/r_220505[r_220505], Mai 2022
 
 <<<
 
