@@ -402,7 +402,7 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RPO.T
 * Angaben in `SurfaceValue` müssen der `AttrTypeDef` ( <<referenzen.adoc#1,[1]>> Kap. 2.6 und 2.8.12.2) im INTERLIS-Datenmodell entsprechen
 * Für die Validierung der Geometrie gelten zusätzlich die im <<referenzen.adoc#1,[1]>> Kap. 2.8.12 und 2.8.13 definierten Regeln
 * Geometrische Bedingungen, die mit der Standardfunktion `areAreas` formuliert werden (<<referenzen.adoc#1,[1]>> Kap. 2.12 und 2.14), müssen zusätzlich geprüft werden
-* Geometrische Bedingungen, den erweiterten Funktionen `areAreas2` und `areAreas3` formuliert werden (<<referenzen.adoc#6,[6]>>), müssen zusätzlich geprüft werden
+* Geometrische Bedingungen, die mit den erweiterten Funktionen `areAreas2` und `areAreas3` formuliert werden (<<referenzen.adoc#6,[6]>>), müssen zusätzlich geprüft werden
 |*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.6, 2.8.12, 2.8.12.2, 2.8.13, 2.12, 2.14 und 3.3.11.13, <<referenzen.adoc#6,[6]>>
 |===
 
@@ -742,10 +742,6 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T
 * RSU.T19e.xtf: keine Fehlermeldung
 |*Referenz*|<<referenzen.adoc#6,[6]>>
 |===
-
-
-
-
 
 ==== Kardinalität
 [cols="2,5a", frame=topbot]
