@@ -1,0 +1,29 @@
+INTERLIS 2.3;
+
+MODEL areAreas_ext (en)
+AT "https://www.kogis.ch"
+VERSION "2022-04-07"  =
+  IMPORTS INTERLIS_ext,GeometryCHLV95_V1;
+  TOPIC Areas =
+    
+    STRUCTURE Two =
+      Geom2 : MANDATORY GeometryCHLV95_V1.Surface;
+    END Two;
+
+    STRUCTURE One =
+      Geom1 : BAG {1..*} OF Two;
+    END One;
+
+    CLASS Areas2 =
+      Geom : MANDATORY One;
+      MANDATORY CONSTRAINT INTERLIS_ext.areAreas2(THIS,UNDEFINED,"Geom->Geom1->Geom2");
+    END Areas2;
+	
+	CLASS Areas3 =
+      Geom : MANDATORY One;
+	  SET CONSTRAINT INTERLIS_ext.areAreas3(ALL,UNDEFINED,"Geom->Geom1->Geom2");
+    END Areas3;
+    
+  END Areas;
+  
+END areAreas_ext.

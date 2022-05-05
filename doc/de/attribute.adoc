@@ -402,7 +402,8 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RPO.T
 * Angaben in `SurfaceValue` müssen der `AttrTypeDef` ( <<referenzen.adoc#1,[1]>> Kap. 2.6 und 2.8.12.2) im INTERLIS-Datenmodell entsprechen
 * Für die Validierung der Geometrie gelten zusätzlich die im <<referenzen.adoc#1,[1]>> Kap. 2.8.12 und 2.8.13 definierten Regeln
 * Geometrische Bedingungen, die mit der Standardfunktion `areAreas` formuliert werden (<<referenzen.adoc#1,[1]>> Kap. 2.12 und 2.14), müssen zusätzlich geprüft werden
-|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.6, 2.8.12, 2.8.12.2, 2.8.13, 2.12, 2.14 und 3.3.11.13
+* Geometrische Bedingungen, die mit den erweiterten Funktionen `areAreas2` und `areAreas3` formuliert werden (<<referenzen.adoc#6,[6]>>), müssen zusätzlich geprüft werden
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.6, 2.8.12, 2.8.12.2, 2.8.13, 2.12, 2.14 und 3.3.11.13, <<referenzen.adoc#6,[6]>>
 |===
 
 ===== Testfälle
@@ -676,6 +677,70 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T
 * RSU.T16a.xtf: Fehlermeldung. _Dangle_ und Selbstüberschneidung
 * RSU.T16b.xtf: Fehlermeldung. _Dangle_ und Selbstüberschneidung
 |*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.8.13 und 3.3.11.13
+|===
+
+====== RSU.T17
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RSU.T17*
+|*Bezeichnung*|*Einzelflächen und Gebietseinteilungen: `areAreas`*
+|*Beschreibung*|Der Test muss prüfen, ob die Polygone der Definition `areAreas` entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T17a.xtf[RSU.T17a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T17b.xtf[RSU.T17b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T17c.xtf[RSU.T17c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T17d.xtf[RSU.T17d.xtf]
+|*Beispiel*|
+|*Erwartetes Ergebnis*|
+* RSU.T17a.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+* RSU.T17b.xtf: keine Fehlermeldung
+* RSU.T17c.xtf: keine Fehlermeldung
+* RSU.T17d.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+|*Referenz*|<<referenzen.adoc#1,[1]>> Kap. 2.12, 2.13 und 2.14
+|===
+
+====== RSU.T18
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RSU.T18*
+|*Bezeichnung*|*Einzelflächen und Gebietseinteilungen: `areAreas2`*
+|*Beschreibung*|Der Test muss prüfen, ob die Polygone der Definition `areAreas2` entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T18a.xtf[RSU.T18a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T18b.xtf[RSU.T18b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T18c.xtf[RSU.T18c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T18d.xtf[RSU.T18d.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T18e.xtf[RSU.T18e.xtf]
+|*Beispiel*|image:../img/rsu.t18.png[]
+|*Erwartetes Ergebnis*|
+* RSU.T18a.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+* RSU.T18b.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+* RSU.T18c.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+* RSU.T18d.xtf: keine Fehlermeldung
+* RSU.T18e.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+|*Referenz*|<<referenzen.adoc#6,[6]>>
+|===
+
+====== RSU.T19
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RSU.T19*
+|*Bezeichnung*|*Einzelflächen und Gebietseinteilungen: `areAreas3`*
+|*Beschreibung*|Der Test muss prüfen, ob die Polygone der Definition `areAreas3` entsprechen
+|*Testvoraussetzung*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T19a.xtf[RSU.T19a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T19b.xtf[RSU.T19b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T19c.xtf[RSU.T19c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T19d.xtf[RSU.T19d.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T19e.xtf[RSU.T19e.xtf]
+|*Beispiel*|image:../img/rsu.t19.png[]
+|*Erwartetes Ergebnis*|
+* RSU.T19a.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+* RSU.T19b.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+* RSU.T19c.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+* RSU.T19d.xtf: Fehlermeldung. Konsistenzbedingung verletzt
+* RSU.T19e.xtf: keine Fehlermeldung
+|*Referenz*|<<referenzen.adoc#6,[6]>>
 |===
 
 ==== Kardinalität

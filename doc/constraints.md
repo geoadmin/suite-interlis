@@ -1,4 +1,4 @@
-# Data section: Constraints
+1# Data section: Constraints
 
 ## Constraints
 |ID|RKo
@@ -76,10 +76,10 @@
 |ID|RKo.T08
 |:--|:--
 |**Designation**|**Constraints:** ```SET CONSTRAINT``` **with function** (```are.Areas```)
-|**Description**|The tests must check whether the data satisfies the ```ConstraintDef``` in the INTERLIS data model
-|**Test requirement**|[RKo.T08a.xtf](../data/RKo.T08a.xtf), [RKo.T08b.xtf](../data/RKo.T08b.xtf), [RKo.T08c.xtf](../data/RKo.T08c.xtf), [RKo.T08d.xtf](../data/RKo.T08d.xtf)
-|**Expected result**|<ul><li>RKo.T08a.xtf: error message. Constraint violated</li><li>RKo.T08b.xtf: no error message</li><li>RKo.T08c.xtf: no error message</li><li>RKo.T08d.xtf: error message. Constraint violated</li></ul>
-|**Reference**|[[1]] Chap. 2.12, 2.13 and 2.14
+|**Description**|See [RSU.T17](attributes.md#surfaces-and-tessellations---rsut17)
+|**Test requirement**|
+|**Expected result**|
+|**Reference**|
 
 ###### Constraints - RKo.T09
 |ID|RKo.T09

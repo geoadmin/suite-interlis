@@ -225,8 +225,8 @@
 |:--|:--
 |**Designation**|```SURFACE```
 |**Description**|For the validation of attribute values of type ```SURFACE```, the rules defined in [[1]] Chap. 3.3.11.13 apply
-|**Details**|<ul><li>The values in ```SurfaceValue``` must satisfy the ```AttrTypeDef``` ([[1]] Chap. 2.6 and 2.8.12.2) in the INTERLIS data model</li><li>For the validation of the geometry, the rules defined in [[1]] Chap. 2.8.12 and 2.8.13 apply additionally</li><li>Geometric constraints formulated with the standard function ```areAreas``` ([[1]] Chap. 2.12 and 2.14) must also be checked</li></ul>
-|**Reference**|[[1]] Chap. 2.6, 2.8.12, 2.8.12.2, 2.8.13, 2.12, 2.14 and 3.3.11.13
+|**Details**|<ul><li>The values in ```SurfaceValue``` must satisfy the ```AttrTypeDef``` ([[1]] Chap. 2.6 and 2.8.12.2) in the INTERLIS data model</li><li>For the validation of the geometry, the rules defined in [[1]] Chap. 2.8.12 and 2.8.13 apply additionally</li><li>Geometric constraints formulated with the standard function ```areAreas``` ([[1]] Chap. 2.12 and 2.14) must also be checked</li><li>Geometric constraints formulated with the extended functions ```areAreas2``` and ```areAreas3``` ([[5]]) must also be checked</li></ul>
+|**Reference**|[[1]] Chap. 2.6, 2.8.12, 2.8.12.2, 2.8.13, 2.12, 2.14 and 3.3.11.13, [[5]]
 
 ### Test cases
 ###### Surfaces and Tessellations - RSU.T01
@@ -389,6 +389,36 @@
 |**Expected result**|<ul><li>RSU.T16a.xtf: error message. Dangle and autointersection</li><li>RSU.T16b.xtf: error message. Dangle and autointersection</li></ul>
 |**Reference**|[[1]] Chap. 2.8.13 and 3.3.11.13
 
+###### Surfaces and Tessellations - RSU.T17
+|ID|RSU.T17
+|:--|:--
+|**Designation**|**Surfaces and tessellations: ```areAreas```**
+|**Description**|The tests must check whether the polygons satisfy the definition for ```areAreas```
+|**Test requirement**|[RSU.T17a.xtf](../data/RSU.T17a.xtf), [RSU.T17b.xtf](../data/RSU.T17b.xtf), [RSU.T17c.xtf](../data/RSU.T17c.xtf), [RSU.T17d.xtf](../data/RSU.T17d.xtf)
+|**Example**|<p align="center"><img src="" height="384" title=""></p>
+|**Expected result**|<ul><li>RSU.T17a.xtf: error message. Constraint ```areAreas``` is violated</li><li>RSU.T17b.xtf: no error message</li><li>RSU.T17c.xtf: no error message</li><li>RSU.T17d.xtf: error message. Constraint ```areAreas``` is violated</li></ul>
+|**Reference**|[[1]] Chap. 2.12, 2.13 and 2.14
+
+###### Surfaces and Tessellations - RSU.T18
+|ID|RSU.T18
+|:--|:--
+|**Designation**|**Surfaces and tessellations: ```areAreas2```**
+|**Description**|The tests must check whether the polygons satisfy the definition for ```areAreas2```
+|**Test requirement**|[RSU.T18a.xtf](../data/RSU.T18a.xtf), [RSU.T18b.xtf](../data/RSU.T18b.xtf), [RSU.T18c.xtf](../data/RSU.T18c.xtf), [RSU.T18d.xtf](../data/RSU.T18d.xtf), [RSU.T18e.xtf](../data/RSU.T18e.xtf)
+|**Example**|<p align="center"><img src="img/rsu.t18.png" height="384" title="RSU.T18"></p>
+|**Expected result**|<ul><li>RSU.T18a.xtf: error message. Constraint ```areAreas2``` is violated</li><li>RSU.T18b.xtf: error message. Constraint ```areAreas2``` is violated</li><li>RSU.T18c.xtf: error message. Constraint ```areAreas2``` is violated</li><li>RSU.T18d.xtf: no error message</li><li>RSU.T18e.xtf: error message. Constraint ```areAreas2``` is violated</li></ul>
+|**Reference**|[[5]]
+
+###### Surfaces and Tessellations - RSU.T19
+|ID|RSU.T19
+|:--|:--
+|**Designation**|**Surfaces and tessellations: ```areAreas3```**
+|**Description**|The tests must check whether the polygons satisfy the definition for ```areAreas3```
+|**Test requirement**|[RSU.T19a.xtf](../data/RSU.T19a.xtf), [RSU.T19b.xtf](../data/RSU.T19b.xtf), [RSU.T19c.xtf](../data/RSU.T19c.xtf), [RSU.T19d.xtf](../data/RSU.T19d.xtf), [RSU.T19e.xtf](../data/RSU.T19e.xtf)
+|**Example**|<p align="center"><img src="img/rsu.t19.png" height="384" title="RSU.T19"></p>
+|**Expected result**|<ul><li>RSU.T19a.xtf: error message. Constraint ```areAreas3``` is violated</li><li>RSU.T19b.xtf: error message. Constraint ```areAreas3``` is violated</li><li>RSU.T19c.xtf: error message. Constraint ```areAreas3``` is violated</li><li>RSU.T19d.xtf: error message. Constraint ```areAreas3``` is violated</li><li>RSU.T19e.xtf: no error message</li></ul>
+|**Reference**|[[5]]
+
 ## Cardinality
 |ID|RKA
 |:--|:--
@@ -420,3 +450,4 @@
 [2]: bib.md#2-w3c-extensible-markup-language-xml-10-fifth-edition-26112008
 [3]: bib.md#3-ietf-rfc-uniform-resource-identifiers-uri-generic-syntax-08-1998
 [4]: bib.md#4-w3c-xmlid-version-10-09-09-2005-online-available-httpswwww3orgtrxml-id
+[5]: bib.md#5-claude-eisenhut-model-interlis_ext-19112018

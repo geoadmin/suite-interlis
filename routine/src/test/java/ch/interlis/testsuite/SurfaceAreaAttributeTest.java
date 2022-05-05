@@ -984,4 +984,340 @@ public class SurfaceAreaAttributeTest {
 		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
 		assertFalse(ret);
 	}
+
+	/**
+	 * @ID RSU.T17a
+	 *
+	 * @Designation Surfaces and tessellations: areAreas
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas
+	 *
+	 * @Test-requirement RSU.T17a.xtf
+	 *
+	 * @Expected-result Error message. Constraint areAreas is violated
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14
+	 *
+	 * <p>
+	 *
+	 * <img alt="" src="">
+	 */
+	@Test
+	public void RSU_T17a() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T17a.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+	
+	/**
+	 * @ID RSU.T17b
+	 *
+	 * @Designation Surfaces and tessellations: areAreas
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas
+	 *
+	 * @Test-requirement RSU.T17b.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. Chap. 2.12, 2.13 and 2.14
+	 *
+	 * <p>
+	 *
+	 * <img alt="" src="">
+	 */
+	@Test
+	public void RSU_T17b() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T17b.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
+
+	/**
+	 * @ID RSU.T17c
+	 *
+	 * @Designation Surfaces and tessellations: areAreas
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas
+	 *
+	 * @Test-requirement RSU.T17c.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. Chap. 2.12, 2.13 and 2.14
+	 *
+	 * <p>
+	 *
+	 * <img alt="" src="">
+	 */
+	@Test
+	public void RSU_T17c() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T17c.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
+
+	/**
+	 * @ID RSU.T17d
+	 *
+	 * @Designation Surfaces and tessellations: areAreas
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas
+	 *
+	 * @Test-requirement RSU.T17d.xtf
+	 *
+	 * @Expected-result Error message. Constraint areAreas is violated
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/ili2-refman_2006-04-13_e.pdf">INTERLIS Version 2 – Reference Manual</a> Chap. 2.12, 2.13 and 2.14
+	 *
+	 * <p>
+	 *
+	 * <img alt="" src="">
+	 */
+	@Test
+	public void RSU_T17d() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T17d.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RSU.T18a
+	 *
+	 * @Designation Surfaces and tessellations: areAreas2
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas2
+	 *
+	 * @Test-requirement RSU.T18a.xtf
+	 *
+	 * @Expected-result Error message. Constraint areAreas2 is violated
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/INTERLIS_ext_e.pdf">MODEL INTERLIS_ext</a>
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T18" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t18.png">
+	 */
+	@Test
+	public void RSU_T18a() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T18a.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RSU.T18b
+	 *
+	 * @Designation Surfaces and tessellations: areAreas2
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas2
+	 *
+	 * @Test-requirement RSU.T18b.xtf
+	 *
+	 * @Expected-result Error message. Constraint areAreas2 is violated
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/INTERLIS_ext_e.pdf">MODEL INTERLIS_ext</a>
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T18" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t18.png">
+	 */
+	@Test
+	public void RSU_T18b() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T18b.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+	
+	/**
+	 * @ID RSU.T18c
+	 *
+	 * @Designation Surfaces and tessellations: areAreas2
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas2
+	 *
+	 * @Test-requirement RSU.T18c.xtf
+	 *
+	 * @Expected-result Error message. Constraint areAreas2 is violated
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/INTERLIS_ext_e.pdf">MODEL INTERLIS_ext</a>
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T18" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t18.png">
+	 */
+	@Test
+	public void RSU_T18c() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T18c.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RSU.T18d
+	 *
+	 * @Designation Surfaces and tessellations: areAreas2
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas2
+	 *
+	 * @Test-requirement RSU.T18d.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/INTERLIS_ext_e.pdf">MODEL INTERLIS_ext</a>
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T18" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t18.png">
+	 */
+	@Test
+	public void RSU_T18d() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T18d.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
+
+	/**
+	 * @ID RSU.T18e
+	 *
+	 * @Designation Surfaces and tessellations: areAreas2
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas2
+	 *
+	 * @Test-requirement RSU.T18e.xtf
+	 *
+	 * @Expected-result Error message. Constraint areAreas2 is violated
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/INTERLIS_ext_e.pdf">MODEL INTERLIS_ext</a>
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T18" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t18.png">
+	 */
+	@Test
+	public void RSU_T18e() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T18e.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RSU.T19a
+	 *
+	 * @Designation Surfaces and tessellations: areAreas3
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas3
+	 *
+	 * @Test-requirement RSU.T19a.xtf
+	 *
+	 * @Expected-result Error message. Constraint areAreas3 is violated
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/INTERLIS_ext_e.pdf">MODEL INTERLIS_ext</a>
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T19" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t19.png">
+	 */
+	@Test
+	public void RSU_T19a() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T19a.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RSU.T19b
+	 *
+	 * @Designation Surfaces and tessellations: areAreas3
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas3
+	 *
+	 * @Test-requirement RSU.T19b.xtf
+	 *
+	 * @Expected-result Error message. Constraint areAreas3 is violated
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/INTERLIS_ext_e.pdf">MODEL INTERLIS_ext</a>
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T19" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t19.png">
+	 */
+	@Test
+	public void RSU_T19b() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T19b.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RSU.T19c
+	 *
+	 * @Designation Surfaces and tessellations: areAreas3
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas3
+	 *
+	 * @Test-requirement RSU.T19c.xtf
+	 *
+	 * @Expected-result Error message. Constraint areAreas3 is violated
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/INTERLIS_ext_e.pdf">MODEL INTERLIS_ext</a>
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T19" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t19.png">
+	 */
+	@Test
+	public void RSU_T19c() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T19c.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}
+
+	/**
+	 * @ID RSU.T19d
+	 *
+	 * @Designation Surfaces and tessellations: areAreas3
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas3
+	 *
+	 * @Test-requirement RSU.T19d.xtf
+	 *
+	 * @Expected-result Error message. Constraint areAreas3 is violated
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/INTERLIS_ext_e.pdf">MODEL INTERLIS_ext</a>
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T19" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t19.png">
+	 */
+	@Test
+	public void RSU_T19d() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T19d.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertFalse(ret);
+	}	
+
+	/**
+	 * @ID RSU.T19e
+	 *
+	 * @Designation Surfaces and tessellations: areAreas3
+	 *
+	 * @Description The tests must check whether the polygons satisfy the definition for areAreas3
+	 *
+	 * @Test-requirement RSU.T19e.xtf
+	 *
+	 * @Expected-result No error message
+	 *
+	 * @Reference <a href="https://www.interlis.ch/download/interlis2/INTERLIS_ext_e.pdf">MODEL INTERLIS_ext</a>
+	 *
+	 * <p>
+	 *
+	 * <img alt="RSU_T19" src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rsu.t19.png">
+	 */
+	@Test
+	public void RSU_T19e() {
+		boolean ret = TestUtil.runJob(vendor, "../data/RSU.T19e.xtf");
+		logger.info(vendor + " - " + testName.getMethodName() +": " + ret);
+		assertTrue(ret);
+	}
 }

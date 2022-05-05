@@ -402,7 +402,8 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RPO.T
 * Les valeurs de `SurfaceValue` doivent être conformes à la définition `AttrTypeDef` ( <<references.adoc#1,[1]>> Chap. 2.6 et 2.8.12.2 ) du modèle de données INTERLIS
 * Pour la validation de la géométrie, les règles définies dans <<references.adoc#1,[1]>> Chap. 2.8.12 et 2.8.13 s’appliquent également
 * Le règles d'intégrité formulées avec la fonction standard `areAreas` ( <<references.adoc#1,[1]>> Chap. 2.12 et 2.14 ) doivent également être validées
-|*Référence*|<<references.adoc#1,[1]>> Chap. 2.6, 2.8.12, 2.8.12.2, 2.8.13, 2.12, 2.14 et 3.3.11.13
+* Le règles d'intégrité formulées avec les fonctions étendues `areAreas2` et `areAreas3` ( <<references.adoc#6,[6]>>) doivent également être validées
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.6, 2.8.12, 2.8.12.2, 2.8.13, 2.12, 2.14 et 3.3.11.13, <<references.adoc#6,[6]>>
 |===
 
 ===== Cas de test
@@ -675,6 +676,70 @@ link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T
 * RSU.T16a.xtf: message d'erreur. _Dangle_ et auto-intersection
 * RSU.T16b.xtf: message d'erreur. _Dangle_ et auto-intersection
 |*Référence*|<<references.adoc#1,[1]>> Chap. 2.8.13 et 3.3.11.13
+|===
+
+====== RSU.T17
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RSU.T17*
+|*Désignation*|*Surfaces simples et partitions de territoire : `areAreas`*
+|*Description*|Le test doit vérifier si les polygones sont conformes à la définition `areAreas`.
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T17a.xtf[RSU.T17a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T17b.xtf[RSU.T17b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T17c.xtf[RSU.T17c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T17d.xtf[RSU.T17d.xtf]
+|*Exemple*|
+|*Résultat attendu*|
+* RSU.T17a.xtf: message d'erreur. Violation de la règle d'integrité
+* RSU.T17b.xtf: aucun message d'erreur
+* RSU.T17c.xtf: aucun message d'erreur
+* RSU.T17d.xtf: message d'erreur. Violation de la règle d'integrité
+|*Référence*|<<references.adoc#1,[1]>> Chap. 2.12, 2.13 et 2.14
+|===
+
+====== RSU.T18
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RSU.T18*
+|*Désignation*|*Surfaces simples et partitions de territoire : `areAreas2`*
+|*Description*|Le test doit vérifier si les polygones sont conformes à la définition `areAreas2`.
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T18a.xtf[RSU.T18a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T18b.xtf[RSU.T18b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T18c.xtf[RSU.T18c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T18d.xtf[RSU.T18d.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T18e.xtf[RSU.T18e.xtf]
+|*Exemple*|image:../img/rsu.t18.png[]
+|*Résultat attendu*|
+* RSU.T18a.xtf: message d'erreur. Violation de la règle d'integrité
+* RSU.T18b.xtf: message d'erreur. Violation de la règle d'integrité
+* RSU.T18c.xtf: message d'erreur. Violation de la règle d'integrité
+* RSU.T18d.xtf: aucun message d'erreur
+* RSU.T18e.xtf: message d'erreur. Violation de la règle d'integrité
+|*Référence*|<<references.adoc#6,[6]>>
+|===
+
+====== RSU.T19
+[cols="2,5a", frame=topbot]
+|===
+|*ID*|*RSU.T19*
+|*Désignation*|*Surfaces simples et partitions de territoire : `areAreas3`*
+|*Description*|Le test doit vérifier si les polygones sont conformes à la définition `areAreas3`.
+|*Condition préalable au test*|
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T19a.xtf[RSU.T19a.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T19b.xtf[RSU.T19b.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T19c.xtf[RSU.T19c.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T19d.xtf[RSU.T19d.xtf],
+link:https://raw.githubusercontent.com/geoadmin/suite-interlis/master/data/RSU.T19e.xtf[RSU.T19e.xtf]
+|*Exemple*|image:../img/rsu.t19.png[]
+|*Résultat attendu*|
+* RSU.T19a.xtf: message d'erreur. Violation de la règle d'integrité
+* RSU.T19b.xtf: message d'erreur. Violation de la règle d'integrité
+* RSU.T19c.xtf: message d'erreur. Violation de la règle d'integrité
+* RSU.T19d.xtf: message d'erreur. Violation de la règle d'integrité
+* RSU.T19e.xtf: aucun message d'erreur
+|*Référence*|<<references.adoc#6,[6]>>
 |===
 
 ==== Cardinalité
